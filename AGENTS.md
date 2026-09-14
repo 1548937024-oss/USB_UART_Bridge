@@ -17,6 +17,8 @@ USB 转 UART 小板。
 核心文件：
 
 - `hardware/USB_UART_Bridge/USB_UART_Bridge.kicad_sch`
+- `hardware/USB_UART_Bridge/Power.kicad_sch`
+- `hardware/USB_UART_Bridge/Communicate.kicad_sch`
 - `hardware/USB_UART_Bridge/USB_UART_Bridge.kicad_pro`
 - `hardware/USB_UART_Bridge/sym-lib-table`
 - `hardware/USB_UART_Bridge/fp-lib-table`
@@ -28,6 +30,15 @@ USB 转 UART 小板。
 - `generated/USB_UART_Bridge.net`
 - `generated/USB_UART_Bridge_BOM.csv`
 - `manufacturing/USB_UART_Bridge.pdf`
+
+## 原理图层次结构
+
+- 顶层图纸只放外部接口和对应电气网络。
+- USB-C、USB ESD、CC 下拉、UART 接口和 VOUT 选择放在顶层图纸。
+- `Power.kicad_sch` 放保险丝、隔离电源、隔离侧 LDO 和相关去耦。
+- `Communicate.kicad_sch` 放 USB-UART 桥、数字隔离器和辅助状态电路。
+- 跨图纸信号使用层次标签和图纸引脚连接。
+- 电源网络必须使用 `power` 库中的电源符号，不得使用普通网络标签。
 
 ## 环境约束
 
@@ -173,7 +184,7 @@ pwsh -NoProfile -File .\scripts\validate.ps1
 - P0 环境锁定：已完成。
 - P1 需求锁定：已完成。
 - P2 架构与选型：已完成。
-- P3 原理图：已完成，A4 图纸，ERC 为 0 错误、0 警告。
+- P3 原理图：已完成，顶层、Power 和 Communicate 均为 A4 图纸，ERC 为 0 错误、0 警告。
 - P4 PCB 设置与布局：尚未开始。
 
 每次进入下一阶段前，优先检查本文件与项目中的 `requirements.yaml`、
