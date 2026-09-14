@@ -1,0 +1,302 @@
+project: USB_UART_Bridge
+revision: 0.1
+
+components:
+  J1:
+    symbol: Connector:USB_C_Receptacle_USB2.0_16P
+    footprint: Connector_USB:USB_C_Receptacle_XKB_U262-16XN-4BVC11
+    value: USB-C_Receptacle_USB2.0
+  U1:
+    symbol: Interface_USB:CH343G
+    footprint: Package_SO:SOIC-16_3.9x9.9mm_P1.27mm
+    value: CH343G
+  U2:
+    symbol: Power_Protection:USBLC6-2SC6
+    footprint: Package_TO_SOT_SMD:SOT-23-6
+    value: USBLC6-2SC6
+  U3:
+    symbol: Isolator:ISO7721D
+    footprint: Package_SO:SOIC-8_3.9x4.9mm_P1.27mm
+    value: ISO7721D
+  PS1:
+    symbol: Converter_DCDC_Isolated:CRE1S0505SC
+    footprint: Converter_DCDC:Converter_DCDC_Murata_CRE1xxxxxxSC_THT
+    value: CRE1S0505SC
+  U4:
+    symbol: Regulator_Linear:AP2112K-3.3
+    footprint: Package_TO_SOT_SMD:SOT-23-5
+    value: AP2112K-3.3
+  F1:
+    symbol: Device:Fuse
+    footprint: Fuse:Fuse_1206_3216Metric
+    value: 0.5A
+  R1:
+    symbol: Device:R
+    footprint: Resistor_SMD:R_0402_1005Metric
+    value: 5.1k
+  R2:
+    symbol: Device:R
+    footprint: Resistor_SMD:R_0402_1005Metric
+    value: 5.1k
+  R4:
+    symbol: Device:R
+    footprint: Resistor_SMD:R_0402_1005Metric
+    value: 1k
+  R5:
+    symbol: Device:R
+    footprint: Resistor_SMD:R_0402_1005Metric
+    value: 1k
+  R6:
+    symbol: Device:R
+    footprint: Resistor_SMD:R_0402_1005Metric
+    value: 33
+  R7:
+    symbol: Device:R
+    footprint: Resistor_SMD:R_0402_1005Metric
+    value: 33
+  D1:
+    symbol: Device:LED
+    footprint: LED_SMD:LED_0603_1608Metric
+    value: ACT
+  D2:
+    symbol: Device:LED
+    footprint: LED_SMD:LED_0603_1608Metric
+    value: PWR
+  C1:
+    symbol: Device:C
+    footprint: Capacitor_SMD:C_0805_2012Metric
+    value: 4.7uF
+  C2:
+    symbol: Device:C
+    footprint: Capacitor_SMD:C_0402_1005Metric
+    value: 100nF
+  C3:
+    symbol: Device:C
+    footprint: Capacitor_SMD:C_0402_1005Metric
+    value: 100nF
+  C4:
+    symbol: Device:C
+    footprint: Capacitor_SMD:C_0402_1005Metric
+    value: 100nF
+  C5:
+    symbol: Device:C
+    footprint: Capacitor_SMD:C_0402_1005Metric
+    value: 100nF
+  C6:
+    symbol: Device:C
+    footprint: Capacitor_SMD:C_0603_1608Metric
+    value: 10uF
+  C7:
+    symbol: Device:C
+    footprint: Capacitor_SMD:C_1206_3216Metric
+    value: 10uF
+  C8:
+    symbol: Device:C
+    footprint: Capacitor_SMD:C_1206_3216Metric
+    value: 10uF
+  C9:
+    symbol: Device:C
+    footprint: Capacitor_SMD:C_0603_1608Metric
+    value: 100nF
+  C10:
+    symbol: Device:C
+    footprint: Capacitor_SMD:C_0603_1608Metric
+    value: 10uF
+  C11:
+    symbol: Device:C
+    footprint: Capacitor_SMD:C_0603_1608Metric
+    value: 100nF
+  C12:
+    symbol: Device:C
+    footprint: Capacitor_SMD:C_0603_1608Metric
+    value: 10uF
+  J2:
+    symbol: Connector_Generic:Conn_01x04
+    footprint: Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical
+    value: UART
+  JP1:
+    symbol: Connector_Generic:Conn_01x03
+    footprint: Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical
+    value: VOUT_SELECT
+  TP1:
+    symbol: Connector:TestPoint
+    footprint: TestPoint:TestPoint_Pad_D1.0mm
+    value: PWR_5V_USB_TEST
+  TP2:
+    symbol: Connector:TestPoint
+    footprint: TestPoint:TestPoint_Pad_D1.0mm
+    value: PWR_3V3_ISO_TEST
+  TP3:
+    symbol: Connector:TestPoint
+    footprint: TestPoint:TestPoint_Pad_D1.0mm
+    value: UART_TX_ISO_TEST
+  TP4:
+    symbol: Connector:TestPoint
+    footprint: TestPoint:TestPoint_Pad_D1.0mm
+    value: UART_RX_ISO_TEST
+
+nets:
+  PWR_5V_RAW:
+    connections:
+      - J1.A4
+      - J1.A9
+      - J1.B4
+      - J1.B9
+      - F1.1
+  PWR_5V_USB:
+    connections:
+      - F1.2
+      - U2.5
+      - U1.16
+      - U1.7
+      - C1.1
+      - PS1.2
+      - C7.1
+      - TP1.1
+  USB_DP:
+    connections:
+      - J1.A6
+      - J1.B6
+      - U2.1
+      - U2.6
+      - U1.5
+  USB_DM:
+    connections:
+      - J1.A7
+      - J1.B7
+      - U2.3
+      - U2.4
+      - U1.6
+  USB_CC1:
+    connections:
+      - J1.A5
+      - R1.1
+  USB_CC2:
+    connections:
+      - J1.B5
+      - R2.1
+  GND:
+    connections:
+      - J1.A1
+      - J1.A12
+      - J1.B1
+      - J1.B12
+      - J1.SH
+      - U1.1
+      - U2.2
+      - R1.2
+      - R2.2
+      - R5.2
+      - C1.2
+      - C2.2
+      - C3.2
+      - C4.2
+      - C5.2
+      - C6.2
+      - C7.2
+      - PS1.1
+      - U3.4
+  ISO_GND:
+    connections:
+      - PS1.3
+      - C8.2
+      - U4.2
+      - C9.2
+      - C10.2
+      - C11.2
+      - C12.2
+      - U3.5
+      - J2.1
+  PWR_3V3_USB:
+    connections:
+      - U1.4
+      - U1.15
+      - C2.1
+      - C3.1
+      - C4.1
+      - C5.1
+      - C6.1
+      - D1.2
+      - D2.2
+      - U3.1
+  LED_ACT_DRIVE:
+    connections:
+      - U1.8
+      - R4.1
+  LED_ACT_K:
+    connections:
+      - R4.2
+      - D1.1
+  LED_PWR_K:
+    connections:
+      - D2.1
+      - R5.1
+  UART_TX_BRIDGE:
+    connections:
+      - U1.2
+      - R6.1
+  UART_TX_ISO_IN:
+    connections:
+      - R6.2
+      - U3.3
+  UART_TX_ISO_OUT:
+    connections:
+      - U3.6
+      - J2.3
+      - TP3.1
+  UART_RX_ISO_IN:
+    connections:
+      - J2.4
+      - R7.1
+      - TP4.1
+  UART_RX_ISO_OUT:
+    connections:
+      - R7.2
+      - U3.7
+  UART_RX_BRIDGE:
+    connections:
+      - U3.2
+      - U1.3
+  PWR_VOUT_ISO:
+    connections:
+      - JP1.2
+      - J2.2
+  PWR_3V3_ISO:
+    connections:
+      - U3.8
+      - U4.5
+      - C9.1
+      - C10.1
+      - C11.1
+      - C12.1
+      - JP1.1
+      - TP2.1
+  PWR_5V_ISO:
+    connections:
+      - PS1.4
+      - C8.1
+      - U4.1
+      - U4.3
+      - JP1.3
+
+no_connect:
+  - J1.A8
+  - J1.B8
+  - U1.9
+  - U1.10
+  - U1.11
+  - U1.12
+  - U1.13
+  - U1.14
+  - U4.4
+
+power_tree:
+  PWR_5V_RAW:
+    through: F1
+    to: PWR_5V_USB
+  PWR_5V_USB:
+    through: PS1
+    to: PWR_5V_ISO
+  PWR_5V_ISO:
+    through: U4
+    to: PWR_3V3_ISO

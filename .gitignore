@@ -1,0 +1,17 @@
+# Codex and KiCad local working data
+.codex-compare/
+.kicad-codex-config/
+KiCad/
+Codex_KiCad_USB_UART_Demo/.kicad-config/
+Codex_KiCad_USB_UART_Demo/.pyhome/
+Codex_KiCad_USB_UART_Demo/tools/
+
+# Editors, Python caches, and generated duplicates
+__pycache__/
+*.py[cod]
+**/.history/
+**/backup/
+*.lck
+*.kicad_prl
+Codex_KiCad_USB_UART_Demo/manufacturing/USB_UART_Bridge_AD_Style_preview.pdf
+Codex_KiCad_USB_UART_Demo/manufacturing/USB_UART_Bridge_preview.png

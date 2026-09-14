@@ -1,0 +1,12 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Connector")(type "KiCad")(uri "D:/KiCad10.0/share/kicad/symbols/Connector.kicad_sym")(options "")(descr "KiCad standard connector symbols"))
+  (lib (name "Connector_Generic")(type "KiCad")(uri "D:/KiCad10.0/share/kicad/symbols/Connector_Generic.kicad_sym")(options "")(descr "KiCad generic connector symbols"))
+  (lib (name "Converter_DCDC_Isolated")(type "KiCad")(uri "D:/KiCad10.0/share/kicad/symbols/Converter_DCDC_Isolated.kicad_sym")(options "")(descr "Isolated DC-DC converter symbols"))
+  (lib (name "Device")(type "KiCad")(uri "D:/KiCad10.0/share/kicad/symbols/Device.kicad_sym")(options "")(descr "KiCad device symbols"))
+  (lib (name "Interface_USB")(type "KiCad")(uri "D:/KiCad10.0/share/kicad/symbols/Interface_USB.kicad_sym")(options "")(descr "USB interface symbols"))
+  (lib (name "Isolator")(type "KiCad")(uri "D:/KiCad10.0/share/kicad/symbols/Isolator.kicad_sym")(options "")(descr "Digital isolator symbols"))
+  (lib (name "Power_Protection")(type "KiCad")(uri "D:/KiCad10.0/share/kicad/symbols/Power_Protection.kicad_sym")(options "")(descr "Power protection symbols"))
+  (lib (name "Regulator_Linear")(type "KiCad")(uri "D:/KiCad10.0/share/kicad/symbols/Regulator_Linear.kicad_sym")(options "")(descr "Linear regulator symbols"))
+  (lib (name "power")(type "KiCad")(uri "D:/KiCad10.0/share/kicad/symbols/power.kicad_sym")(options "")(descr "KiCad power symbols"))
+)

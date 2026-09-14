@@ -1,0 +1,106 @@
+project:
+  name: USB_UART_Bridge
+  revision: 0.1
+  purpose: Isolated USB 2.0 to 3.3 V UART bridge demonstration
+
+electrical:
+  isolation:
+    barrier_location: between CH343G and external UART connector
+    isolated_signals: [TXD, RXD]
+    isolator: ISO7721D
+    isolator_data_rate_mbps: 100
+    isolated_dcdc: CRE1S0505SC
+    isolated_ldo: AP2112K-3.3
+    grounds: [GND, ISO_GND]
+    minimum_isolation_voltage_vrms: 1500
+    hipot_test_duration_s: 60
+    minimum_creepage_mm: 5
+    recommended_board_slot: true
+    note: USB data lines are not isolated because the bridge is on the USB side
+  usb:
+    standard: USB 2.0
+    device_role: USB device
+    connector: USB-C receptacle
+    data_protection: USBLC6-2SC6
+  uart:
+    logic_voltage_v: 3.3
+    signals: [ISO_GND, PWR_VOUT_ISO, TXD, RXD]
+    connector: 1x4 2.54 mm header
+    minimum_data_rate_mbps: 5
+    continuous_full_duplex: true
+    output_voltage_selection:
+      options_v: [3.3, 5.0]
+      selector: JP1
+      default_v: 3.3
+      maximum_load_ma: 100
+      note: Selection changes the isolated VOUT rail only and does not change UART logic levels
+  bridge:
+    part: CH343G
+    maximum_uart_data_rate_mbps: 6
+    oscillator: internal
+    regulator: internal 3.3 V
+
+power:
+  input:
+    source: USB VBUS
+    nominal_v: 5.0
+    range_v: [4.5, 5.5]
+  rails:
+    - name: PWR_5V_RAW
+      nominal_v: 5.0
+    - name: PWR_5V_USB
+      nominal_v: 5.0
+      domain: USB
+    - name: PWR_3V3_USB
+      nominal_v: 3.3
+      source: CH343G V3 regulator output
+      domain: USB
+      note: USB-side logic and isolator side-1 supply
+    - name: PWR_5V_ISO
+      nominal_v: 5.0
+      source: CRE1S0505SC
+      domain: isolated
+    - name: PWR_3V3_ISO
+      nominal_v: 3.3
+      source: AP2112K-3.3
+      domain: isolated
+
+mechanical:
+  board:
+    width_mm: 55
+    height_mm: 32
+    thickness_mm: 1.6
+  stackup:
+    layers: 2
+    copper_oz: 1
+  mounting_holes:
+    count: 4
+    size: M2.5
+  connector_edges:
+    usb_c: top
+    uart_header: bottom
+
+manufacturing:
+  process: two-layer FR4 prototype
+  minimum_trace_mm: 0.20
+  minimum_clearance_mm: 0.20
+  minimum_drill_mm: 0.30
+  surface_finish: HASL lead-free
+
+verification:
+  erc:
+    unexcluded_errors: 0
+  drc:
+    unexcluded_errors: 0
+    schematic_parity: required
+  usb_pair:
+    target_differential_impedance_ohm: 90
+    impedance_tolerance_percent: 10
+    maximum_length_mismatch_mm: 5
+  isolation:
+    all_uart_channels_isolated: true
+    minimum_data_rate_mbps: 5
+    loopback_test_required: true
+    ground_isolation_test_required: true
+  manufacturing_outputs:
+    required: [gerber, drill, position, step]
