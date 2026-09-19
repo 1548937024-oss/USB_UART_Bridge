@@ -1241,13 +1241,21 @@ def build_top_sheet(design: dict, allocator: ReferenceAllocator) -> tuple[str, s
     return communicate_sheet, power_sheet
 
 
-def update_project_file(root_uuid: str, power_uuid: str, communicate_uuid: str) -> None:
+def update_project_file(
+    root_uuid: str,
+    power_uuid: str,
+    communicate_uuid: str,
+    revision: str,
+) -> None:
     project_data = json.loads(PROJECT_PATH.read_text(encoding="utf-8"))
     project_data.setdefault("meta", {})
     project_data["meta"]["filename"] = PROJECT_PATH.name
     project_data.setdefault("schematic", {})[
         "page_layout_descr_file"
     ] = DRAWING_SHEET_NAME
+    project_data.setdefault("board", {}).setdefault("ipc2581", {})[
+        "sch_revision"
+    ] = revision
     project_data["sheets"] = [
         [root_uuid, PROJECT_NAME],
         [power_uuid, "Power"],
@@ -1285,6 +1293,38 @@ def force_visible_pin_numbers() -> None:
             schematic_path.write_text(updated, encoding="utf-8")
 
 
+def apply_title_block_metadata(design: dict) -> None:
+    revision = str(design.get("revision", "")).strip()
+    revision_date = str(design.get("revision_date", "")).strip()
+    if not revision or not revision_date:
+        return
+
+    title_block_pattern = re.compile(
+        r"(\t\(title_block\s*\n)(.*?)(\t\))",
+        flags=re.DOTALL,
+    )
+    for schematic_path in (POWER_PATH, COMMUNICATE_PATH, TOP_PATH):
+        content = schematic_path.read_text(encoding="utf-8")
+
+        def add_metadata(match: re.Match[str]) -> str:
+            body = match.group(2)
+            body = re.sub(r"\t\t\(rev\s+\"[^\"]*\"\)\s*\n", "", body)
+            body = re.sub(r"\t\t\(date\s+\"[^\"]*\"\)\s*\n", "", body)
+            metadata = (
+                f'\t\t(rev "{revision}")\n'
+                f'\t\t(date "{revision_date}")\n'
+            )
+            return f"{match.group(1)}{body}{metadata}{match.group(3)}"
+
+        updated, replacements = title_block_pattern.subn(add_metadata, content)
+        if replacements != 1:
+            raise ValueError(
+                f"Expected exactly one title block in {schematic_path.name}, "
+                f"found {replacements}"
+            )
+        schematic_path.write_text(updated, encoding="utf-8")
+
+
 def main() -> None:
     HARDWARE_DIR.mkdir(parents=True, exist_ok=True)
     (PROJECT_ROOT / ".pyhome").mkdir(parents=True, exist_ok=True)
@@ -1296,9 +1336,15 @@ def main() -> None:
     communicate_sheet, power_sheet = build_top_sheet(design, allocator)
 
     root = ksa.load_schematic(TOP_PATH)
-    update_project_file(root.uuid, power_sheet, communicate_sheet)
+    update_project_file(
+        root.uuid,
+        power_sheet,
+        communicate_sheet,
+        str(design["revision"]),
+    )
     upgrade_schematics_to_current_format()
     force_visible_pin_numbers()
+    apply_title_block_metadata(design)
 
     print(f"Generated hierarchy: {TOP_PATH.name}, {POWER_PATH.name}, {COMMUNICATE_PATH.name}")
     print("Upgraded all schematics to the installed KiCad 10.0 format")

@@ -6,6 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "USB_UART_Bridge")
+		(rev "0.2")
+		(date "2026-09-19")
 	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"
@@ -2384,7 +2386,7 @@
 	(text_box "ISOLATED UART OUTPUT\nJ2: 1x4 2.54mm\nJP1: 1-2=PWR_3V3_ISO default, 2-3=PWR_5V_ISO"
 		(exclude_from_sim no)
 		(at 217.17 106.68 0)
-		(size 58.42 31.7499)
+		(size 58.42 7.6199)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0.15)
@@ -2404,7 +2406,7 @@
 	(text_box "USB-C INPUT + ESD + CC\nJ1: USB-C 2.0 16P | U2: USBLC6-2SC6 | R1/R2: 5.1k"
 		(exclude_from_sim no)
 		(at 25.4 31.75 0)
-		(size 83.82 126.9999)
+		(size 83.82 78.7399)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0.15)
@@ -2525,7 +2527,7 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 71.12) (xy 264.16 71.12)
+			(xy 247.65 71.12) (xy 255.27 71.12)
 		)
 		(stroke
 			(width 0)
@@ -2605,16 +2607,6 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 134.62) (xy 64.77 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "335a81fd-d19c-458f-8219-e35a67c63b8c")
-	)
-	(wire
-		(pts
 			(xy 257.81 63.5) (xy 257.81 66.04)
 		)
 		(stroke
@@ -2685,6 +2677,16 @@
 	)
 	(wire
 		(pts
+			(xy 60.96 134.62) (xy 58.42 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79ee3ae3-1d8e-4b7a-bf92-bc51369f9d34")
+	)
+	(wire
+		(pts
 			(xy 40.64 90.17) (xy 40.64 93.98)
 		)
 		(stroke
@@ -2725,7 +2727,7 @@
 	)
 	(wire
 		(pts
-			(xy 264.16 63.5) (xy 264.16 68.58)
+			(xy 255.27 63.5) (xy 255.27 68.58)
 		)
 		(stroke
 			(width 0)
@@ -2735,7 +2737,7 @@
 	)
 	(wire
 		(pts
-			(xy 264.16 63.5) (xy 257.81 63.5)
+			(xy 255.27 63.5) (xy 257.81 63.5)
 		)
 		(stroke
 			(width 0)
@@ -2752,16 +2754,6 @@
 			(type default)
 		)
 		(uuid "a65de2c3-54b8-4beb-a081-3a575ba4b0e0")
-	)
-	(wire
-		(pts
-			(xy 58.42 137.16) (xy 64.77 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "abf0b3d5-5a6c-4731-922d-9ddc61c70dd9")
 	)
 	(wire
 		(pts
@@ -2795,7 +2787,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 137.16) (xy 48.26 137.16)
+			(xy 44.45 137.16) (xy 48.26 137.16)
 		)
 		(stroke
 			(width 0)
@@ -2855,7 +2847,17 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 73.66) (xy 264.16 73.66)
+			(xy 63.5 137.16) (xy 58.42 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3b6ab4f-5e52-408e-8663-9e5fc0be8561")
+	)
+	(wire
+		(pts
+			(xy 200.66 73.66) (xy 255.27 73.66)
 		)
 		(stroke
 			(width 0)
@@ -2865,7 +2867,7 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 76.2) (xy 264.16 76.2)
+			(xy 255.27 76.2) (xy 257.81 76.2)
 		)
 		(stroke
 			(width 0)
@@ -2904,7 +2906,7 @@
 		(uuid "ff9da20e-7747-4fcb-a2da-b1321a7f6131")
 	)
 	(label "USB_DM"
-		(at 58.42 137.16 0)
+		(at 63.5 137.16 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2914,7 +2916,7 @@
 		(uuid "1ff436c0-ae17-4b2b-b25a-10ad34df718f")
 	)
 	(label "USB_CC2"
-		(at 67.31 59.69 0)
+		(at 64.77 59.69 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2944,7 +2946,7 @@
 		(uuid "80dfcc4b-6f46-4a67-b06f-697f1c335406")
 	)
 	(label "USB_DM"
-		(at 40.64 137.16 0)
+		(at 44.45 137.16 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2954,7 +2956,7 @@
 		(uuid "8979bf86-cb5f-499b-a990-f8fd3ca07dc2")
 	)
 	(label "USB_DP"
-		(at 58.42 134.62 0)
+		(at 60.96 134.62 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4202,7 +4204,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
-		(at 269.24 71.12 0)
+		(at 260.35 71.12 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4212,7 +4214,7 @@
 		(dnp no)
 		(uuid "cb7c16d4-9917-4aa6-9046-aae8f3209005")
 		(property "Reference" "J2"
-			(at 268.478 79.502 0)
+			(at 259.588 79.502 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4223,7 +4225,7 @@
 			)
 		)
 		(property "Value" "UART"
-			(at 267.97 65.024 0)
+			(at 259.08 65.024 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

@@ -1,5 +1,6 @@
 project: USB_UART_Bridge
-revision: 0.1
+revision: 0.2
+revision_date: 2026-09-19
 
 components:
   J1:

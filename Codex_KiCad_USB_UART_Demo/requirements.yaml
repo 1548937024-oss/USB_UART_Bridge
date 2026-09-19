@@ -1,6 +1,6 @@
 project:
   name: USB_UART_Bridge
-  revision: 0.1
+  revision: 0.2
   purpose: Isolated USB 2.0 to 3.3 V UART bridge demonstration
 
 electrical:

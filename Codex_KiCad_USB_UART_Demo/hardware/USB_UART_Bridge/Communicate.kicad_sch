@@ -6,6 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Communicate")
+		(rev "0.2")
+		(date "2026-09-19")
 	)
 	(lib_symbols
 		(symbol "Device:C"
@@ -1695,26 +1697,6 @@
 		)
 		(uuid "31a677a2-7883-4098-b7de-8e5f6da4c48c")
 	)
-	(text_box "UART ISOLATION + SERIES TERMINATION\nU3: ISO7721D / SOIC-8 / 1.5kVrms / 100Mbps\nR6/R7: 33 Ohm"
-		(exclude_from_sim no)
-		(at 151.13 26.67 0)
-		(size 128.27 81.2799)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0.15)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left top)
-		)
-		(uuid "47c467d3-6a3e-4ffd-9f2e-d9e307aad5da")
-	)
 	(text_box "POWER STATUS LED\nPWR_3V3_USB -> D2 -> R5 -> GND"
 		(exclude_from_sim no)
 		(at 53.34 115.57 0)
@@ -1760,22 +1742,10 @@
 		(uuid "646699bb-924b-47a7-9af7-39bda4dc8104")
 	)
 	(junction
-		(at 237.49 64.77)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a1686707-2930-46c6-a7e3-757b36994483")
-	)
-	(junction
 		(at 181.61 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a9ac7db6-0fd2-4081-8e9e-94f5e4f74a74")
-	)
-	(junction
-		(at 250.19 67.31)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b8adf948-cd29-458d-b243-9b1bc9495626")
 	)
 	(junction
 		(at 134.62 62.23)
@@ -1827,16 +1797,6 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 67.31) (xy 250.19 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "00611309-139e-4549-bae1-cb2faa610d8a")
-	)
-	(wire
-		(pts
 			(xy 102.87 66.04) (xy 102.87 69.85)
 		)
 		(stroke
@@ -1857,7 +1817,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 146.05) (xy 124.46 146.05)
+			(xy 106.68 146.05) (xy 110.49 146.05)
 		)
 		(stroke
 			(width 0)
@@ -1874,6 +1834,16 @@
 			(type default)
 		)
 		(uuid "17df9f32-7611-433e-9e85-1dc20e807e24")
+	)
+	(wire
+		(pts
+			(xy 182.88 81.28) (xy 200.66 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a4aaf88-f01d-41d2-906e-95acc3982fee")
 	)
 	(wire
 		(pts
@@ -1907,16 +1877,6 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 64.77) (xy 237.49 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2eda3136-235c-4f70-ae0a-8ad9bd0b16e2")
-	)
-	(wire
-		(pts
 			(xy 194.31 53.34) (xy 181.61 53.34)
 		)
 		(stroke
@@ -1937,7 +1897,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 77.47) (xy 140.97 77.47)
+			(xy 113.03 77.47) (xy 124.46 77.47)
 		)
 		(stroke
 			(width 0)
@@ -2017,6 +1977,16 @@
 	)
 	(wire
 		(pts
+			(xy 113.03 74.93) (xy 121.92 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e7554a7-02b2-4602-853d-7fdb80a51cf9")
+	)
+	(wire
+		(pts
 			(xy 226.06 53.34) (xy 226.06 78.74)
 		)
 		(stroke
@@ -2057,7 +2027,7 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 81.28) (xy 257.81 81.28)
+			(xy 250.19 81.28) (xy 254 81.28)
 		)
 		(stroke
 			(width 0)
@@ -2257,17 +2227,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 81.28) (xy 200.66 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ad204ebd-81f6-406d-aa84-6e3980f20f56")
-	)
-	(wire
-		(pts
-			(xy 113.03 80.01) (xy 140.97 80.01)
+			(xy 113.03 80.01) (xy 121.92 80.01)
 		)
 		(stroke
 			(width 0)
@@ -2317,7 +2277,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 85.09) (xy 72.39 85.09)
+			(xy 92.71 85.09) (xy 77.47 85.09)
 		)
 		(stroke
 			(width 0)
@@ -2357,16 +2317,6 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 69.85) (xy 250.19 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e4436bcb-32ae-4356-a3aa-5c08f3c19d9e")
-	)
-	(wire
-		(pts
 			(xy 100.33 66.04) (xy 100.33 69.85)
 		)
 		(stroke
@@ -2374,16 +2324,6 @@
 			(type default)
 		)
 		(uuid "e55a2255-059d-4e5e-ad6f-a89d943eec7c")
-	)
-	(wire
-		(pts
-			(xy 113.03 74.93) (xy 140.97 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e7c07ebe-ae17-44c5-ae86-9c76d1cf5d6a")
 	)
 	(wire
 		(pts
@@ -2417,16 +2357,6 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 67.31) (xy 250.19 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f874085a-bb56-44c7-9d1d-bdba70e2a696")
-	)
-	(wire
-		(pts
 			(xy 72.39 82.55) (xy 92.71 82.55)
 		)
 		(stroke
@@ -2437,7 +2367,7 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 64.77) (xy 250.19 67.31)
+			(xy 250.19 64.77) (xy 250.19 68.58)
 		)
 		(stroke
 			(width 0)
@@ -2496,7 +2426,7 @@
 		(uuid "2a3ec002-9a16-4b17-92fa-7c1d615ac99b")
 	)
 	(label "UART_TX_BRIDGE"
-		(at 124.46 74.93 0)
+		(at 121.92 74.93 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2506,7 +2436,7 @@
 		(uuid "443dfbfe-258a-495f-a2db-e671ced9694d")
 	)
 	(label "LED_ACT_DRIVE"
-		(at 109.22 146.05 0)
+		(at 110.49 146.05 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2516,7 +2446,7 @@
 		(uuid "4ca27a40-3abe-496f-b2fc-570399ae3c6d")
 	)
 	(label "UART_RX_BRIDGE"
-		(at 180.34 81.28 0)
+		(at 182.88 81.28 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2536,7 +2466,7 @@
 		(uuid "539f07e6-ef85-4a87-bf17-ac7a4e1e9075")
 	)
 	(label "LED_ACT_DRIVE"
-		(at 124.46 80.01 0)
+		(at 121.92 80.01 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2577,7 +2507,7 @@
 	)
 	(hierarchical_label "USB_DM"
 		(shape input)
-		(at 72.39 85.09 180)
+		(at 77.47 85.09 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2588,7 +2518,7 @@
 	)
 	(hierarchical_label "UART_RX_ISO_IN"
 		(shape input)
-		(at 257.81 81.28 0)
+		(at 254 81.28 0)
 		(effects
 			(font
 				(size 1.27 1.27)

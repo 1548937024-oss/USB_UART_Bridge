@@ -1,12 +1,8 @@
 {
     "$schema": "https://schemas.kicad.org/erc.v1.json",
     "coordinate_units": "mm",
-    "date": "2026-09-14T21:17:52",
+    "date": "2026-09-19T11:20:52",
     "ignored_checks": [
-        {
-            "description": "Global label only appears once in the schematic",
-            "key": "single_global_label"
-        },
         {
             "description": "Four connection points are joined together",
             "key": "four_way_junction"
@@ -33,13 +29,13 @@
             "violations": []
         },
         {
-            "path": "/Power/",
-            "uuid_path": "/991ad087-5b84-4353-b5af-12ada82ec90c/734a3fd4-b022-4fbc-bb04-e2dac4c1f1f0",
+            "path": "/Communicate/",
+            "uuid_path": "/991ad087-5b84-4353-b5af-12ada82ec90c/38b96319-3e6d-4c80-8696-2aab87553969",
             "violations": []
         },
         {
-            "path": "/Communicate/",
-            "uuid_path": "/991ad087-5b84-4353-b5af-12ada82ec90c/38b96319-3e6d-4c80-8696-2aab87553969",
+            "path": "/Power/",
+            "uuid_path": "/991ad087-5b84-4353-b5af-12ada82ec90c/734a3fd4-b022-4fbc-bb04-e2dac4c1f1f0",
             "violations": []
         }
     ],
