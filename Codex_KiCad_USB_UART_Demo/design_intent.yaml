@@ -7,6 +7,8 @@ components:
     symbol: Connector:USB_C_Receptacle_USB2.0_16P
     footprint: Connector_USB:USB_C_Receptacle_XKB_U262-16XN-4BVC11
     value: USB-C_Receptacle_USB2.0
+    model_status: approximate
+    model_path: ${KICAD10_3DMODEL_DIR}/Connector_USB.3dshapes/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step
   U1:
     symbol: Interface_USB:CH343G
     footprint: Package_SO:SOIC-16_3.9x9.9mm_P1.27mm
@@ -20,9 +22,14 @@ components:
     footprint: Package_SO:SOIC-8_3.9x4.9mm_P1.27mm
     value: ISO7721D
   PS1:
-    symbol: Converter_DCDC_Isolated:CRE1S0505SC
-    footprint: Converter_DCDC:Converter_DCDC_Murata_CRE1xxxxxxSC_THT
-    value: CRE1S0505SC
+    symbol: USB_UART_Bridge:IB0505LS-1WR3
+    footprint: USB_UART_Bridge:Converter_DCDC_YLPTEC_IB0505LS-1WR3
+    value: IB0505LS-1WR3
+    model_status: approximate
+    model_path: ${KICAD10_3DMODEL_DIR}/Converter_DCDC.3dshapes/Converter_DCDC_TRACO_TMR-1-xxxx_Single_THT.step
+    model_offset_mm: [-6.35, 0, 0]
+    model_scale: [1.1, 0.734, 1.0]
+    model_rotation_deg: [0, 0, 0]
   U4:
     symbol: Regulator_Linear:AP2112K-3.3
     footprint: Package_TO_SOT_SMD:SOT-23-5
@@ -113,11 +120,11 @@ components:
     value: 10uF
   J2:
     symbol: Connector_Generic:Conn_01x04
-    footprint: Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical
+    footprint: Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal
     value: UART
   JP1:
     symbol: Connector_Generic:Conn_01x03
-    footprint: Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical
+    footprint: Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal
     value: VOUT_SELECT
   TP1:
     symbol: Connector:TestPoint
@@ -139,6 +146,7 @@ components:
 nets:
   PWR_5V_RAW:
     connections:
+      - U2.5
       - J1.A4
       - J1.A9
       - J1.B4
@@ -147,7 +155,6 @@ nets:
   PWR_5V_USB:
     connections:
       - F1.2
-      - U2.5
       - U1.16
       - U1.7
       - C1.1
@@ -243,11 +250,11 @@ nets:
   UART_TX_ISO_OUT:
     connections:
       - U3.6
-      - J2.3
+      - J2.4
       - TP3.1
   UART_RX_ISO_IN:
     connections:
-      - J2.4
+      - J2.3
       - R7.1
       - TP4.1
   UART_RX_ISO_OUT:
@@ -270,7 +277,7 @@ nets:
       - C10.1
       - C11.1
       - C12.1
-      - JP1.1
+      - JP1.3
       - TP2.1
   PWR_5V_ISO:
     connections:
@@ -278,7 +285,7 @@ nets:
       - C8.1
       - U4.1
       - U4.3
-      - JP1.3
+      - JP1.1
 
 no_connect:
   - J1.A8
@@ -301,3 +308,74 @@ power_tree:
   PWR_5V_ISO:
     through: U4
     to: PWR_3V3_ISO
+
+pcb_layout:
+  footprint_text:
+    show_reference: true
+    show_value: false
+  routing:
+    pad_exit: center_of_long_axis
+    ground_return_width: same_or_greater_than_power
+  board:
+    width_mm: 55
+    height_mm: 32
+    page_size_mm: [297, 210]
+    center_on_page: true
+    thickness_mm: 1.6
+    copper_layers: 2
+    copper_oz: 1
+    corner_radius_mm: 2.0
+    mounting_hole_copper_edge_clearance_mm: 1.27
+    mounting_holes:
+      - {reference: H1, x_mm: 4.5, y_mm: 4.5}
+      - {reference: H2, x_mm: 50.5, y_mm: 3.5}
+      - {reference: H3, x_mm: 4.5, y_mm: 27.5}
+      - {reference: H4, x_mm: 50.5, y_mm: 29.0}
+  isolation:
+    barrier_x_mm: [28.0, 33.0]
+    keepout_y_mm: [[2.0, 15.0], [21.0, 30.0]]
+    crossing_devices: [U3, PS1]
+    slots:
+      - name: PS1_isolation_slot
+        center_x_mm: 30.5
+        center_y_mm: 8.0
+        width_mm: 1.0
+        height_mm: 6.0
+  allowed_edge_overhang_mm:
+    J1: {left: 0.5}
+    J2: {right: 9.0}
+    JP1: {right: 9.0}
+  placements:
+    J1: {x_mm: 4.0, y_mm: 16.0, rotation_deg: 270}
+    U2: {x_mm: 11.5, y_mm: 15.5, rotation_deg: 90}
+    R1: {x_mm: 17.0, y_mm: 9.0, rotation_deg: 90}
+    R2: {x_mm: 17.0, y_mm: 12.0, rotation_deg: 90}
+    F1: {x_mm: 20.0, y_mm: 13.5, rotation_deg: 0}
+    C1: {x_mm: 25.0, y_mm: 13.5, rotation_deg: 0}
+    U1: {x_mm: 16.0, y_mm: 24.0, rotation_deg: 270}
+    C2: {x_mm: 16.5, y_mm: 19.0, rotation_deg: 90}
+    C3: {x_mm: 18.5, y_mm: 19.5, rotation_deg: 0}
+    C4: {x_mm: 18.5, y_mm: 28.5, rotation_deg: 180}
+    C5: {x_mm: 22.5, y_mm: 26.0, rotation_deg: 90}
+    C6: {x_mm: 24.0, y_mm: 26.0, rotation_deg: 90}
+    D2: {x_mm: 15.0, y_mm: 30.0, rotation_deg: 0}
+    R5: {x_mm: 15.0, y_mm: 28.5, rotation_deg: 0}
+    D1: {x_mm: 18.5, y_mm: 30.0, rotation_deg: 180}
+    R4: {x_mm: 21.0, y_mm: 29.0, rotation_deg: 90}
+    TP1: {x_mm: 24.0, y_mm: 16.0, rotation_deg: 0}
+    R6: {x_mm: 25.0, y_mm: 19.62, rotation_deg: 341.9}
+    U3: {x_mm: 30.5, y_mm: 18.0, rotation_deg: 0}
+    C11: {x_mm: 37.0, y_mm: 15.5, rotation_deg: 90}
+    C12: {x_mm: 35.2, y_mm: 16.1, rotation_deg: 270}
+    R7: {x_mm: 35.5, y_mm: 18.3, rotation_deg: 0}
+    PS1: {x_mm: 30.5, y_mm: 8.0, rotation_deg: 0}
+    C7: {x_mm: 23.0, y_mm: 2.5, rotation_deg: 180}
+    C8: {x_mm: 44.0, y_mm: 11.0, rotation_deg: 0}
+    U4: {x_mm: 43.0, y_mm: 15.0, rotation_deg: 0}
+    C9: {x_mm: 39.5, y_mm: 13.0, rotation_deg: 90}
+    C10: {x_mm: 39.5, y_mm: 17.0, rotation_deg: 90}
+    TP2: {x_mm: 41.5, y_mm: 18.0, rotation_deg: 0}
+    TP3: {x_mm: 45.0, y_mm: 20.76, rotation_deg: 0}
+    TP4: {x_mm: 48.5, y_mm: 23.14, rotation_deg: 0}
+    J2: {x_mm: 52.5, y_mm: 17.0, rotation_deg: 0}
+    JP1: {x_mm: 52.5, y_mm: 8.0, rotation_deg: 0}

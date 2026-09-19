@@ -18,7 +18,12 @@ PROJECT_PATH = HARDWARE_DIR / f"{PROJECT_NAME}.kicad_pro"
 DRAWING_SHEET_NAME = "AD_Style_A4.kicad_wks"
 KICAD_CLI = Path(r"D:\KiCad10.0\bin\kicad-cli.exe")
 
-os.environ.setdefault("KICAD_SYMBOL_DIR", r"D:\KiCad10.0\share\kicad\symbols")
+os.environ["KICAD_SYMBOL_DIR"] = os.pathsep.join(
+    [
+        str(HARDWARE_DIR / "library"),
+        r"D:\KiCad10.0\share\kicad\symbols",
+    ]
+)
 os.environ["USERPROFILE"] = str(PROJECT_ROOT / ".pyhome")
 os.environ["HOME"] = str(PROJECT_ROOT / ".pyhome")
 
@@ -938,7 +943,7 @@ def build_power_sheet(design: dict, allocator: ReferenceAllocator) -> None:
                 reference,
                 pin,
                 flagged_nets,
-                allow_flags=False,
+                allow_flags=net_name == "PWR_5V_USB",
             )
 
     schematic.wires.add(
@@ -971,19 +976,26 @@ def build_power_sheet(design: dict, allocator: ReferenceAllocator) -> None:
     add_module_box(
         schematic,
         "ISOLATED POWER TREE",
-        "PWR_5V_USB -> PS1 -> PWR_5V_ISO -> U4 -> PWR_3V3_ISO",
+        "C7: PS1 input | C8: PS1 output\n"
+        "PWR_5V_USB -> PS1 -> PWR_5V_ISO -> U4 -> PWR_3V3_ISO\n"
+        "C9/C10: U4 output decoupling",
         (160.02, 12.7),
         (261.62, 53.34),
     )
     add_annotation(
         schematic,
-        "PS1: CRE1S0505SC / 1W / 1.5kVrms / isolated",
+        "PS1: IB0505LS-1WR3 / 1W / 1.5kVrms / isolated",
         (169.0, 41.91),
     )
     add_annotation(
         schematic,
         "U4: AP2112K-3.3 / SOT-23-5 / 3.3V / 600mA",
         (222.25, 41.91),
+    )
+    add_annotation(
+        schematic,
+        "C7 near PS1 input; C8 near PS1 output; C9/C10 near U4 output",
+        (174.63, 48.26),
     )
     add_annotation(
         schematic,
@@ -1047,7 +1059,8 @@ def build_communicate_sheet(design: dict, allocator: ReferenceAllocator) -> None
     add_module_box(
         schematic,
         "USB-UART BRIDGE + STATUS",
-        "U1: CH343G / SOIC-16 / 6Mbps USB-UART\nC2-C6: local decoupling bank",
+        "U1: CH343G / SOIC-16 / 6Mbps USB-UART\n"
+        "C2/C3: U1 pin4 rail | C4/C5: U1 pin15 rail | C6: U1 bulk",
         (103.51, 47.63),
         (168.28, 103.51),
     )
@@ -1074,6 +1087,11 @@ def build_communicate_sheet(design: dict, allocator: ReferenceAllocator) -> None
         schematic,
         "U3: ISO7721D / SOIC-8 / 1.5kVrms / 100Mbps",
         (204.47, 94.62),
+    )
+    add_annotation(
+        schematic,
+        "C11/C12: U3 VCC2 local decoupling",
+        (205.74, 66.04),
     )
     assert_schematic_on_grid(schematic)
     schematic.save(COMMUNICATE_PATH)
@@ -1212,13 +1230,14 @@ def build_top_sheet(design: dict, allocator: ReferenceAllocator) -> tuple[str, s
     add_module_box(
         schematic,
         "POWER FLOW",
-        "PWR_5V_RAW -> [F1/ESD] -> PWR_5V_USB -> [PS1] -> PWR_5V_ISO -> [U4] -> PWR_3V3_ISO",
+        "PWR_5V_RAW -> [U2 ESD clamp]\n"
+        "PWR_5V_RAW -> [F1] -> PWR_5V_USB -> [PS1] -> PWR_5V_ISO -> [U4] -> PWR_3V3_ISO",
         (96.52, 10.16),
         (210.82, 25.4),
     )
     add_annotation(
         schematic,
-        "U2: USBLC6-2SC6 / SOT-23-6 / USB ESD",
+        "U2: USBLC6-2SC6 / pin5 = PWR_5V_RAW / pre-fuse clamp",
         (78.74, 139.7),
     )
     add_annotation(

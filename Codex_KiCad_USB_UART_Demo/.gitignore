@@ -1,0 +1,7 @@
+.tools/
+.kicad-config*/
+.pyhome/
+.tmp/
+generated/routing/*.log
+generated/routing/*_hybrid.ses
+en/freerouting.log

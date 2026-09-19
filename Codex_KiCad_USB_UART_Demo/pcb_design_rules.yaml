@@ -1,0 +1,319 @@
+metadata:
+  name: USB_UART_Bridge PCB Design Rules
+  revision: 0.2
+  status: reviewed
+  last_updated: 2026-09-19
+  reviewed_on: 2026-09-19
+  reviewed_by: Codex
+  review_scope: JLCPCB standard 2-layer capability review and KiCad rule import
+  primary_supplier: JLCPCB
+  scope: 2-layer FR4 prototype, 55 x 32 mm, 1.6 mm, 1 oz copper
+
+sources:
+  jlcpcb_capabilities:
+    - https://jlcpcb.com/capabilities/pcb-capabilities
+  jlcpcb_impedance:
+    - https://jlcpcb.com/impedance
+  ipc:
+    - IPC-2152: Standard for Determining Current-Carrying Capacity in Printed Board Design
+    - IPC-2221B: Generic Standard on Printed Board Design
+    - IPC-7351B: Generic Requirements for Surface Mount Design and Land Pattern Standard
+    - IPC-A-610: Acceptability of Electronic Assemblies
+    - IPC-6012: Qualification and Performance Specification for Rigid Printed Boards
+  note: 规范只引用公开能力与标准原则，不复制受版权保护的标准表格。
+
+manufacturing_capability_baseline:
+  supplier: JLCPCB
+  review_status: reviewed
+  reviewed_on: 2026-09-19
+  process: standard 2-layer FR4 prototype
+  layer_count: 2
+  finished_thickness_mm: 1.6
+  finished_thickness_tolerance: "+/-10% for thickness >= 1.0 mm"
+  outer_copper_oz: 1
+  solder_mask: LPI liquid photo-imageable
+  solder_mask_thickness_um_min: 10
+  surface_finish: lead-free HASL
+  min_trace_width_mm: 0.15
+  min_trace_clearance_mm: 0.15
+  min_drill_mm: 0.15
+  preferred_min_drill_mm: 0.30
+  min_via_hole_mm: 0.15
+  min_via_diameter_mm: 0.25
+  preferred_via_hole_mm: 0.20
+  published_via_diameter_rule: "Via diameter should be 0.1 mm (0.15 mm preferred) larger than via hole size."
+  published_pth_annular_ring_rule: "Component PTH pads, 2-layer 1 oz: recommended >= 0.25 mm; absolute minimum 0.18 mm."
+  via_rule_interpretation: "For vias, use the via-specific outer-diameter minus drill-diameter rule. For component PTH pads, use the separate PTH annular-ring table. The 0.30/0.60 mm project via satisfies the via-specific rule."
+  via_hole_to_hole_mm_min: 0.20
+  nonstandard_via_plugging_rule: "If a non-standard via hole is selected for a 2-layer order, select the via plugging/tenting option required by the order form."
+  min_pth_annular_ring_mm: 0.18
+  recommended_pth_annular_ring_mm: 0.25
+  min_npth_pad_annular_ring_mm: 0.45
+  min_copper_to_routed_edge_mm: 0.20
+  min_copper_to_slot_edge_mm: 0.20
+  min_pad_to_silkscreen_mm: 0.15
+  min_plated_slot_width_mm: 0.50
+  min_non_plated_slot_width_mm: 1.00
+  routed_edge_tolerance_mm: 0.20
+  hole_position_tolerance_mm: 0.05
+  hole_size_tolerance_mm: "+0.13 / -0.08"
+  blind_buried_vias: not_supported
+  impedance_control: normally offered for multilayer controlled-impedance boards; 2-layer impedance must be engineered and independently verified
+  adopted_project_values:
+    min_trace_width_mm: 0.20
+    min_trace_clearance_mm: 0.20
+    min_drill_mm: 0.30
+    signal_via_diameter_mm: 0.60
+    signal_via_drill_mm: 0.30
+    power_via_diameter_mm: 0.60
+    power_via_drill_mm: 0.30
+    min_via_annular_ring_mm: 0.15
+    preferred_via_annular_ring_mm: 0.15
+    copper_to_edge_mm_min: 0.40
+    hole_clearance_mm_min: 0.25
+    silkscreen_clearance_mm_min: 0.15
+    silkscreen_text_height_mm_min: 0.80
+    silkscreen_text_thickness_mm_min: 0.15
+    solder_mask_expansion_mm: 0.05
+    solder_mask_min_web_mm: 0.10
+    solder_mask_to_copper_clearance_mm: 0.05
+    non_plated_slot_width_mm_min: 1.00
+  
+design_rule_import:
+  status: imported
+  imported_on: 2026-09-19
+  target_files:
+    - hardware/USB_UART_Bridge/USB_UART_Bridge.kicad_pro
+    - hardware/USB_UART_Bridge/USB_UART_Bridge.kicad_pcb
+  board_rules:
+    min_clearance_mm: 0.20
+    min_track_width_mm: 0.20
+    min_through_hole_diameter_mm: 0.30
+    min_hole_clearance_mm: 0.25
+    min_hole_to_hole_mm: 0.25
+    min_copper_edge_clearance_mm: 0.40
+    min_silk_clearance_mm: 0.15
+    min_text_height_mm: 0.80
+    min_text_thickness_mm: 0.15
+    min_groove_width_mm: 1.00
+    min_via_diameter_mm: 0.60
+    min_via_annular_width_mm: 0.15
+    solder_mask_expansion_mm: 0.05
+    solder_mask_min_web_mm: 0.10
+    solder_mask_to_copper_clearance_mm: 0.05
+  netclass_source: pcb_design_rules.yaml
+
+project_design_limits:
+  trace_width_mm_min: 0.20
+  trace_clearance_mm_min: 0.20
+  drill_mm_min: 0.30
+  signal_via_diameter_mm: 0.60
+  signal_via_drill_mm: 0.30
+  signal_via_annular_ring_mm: 0.15
+  power_via_diameter_mm: 0.60
+  power_via_drill_mm: 0.30
+  power_via_annular_ring_mm: 0.15
+  copper_to_edge_mm_min: 0.40
+  hole_clearance_mm_min: 0.25
+  silkscreen_clearance_mm_min: 0.15
+  silkscreen_text_height_mm_min: 0.80
+  silkscreen_text_thickness_mm_min: 0.15
+  solder_mask_expansion_mm: 0.05
+  solder_mask_min_web_mm: 0.10
+  solder_mask_to_copper_clearance_mm: 0.05
+  hole_to_hole_mm_min: 0.25
+  non_plated_slot_width_mm_min: 1.00
+  via_annular_ring_mm_min: 0.15
+  via_annular_ring_mm_preferred: 0.15
+  mounting_hole: M2
+  corner_radius_mm: 2.00
+  board_thickness_mm: 1.60
+  board_thickness_tolerance: "+/-10%"
+  mounting_hole_copper_edge_clearance_mm: 1.27
+
+netclasses:
+  Default:
+    trace_width_mm: 0.20
+    clearance_mm: 0.20
+    via_diameter_mm: 0.60
+    via_drill_mm: 0.30
+  Power:
+    trace_width_mm: 0.22
+    clearance_mm: 0.20
+    via_diameter_mm: 0.60
+    via_drill_mm: 0.30
+  Ground:
+    trace_width_mm: 0.50
+    clearance_mm: 0.20
+    via_diameter_mm: 0.60
+    via_drill_mm: 0.30
+  UART5M:
+    trace_width_mm: 0.20
+    clearance_mm: 0.20
+    via_diameter_mm: 0.60
+    via_drill_mm: 0.30
+  USB:
+    trace_width_mm: 0.20
+    clearance_mm: 0.20
+    differential_width_mm: 0.20
+    differential_gap_mm: 0.20
+    via_diameter_mm: 0.60
+    via_drill_mm: 0.30
+    impedance_ohm: 90
+    impedance_tolerance_percent: 10
+    length_mismatch_mm_max: 5.0
+
+ipc_current_capacity:
+  primary_standard: IPC-2152
+  supporting_standard: IPC-2221B
+  assumptions:
+    copper_oz: 1
+    temperature_rise_c: 10
+    ambient_c: 25
+    copper_trace_tolerance_percent: 20
+    external_layer: exposed to still air
+    internal_layer: not applicable to this 2-layer board
+  design_targets_not_direct_standard_values: true
+  trace_width_targets:
+    - current_a: 0.10
+      external_width_mm_min: 0.20
+    - current_a: 0.25
+      external_width_mm_min: 0.25
+    - current_a: 0.50
+      external_width_mm_min: 0.40
+    - current_a: 1.00
+      external_width_mm_min: 0.65
+    - current_a: 2.00
+      external_width_mm_min: 1.20
+    - current_a: 3.00
+      external_width_mm_min: 1.80
+  rules:
+    - 所有载流走线最终必须使用 IPC-2152 曲线或合格计算器复核。
+    - PWR_5V_USB 和 PWR_3V3_USB 主路径按至少 0.50 mm 设计。
+    - PWR_5V_ISO 和 PWR_3V3_ISO 按至少 0.40 mm 设计。
+    - 100 mA 以内的隔离输出分支可以使用 0.30 mm，但不得低于项目最小线宽。
+    - 每个电源过孔不得单独承担 0.50 A 以上电流；高电流路径使用过孔阵列。
+
+return_path_rules:
+  standards_basis:
+    - IPC-2152
+    - IPC-2221B
+  rules:
+    - 高速与高边沿速率信号必须具有连续参考平面，USB D+/D- 下方优先保持完整 GND。
+    - USB 差分对不得跨越 GND 平面开槽、隔离带或平面分割边界。
+    - 信号换层时必须在其过孔附近提供返回过孔，目标距离不超过 5 mm。
+    - 去耦电容必须靠近 IC 电源和地引脚，电源去耦回路面积尽量小。
+    - GND 与 ISO_GND 的返回路径不得共用铜皮、过孔或参考平面。
+    - 电源电流必须从电源源端到负载端保持连续返回，不得依赖隔离带两侧的公共回路。
+    - 铜皮缝合过孔应沿 GND 和 ISO_GND 各自边界布置，禁止跨隔离带缝合。
+    - 不得使用孤立铜岛作为返回路径；铺铜后必须删除无法可靠连接的小铜岛。
+
+voltage_spacing:
+  basis: IPC-2221B
+  isolation_target_vrms: 1500
+  project_min_creepage_mm: 5.0
+  project_min_clearance_mm: 5.0
+  rules:
+    - 项目 5 mm 最小爬电距离高于一般低压逻辑要求，用于满足隔离目标。
+    - 具体绝缘等级和安规认证仍由最终结构、污染等级、海拔和测试条件决定。
+    - 隔离带内只允许 U3 和 PS1 的功能跨越，不允许其他铜结构跨越。
+
+copper_and_ground:
+  copper_layers: 2
+  ground_domains:
+    - GND
+    - ISO_GND
+  rules:
+    - GND 和 ISO_GND 必须独立铺铜。
+    - 隔离带内禁止铜皮、走线、过孔和普通焊盘。
+    - B.Cu 优先作为 USB 区域的连续 GND 参考平面。
+    - ISO_GND 铜皮不得延伸到 USB 侧，反之亦然。
+    - ISO_GND 铜皮与焊盘采用花焊盘连接，降低局部焊接热应力。
+
+impedance:
+  usb_standard: USB 2.0
+  target_differential_ohm: 90
+  tolerance_percent: 10
+  maximum_length_mismatch_mm: 5
+  stackup_required: true
+  rules:
+    - 必须建立实际 2 层或 4 层叠层参数后才能确定最终线宽/间距。
+    - 当前 2 层 FR4 板默认叠层不能自动保证 90 ohm。
+    - 若 2 层无法在机械约束内满足阻抗，应升级为 4 层或调整 USB 接口位置。
+    - 投产前应使用阻抗计算器、场求解器和首板 TDR/网络分析仪测试确认。
+
+assembly_and_test:
+  fiducials_required: yes
+  test_point_min_diameter_mm: 1.0
+  connector_overhang_allowed: yes
+  connector_overhang_reason: 便于 J2/JP1 插拔杜邦线
+  rules:
+    - 测试点不得形成影响高速或隔离布局的长残桩。
+    - 连接器伸出板外的区域不得与安装孔、板框机械边或隔离槽冲突。
+    - 首板必须进行 5 Mbps 全双工回环、隔离和电源负载测试。
+
+known_conflicts:
+  - id: DRC-001
+    object: PS1_isolation_slot
+    current_value_mm: 1.00
+    jlcpcb_min_non_plated_slot_mm: 1.00
+    disposition: resolved
+    required_action: 已更换为 LS 封装并将 PS1 第 2/3 脚间距扩大到 7.62 mm。
+  - id: DRC-002
+    object: J1 USB-C NPTH-to-pad
+    current_value_mm: 0.1847
+    project_hole_clearance_mm: 0.25
+    deficit_mm: 0.0653
+    affected_pads:
+      - A1/B12
+      - A12/B1
+    disposition: review_required
+    required_action: 该间距来自标准 USB-C 封装几何；投产前需由板厂确认可制造，或更换封装/修改焊盘后重新运行 DRC。
+  - id: DRC-003
+    object: J2_JP1_board_overhang
+    current_value: connector body intentionally outside board edge
+    disposition: accepted_for_layout
+    required_action: 机械装配和板厂外形评审确认。
+  - id: DRC-004
+    object: 2-layer controlled impedance
+    current_value: 90 ohm target
+    disposition: verification_required
+    required_action: 完成叠层计算和首板 TDR/网络分析仪验证，或升级为 4 层。
+  - id: DRC-005
+    object: PS1_3d_model
+    current_value: TRACO TMR-1 SIP-4 STEP scaled to IB0505LS package envelope
+    disposition: approximate
+    required_action: 机械发布前替换为 YLPTEC 官方 STEP 或完成尺寸等效性确认。
+  - id: DRC-006
+    object: 0.30/0.60 mm via
+    current_value: outer diameter exceeds drill diameter by 0.30 mm
+    jlcpcb_via_rule: minimum 0.10 mm, preferred 0.15 mm or more
+    disposition: resolved_under_via_specific_rule
+    required_action: 下单时按立创要求确认 0.30 mm 孔径选项；若被归类为非标孔径，选择要求的塞油墨/树脂工艺。
+
+routing_baseline:
+  tool: FreeRouting 2.4.1
+  frozen_ses: generated/routing/USB_UART_Bridge_frozen.ses
+  sha256: AA3BCD88D0543DB050E312FE63A81F5840888BC9388077DFE603535D5AF3846E
+  postprocessing:
+    - 低于 0.20 mm 的走线统一提升到项目最小值。
+    - 补通 PWR_VOUT_ISO 和 PWR_3V3_USB。
+    - 铺设 GND、ISO_GND 和局部 PWR_5V_ISO 铜皮。
+  final_drc:
+    unconnected_items: 0
+    hole_clearance_errors: 4
+    silk_overlap_warnings: 29
+    silk_over_copper_warnings: 13
+    silk_edge_clearance_warnings: 9
+    schematic_parity_warnings: 0
+
+validation_gates:
+  layout:
+    - 板框、安装孔、连接器、隔离槽和器件 courtyard 无冲突。
+  routing:
+    - 所有电源走线按 IPC-2152 规则复核。
+    - USB 差分对参考平面连续且满足长度匹配。
+    - 隔离侧和 USB 侧回流路径完全分离。
+  manufacturing:
+    - 所有尺寸满足嘉立创标准工艺，例外具有书面批准。
+    - 发布 Gerber、钻孔、叠层、坐标、BOM、STEP 和验证报告。

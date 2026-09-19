@@ -1,5 +1,6 @@
 (sym_lib_table
   (version 7)
+  (lib (name "USB_UART_Bridge")(type "KiCad")(uri "${KIPRJMOD}/library/USB_UART_Bridge.kicad_sym")(options "")(descr "Project-specific symbols"))
   (lib (name "Connector")(type "KiCad")(uri "D:/KiCad10.0/share/kicad/symbols/Connector.kicad_sym")(options "")(descr "KiCad standard connector symbols"))
   (lib (name "Connector_Generic")(type "KiCad")(uri "D:/KiCad10.0/share/kicad/symbols/Connector_Generic.kicad_sym")(options "")(descr "KiCad generic connector symbols"))
   (lib (name "Converter_DCDC_Isolated")(type "KiCad")(uri "D:/KiCad10.0/share/kicad/symbols/Converter_DCDC_Isolated.kicad_sym")(options "")(descr "Isolated DC-DC converter symbols"))

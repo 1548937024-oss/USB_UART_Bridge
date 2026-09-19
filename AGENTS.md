@@ -91,8 +91,8 @@ USB 转 UART 小板。
 - J2 引脚顺序固定为：
   1. `ISO_GND`
   2. `PWR_VOUT_ISO`
-  3. `TXD`
-  4. `RXD`
+  3. `RXD`
+  4. `TXD`
 - `PWR_VOUT_ISO` 通过 `JP1` 选择隔离 `PWR_3V3_ISO` 或隔离 `PWR_5V_ISO`。
 - 隔离输出最大负载按 `100 mA` 设计。
 - `PWR_VOUT_ISO` 只改变参考电源输出，不改变 TXD/RXD 的 3.3 V 逻辑电平。
@@ -204,7 +204,10 @@ pwsh -NoProfile -File .\scripts\validate.ps1
 - P2 架构与选型：已完成。
 - P3 原理图：已完成，顶层、Power 和 Communicate 均为 A4 图纸；已按 §10 完成
   网络统一命名、模块边框、器件注释、修订表和测试点，ERC 为 0 错误、0 警告。
-- P4 PCB 设置与布局：尚未开始。
+- P4 PCB 设置与布局：已完成，PCB 为 55 x 32 mm、2 层、2 mm 圆角并居中于
+  A4 图框；J1、J2/JP1、PS1、U2 和 M2 安装孔已按机械要求布置。
+- P5 布线：已完成脚本化初版布线，0 个未连接项；剩余 12 条 DRC 固定项为
+  4 条 J1 封装内部孔间距和 8 条 J2/JP1 有意伸出板边的丝印警告。
 
 每次进入下一阶段前，优先检查本文件与项目中的 `requirements.yaml`、
 `design_intent.yaml` 和生成脚本是否仍然一致。

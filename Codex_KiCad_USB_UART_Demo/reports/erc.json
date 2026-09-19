@@ -1,43 +1,22 @@
-{
-    "$schema": "https://schemas.kicad.org/erc.v1.json",
-    "coordinate_units": "mm",
-    "date": "2026-09-19T11:20:52",
-    "ignored_checks": [
-        {
-            "description": "Four connection points are joined together",
-            "key": "four_way_junction"
-        },
-        {
-            "description": "SPICE model issue",
-            "key": "simulation_model_issue"
-        },
-        {
-            "description": "Assigned footprint doesn't match footprint filters",
-            "key": "footprint_filter"
-        }
-    ],
-    "included_severities": [
-        "error",
-        "warning",
-        "exclusion"
-    ],
-    "kicad_version": "10.0.6",
-    "sheets": [
-        {
-            "path": "/",
-            "uuid_path": "/991ad087-5b84-4353-b5af-12ada82ec90c",
-            "violations": []
-        },
-        {
-            "path": "/Communicate/",
-            "uuid_path": "/991ad087-5b84-4353-b5af-12ada82ec90c/38b96319-3e6d-4c80-8696-2aab87553969",
-            "violations": []
-        },
-        {
-            "path": "/Power/",
-            "uuid_path": "/991ad087-5b84-4353-b5af-12ada82ec90c/734a3fd4-b022-4fbc-bb04-e2dac4c1f1f0",
-            "violations": []
-        }
-    ],
-    "source": "USB_UART_Bridge.kicad_sch"
-}
+ERC report (2026-09-19T17:31:59, Encoding UTF8)
+Report includes: Errors, Warnings, Exclusions
+
+***** Sheet /
+[lib_symbol_mismatch]: 符号 'Conn_01x03' 与来源库 'Connector_Generic' 中的符号存在差异
+    ; warning
+    @(257.81 mm, 129.54 mm): Symbol JP1 [Conn_01x03]
+[lib_symbol_mismatch]: 符号 'Conn_01x04' 与来源库 'Connector_Generic' 中的符号存在差异
+    ; warning
+    @(260.35 mm, 71.12 mm): Symbol J2 [Conn_01x04]
+
+***** Sheet /Communicate/
+
+***** Sheet /Power/
+
+ ** ERC messages: 2  Errors 0  Warnings 2
+
+ ** Ignored checks:
+    - Global label only appears once in the schematic
+    - Four connection points are joined together
+    - SPICE model issue
+    - Assigned footprint doesn't match footprint filters

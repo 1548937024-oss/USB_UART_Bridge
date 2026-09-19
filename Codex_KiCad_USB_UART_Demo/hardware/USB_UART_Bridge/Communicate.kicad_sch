@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Communicate")
-		(rev "0.2")
 		(date "2026-09-19")
+		(rev "0.2")
 	)
 	(lib_symbols
 		(symbol "Device:C"
@@ -1667,7 +1667,7 @@
 		)
 		(uuid "384ebb5a-5641-4c5b-93ed-242b294cc0cb")
 	)
-	(text "U3: ISO7721D / SOIC-8 / 1.5kVrms / 100Mbps"
+	(text "U3: ISO7721D digital isolator / SOIC-8 / 100Mbps\nUART TX/RX: 5 Mbps high-speed single-ended, not a differential pair\nKeep R6/R7 adjacent to U3; route U1-R6/R7-U3-J2 shortest, no stubs\nC11/C12: U3 VCC2 decoupling"
 		(exclude_from_sim no)
 		(at 204.47 97.282 0)
 		(effects
@@ -1677,7 +1677,7 @@
 		)
 		(uuid "e0f09c3b-479e-4f1d-8100-8931299ecb2f")
 	)
-	(text_box "USB-UART BRIDGE + STATUS\nU1: CH343G / SOIC-16 / 6Mbps USB-UART\nC2-C6: local decoupling bank"
+	(text_box "USB-UART BRIDGE + STATUS\nU1: CH343G / SOIC-16 / 6Mbps USB-UART\nC2/C3: U1 pin4 V3 decoupling | C4/C5: U1 pin15 VIO decoupling\nC6: V3/VIO bulk | C1/C7: U1 pin16 VDD5/USB 5V rail | C11/C12: U3 VCC2 decoupling"
 		(exclude_from_sim no)
 		(at 53.34 16.5099 0)
 		(size 90.17 92.7101)
@@ -2638,14 +2638,14 @@
 			(uuid "5eadfa75-69b1-4c60-82f5-e8a40762295c")
 		)
 		(instances
-			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03/38b96319-3e6d-4c80-8696-2aab87553969"
+			(project ""
+				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
 					(reference "U3")
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
+			(project "USB_UART_Bridge"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c/38b96319-3e6d-4c80-8696-2aab87553969"
 					(reference "U3")
 					(unit 1)
 				)
@@ -2723,14 +2723,14 @@
 			(uuid "eecbfc5e-fe12-49b5-a2c9-c3e3b2d40bde")
 		)
 		(instances
-			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03/38b96319-3e6d-4c80-8696-2aab87553969"
+			(project ""
+				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
 					(reference "C6")
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
+			(project "USB_UART_Bridge"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c/38b96319-3e6d-4c80-8696-2aab87553969"
 					(reference "C6")
 					(unit 1)
 				)
@@ -2804,14 +2804,14 @@
 			(uuid "e4fd15cb-c873-4496-b515-0b38238503b3")
 		)
 		(instances
-			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03/38b96319-3e6d-4c80-8696-2aab87553969"
+			(project ""
+				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
 					(reference "#PWR035")
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
+			(project "USB_UART_Bridge"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c/38b96319-3e6d-4c80-8696-2aab87553969"
 					(reference "#PWR035")
 					(unit 1)
 				)
@@ -2885,14 +2885,14 @@
 			(uuid "d9ceebc3-cd55-4141-ad94-d837c3d678b2")
 		)
 		(instances
-			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03/38b96319-3e6d-4c80-8696-2aab87553969"
+			(project ""
+				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
 					(reference "#PWR022")
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
+			(project "USB_UART_Bridge"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c/38b96319-3e6d-4c80-8696-2aab87553969"
 					(reference "#PWR022")
 					(unit 1)
 				)
@@ -2966,14 +2966,14 @@
 			(uuid "7c7bd126-c5e2-4d79-be42-eecd49e16ea0")
 		)
 		(instances
-			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03/38b96319-3e6d-4c80-8696-2aab87553969"
+			(project ""
+				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
 					(reference "#PWR034")
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
+			(project "USB_UART_Bridge"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c/38b96319-3e6d-4c80-8696-2aab87553969"
 					(reference "#PWR034")
 					(unit 1)
 				)
@@ -3047,14 +3047,14 @@
 			(uuid "9f5884fc-03d8-4ff6-b59f-5b1b83f35ed2")
 		)
 		(instances
-			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03/38b96319-3e6d-4c80-8696-2aab87553969"
+			(project ""
+				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
 					(reference "#PWR019")
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
+			(project "USB_UART_Bridge"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c/38b96319-3e6d-4c80-8696-2aab87553969"
 					(reference "#PWR019")
 					(unit 1)
 				)
@@ -3128,14 +3128,14 @@
 			(uuid "44cfeae6-5c52-4220-928c-6926cf3aff2b")
 		)
 		(instances
-			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03/38b96319-3e6d-4c80-8696-2aab87553969"
+			(project ""
+				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
 					(reference "#PWR044")
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
+			(project "USB_UART_Bridge"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c/38b96319-3e6d-4c80-8696-2aab87553969"
 					(reference "#PWR044")
 					(unit 1)
 				)
@@ -3209,14 +3209,14 @@
 			(uuid "f6c2c683-4416-4ed5-ba2c-9b99e6f782bb")
 		)
 		(instances
-			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03/38b96319-3e6d-4c80-8696-2aab87553969"
+			(project ""
+				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
 					(reference "#PWR025")
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
+			(project "USB_UART_Bridge"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c/38b96319-3e6d-4c80-8696-2aab87553969"
 					(reference "#PWR025")
 					(unit 1)
 				)
@@ -3290,14 +3290,14 @@
 			(uuid "6ab5a7a2-2440-4985-b308-472fbc6a760b")
 		)
 		(instances
-			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03/38b96319-3e6d-4c80-8696-2aab87553969"
+			(project ""
+				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
 					(reference "#PWR026")
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
+			(project "USB_UART_Bridge"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c/38b96319-3e6d-4c80-8696-2aab87553969"
 					(reference "#PWR026")
 					(unit 1)
 				)
@@ -3371,14 +3371,14 @@
 			(uuid "b13ad1b1-a8d5-4958-8e37-41f3e8b16a5e")
 		)
 		(instances
-			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03/38b96319-3e6d-4c80-8696-2aab87553969"
+			(project ""
+				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
 					(reference "#PWR039")
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
+			(project "USB_UART_Bridge"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c/38b96319-3e6d-4c80-8696-2aab87553969"
 					(reference "#PWR039")
 					(unit 1)
 				)
@@ -3452,14 +3452,14 @@
 			(uuid "582f7aa1-ce82-4734-a102-1f8426c05d49")
 		)
 		(instances
-			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03/38b96319-3e6d-4c80-8696-2aab87553969"
+			(project ""
+				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
 					(reference "#PWR024")
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
+			(project "USB_UART_Bridge"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c/38b96319-3e6d-4c80-8696-2aab87553969"
 					(reference "#PWR024")
 					(unit 1)
 				)
@@ -3537,14 +3537,14 @@
 			(uuid "bb61fb2c-8dae-4c62-b28e-02ba29f039d7")
 		)
 		(instances
-			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03/38b96319-3e6d-4c80-8696-2aab87553969"
+			(project ""
+				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
 					(reference "D2")
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
+			(project "USB_UART_Bridge"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c/38b96319-3e6d-4c80-8696-2aab87553969"
 					(reference "D2")
 					(unit 1)
 				)
@@ -3622,14 +3622,14 @@
 			(uuid "81a59a0e-5d2b-4f9c-be77-ba8aaa97e133")
 		)
 		(instances
-			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03/38b96319-3e6d-4c80-8696-2aab87553969"
+			(project ""
+				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
 					(reference "R6")
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
+			(project "USB_UART_Bridge"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c/38b96319-3e6d-4c80-8696-2aab87553969"
 					(reference "R6")
 					(unit 1)
 				)
@@ -3707,14 +3707,14 @@
 			(uuid "b63fc1e1-43f7-4eaf-92c5-eb9b7a36c9ce")
 		)
 		(instances
-			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03/38b96319-3e6d-4c80-8696-2aab87553969"
+			(project ""
+				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
 					(reference "C11")
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
+			(project "USB_UART_Bridge"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c/38b96319-3e6d-4c80-8696-2aab87553969"
 					(reference "C11")
 					(unit 1)
 				)
@@ -3788,14 +3788,14 @@
 			(uuid "ba84c7e5-1dc0-46de-a086-3ad93aab5d1c")
 		)
 		(instances
-			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03/38b96319-3e6d-4c80-8696-2aab87553969"
+			(project ""
+				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
 					(reference "#PWR040")
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
+			(project "USB_UART_Bridge"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c/38b96319-3e6d-4c80-8696-2aab87553969"
 					(reference "#PWR040")
 					(unit 1)
 				)
@@ -3873,14 +3873,14 @@
 			(uuid "2afb7f4d-1e09-4c08-8c41-30cf83073558")
 		)
 		(instances
-			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03/38b96319-3e6d-4c80-8696-2aab87553969"
+			(project ""
+				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
 					(reference "R7")
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
+			(project "USB_UART_Bridge"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c/38b96319-3e6d-4c80-8696-2aab87553969"
 					(reference "R7")
 					(unit 1)
 				)
@@ -3958,14 +3958,14 @@
 			(uuid "408197f5-3697-454c-aeb8-1090216e2608")
 		)
 		(instances
-			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03/38b96319-3e6d-4c80-8696-2aab87553969"
+			(project ""
+				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
 					(reference "C2")
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
+			(project "USB_UART_Bridge"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c/38b96319-3e6d-4c80-8696-2aab87553969"
 					(reference "C2")
 					(unit 1)
 				)
@@ -4043,14 +4043,14 @@
 			(uuid "53d18f66-3529-4c6c-9a4a-32d7b631e243")
 		)
 		(instances
-			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03/38b96319-3e6d-4c80-8696-2aab87553969"
+			(project ""
+				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
 					(reference "C3")
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
+			(project "USB_UART_Bridge"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c/38b96319-3e6d-4c80-8696-2aab87553969"
 					(reference "C3")
 					(unit 1)
 				)
@@ -4128,14 +4128,14 @@
 			(uuid "c7e919c9-e35e-41a2-8dc4-44f28039f31e")
 		)
 		(instances
-			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03/38b96319-3e6d-4c80-8696-2aab87553969"
+			(project ""
+				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
 					(reference "R5")
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
+			(project "USB_UART_Bridge"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c/38b96319-3e6d-4c80-8696-2aab87553969"
 					(reference "R5")
 					(unit 1)
 				)
@@ -4213,14 +4213,14 @@
 			(uuid "bd31e815-a9ff-494a-afc9-9226e3e89f6d")
 		)
 		(instances
-			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03/38b96319-3e6d-4c80-8696-2aab87553969"
+			(project ""
+				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
 					(reference "C5")
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
+			(project "USB_UART_Bridge"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c/38b96319-3e6d-4c80-8696-2aab87553969"
 					(reference "C5")
 					(unit 1)
 				)
@@ -4298,14 +4298,14 @@
 			(uuid "8b896d97-5e6a-4f90-ae53-7bb672256be2")
 		)
 		(instances
-			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03/38b96319-3e6d-4c80-8696-2aab87553969"
+			(project ""
+				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
 					(reference "C12")
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
+			(project "USB_UART_Bridge"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c/38b96319-3e6d-4c80-8696-2aab87553969"
 					(reference "C12")
 					(unit 1)
 				)
@@ -4379,14 +4379,14 @@
 			(uuid "afe50437-dcc2-4659-95b6-f00ac21d0e99")
 		)
 		(instances
-			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03/38b96319-3e6d-4c80-8696-2aab87553969"
+			(project ""
+				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
 					(reference "#PWR023")
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
+			(project "USB_UART_Bridge"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c/38b96319-3e6d-4c80-8696-2aab87553969"
 					(reference "#PWR023")
 					(unit 1)
 				)
@@ -4460,14 +4460,14 @@
 			(uuid "ef1ee25e-86ce-4795-8204-2c31a8f1c254")
 		)
 		(instances
-			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03/38b96319-3e6d-4c80-8696-2aab87553969"
+			(project ""
+				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
 					(reference "#PWR021")
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
+			(project "USB_UART_Bridge"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c/38b96319-3e6d-4c80-8696-2aab87553969"
 					(reference "#PWR021")
 					(unit 1)
 				)
@@ -4545,14 +4545,14 @@
 			(uuid "e2923c86-48e8-4ba1-94a0-b477519e7497")
 		)
 		(instances
-			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03/38b96319-3e6d-4c80-8696-2aab87553969"
+			(project ""
+				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
 					(reference "D1")
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
+			(project "USB_UART_Bridge"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c/38b96319-3e6d-4c80-8696-2aab87553969"
 					(reference "D1")
 					(unit 1)
 				)
@@ -4626,14 +4626,14 @@
 			(uuid "dc00e4af-df72-4d01-a091-6f2854e519a0")
 		)
 		(instances
-			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03/38b96319-3e6d-4c80-8696-2aab87553969"
+			(project ""
+				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
 					(reference "#PWR037")
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
+			(project "USB_UART_Bridge"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c/38b96319-3e6d-4c80-8696-2aab87553969"
 					(reference "#PWR037")
 					(unit 1)
 				)
@@ -4707,14 +4707,14 @@
 			(uuid "c68db942-ae48-4b35-9184-ad8e7c2cc800")
 		)
 		(instances
-			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03/38b96319-3e6d-4c80-8696-2aab87553969"
+			(project ""
+				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
 					(reference "#PWR028")
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
+			(project "USB_UART_Bridge"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c/38b96319-3e6d-4c80-8696-2aab87553969"
 					(reference "#PWR028")
 					(unit 1)
 				)
@@ -4792,14 +4792,14 @@
 			(uuid "577f389c-968d-4b08-b560-e236f5833b61")
 		)
 		(instances
-			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03/38b96319-3e6d-4c80-8696-2aab87553969"
+			(project ""
+				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
 					(reference "R4")
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
+			(project "USB_UART_Bridge"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c/38b96319-3e6d-4c80-8696-2aab87553969"
 					(reference "R4")
 					(unit 1)
 				)
@@ -4919,14 +4919,14 @@
 			(uuid "e3bece9e-4537-417f-9631-dcb41215a5d3")
 		)
 		(instances
-			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03/38b96319-3e6d-4c80-8696-2aab87553969"
+			(project ""
+				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
 					(reference "U1")
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
+			(project "USB_UART_Bridge"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c/38b96319-3e6d-4c80-8696-2aab87553969"
 					(reference "U1")
 					(unit 1)
 				)
@@ -5004,14 +5004,14 @@
 			(uuid "3242074d-84d9-4f70-a4fb-453b1bdd4743")
 		)
 		(instances
-			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03/38b96319-3e6d-4c80-8696-2aab87553969"
+			(project ""
+				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
 					(reference "C4")
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
+			(project "USB_UART_Bridge"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c/38b96319-3e6d-4c80-8696-2aab87553969"
 					(reference "C4")
 					(unit 1)
 				)
@@ -5085,14 +5085,14 @@
 			(uuid "58bd9f4f-95f6-4824-818a-aacb4813bd05")
 		)
 		(instances
-			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03/38b96319-3e6d-4c80-8696-2aab87553969"
+			(project ""
+				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
 					(reference "#PWR031")
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
+			(project "USB_UART_Bridge"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c/38b96319-3e6d-4c80-8696-2aab87553969"
 					(reference "#PWR031")
 					(unit 1)
 				)
@@ -5166,14 +5166,14 @@
 			(uuid "58ddb335-3bb0-4fcf-82ca-a2b7a4f42585")
 		)
 		(instances
-			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03/38b96319-3e6d-4c80-8696-2aab87553969"
+			(project ""
+				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
 					(reference "#PWR036")
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
+			(project "USB_UART_Bridge"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c/38b96319-3e6d-4c80-8696-2aab87553969"
 					(reference "#PWR036")
 					(unit 1)
 				)
@@ -5247,14 +5247,14 @@
 			(uuid "e94b59ab-8785-4a0e-b9c0-0bdd0f58e2f7")
 		)
 		(instances
-			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03/38b96319-3e6d-4c80-8696-2aab87553969"
+			(project ""
+				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
 					(reference "#PWR030")
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/8c9a0c0f-0f63-49ab-80a5-70b5703ced37"
+			(project "USB_UART_Bridge"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c/38b96319-3e6d-4c80-8696-2aab87553969"
 					(reference "#PWR030")
 					(unit 1)
 				)

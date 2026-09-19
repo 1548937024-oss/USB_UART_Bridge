@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "USB_UART_Bridge")
-		(rev "0.2")
 		(date "2026-09-19")
+		(rev "0.2")
 	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"
@@ -974,7 +974,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 2.54 0)
+					(at -5.08 -2.54 0)
 					(length 3.81)
 					(name "Pin_1"
 						(effects
@@ -1010,7 +1010,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -2.54 0)
+					(at -5.08 2.54 0)
 					(length 3.81)
 					(name "Pin_3"
 						(effects
@@ -1208,7 +1208,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -2.54 0)
+					(at -5.08 -5.08 0)
 					(length 3.81)
 					(name "Pin_3"
 						(effects
@@ -1226,7 +1226,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -5.08 0)
+					(at -5.08 -2.54 0)
 					(length 3.81)
 					(name "Pin_4"
 						(effects
@@ -2383,7 +2383,7 @@
 		)
 		(uuid "fdfd1458-975b-45b0-8a00-274d8178a569")
 	)
-	(text_box "ISOLATED UART OUTPUT\nJ2: 1x4 2.54mm\nJP1: 1-2=PWR_3V3_ISO default, 2-3=PWR_5V_ISO"
+	(text_box "ISOLATED UART OUTPUT\nJ2: 1x4 2.54mm\nJP1: 2-3=PWR_3V3_ISO default, 1-2=PWR_5V_ISO"
 		(exclude_from_sim no)
 		(at 217.17 106.68 0)
 		(size 58.42 7.6199)
@@ -2403,7 +2403,7 @@
 		)
 		(uuid "084a7397-1051-4223-bbd9-7753069591d9")
 	)
-	(text_box "USB-C INPUT + ESD + CC\nJ1: USB-C 2.0 16P | U2: USBLC6-2SC6 | R1/R2: 5.1k"
+	(text_box "USB-C INPUT + ESD + CC\nJ1: USB-C 2.0 16P | U2: USBLC6-2SC6 | R1/R2: 5.1k\nUSB_DP/USB_DM: 90 ohm differential pair; short, matched, continuous GND reference"
 		(exclude_from_sim no)
 		(at 25.4 31.75 0)
 		(size 83.82 78.7399)
@@ -2466,12 +2466,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "76a42d90-989d-4a3c-87cc-d0af01524859")
-	)
-	(junction
-		(at 53.34 125.73)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8fde4e37-deeb-4ea6-9304-fb7dd9f731a6")
 	)
 	(junction
 		(at 231.14 73.66)
@@ -2554,16 +2548,6 @@
 			(type default)
 		)
 		(uuid "2084a31f-cd74-4f09-bf7f-ffe019e951d8")
-	)
-	(wire
-		(pts
-			(xy 53.34 125.73) (xy 53.34 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "21063380-7c52-4fec-a65c-acec5f9ec2a1")
 	)
 	(wire
 		(pts
@@ -3073,7 +3057,7 @@
 		)
 		(instances
 			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c"
 					(reference "#PWR055")
 					(unit 1)
 				)
@@ -3148,7 +3132,7 @@
 		)
 		(instances
 			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c"
 					(reference "#PWR047")
 					(unit 1)
 				)
@@ -3223,7 +3207,7 @@
 		)
 		(instances
 			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c"
 					(reference "#PWR046")
 					(unit 1)
 				)
@@ -3298,7 +3282,7 @@
 		)
 		(instances
 			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c"
 					(reference "#PWR048")
 					(unit 1)
 				)
@@ -3373,7 +3357,7 @@
 		)
 		(instances
 			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c"
 					(reference "#FLG004")
 					(unit 1)
 				)
@@ -3464,7 +3448,7 @@
 		)
 		(instances
 			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c"
 					(reference "U2")
 					(unit 1)
 				)
@@ -3539,7 +3523,7 @@
 		)
 		(instances
 			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c"
 					(reference "#PWR059")
 					(unit 1)
 				)
@@ -3614,7 +3598,7 @@
 		)
 		(instances
 			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c"
 					(reference "#PWR058")
 					(unit 1)
 				)
@@ -3689,7 +3673,7 @@
 		)
 		(instances
 			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c"
 					(reference "#FLG003")
 					(unit 1)
 				)
@@ -3764,7 +3748,7 @@
 		)
 		(instances
 			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c"
 					(reference "#PWR060")
 					(unit 1)
 				)
@@ -3839,7 +3823,7 @@
 		)
 		(instances
 			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c"
 					(reference "#PWR062")
 					(unit 1)
 				)
@@ -3914,7 +3898,7 @@
 		)
 		(instances
 			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c"
 					(reference "#PWR052")
 					(unit 1)
 				)
@@ -3989,7 +3973,7 @@
 		)
 		(instances
 			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c"
 					(reference "#PWR061")
 					(unit 1)
 				)
@@ -4113,7 +4097,7 @@
 		)
 		(instances
 			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c"
 					(reference "J1")
 					(unit 1)
 				)
@@ -4195,7 +4179,7 @@
 		)
 		(instances
 			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c"
 					(reference "JP1")
 					(unit 1)
 				)
@@ -4280,7 +4264,7 @@
 		)
 		(instances
 			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c"
 					(reference "J2")
 					(unit 1)
 				)
@@ -4356,7 +4340,7 @@
 		)
 		(instances
 			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c"
 					(reference "TP3")
 					(unit 1)
 				)
@@ -4435,7 +4419,7 @@
 		)
 		(instances
 			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c"
 					(reference "R1")
 					(unit 1)
 				)
@@ -4510,7 +4494,7 @@
 		)
 		(instances
 			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c"
 					(reference "#FLG001")
 					(unit 1)
 				)
@@ -4540,7 +4524,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "PWR_5V_USB"
+		(property "Value" "PWR_5V_RAW"
 			(at 53.34 120.65 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4585,7 +4569,7 @@
 		)
 		(instances
 			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c"
 					(reference "#PWR049")
 					(unit 1)
 				)
@@ -4660,83 +4644,8 @@
 		)
 		(instances
 			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c"
 					(reference "#PWR056")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 53.34 120.65 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "f8982b7d-74d0-4473-b5be-7b5ff8adabed")
-		(property "Reference" "#FLG002"
-			(at 53.34 122.555 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 53.34 115.57 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 53.34 120.65 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 53.34 120.65 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 53.34 120.65 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d7918a0d-7180-4b61-9c2c-bb9ed7467e0b")
-		)
-		(instances
-			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03"
-					(reference "#FLG002")
 					(unit 1)
 				)
 			)
@@ -4811,7 +4720,7 @@
 		)
 		(instances
 			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c"
 					(reference "TP4")
 					(unit 1)
 				)
@@ -4886,7 +4795,7 @@
 		)
 		(instances
 			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c"
 					(reference "#PWR045")
 					(unit 1)
 				)
@@ -4965,7 +4874,7 @@
 		)
 		(instances
 			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c"
 					(reference "R2")
 					(unit 1)
 				)
@@ -5052,7 +4961,7 @@
 		)
 		(instances
 			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c"
 					(page "2")
 				)
 			)
@@ -5098,7 +5007,7 @@
 		)
 		(instances
 			(project "USB_UART_Bridge"
-				(path "/6d719abe-8294-4a13-afeb-1c2f95178f03"
+				(path "/991ad087-5b84-4353-b5af-12ada82ec90c"
 					(page "3")
 				)
 			)

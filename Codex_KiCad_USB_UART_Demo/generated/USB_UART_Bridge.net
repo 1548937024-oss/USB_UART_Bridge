@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-外置驱动器\\Codex_KiCad_USB_UART_Demo\\hardware\\USB_UART_Bridge\\USB_UART_Bridge.kicad_sch")
-		(date "2026-09-19T11:20:53")
+		(date "2026-09-19T17:32:00")
 		(tool "Eeschema 10.0.6")
 		(sheet
 			(number "1")
@@ -300,10 +300,10 @@
 							(num "2")
 						)
 						(pin
-							(num "3")
+							(num "4")
 						)
 						(pin
-							(num "4")
+							(num "3")
 						)
 					)
 				)
@@ -354,13 +354,13 @@
 					(name "A")
 					(pins
 						(pin
-							(num "1")
+							(num "3")
 						)
 						(pin
 							(num "2")
 						)
 						(pin
-							(num "3")
+							(num "1")
 						)
 					)
 				)
@@ -1838,22 +1838,22 @@
 		)
 		(comp
 			(ref "PS1")
-			(value "CRE1S0505SC")
-			(footprint "Converter_DCDC:Converter_DCDC_Murata_CRE1xxxxxxSC_THT")
+			(value "IB0505LS-1WR3")
+			(footprint "USB_UART_Bridge:Converter_DCDC_YLPTEC_IB0505LS-1WR3")
+			(datasheet "https://item.szlcsc.com/6212649.html")
+			(description "5V to 5V 200mA isolated DC-DC converter, 1W, SIP-4")
 			(fields
 				(field
-					(name "Footprint") "Converter_DCDC:Converter_DCDC_Murata_CRE1xxxxxxSC_THT")
+					(name "Footprint") "USB_UART_Bridge:Converter_DCDC_YLPTEC_IB0505LS-1WR3")
 				(field
-					(name "Datasheet")
-				)
+					(name "Datasheet") "https://item.szlcsc.com/6212649.html")
 				(field
-					(name "Description")
-				)
+					(name "Description") "5V to 5V 200mA isolated DC-DC converter, 1W, SIP-4")
 			)
 			(libsource
-				(lib "Converter_DCDC_Isolated")
-				(part "CRE1S0505SC")
-				(description "5V to 5V 200mA DC-DC Converter with 1kV isolation, SIP-4")
+				(lib "USB_UART_Bridge")
+				(part "IB0505LS-1WR3")
+				(description "5V to 5V 200mA isolated DC-DC converter, 1W, SIP-4")
 			)
 			(property
 				(name "Sheetname")
@@ -1865,11 +1865,11 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "Murata isolated isolation dc-dc converter transformer")
+				(value "YLPTEC isolated isolation dc-dc converter transformer")
 			)
 			(property
 				(name "ki_fp_filters")
-				(value "Converter*DCDC*Murata*CRE1xxxxxxSC*")
+				(value "Converter*DCDC*YLPTEC*IB0505LS*")
 			)
 			(sheetpath
 				(names "/Power/")
@@ -2288,49 +2288,6 @@
 			)
 		)
 		(libpart
-			(lib "Converter_DCDC_Isolated")
-			(part "CRE1S0505SC")
-			(description "5V to 5V 200mA DC-DC Converter with 1kV isolation, SIP-4")
-			(docs "https://pim.murata.com/asset/pim4/isolatedDCDCconverter/KDC_CRE1_PDF_ISOLATEDDCDCCONVERTER")
-			(footprints
-				(fp "Converter*DCDC*Murata*CRE1xxxxxxSC*")
-			)
-			(fields
-				(field
-					(name "Reference") "U")
-				(field
-					(name "Value") "CRE1S0505SC")
-				(field
-					(name "Footprint") "Converter_DCDC:Converter_DCDC_Murata_CRE1xxxxxxSC_THT")
-				(field
-					(name "Datasheet") "https://pim.murata.com/asset/pim4/isolatedDCDCconverter/KDC_CRE1_PDF_ISOLATEDDCDCCONVERTER")
-				(field
-					(name "Description") "5V to 5V 200mA DC-DC Converter with 1kV isolation, SIP-4")
-			)
-			(pins
-				(pin
-					(num "1")
-					(name "-VIN")
-					(type "power_in")
-				)
-				(pin
-					(num "2")
-					(name "+VIN")
-					(type "power_in")
-				)
-				(pin
-					(num "3")
-					(name "-VOUT")
-					(type "power_out")
-				)
-				(pin
-					(num "4")
-					(name "+VOUT")
-					(type "power_out")
-				)
-			)
-		)
-		(libpart
 			(lib "Device")
 			(part "C")
 			(description "Unpolarized capacitor")
@@ -2737,6 +2694,49 @@
 				)
 			)
 		)
+		(libpart
+			(lib "USB_UART_Bridge")
+			(part "IB0505LS-1WR3")
+			(description "5V to 5V 200mA isolated DC-DC converter, 1W, SIP-4")
+			(docs "https://item.szlcsc.com/6212649.html")
+			(footprints
+				(fp "Converter*DCDC*YLPTEC*IB0505LS*")
+			)
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "IB0505LS-1WR3")
+				(field
+					(name "Footprint") "USB_UART_Bridge:Converter_DCDC_YLPTEC_IB0505LS-1WR3")
+				(field
+					(name "Datasheet") "https://item.szlcsc.com/6212649.html")
+				(field
+					(name "Description") "5V to 5V 200mA isolated DC-DC converter, 1W, SIP-4")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "-VIN")
+					(type "power_in")
+				)
+				(pin
+					(num "2")
+					(name "+VIN")
+					(type "power_in")
+				)
+				(pin
+					(num "3")
+					(name "-VOUT")
+					(type "power_out")
+				)
+				(pin
+					(num "4")
+					(name "+VOUT")
+					(type "power_out")
+				)
+			)
+		)
 	)
 	(libraries
 		(library
@@ -2746,10 +2746,6 @@
 		(library
 			(logical "Connector_Generic")
 			(uri "D:/KiCad10.0/share/kicad/symbols/Connector_Generic.kicad_sym")
-		)
-		(library
-			(logical "Converter_DCDC_Isolated")
-			(uri "D:/KiCad10.0/share/kicad/symbols/Converter_DCDC_Isolated.kicad_sym")
 		)
 		(library
 			(logical "Device")
@@ -2770,6 +2766,10 @@
 		(library
 			(logical "Regulator_Linear")
 			(uri "D:/KiCad10.0/share/kicad/symbols/Regulator_Linear.kicad_sym")
+		)
+		(library
+			(logical "USB_UART_Bridge")
+			(uri "${KIPRJMOD}/library/USB_UART_Bridge.kicad_sym")
 		)
 	)
 	(nets
@@ -2808,7 +2808,7 @@
 		(net
 			(code "3")
 			(name "/Communicate/LED_PWR_K")
-			(class "Default")
+			(class "Power")
 			(node
 				(ref "D2")
 				(pin "1")
@@ -2892,8 +2892,8 @@
 			(class "Default")
 			(node
 				(ref "J2")
-				(pin "4")
-				(pinfunction "Pin_4_4")
+				(pin "3")
+				(pinfunction "Pin_3_3")
 				(pintype "passive")
 			)
 			(node
@@ -2914,8 +2914,8 @@
 			(class "Default")
 			(node
 				(ref "J2")
-				(pin "3")
-				(pinfunction "Pin_3_3")
+				(pin "4")
+				(pinfunction "Pin_4_4")
 				(pintype "passive")
 			)
 			(node
@@ -2966,7 +2966,7 @@
 		(net
 			(code "12")
 			(name "/USB_DM")
-			(class "Default")
+			(class "USB")
 			(node
 				(ref "J1")
 				(pin "A7")
@@ -3001,7 +3001,7 @@
 		(net
 			(code "13")
 			(name "/USB_DP")
-			(class "Default")
+			(class "USB")
 			(node
 				(ref "J1")
 				(pin "A6")
@@ -3036,7 +3036,7 @@
 		(net
 			(code "14")
 			(name "GND")
-			(class "Default")
+			(class "Ground")
 			(node
 				(ref "C1")
 				(pin "2")
@@ -3145,7 +3145,7 @@
 		(net
 			(code "15")
 			(name "ISO_GND")
-			(class "Default")
+			(class "Ground")
 			(node
 				(ref "C10")
 				(pin "2")
@@ -3199,7 +3199,7 @@
 		(net
 			(code "16")
 			(name "PWR_3V3_ISO")
-			(class "Default")
+			(class "Power")
 			(node
 				(ref "C10")
 				(pin "1")
@@ -3222,8 +3222,8 @@
 			)
 			(node
 				(ref "JP1")
-				(pin "1")
-				(pinfunction "Pin_1_1")
+				(pin "3")
+				(pinfunction "Pin_3_3")
 				(pintype "passive")
 			)
 			(node
@@ -3248,7 +3248,7 @@
 		(net
 			(code "17")
 			(name "PWR_3V3_USB")
-			(class "Default")
+			(class "Power")
 			(node
 				(ref "C2")
 				(pin "1")
@@ -3308,7 +3308,7 @@
 		(net
 			(code "18")
 			(name "PWR_5V_ISO")
-			(class "Default")
+			(class "Power")
 			(node
 				(ref "C8")
 				(pin "1")
@@ -3316,8 +3316,8 @@
 			)
 			(node
 				(ref "JP1")
-				(pin "3")
-				(pinfunction "Pin_3_3")
+				(pin "1")
+				(pinfunction "Pin_1_1")
 				(pintype "passive")
 			)
 			(node
@@ -3342,7 +3342,7 @@
 		(net
 			(code "19")
 			(name "PWR_5V_RAW")
-			(class "Default")
+			(class "Power")
 			(node
 				(ref "F1")
 				(pin "1")
@@ -3372,11 +3372,17 @@
 				(pinfunction "VBUS_B9")
 				(pintype "passive")
 			)
+			(node
+				(ref "U2")
+				(pin "5")
+				(pinfunction "VBUS_5")
+				(pintype "passive")
+			)
 		)
 		(net
 			(code "20")
 			(name "PWR_5V_USB")
-			(class "Default")
+			(class "Power")
 			(node
 				(ref "C1")
 				(pin "1")
@@ -3416,17 +3422,11 @@
 				(pinfunction "VBUS_7")
 				(pintype "input")
 			)
-			(node
-				(ref "U2")
-				(pin "5")
-				(pinfunction "VBUS_5")
-				(pintype "passive")
-			)
 		)
 		(net
 			(code "21")
 			(name "PWR_VOUT_ISO")
-			(class "Default")
+			(class "Power")
 			(node
 				(ref "J2")
 				(pin "2")

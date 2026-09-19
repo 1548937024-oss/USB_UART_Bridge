@@ -1,0 +1,163 @@
+(footprint "Converter_DCDC_YLPTEC_IB0505LS-1WR3"
+  (version 20240108)
+  (generator "pcbnew")
+  (generator_version "10.0")
+  (layer "F.Cu")
+  (descr "1W isolated DC-DC converter, 5V input, 5V output, LS SIP-4, 19.5 x 6.0 x 10.0 mm")
+  (tags "isolated DC-DC converter SIP-4 1W")
+  (attr through_hole)
+  (property "Reference" "PS1"
+    (at 0 -5.2 0)
+    (layer "F.SilkS")
+    (hide yes)
+    (effects
+      (font
+        (size 1 1)
+        (thickness 0.15)
+      )
+    )
+  )
+  (property "Value" "IB0505LS-1WR3"
+    (at 0 5.2 0)
+    (layer "F.Fab")
+    (hide yes)
+    (effects
+      (font
+        (size 1 1)
+        (thickness 0.15)
+      )
+    )
+  )
+  (property "Footprint" "USB_UART_Bridge:Converter_DCDC_YLPTEC_IB0505LS-1WR3"
+    (at 0 0 0)
+    (layer "F.Fab")
+    (hide yes)
+    (effects
+      (font
+        (size 1 1)
+        (thickness 0.15)
+      )
+    )
+  )
+  (property "Datasheet" "https://item.szlcsc.com/6212649.html"
+    (at 0 0 0)
+    (layer "F.Fab")
+    (hide yes)
+    (effects
+      (font
+        (size 1 1)
+        (thickness 0.15)
+      )
+    )
+  )
+  (property "Description" "YLPTEC IB0505LS-1WR3 isolated DC-DC module"
+    (at 0 0 0)
+    (layer "F.Fab")
+    (hide yes)
+    (effects
+      (font
+        (size 1 1)
+        (thickness 0.15)
+      )
+    )
+  )
+  (fp_rect
+    (start -9.75 -3)
+    (end 9.75 3)
+    (stroke
+      (width 0.12)
+      (type default)
+    )
+    (fill none)
+    (layer "F.SilkS")
+  )
+  (fp_line
+    (start -9.9 -3.15)
+    (end 9.9 -3.15)
+    (stroke
+      (width 0.05)
+      (type default)
+    )
+    (layer "F.CrtYd")
+  )
+  (fp_line
+    (start 9.9 -3.15)
+    (end 9.9 3.15)
+    (stroke
+      (width 0.05)
+      (type default)
+    )
+    (layer "F.CrtYd")
+  )
+  (fp_line
+    (start 9.9 3.15)
+    (end -9.9 3.15)
+    (stroke
+      (width 0.05)
+      (type default)
+    )
+    (layer "F.CrtYd")
+  )
+  (fp_line
+    (start -9.9 3.15)
+    (end -9.9 -3.15)
+    (stroke
+      (width 0.05)
+      (type default)
+    )
+    (layer "F.CrtYd")
+  )
+  (fp_circle
+    (center -6.35 -3.75)
+    (end -6.1 -3.75)
+    (stroke
+      (width 0.15)
+      (type default)
+    )
+    (fill solid)
+    (layer "F.SilkS")
+  )
+  (fp_text user "IB0505LS-1WR3"
+    (at 0 0 0)
+    (layer "F.Fab")
+    (effects
+      (font
+        (size 0.8 0.8)
+        (thickness 0.12)
+      )
+    )
+  )
+  (pad "1" thru_hole circle
+    (at -6.35 0)
+    (size 1.8 1.8)
+    (drill 1)
+    (layers "*.Cu" "*.Mask")
+    (remove_unused_layers no)
+  )
+  (pad "2" thru_hole circle
+    (at -3.81 0)
+    (size 1.8 1.8)
+    (drill 1)
+    (layers "*.Cu" "*.Mask")
+    (remove_unused_layers no)
+  )
+  (pad "3" thru_hole circle
+    (at 3.81 0)
+    (size 1.8 1.8)
+    (drill 1)
+    (layers "*.Cu" "*.Mask")
+    (remove_unused_layers no)
+  )
+  (pad "4" thru_hole circle
+    (at 6.35 0)
+    (size 1.8 1.8)
+    (drill 1)
+    (layers "*.Cu" "*.Mask")
+    (remove_unused_layers no)
+  )
+  (model "${KICAD10_3DMODEL_DIR}/Converter_DCDC.3dshapes/Converter_DCDC_TRACO_TMR-1-xxxx_Single_THT.step"
+    (offset (xyz -6.35 0 0))
+    (scale (xyz 1.1 0.734 1))
+    (rotate (xyz 0 0 0))
+  )
+)
