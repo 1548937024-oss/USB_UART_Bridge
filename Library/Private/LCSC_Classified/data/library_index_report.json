@@ -1,6 +1,6 @@
 {
-  "parts": 105,
-  "converted": 99,
+  "parts": 106,
+  "converted": 100,
   "pending_conversion": 6,
   "converted_by_category": {
     "Capacitors": 27,
@@ -21,6 +21,6 @@
     "Resistors": 27,
     "Sensors": 1,
     "Switches": 1,
-    "Transistors": 7
+    "Transistors": 8
   }
 }
