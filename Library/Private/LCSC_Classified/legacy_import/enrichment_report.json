@@ -1,0 +1,14 @@
+{
+  "requested": 64,
+  "reused": 0,
+  "fetched": 58,
+  "succeeded": 58,
+  "failed": {
+    "C54318468": "HTTP Error 404: Not Found",
+    "C7433196": "HTTP Error 404: Not Found",
+    "C9900232088": "HTTP Error 404: Not Found",
+    "C9900198844": "HTTP Error 404: Not Found",
+    "C9900301658": "HTTP Error 404: Not Found",
+    "C9900304380": "HTTP Error 404: Not Found"
+  }
+}

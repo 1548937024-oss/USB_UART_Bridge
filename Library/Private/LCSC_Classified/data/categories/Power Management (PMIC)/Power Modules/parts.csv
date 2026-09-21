@@ -1,0 +1,2 @@
+﻿LCSC,MPN,Manufacturer,Description,Category,Symbol,Footprint,Value,Package,Datasheet,Model3D,Lifecycle,Source,SourceFootprint,LCSC_URL,Specifications,Notes,ReviewStatus,SourceBundles
+C9900232088,,,Imported from legacy JLC paste BOM,Power Management (PMIC)/Power Modules,C9900232088,ExternalDriver_,9980000556405,电源模块,,,Unknown,LCSC,电源模块,https://www.lcsc.com/product-detail/C9900232088.html,,Sources: BOM_PASTER_8984112A_Y182.xls; Designators: BOM_PASTER_8984112A_Y182.xls: U2; Inferred from power module description; confirm exact device later,CLASSIFIED_PARTIAL,legacy_import

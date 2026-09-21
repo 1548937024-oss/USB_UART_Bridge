@@ -1,0 +1,26 @@
+{
+  "parts": 105,
+  "converted": 99,
+  "pending_conversion": 6,
+  "converted_by_category": {
+    "Capacitors": 27,
+    "Circuit Protection": 2,
+    "Connectors": 7,
+    "Crystals, Oscillators, Resonators": 1,
+    "Diodes": 2,
+    "Embedded Processors & Controllers": 1,
+    "Filters": 2,
+    "Inductors, Coils, Chokes": 2,
+    "Industrial control electrical": 1,
+    "Interface": 3,
+    "Magnetic Sensors": 3,
+    "Memory": 1,
+    "Motor Driver ICs": 2,
+    "Optoelectronics": 3,
+    "Power Management (PMIC)": 6,
+    "Resistors": 27,
+    "Sensors": 1,
+    "Switches": 1,
+    "Transistors": 7
+  }
+}

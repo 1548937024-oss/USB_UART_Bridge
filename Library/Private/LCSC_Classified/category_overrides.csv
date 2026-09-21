@@ -1,0 +1,7 @@
+LCSC,Category,Notes
+C54318468,Embedded Processors & Controllers/Microcontrollers,Inferred from MCU designator and BOM description; confirm exact device later
+C7433196,"Magnetic Sensors/Angle, Linear Position Measuring",Inferred from magnetic angle sensor description; confirm exact device later
+C9900232088,Power Management (PMIC)/Power Modules,Inferred from power module description; confirm exact device later
+C9900198844,Circuit Protection/TVS Diodes,Inferred from SOD323 5V 320W TVS description
+C9900301658,Circuit Protection/ESD Protection,Inferred from DFN0603 5V 5.5A 60W ESD description
+C9900304380,Transistors/Single FETs MOSFETs,Inferred from PMOS description

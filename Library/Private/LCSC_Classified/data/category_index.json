@@ -1,0 +1,156 @@
+{
+  "parts": 105,
+  "top_categories": {
+    "Capacitors": 27,
+    "Circuit Protection": 2,
+    "Connectors": 7,
+    "Crystals, Oscillators, Resonators": 1,
+    "Diodes": 2,
+    "Embedded Processors & Controllers": 2,
+    "Filters": 2,
+    "Inductors, Coils, Chokes": 2,
+    "Industrial control electrical": 1,
+    "Interface": 4,
+    "Magnetic Sensors": 5,
+    "Memory": 1,
+    "Motor Driver ICs": 2,
+    "Optoelectronics": 3,
+    "Power Management (PMIC)": 7,
+    "Resistors": 27,
+    "Sensors": 1,
+    "Switches": 1,
+    "Transistors": 8
+  },
+  "category_paths": [
+    {
+      "top": "Capacitors",
+      "sub": "Ceramic Capacitors",
+      "parts": 27
+    },
+    {
+      "top": "Circuit Protection",
+      "sub": "ESD Protection",
+      "parts": 1
+    },
+    {
+      "top": "Circuit Protection",
+      "sub": "TVS Diodes",
+      "parts": 1
+    },
+    {
+      "top": "Connectors",
+      "sub": "Headers, Male Pins",
+      "parts": 7
+    },
+    {
+      "top": "Crystals, Oscillators, Resonators",
+      "sub": "Resonators",
+      "parts": 1
+    },
+    {
+      "top": "Diodes",
+      "sub": "Single Diodes",
+      "parts": 1
+    },
+    {
+      "top": "Diodes",
+      "sub": "Single Zener Diodes",
+      "parts": 1
+    },
+    {
+      "top": "Embedded Processors & Controllers",
+      "sub": "Microcontrollers",
+      "parts": 2
+    },
+    {
+      "top": "Filters",
+      "sub": "Common Mode Chokes",
+      "parts": 1
+    },
+    {
+      "top": "Filters",
+      "sub": "Ferrite Beads and Chips",
+      "parts": 1
+    },
+    {
+      "top": "Inductors, Coils, Chokes",
+      "sub": "Fixed Inductors",
+      "parts": 2
+    },
+    {
+      "top": "Industrial control electrical",
+      "sub": "Power Connectors",
+      "parts": 1
+    },
+    {
+      "top": "Interface",
+      "sub": "Drivers, Receivers, Transceivers",
+      "parts": 4
+    },
+    {
+      "top": "Magnetic Sensors",
+      "sub": "Angle, Linear Position Measuring",
+      "parts": 5
+    },
+    {
+      "top": "Memory",
+      "sub": "Memory",
+      "parts": 1
+    },
+    {
+      "top": "Motor Driver ICs",
+      "sub": "Gate Drivers",
+      "parts": 1
+    },
+    {
+      "top": "Motor Driver ICs",
+      "sub": "Motor Drivers, Controllers",
+      "parts": 1
+    },
+    {
+      "top": "Optoelectronics",
+      "sub": "LED Indication - Discrete",
+      "parts": 3
+    },
+    {
+      "top": "Power Management (PMIC)",
+      "sub": "Power Modules",
+      "parts": 1
+    },
+    {
+      "top": "Power Management (PMIC)",
+      "sub": "Voltage Regulators - DC DC Switching Regulators",
+      "parts": 1
+    },
+    {
+      "top": "Power Management (PMIC)",
+      "sub": "Voltage Regulators - Linear, Low Drop Out (LDO) Regulators",
+      "parts": 5
+    },
+    {
+      "top": "Resistors",
+      "sub": "Chip Resistor - Surface Mount",
+      "parts": 27
+    },
+    {
+      "top": "Sensors",
+      "sub": "NTC Thermistors",
+      "parts": 1
+    },
+    {
+      "top": "Switches",
+      "sub": "Tactile Switches",
+      "parts": 1
+    },
+    {
+      "top": "Transistors",
+      "sub": "Single FETs MOSFETs",
+      "parts": 1
+    },
+    {
+      "top": "Transistors",
+      "sub": "Thyristors",
+      "parts": 7
+    }
+  ]
+}
