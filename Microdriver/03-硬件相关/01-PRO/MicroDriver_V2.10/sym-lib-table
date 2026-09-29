@@ -1,0 +1,38 @@
+(sym_lib_table
+	(version 7)
+	(lib
+		(name "power")
+		(type "KiCad")
+		(uri "${KIPRJMOD}/library/MicroDriver_V2.10.kicad_sym")
+		(options "")
+		(descr "MicroDriver V2.10 project power symbols")
+	)
+	(lib
+		(name "MicroDriver_V2.10")
+		(type "KiCad")
+		(uri "${KIPRJMOD}/library/MicroDriver_V2.10.kicad_sym")
+		(options "")
+		(descr "MicroDriver V2.10 project symbols")
+	)
+	(lib
+		(name "Device")
+		(type "KiCad")
+		(uri "${KICAD10_SYMBOL_DIR}/Device.kicad_sym")
+		(options "")
+		(descr "KiCad standard device symbols")
+	)
+	(lib
+		(name "Connector")
+		(type "KiCad")
+		(uri "${KICAD10_SYMBOL_DIR}/Connector.kicad_sym")
+		(options "")
+		(descr "KiCad standard connector symbols")
+	)
+	(lib
+		(name "Mechanical")
+		(type "KiCad")
+		(uri "${KICAD10_SYMBOL_DIR}/Mechanical.kicad_sym")
+		(options "")
+		(descr "KiCad standard mechanical symbols")
+	)
+)

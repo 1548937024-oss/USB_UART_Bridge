@@ -1,0 +1,994 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "8c2138de-a45d-5845-b246-549eda95dfa2")
+	(paper "A4")
+	(title_block
+		(rev "V2.10")
+	)
+	(lib_symbols)
+	(text "MicroDriver V2.10 - TOP\n层次页：电源 / MCU / 编码器 / 通信 / 电机驱动"
+		(exclude_from_sim no)
+		(at 25.4 17.78 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "8b2b111d-271e-5c6b-b0f3-27c1c38b6501")
+	)
+	(text "电源网络（VBUS_IN / VBUS / 5V / 3.3V / GND / EGND）为全局电源符号，不在本页连线。\n本页为 V2.10 重建骨架：连接器 J1-J10 待补。"
+		(exclude_from_sim no)
+		(at 25.4 177.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9e638c1d-896e-5872-aa8c-50ae046e373e")
+	)
+	(sheet
+		(at 193.04 25.4)
+		(size 68.58 66.04)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+			(color 128 0 0 1)
+		)
+		(fill
+			(color 128 255 128 1)
+		)
+		(uuid "41e2dd75-f7ad-5984-bd28-bc7dded45a8b")
+		(property "Sheetname" "ENCODER"
+			(at 193.04 22.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "SCH_MicroDriver_V2.10_ENCODER.kicad_sch"
+			(at 193.04 25.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(pin "EC-A" input
+			(at 193.04 33.02 180)
+			(uuid "116d8713-fbec-5d17-99ba-f1a925062e5e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "EC-B" input
+			(at 193.04 35.56 180)
+			(uuid "f745413e-9c67-5d34-8b9b-0d25cb58a692")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "EC-Z" input
+			(at 193.04 38.1 180)
+			(uuid "c9815874-7957-5862-8e84-1e74a77ffc96")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CLK" input
+			(at 193.04 40.64 180)
+			(uuid "48bec960-71da-55ea-a37b-fe6ed7439fab")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DATA" input
+			(at 193.04 43.18 180)
+			(uuid "90283ba9-e849-59e6-bf35-71e26c71a1f9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "NSS" input
+			(at 193.04 45.72 180)
+			(uuid "b0a378c0-cbef-584c-90bb-1160097a82e8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SCK" input
+			(at 193.04 48.26 180)
+			(uuid "8518aaf1-80ea-5d68-a812-35aed98de314")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MOSI" input
+			(at 193.04 50.8 180)
+			(uuid "eec20e55-4754-5292-8cf4-02e8a60cc72a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MA" input
+			(at 193.04 53.34 180)
+			(uuid "05583e9f-1aa4-5de8-a6f6-d9974eeb3737")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SPI-NSS" input
+			(at 193.04 55.88 180)
+			(uuid "f1b18076-6d24-598b-958a-5b1daa12d2dd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SPI-SCK" input
+			(at 193.04 58.42 180)
+			(uuid "f9d09205-c9f0-55be-8ea2-5df9b94bee4c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SPI-MOSI" input
+			(at 193.04 60.96 180)
+			(uuid "82c1be0f-ad02-5787-871f-f247935fb113")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MISO" output
+			(at 261.62 33.02 0)
+			(uuid "1abb7379-0715-5baf-9984-80878e1c1109")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ENCODER-A" output
+			(at 261.62 35.56 0)
+			(uuid "bb21a0ec-4ace-5808-bf34-48246e08fc15")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ENCODER-B" output
+			(at 261.62 38.1 0)
+			(uuid "abccf5a1-bc6c-5304-8f68-5518303b6893")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ENCODER-Z" output
+			(at 261.62 40.64 0)
+			(uuid "e49579cb-3193-5040-82fa-0693386b9f5a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SLO" bidirectional
+			(at 261.62 43.18 0)
+			(uuid "3a0b4340-59a3-55e7-b5c3-bf0e87ec2c81")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SPI-MISO" output
+			(at 261.62 45.72 0)
+			(uuid "8a3bd9cd-d548-526d-8ea0-1f40da197caf")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MicroDriver_V2.10"
+				(path "/f10b086c-8dfa-5583-8849-77800d6bc67f"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 104.14 104.14)
+		(size 78.74 60.96)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+			(color 128 0 0 1)
+		)
+		(fill
+			(color 128 255 128 1)
+		)
+		(uuid "4a1cec70-8454-5e0e-b45a-893b26ca1d46")
+		(property "Sheetname" "communication"
+			(at 104.14 101.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "SCH_MicroDriver_V2.10_communication.kicad_sch"
+			(at 104.14 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(pin "CANFD-TX" input
+			(at 104.14 111.76 180)
+			(uuid "f6a8ea71-10b8-5e0b-b2f8-12b1d5b8fa84")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "RS485-TX" input
+			(at 104.14 114.3 180)
+			(uuid "9694d8c0-5c47-5f0a-ba10-2b4351abda53")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "RS485-DIR" input
+			(at 104.14 116.84 180)
+			(uuid "5dbcbe45-29df-5472-b6e7-715d3c9eac88")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CANFD-RX" output
+			(at 182.88 111.76 0)
+			(uuid "26de6978-95d9-5390-a955-0eea3abd43f6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "RS485-RX" output
+			(at 182.88 114.3 0)
+			(uuid "f24b980f-bbe8-5499-8967-962642d2d260")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CANH" bidirectional
+			(at 182.88 116.84 0)
+			(uuid "be241004-e1c5-55c2-bff0-9561438a3814")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CANL" bidirectional
+			(at 182.88 119.38 0)
+			(uuid "b267675c-f19b-5537-9799-bfc158cf15db")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "RS485-A" bidirectional
+			(at 182.88 121.92 0)
+			(uuid "65e4da15-ab3c-5237-b6db-3234064f861e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "RS485-B" bidirectional
+			(at 182.88 124.46 0)
+			(uuid "19cf2bec-cb0e-5b22-9b8d-a5bf9fc097c5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MicroDriver_V2.10"
+				(path "/f10b086c-8dfa-5583-8849-77800d6bc67f"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 25.4 25.4)
+		(size 68.58 55.88)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+			(color 128 0 0 1)
+		)
+		(fill
+			(color 128 255 128 1)
+		)
+		(uuid "4c725f53-8c36-51d2-afbf-ecf57f201a2b")
+		(property "Sheetname" "POWER"
+			(at 25.4 22.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "SCH_MicroDriver_V2.10_POWER.kicad_sch"
+			(at 25.4 25.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(pin "AD-VBUS" output
+			(at 93.98 33.02 0)
+			(uuid "0b661ef7-24d0-516c-8812-a73bcf01f300")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MicroDriver_V2.10"
+				(path "/f10b086c-8dfa-5583-8849-77800d6bc67f"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 25.4 93.98)
+		(size 68.58 71.12)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+			(color 128 0 0 1)
+		)
+		(fill
+			(color 128 255 128 1)
+		)
+		(uuid "c98d356d-b1eb-5e26-b698-25494acc1b17")
+		(property "Sheetname" "MOTOR"
+			(at 25.4 91.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "SCH_MicroDriver_V2.10_MOTOR.kicad_sch"
+			(at 25.4 93.98 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(pin "PWMA" input
+			(at 25.4 101.6 180)
+			(uuid "b8dc4060-fcb4-5da5-854c-41cfd7de3c55")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PWMB" input
+			(at 25.4 104.14 180)
+			(uuid "d3974e79-04f9-5b2b-ade1-6ec78a38aab6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PWMC" input
+			(at 25.4 106.68 180)
+			(uuid "940e4f14-5b9f-51e0-93de-0b03cb97768d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "nSLEEP" input
+			(at 25.4 109.22 180)
+			(uuid "f17b999b-dc03-5126-9cd6-acd14ebcbd48")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SOA" output
+			(at 93.98 101.6 0)
+			(uuid "514262ed-e119-56e2-b6aa-33cb77a1e73c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SOB" output
+			(at 93.98 104.14 0)
+			(uuid "99920722-b0c6-5669-be7d-270292532e1b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SOC" output
+			(at 93.98 106.68 0)
+			(uuid "eef2c5a3-63e8-58e3-b3d8-afa6bcbb166d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VA" output
+			(at 93.98 109.22 0)
+			(uuid "729ce70a-5103-5e5e-b5a0-5f1029fc2bb1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VB" output
+			(at 93.98 111.76 0)
+			(uuid "2b6734ce-c83a-545e-bff7-347bd6ba3671")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VC" output
+			(at 93.98 114.3 0)
+			(uuid "e4c1b9a4-b8ae-5498-8084-5c4ef3ade812")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "AD-NTC1" output
+			(at 93.98 116.84 0)
+			(uuid "3fd3d7ce-050e-5f74-b8c3-047ce9a64d5b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "nFAULT" output
+			(at 93.98 119.38 0)
+			(uuid "59e07b8b-8a30-578b-80e0-914e23d8a915")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "MOTU" output
+			(at 93.98 121.92 0)
+			(uuid "75a17984-dd5f-56ad-8aec-05ae2835618a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "MOTV" output
+			(at 93.98 124.46 0)
+			(uuid "ff1a3367-5e75-554c-a2a9-9b5754336f87")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "MOTW" output
+			(at 93.98 127 0)
+			(uuid "5b1da5a6-fd1e-5794-bca4-05cab80cda25")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MicroDriver_V2.10"
+				(path "/f10b086c-8dfa-5583-8849-77800d6bc67f"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 104.14 25.4)
+		(size 78.74 66.04)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+			(color 128 0 0 1)
+		)
+		(fill
+			(color 128 255 128 1)
+		)
+		(uuid "ffbc209d-1414-5f9a-87df-655eedef213c")
+		(property "Sheetname" "MCU"
+			(at 104.14 22.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "SCH_MicroDriver_V2.10_MCU.kicad_sch"
+			(at 104.14 25.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(pin "SOA" input
+			(at 104.14 33.02 180)
+			(uuid "553f035c-6614-5ff3-ab86-7f38b40e5eb1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SOB" input
+			(at 104.14 35.56 180)
+			(uuid "e048fd28-82bf-5521-ad58-1c9d827ebedd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SOC" input
+			(at 104.14 38.1 180)
+			(uuid "972b3b53-4c8b-5f8c-994a-6039e2d0e107")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VA" input
+			(at 104.14 40.64 180)
+			(uuid "3d1c9949-ea3f-5dbe-a896-d51ac53a8e49")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VB" input
+			(at 104.14 43.18 180)
+			(uuid "85226538-f695-55bf-acd4-61002c721107")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VC" input
+			(at 104.14 45.72 180)
+			(uuid "fef62d7e-0e3f-5324-a772-338a29047765")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "AD-VBUS" input
+			(at 104.14 48.26 180)
+			(uuid "74e0b9a1-19fb-5187-a4b9-22f3956d3958")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "AD-NTC1" input
+			(at 104.14 50.8 180)
+			(uuid "f347ac77-75d1-5111-a020-d17f07719f88")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "nFAULT" input
+			(at 104.14 53.34 180)
+			(uuid "8f36804d-2186-5c45-8188-5168827fb0f3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CANFD-RX" input
+			(at 104.14 55.88 180)
+			(uuid "10d5d2dc-427f-50c8-92b0-cbe054a2ce3e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "RS485-RX" input
+			(at 104.14 58.42 180)
+			(uuid "b77b14db-7abb-535b-a800-97adce3f09b5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SPI-MISO" input
+			(at 104.14 60.96 180)
+			(uuid "dcae6024-4f76-57d6-bd1e-f52e19a28f92")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ENCODER-A" input
+			(at 104.14 63.5 180)
+			(uuid "d50ec0ad-1797-59a1-af3f-dcaccd205b87")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ENCODER-B" input
+			(at 104.14 66.04 180)
+			(uuid "da3ee274-5615-56ed-b37b-172f93891724")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ENCODER-Z" input
+			(at 104.14 68.58 180)
+			(uuid "a5b32d50-1235-5391-8361-e5406ca76263")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PWMA" output
+			(at 182.88 33.02 0)
+			(uuid "6e05aeb1-3bda-5667-9c6f-78ea72c37b06")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PWMB" output
+			(at 182.88 35.56 0)
+			(uuid "da2f5bd9-a4d1-5f98-ac73-0143b5f77845")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PWMC" output
+			(at 182.88 38.1 0)
+			(uuid "59855d6b-99eb-53b0-a625-7c9415736f76")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "nSLEEP" output
+			(at 182.88 40.64 0)
+			(uuid "0a14c4ee-5eeb-56f8-bc79-faee21765732")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CANFD-TX" output
+			(at 182.88 43.18 0)
+			(uuid "53b3e019-493d-592d-a69e-817e67239955")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "RS485-TX" output
+			(at 182.88 45.72 0)
+			(uuid "60ddadb0-54c4-5c5d-a8df-97389fd343f5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "RS485-DIR" output
+			(at 182.88 48.26 0)
+			(uuid "0cef0c3a-445c-5cdf-8ece-4788e4319158")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "I2C-SCL" bidirectional
+			(at 182.88 50.8 0)
+			(uuid "f614aa2b-8966-5ed4-8a59-49737a31173e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "I2C-SDA" bidirectional
+			(at 182.88 53.34 0)
+			(uuid "557d7049-e020-52ed-8829-eed8a5e6d20e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SPI-NSS" output
+			(at 182.88 55.88 0)
+			(uuid "7c675d5d-a95d-5865-a70d-4b6bede4ce82")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SPI-SCK" output
+			(at 182.88 58.42 0)
+			(uuid "b67cc6a7-ad01-5a47-b01c-bcf28a7f9e51")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SPI-MOSI" output
+			(at 182.88 60.96 0)
+			(uuid "51c2090b-f5ce-56c1-9cdc-a31d41dd4dad")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "MA" output
+			(at 182.88 63.5 0)
+			(uuid "37aada33-4427-5478-9d90-f0d9adf798a0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SLO" bidirectional
+			(at 182.88 66.04 0)
+			(uuid "21446e94-6c29-55f5-b829-422104c87de0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MicroDriver_V2.10"
+				(path "/f10b086c-8dfa-5583-8849-77800d6bc67f"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

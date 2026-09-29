@@ -1,0 +1,5181 @@
+(export
+	(version "E")
+	(design
+		(source "D:\\CODEX\\外置驱动器\\MicroDriver_V2.10\\MicroDriver_V2.10.kicad_sch")
+		(date "2026-09-29T23:00:52")
+		(tool "Eeschema 10.0.6")
+		(textvar
+			(name "@CREATE DATE") "2026-05-29")
+		(textvar
+			(name "@PAGE COUNT") "5")
+		(textvar
+			(name "@PAGE NAME") "外置驱动器")
+		(textvar
+			(name "@PAGE NO") "1")
+		(textvar
+			(name "@PROJECT NAME") "MicroDriver V2.10")
+		(textvar
+			(name "@SCHEMATIC NAME") "外置驱动器 MicroDriver V2.10")
+		(textvar
+			(name "@UPDATE DATE") "2026-09-29")
+		(textvar
+			(name "ADDRESS1") "L3, 12a Rodborough Rd")
+		(textvar
+			(name "ADDRESS2") "Frenchs Forest")
+		(textvar
+			(name "ADDRESS3") "NSW")
+		(textvar
+			(name "ADDRESS4") "Australia 2086")
+		(textvar
+			(name "COMPANY") "三花汽零技术中心电控电机技术部")
+		(textvar
+			(name "DESIGNATOR")
+		)
+		(textvar
+			(name "DEVICE") "Sheet-Symbol_A4")
+		(textvar
+			(name "DOCUMENTNUMBER")
+		)
+		(textvar
+			(name "DRAWED") "李鹏")
+		(textvar
+			(name "FOOTPRINT")
+		)
+		(textvar
+			(name "NAME")
+		)
+		(textvar
+			(name "ORGANIZATION") "Altium Limited")
+		(textvar
+			(name "PAGE SIZE") "A4")
+		(textvar
+			(name "PART NUMBER")
+		)
+		(textvar
+			(name "REVIEWED")
+		)
+		(textvar
+			(name "SHEETTOTAL") "5")
+		(textvar
+			(name "SYMBOL") "Sheet-Symbol_A4")
+		(textvar
+			(name "VERSION") "V2.10")
+		(sheet
+			(number "1")
+			(name "/")
+			(tstamps "/")
+			(title_block
+				(title)
+				(company)
+				(rev "V2.10")
+				(date)
+				(source "MicroDriver_V2.10.kicad_sch")
+				(comment
+					(number "1")
+					(value "")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+		(sheet
+			(number "2")
+			(name "/POWER/")
+			(tstamps "/4c725f53-8c36-51d2-afbf-ecf57f201a2b/")
+			(title_block
+				(title)
+				(company)
+				(rev "V2.10")
+				(date)
+				(source "SCH_MicroDriver_V2.10_POWER.kicad_sch")
+				(comment
+					(number "1")
+					(value "")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+		(sheet
+			(number "3")
+			(name "/MOTOR/")
+			(tstamps "/c98d356d-b1eb-5e26-b698-25494acc1b17/")
+			(title_block
+				(title)
+				(company)
+				(rev "V2.10")
+				(date)
+				(source "SCH_MicroDriver_V2.10_MOTOR.kicad_sch")
+				(comment
+					(number "1")
+					(value "")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+		(sheet
+			(number "4")
+			(name "/MCU/")
+			(tstamps "/ffbc209d-1414-5f9a-87df-655eedef213c/")
+			(title_block
+				(title)
+				(company)
+				(rev "V2.10")
+				(date)
+				(source "SCH_MicroDriver_V2.10_MCU.kicad_sch")
+				(comment
+					(number "1")
+					(value "")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+		(sheet
+			(number "5")
+			(name "/communication/")
+			(tstamps "/4a1cec70-8454-5e0e-b45a-893b26ca1d46/")
+			(title_block
+				(title)
+				(company)
+				(rev "V2.10")
+				(date)
+				(source "SCH_MicroDriver_V2.10_communication.kicad_sch")
+				(comment
+					(number "1")
+					(value "")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+		(sheet
+			(number "6")
+			(name "/ENCODER/")
+			(tstamps "/41e2dd75-f7ad-5984-bd28-bc7dded45a8b/")
+			(title_block
+				(title)
+				(company)
+				(rev "V2.10")
+				(date)
+				(source "SCH_MicroDriver_V2.10_ENCODER.kicad_sch")
+				(comment
+					(number "1")
+					(value "")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+	)
+	(components
+		(comp
+			(ref "C14")
+			(value "2.2nF")
+			(description "1206 2.2nF 630V")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "1206 2.2nF 630V")
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "POWER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_POWER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/POWER/")
+				(tstamps "/4c725f53-8c36-51d2-afbf-ecf57f201a2b/")
+			)
+			(tstamps "bf0b799d-e564-5c72-b892-03f32d1ea606")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C15")
+			(value "100nF")
+			(description "0603 100nF 100V")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "0603 100nF 100V")
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "POWER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_POWER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/POWER/")
+				(tstamps "/4c725f53-8c36-51d2-afbf-ecf57f201a2b/")
+			)
+			(tstamps "28e94e70-cbe5-58f2-aaa8-59a5744feeb0")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C16")
+			(value "10uF")
+			(description "1210 10uF 100V")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "1210 10uF 100V")
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "POWER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_POWER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/POWER/")
+				(tstamps "/4c725f53-8c36-51d2-afbf-ecf57f201a2b/")
+			)
+			(tstamps "2c156f49-b5ed-5611-807c-eafc64924c44")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C17")
+			(value "10uF")
+			(description "1210 10uF 100V")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "1210 10uF 100V")
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "POWER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_POWER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/POWER/")
+				(tstamps "/4c725f53-8c36-51d2-afbf-ecf57f201a2b/")
+			)
+			(tstamps "3d2aa3a1-6947-53b0-b809-ec6cd435a2ba")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C18")
+			(value "2.2nF")
+			(description "1206 2.2nF 630V 共模 Y 电容")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "1206 2.2nF 630V 共模 Y 电容")
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "POWER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_POWER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/POWER/")
+				(tstamps "/4c725f53-8c36-51d2-afbf-ecf57f201a2b/")
+			)
+			(tstamps "b1b4be95-5c66-5cf6-92c0-d499aeb05ea4")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C19")
+			(value "100nF")
+			(description "0402 100nF 50V 栅源缓冲")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "0402 100nF 50V 栅源缓冲")
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "POWER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_POWER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/POWER/")
+				(tstamps "/4c725f53-8c36-51d2-afbf-ecf57f201a2b/")
+			)
+			(tstamps "32b1fe80-a1e6-5fd8-828f-bda8d4bf3318")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C20")
+			(value "10uF")
+			(description "0603 10uF 6.3V")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "0603 10uF 6.3V")
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "POWER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_POWER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/POWER/")
+				(tstamps "/4c725f53-8c36-51d2-afbf-ecf57f201a2b/")
+			)
+			(tstamps "2355a1c5-8feb-5f8b-a567-08cb393538f3")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C21")
+			(value "100nF")
+			(description "0201 100nF 16V")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "0201 100nF 16V")
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "POWER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_POWER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/POWER/")
+				(tstamps "/4c725f53-8c36-51d2-afbf-ecf57f201a2b/")
+			)
+			(tstamps "b71f7098-15f7-5e1b-b6e9-e4ee94a6918b")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C22")
+			(value "10uF")
+			(description "1210 10uF 100V")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "1210 10uF 100V")
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "POWER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_POWER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/POWER/")
+				(tstamps "/4c725f53-8c36-51d2-afbf-ecf57f201a2b/")
+			)
+			(tstamps "39801e89-7bb7-5d8b-b466-41a19072ca3d")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C23")
+			(value "100nF")
+			(description "0603 100nF 100V")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "0603 100nF 100V")
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "POWER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_POWER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/POWER/")
+				(tstamps "/4c725f53-8c36-51d2-afbf-ecf57f201a2b/")
+			)
+			(tstamps "f69610f9-0939-5545-ad8f-122bfc4243b1")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C24")
+			(value "100pF")
+			(description "0201 100pF 50V")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "0201 100pF 50V")
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "POWER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_POWER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/POWER/")
+				(tstamps "/4c725f53-8c36-51d2-afbf-ecf57f201a2b/")
+			)
+			(tstamps "ac5616a0-3769-53b7-8e7d-9d5787042e1c")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C25")
+			(value "1uF")
+			(description "0402 1uF 10V")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "0402 1uF 10V")
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "POWER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_POWER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/POWER/")
+				(tstamps "/4c725f53-8c36-51d2-afbf-ecf57f201a2b/")
+			)
+			(tstamps "564184fe-4924-5277-b287-0156db817917")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C26")
+			(value "100nF")
+			(description "0201 100nF 16V")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "0201 100nF 16V")
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "POWER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_POWER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/POWER/")
+				(tstamps "/4c725f53-8c36-51d2-afbf-ecf57f201a2b/")
+			)
+			(tstamps "cd1f78ef-0153-5218-a720-eddb6bea2c8a")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C27")
+			(value "100nF")
+			(description "0201 100nF 16V")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "0201 100nF 16V")
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "POWER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_POWER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/POWER/")
+				(tstamps "/4c725f53-8c36-51d2-afbf-ecf57f201a2b/")
+			)
+			(tstamps "12528d11-bf8a-51bd-bcc0-84ccabbad8e9")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C28")
+			(value "1uF")
+			(description "0402 1uF 10V")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "0402 1uF 10V")
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "POWER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_POWER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/POWER/")
+				(tstamps "/4c725f53-8c36-51d2-afbf-ecf57f201a2b/")
+			)
+			(tstamps "0d3ab85a-3e81-5673-a561-b5d113c67a4c")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "D4")
+			(value "SMBJ58CA")
+			(description "双向 TVS 58V/600W SMB")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "双向 TVS 58V/600W SMB")
+			)
+			(libsource
+				(lib "MicroDriver_V2.10")
+				(part "SMBJ58CA")
+				(description "Bidirectional TVS 58V standoff 600W SMB")
+			)
+			(property
+				(name "Sheetname")
+				(value "POWER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_POWER.kicad_sch")
+			)
+			(sheetpath
+				(names "/POWER/")
+				(tstamps "/4c725f53-8c36-51d2-afbf-ecf57f201a2b/")
+			)
+			(tstamps "89e53ac5-2995-5caa-b1d7-8d0a921153d2")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "LED3")
+			(value "XL-1005UGC")
+			(description "绿色 0402 LED")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "绿色 0402 LED")
+			)
+			(libsource
+				(lib "Device")
+				(part "LED")
+				(description "Light emitting diode")
+			)
+			(property
+				(name "Sheetname")
+				(value "POWER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_POWER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "LED diode")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "LED* LED_SMD:* LED_THT:*")
+			)
+			(sheetpath
+				(names "/POWER/")
+				(tstamps "/4c725f53-8c36-51d2-afbf-ecf57f201a2b/")
+			)
+			(tstamps "9971bbd5-3b62-55b6-8f52-ed3a03905821")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "MOS1")
+			(value "PMOS")
+			(description "-100V/-1.2A/280mΩ SOT23")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "-100V/-1.2A/280mΩ SOT23")
+			)
+			(libsource
+				(lib "Transistor_FET")
+				(part "Q_PMOS_GSD")
+				(description "P-MOSFET transistor, gate/source/drain")
+			)
+			(property
+				(name "Sheetname")
+				(value "POWER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_POWER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "transistor PMOS P-MOS P-MOSFET")
+			)
+			(sheetpath
+				(names "/POWER/")
+				(tstamps "/4c725f53-8c36-51d2-afbf-ecf57f201a2b/")
+			)
+			(tstamps "4bbe6854-8de0-5319-b851-dfcce90aa131")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R14")
+			(value "10K")
+			(description "0201 10K 1%")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "0201 10K 1%")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "POWER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_POWER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/POWER/")
+				(tstamps "/4c725f53-8c36-51d2-afbf-ecf57f201a2b/")
+			)
+			(tstamps "61605d30-568a-59bf-b9fd-3b1c41229d64")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R15")
+			(value "15K")
+			(description "0402 15K 1%")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "0402 15K 1%")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "POWER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_POWER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/POWER/")
+				(tstamps "/4c725f53-8c36-51d2-afbf-ecf57f201a2b/")
+			)
+			(tstamps "b8e7eee1-48f2-5506-836d-047ec88b8575")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R16")
+			(value "26.1K")
+			(description "0201 26.1K 0.5%")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "0201 26.1K 0.5%")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "POWER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_POWER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/POWER/")
+				(tstamps "/4c725f53-8c36-51d2-afbf-ecf57f201a2b/")
+			)
+			(tstamps "dffc58eb-c202-5dc9-9266-c090d5c94e59")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R19")
+			(value "100K")
+			(description "0402 100K 1%")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "0402 100K 1%")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "POWER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_POWER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/POWER/")
+				(tstamps "/4c725f53-8c36-51d2-afbf-ecf57f201a2b/")
+			)
+			(tstamps "1e1ce618-aac5-59e8-a6f9-717fcf6e97ef")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R20")
+			(value "4.7K")
+			(description "0201 4.7K 1%")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "0201 4.7K 1%")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "POWER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_POWER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/POWER/")
+				(tstamps "/4c725f53-8c36-51d2-afbf-ecf57f201a2b/")
+			)
+			(tstamps "8f50a098-5b6d-5153-99ef-329be09cd7dd")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R45")
+			(value "4.7K")
+			(description "0402 4.7K 1%")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "0402 4.7K 1%")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "POWER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_POWER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/POWER/")
+				(tstamps "/4c725f53-8c36-51d2-afbf-ecf57f201a2b/")
+			)
+			(tstamps "223e1aed-6d11-5be3-9944-99f0676ccb20")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U2")
+			(value "MPM3572")
+			(description "80V/0.6A 电源模块 LGA-6x6")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "80V/0.6A 电源模块 LGA-6x6")
+			)
+			(libsource
+				(lib "MicroDriver_V2.10")
+				(part "MPM3572")
+				(description "80V/0.6A buck power module LGA-24(6x6)")
+			)
+			(property
+				(name "Sheetname")
+				(value "POWER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_POWER.kicad_sch")
+			)
+			(sheetpath
+				(names "/POWER/")
+				(tstamps "/4c725f53-8c36-51d2-afbf-ecf57f201a2b/")
+			)
+			(tstamps "9331cada-c691-5e75-a1a4-58a09ba73778")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "23")
+						)
+						(pin
+							(num "24")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "9")
+						)
+						(pin
+							(num "10")
+						)
+						(pin
+							(num "11")
+						)
+						(pin
+							(num "12")
+						)
+						(pin
+							(num "20")
+						)
+						(pin
+							(num "21")
+						)
+						(pin
+							(num "22")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "15")
+						)
+						(pin
+							(num "16")
+						)
+						(pin
+							(num "17")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "13")
+						)
+						(pin
+							(num "14")
+						)
+						(pin
+							(num "18")
+						)
+						(pin
+							(num "19")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U3")
+			(value "TLV74333PDBVR")
+			(description "3.3V/300mA LDO SOT-23-5")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "3.3V/300mA LDO SOT-23-5")
+			)
+			(libsource
+				(lib "MicroDriver_V2.10")
+				(part "TLV74333PDBVR")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "POWER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_POWER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "Linear Voltage Regulators (LDO)")
+			)
+			(sheetpath
+				(names "/POWER/")
+				(tstamps "/4c725f53-8c36-51d2-afbf-ecf57f201a2b/")
+			)
+			(tstamps "1ba05b61-c5a8-59cd-bd8d-e4a41aa04dac")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "4")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C34")
+			(value "100nF")
+			(description "0201 100nF 16V")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "0201 100nF 16V")
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "ENCODER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_ENCODER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/ENCODER/")
+				(tstamps "/41e2dd75-f7ad-5984-bd28-bc7dded45a8b/")
+			)
+			(tstamps "dd061ae8-04a1-5d81-a051-5ac8b060e828")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C35")
+			(value "100pF")
+			(description "0201 100pF 50V")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "0201 100pF 50V")
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "ENCODER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_ENCODER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/ENCODER/")
+				(tstamps "/41e2dd75-f7ad-5984-bd28-bc7dded45a8b/")
+			)
+			(tstamps "4693ee98-f3c5-5b55-b8eb-d3d70aef72a9")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C36")
+			(value "100pF")
+			(description "0201 100pF 50V")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "0201 100pF 50V")
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "ENCODER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_ENCODER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/ENCODER/")
+				(tstamps "/41e2dd75-f7ad-5984-bd28-bc7dded45a8b/")
+			)
+			(tstamps "c5987606-a6aa-5730-a382-cb1b68b39e83")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C37")
+			(value "100pF")
+			(description "0201 100pF 50V")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "0201 100pF 50V")
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "ENCODER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_ENCODER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/ENCODER/")
+				(tstamps "/41e2dd75-f7ad-5984-bd28-bc7dded45a8b/")
+			)
+			(tstamps "6b70cba4-3abe-5183-ba05-bbbb7f1234c7")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C38")
+			(value "100pF")
+			(description "0201 100pF 50V")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "0201 100pF 50V")
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "ENCODER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_ENCODER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/ENCODER/")
+				(tstamps "/41e2dd75-f7ad-5984-bd28-bc7dded45a8b/")
+			)
+			(tstamps "0b77a04c-090f-5607-9cb3-ca0a1ba6ccd7")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C39")
+			(value "100pF")
+			(description "0201 100pF 50V")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "0201 100pF 50V")
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "ENCODER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_ENCODER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/ENCODER/")
+				(tstamps "/41e2dd75-f7ad-5984-bd28-bc7dded45a8b/")
+			)
+			(tstamps "8dc2bba0-0896-5a77-9a40-52c35ecc3618")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C40")
+			(value "100pF")
+			(description "0201 100pF 50V")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "0201 100pF 50V")
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "ENCODER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_ENCODER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/ENCODER/")
+				(tstamps "/41e2dd75-f7ad-5984-bd28-bc7dded45a8b/")
+			)
+			(tstamps "2febd967-4a18-52a3-a3ce-db44a83d2d0c")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C41")
+			(value "100pF")
+			(description "0201 100pF 50V")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "0201 100pF 50V")
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "ENCODER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_ENCODER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/ENCODER/")
+				(tstamps "/41e2dd75-f7ad-5984-bd28-bc7dded45a8b/")
+			)
+			(tstamps "50096b3c-4b83-5214-b554-6311e656c173")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C42")
+			(value "100pF")
+			(description "0201 100pF 50V")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "0201 100pF 50V")
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "ENCODER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_ENCODER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/ENCODER/")
+				(tstamps "/41e2dd75-f7ad-5984-bd28-bc7dded45a8b/")
+			)
+			(tstamps "268c5718-e925-59c3-84e6-88446c430489")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C43")
+			(value "100pF")
+			(description "0201 100pF 50V")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "0201 100pF 50V")
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "ENCODER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_ENCODER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/ENCODER/")
+				(tstamps "/41e2dd75-f7ad-5984-bd28-bc7dded45a8b/")
+			)
+			(tstamps "99a59b9b-fdf9-5551-adc2-4bb921e026ca")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "D9")
+			(value "PESDNC2XD5VB")
+			(description "DFN0603-2L 5V ESD")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "DFN0603-2L 5V ESD")
+			)
+			(libsource
+				(lib "MicroDriver_V2.10")
+				(part "PESDNC2XD5VB")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "ENCODER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_ENCODER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "ESD Protection Devices")
+			)
+			(sheetpath
+				(names "/ENCODER/")
+				(tstamps "/41e2dd75-f7ad-5984-bd28-bc7dded45a8b/")
+			)
+			(tstamps "4a6d9884-c083-5759-8c3a-066883f7901d")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "D10")
+			(value "PESDNC2XD5VB")
+			(description "DFN0603-2L 5V ESD")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "DFN0603-2L 5V ESD")
+			)
+			(libsource
+				(lib "MicroDriver_V2.10")
+				(part "PESDNC2XD5VB")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "ENCODER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_ENCODER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "ESD Protection Devices")
+			)
+			(sheetpath
+				(names "/ENCODER/")
+				(tstamps "/41e2dd75-f7ad-5984-bd28-bc7dded45a8b/")
+			)
+			(tstamps "204d6fab-5545-5dce-8a24-c6eadaaa411a")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "D11")
+			(value "PESDNC2XD5VB")
+			(description "DFN0603-2L 5V ESD")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "DFN0603-2L 5V ESD")
+			)
+			(libsource
+				(lib "MicroDriver_V2.10")
+				(part "PESDNC2XD5VB")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "ENCODER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_ENCODER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "ESD Protection Devices")
+			)
+			(sheetpath
+				(names "/ENCODER/")
+				(tstamps "/41e2dd75-f7ad-5984-bd28-bc7dded45a8b/")
+			)
+			(tstamps "1ae8eab2-785e-5b57-a685-73fe2a507b96")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "D12")
+			(value "PESDNC2XD5VB")
+			(description "DFN0603-2L 5V ESD")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "DFN0603-2L 5V ESD")
+			)
+			(libsource
+				(lib "MicroDriver_V2.10")
+				(part "PESDNC2XD5VB")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "ENCODER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_ENCODER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "ESD Protection Devices")
+			)
+			(sheetpath
+				(names "/ENCODER/")
+				(tstamps "/41e2dd75-f7ad-5984-bd28-bc7dded45a8b/")
+			)
+			(tstamps "1cf4dd48-db39-5d3d-aee2-f7eac20eb566")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "D13")
+			(value "PESDNC2XD5VB")
+			(description "DFN0603-2L 5V ESD")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "DFN0603-2L 5V ESD")
+			)
+			(libsource
+				(lib "MicroDriver_V2.10")
+				(part "PESDNC2XD5VB")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "ENCODER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_ENCODER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "ESD Protection Devices")
+			)
+			(sheetpath
+				(names "/ENCODER/")
+				(tstamps "/41e2dd75-f7ad-5984-bd28-bc7dded45a8b/")
+			)
+			(tstamps "0c034dc7-dc26-587e-87c0-fe8a5e1e07c7")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "D14")
+			(value "PESDNC2XD5VB")
+			(description "DFN0603-2L 5V ESD")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "DFN0603-2L 5V ESD")
+			)
+			(libsource
+				(lib "MicroDriver_V2.10")
+				(part "PESDNC2XD5VB")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "ENCODER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_ENCODER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "ESD Protection Devices")
+			)
+			(sheetpath
+				(names "/ENCODER/")
+				(tstamps "/41e2dd75-f7ad-5984-bd28-bc7dded45a8b/")
+			)
+			(tstamps "016a7512-cf2b-5eac-9f54-65c28e40e9fc")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "D15")
+			(value "PESDNC2XD5VB")
+			(description "DFN0603-2L 5V ESD")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "DFN0603-2L 5V ESD")
+			)
+			(libsource
+				(lib "MicroDriver_V2.10")
+				(part "PESDNC2XD5VB")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "ENCODER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_ENCODER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "ESD Protection Devices")
+			)
+			(sheetpath
+				(names "/ENCODER/")
+				(tstamps "/41e2dd75-f7ad-5984-bd28-bc7dded45a8b/")
+			)
+			(tstamps "1a052d69-d1a1-5e90-a506-ee1ef284de07")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "D16")
+			(value "PESDNC2XD5VB")
+			(description "DFN0603-2L 5V ESD")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "DFN0603-2L 5V ESD")
+			)
+			(libsource
+				(lib "MicroDriver_V2.10")
+				(part "PESDNC2XD5VB")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "ENCODER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_ENCODER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "ESD Protection Devices")
+			)
+			(sheetpath
+				(names "/ENCODER/")
+				(tstamps "/41e2dd75-f7ad-5984-bd28-bc7dded45a8b/")
+			)
+			(tstamps "f81c8452-cbaf-5f3e-b9dd-39a2e004f896")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "D17")
+			(value "PESDNC2XD5VB")
+			(description "DFN0603-2L 5V ESD")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "DFN0603-2L 5V ESD")
+			)
+			(libsource
+				(lib "MicroDriver_V2.10")
+				(part "PESDNC2XD5VB")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "ENCODER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_ENCODER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "ESD Protection Devices")
+			)
+			(sheetpath
+				(names "/ENCODER/")
+				(tstamps "/41e2dd75-f7ad-5984-bd28-bc7dded45a8b/")
+			)
+			(tstamps "69067639-6a30-5358-96b3-c9b080f3d744")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R23")
+			(value "100R")
+			(description "0201 100R 1%")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "0201 100R 1%")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "ENCODER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_ENCODER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/ENCODER/")
+				(tstamps "/41e2dd75-f7ad-5984-bd28-bc7dded45a8b/")
+			)
+			(tstamps "2e5a480a-327a-51db-8462-43df701be72f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R24")
+			(value "100R")
+			(description "0201 100R 1%")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "0201 100R 1%")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "ENCODER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_ENCODER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/ENCODER/")
+				(tstamps "/41e2dd75-f7ad-5984-bd28-bc7dded45a8b/")
+			)
+			(tstamps "7057dd92-3d99-5e68-9894-a584193ee14f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R25")
+			(value "100R")
+			(description "0201 100R 1%")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "0201 100R 1%")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "ENCODER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_ENCODER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/ENCODER/")
+				(tstamps "/41e2dd75-f7ad-5984-bd28-bc7dded45a8b/")
+			)
+			(tstamps "3aad288c-0641-5d78-80e9-89466d808219")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R26")
+			(value "100R")
+			(description "0201 100R 1%")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "0201 100R 1%")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "ENCODER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_ENCODER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/ENCODER/")
+				(tstamps "/41e2dd75-f7ad-5984-bd28-bc7dded45a8b/")
+			)
+			(tstamps "1e861b74-0161-575d-9dbf-a70b33eabf98")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R27")
+			(value "100R")
+			(description "0201 100R 1%")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "0201 100R 1%")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "ENCODER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_ENCODER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/ENCODER/")
+				(tstamps "/41e2dd75-f7ad-5984-bd28-bc7dded45a8b/")
+			)
+			(tstamps "e67da39a-be81-50b3-ae80-37461601da46")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R28")
+			(value "100R")
+			(description "0201 100R 1%")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "0201 100R 1%")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "ENCODER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_ENCODER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/ENCODER/")
+				(tstamps "/41e2dd75-f7ad-5984-bd28-bc7dded45a8b/")
+			)
+			(tstamps "cf3e76a0-cb23-5887-8567-3c6a94fb8801")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R29")
+			(value "100R")
+			(description "0201 100R 1%")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "0201 100R 1%")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "ENCODER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_ENCODER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/ENCODER/")
+				(tstamps "/41e2dd75-f7ad-5984-bd28-bc7dded45a8b/")
+			)
+			(tstamps "dbef4667-4ea9-54f2-a359-53eb38a8f0cb")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R30")
+			(value "100R")
+			(description "0201 100R 1%")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "0201 100R 1%")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "ENCODER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_ENCODER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/ENCODER/")
+				(tstamps "/41e2dd75-f7ad-5984-bd28-bc7dded45a8b/")
+			)
+			(tstamps "2c425ad3-3c74-5fe9-8f0f-5c2a72cf37b5")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R31")
+			(value "100R")
+			(description "0201 100R 1%")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "0201 100R 1%")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "ENCODER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_ENCODER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/ENCODER/")
+				(tstamps "/41e2dd75-f7ad-5984-bd28-bc7dded45a8b/")
+			)
+			(tstamps "d622e5f0-27fe-59e8-812d-4a4e386dbb1d")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R44")
+			(value "0R")
+			(description "0402 0R, NC = 5V 不供")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "0402 0R, NC = 5V 不供")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "ENCODER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_ENCODER.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/ENCODER/")
+				(tstamps "/41e2dd75-f7ad-5984-bd28-bc7dded45a8b/")
+			)
+			(tstamps "edbaeab4-4b0b-51cc-9558-f5f02b354720")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP01")
+			(value "TP")
+			(description "测试点")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "测试点")
+			)
+			(libsource
+				(lib "MicroDriver_V2.10")
+				(part "TP0.8")
+				(description "0.8mmTP测试点")
+			)
+			(property
+				(name "Sheetname")
+				(value "ENCODER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_ENCODER.kicad_sch")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "*TP0.8*")
+			)
+			(sheetpath
+				(names "/ENCODER/")
+				(tstamps "/41e2dd75-f7ad-5984-bd28-bc7dded45a8b/")
+			)
+			(tstamps "d97f1377-8d4d-5c24-abeb-cf2bbb0bc9ac")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "0")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP02")
+			(value "TP")
+			(description "测试点")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "测试点")
+			)
+			(libsource
+				(lib "MicroDriver_V2.10")
+				(part "TP0.8")
+				(description "0.8mmTP测试点")
+			)
+			(property
+				(name "Sheetname")
+				(value "ENCODER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_ENCODER.kicad_sch")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "*TP0.8*")
+			)
+			(sheetpath
+				(names "/ENCODER/")
+				(tstamps "/41e2dd75-f7ad-5984-bd28-bc7dded45a8b/")
+			)
+			(tstamps "b7da7601-48f2-5c65-b44e-7f984df14602")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "0")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP03")
+			(value "TP")
+			(description "测试点")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "测试点")
+			)
+			(libsource
+				(lib "MicroDriver_V2.10")
+				(part "TP0.8")
+				(description "0.8mmTP测试点")
+			)
+			(property
+				(name "Sheetname")
+				(value "ENCODER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_ENCODER.kicad_sch")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "*TP0.8*")
+			)
+			(sheetpath
+				(names "/ENCODER/")
+				(tstamps "/41e2dd75-f7ad-5984-bd28-bc7dded45a8b/")
+			)
+			(tstamps "d47ef648-8100-5e80-b789-d7da61a1818c")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "0")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP04")
+			(value "TP")
+			(description "测试点")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "测试点")
+			)
+			(libsource
+				(lib "MicroDriver_V2.10")
+				(part "TP0.8")
+				(description "0.8mmTP测试点")
+			)
+			(property
+				(name "Sheetname")
+				(value "ENCODER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_ENCODER.kicad_sch")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "*TP0.8*")
+			)
+			(sheetpath
+				(names "/ENCODER/")
+				(tstamps "/41e2dd75-f7ad-5984-bd28-bc7dded45a8b/")
+			)
+			(tstamps "879be63f-0e5d-53ed-aff6-44917ed95896")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "0")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP05")
+			(value "TP")
+			(description "测试点")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "测试点")
+			)
+			(libsource
+				(lib "MicroDriver_V2.10")
+				(part "TP0.8")
+				(description "0.8mmTP测试点")
+			)
+			(property
+				(name "Sheetname")
+				(value "ENCODER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_ENCODER.kicad_sch")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "*TP0.8*")
+			)
+			(sheetpath
+				(names "/ENCODER/")
+				(tstamps "/41e2dd75-f7ad-5984-bd28-bc7dded45a8b/")
+			)
+			(tstamps "d730a46a-a9fb-5ba1-8c0b-527f15db2ed1")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "0")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP06")
+			(value "TP")
+			(description "测试点")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "测试点")
+			)
+			(libsource
+				(lib "MicroDriver_V2.10")
+				(part "TP0.8")
+				(description "0.8mmTP测试点")
+			)
+			(property
+				(name "Sheetname")
+				(value "ENCODER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_ENCODER.kicad_sch")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "*TP0.8*")
+			)
+			(sheetpath
+				(names "/ENCODER/")
+				(tstamps "/41e2dd75-f7ad-5984-bd28-bc7dded45a8b/")
+			)
+			(tstamps "57681fde-2eb8-5cd2-94e6-f2a88a77be18")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "0")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP07")
+			(value "TP")
+			(description "测试点")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "测试点")
+			)
+			(libsource
+				(lib "MicroDriver_V2.10")
+				(part "TP0.8")
+				(description "0.8mmTP测试点")
+			)
+			(property
+				(name "Sheetname")
+				(value "ENCODER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_ENCODER.kicad_sch")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "*TP0.8*")
+			)
+			(sheetpath
+				(names "/ENCODER/")
+				(tstamps "/41e2dd75-f7ad-5984-bd28-bc7dded45a8b/")
+			)
+			(tstamps "e0f725a2-49f6-51c6-adc1-8aa6cdc4e826")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "0")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP08")
+			(value "TP")
+			(description "测试点")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "测试点")
+			)
+			(libsource
+				(lib "MicroDriver_V2.10")
+				(part "TP0.8")
+				(description "0.8mmTP测试点")
+			)
+			(property
+				(name "Sheetname")
+				(value "ENCODER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_ENCODER.kicad_sch")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "*TP0.8*")
+			)
+			(sheetpath
+				(names "/ENCODER/")
+				(tstamps "/41e2dd75-f7ad-5984-bd28-bc7dded45a8b/")
+			)
+			(tstamps "73954e5f-6bcd-5fbc-9429-d91b0bf7dd47")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "0")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP09")
+			(value "TP")
+			(description "测试点")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "测试点")
+			)
+			(libsource
+				(lib "MicroDriver_V2.10")
+				(part "TP0.8")
+				(description "0.8mmTP测试点")
+			)
+			(property
+				(name "Sheetname")
+				(value "ENCODER")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_MicroDriver_V2.10_ENCODER.kicad_sch")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "*TP0.8*")
+			)
+			(sheetpath
+				(names "/ENCODER/")
+				(tstamps "/41e2dd75-f7ad-5984-bd28-bc7dded45a8b/")
+			)
+			(tstamps "399f5bfa-6b01-5133-9747-20d433b05df5")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "0")
+						)
+					)
+				)
+			)
+		)
+	)
+	(groups)
+	(variants)
+	(libparts
+		(libpart
+			(lib "Device")
+			(part "C")
+			(description "Unpolarized capacitor")
+			(footprints
+				(fp "C_*")
+			)
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "C")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Unpolarized capacitor")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Device")
+			(part "LED")
+			(description "Light emitting diode")
+			(footprints
+				(fp "LED*")
+				(fp "LED_SMD:*")
+				(fp "LED_THT:*")
+			)
+			(fields
+				(field
+					(name "Reference") "D")
+				(field
+					(name "Value") "LED")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Light emitting diode")
+				(field
+					(name "Sim.Pins") "1=K 2=A")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "K")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "A")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Device")
+			(part "R")
+			(description "Resistor")
+			(footprints
+				(fp "R_*")
+			)
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "R")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "MicroDriver_V2.10")
+			(part "MPM3572")
+			(description "80V/0.6A buck power module LGA-24(6x6)")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "MPM3572")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "80V/0.6A buck power module LGA-24(6x6)")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "EN")
+					(type "input")
+				)
+				(pin
+					(num "2")
+					(name "NC")
+					(type "no_connect")
+				)
+				(pin
+					(num "3")
+					(name "VCC")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "FB")
+					(type "input")
+				)
+				(pin
+					(num "5")
+					(name "AGND")
+					(type "power_in")
+				)
+				(pin
+					(num "6")
+					(name "FREQ")
+					(type "input")
+				)
+				(pin
+					(num "7")
+					(name "OUT")
+					(type "passive")
+				)
+				(pin
+					(num "8")
+					(name "OUT")
+					(type "passive")
+				)
+				(pin
+					(num "9")
+					(name "GND")
+					(type "power_in")
+				)
+				(pin
+					(num "10")
+					(name "GND")
+					(type "power_in")
+				)
+				(pin
+					(num "11")
+					(name "GND")
+					(type "power_in")
+				)
+				(pin
+					(num "12")
+					(name "GND")
+					(type "power_in")
+				)
+				(pin
+					(num "13")
+					(name "TP1")
+					(type "no_connect")
+				)
+				(pin
+					(num "14")
+					(name "NC")
+					(type "no_connect")
+				)
+				(pin
+					(num "15")
+					(name "SW")
+					(type "passive")
+				)
+				(pin
+					(num "16")
+					(name "SW")
+					(type "passive")
+				)
+				(pin
+					(num "17")
+					(name "BST")
+					(type "passive")
+				)
+				(pin
+					(num "18")
+					(name "TP2")
+					(type "no_connect")
+				)
+				(pin
+					(num "19")
+					(name "NC")
+					(type "no_connect")
+				)
+				(pin
+					(num "20")
+					(name "GND")
+					(type "power_in")
+				)
+				(pin
+					(num "21")
+					(name "GND")
+					(type "power_in")
+				)
+				(pin
+					(num "22")
+					(name "GND")
+					(type "power_in")
+				)
+				(pin
+					(num "23")
+					(name "VIN")
+					(type "power_in")
+				)
+				(pin
+					(num "24")
+					(name "VIN")
+					(type "power_in")
+				)
+			)
+		)
+		(libpart
+			(lib "MicroDriver_V2.10")
+			(part "PESDNC2XD5VB")
+			(docs "https://lcsc.com/product-detail/Diodes-ESD_Shanghai-Prisemi-Elec-PESDNC2XD5VB_C110696.html")
+			(fields
+				(field
+					(name "Reference") "D")
+				(field
+					(name "Value") "PESDNC2XD5VB")
+				(field
+					(name "Footprint") "Transistors:DFN0603-D_L0.6-W0.3-P0.34-BI")
+				(field
+					(name "Datasheet") "https://lcsc.com/product-detail/Diodes-ESD_Shanghai-Prisemi-Elec-PESDNC2XD5VB_C110696.html")
+				(field
+					(name "Description")
+				)
+				(field
+					(name "Manufacturer") "Prisemi(芯导)")
+				(field
+					(name "MPN") "PESDNC2XD5VB")
+				(field
+					(name "LCSC Part") "C110696")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "K")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "A")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "MicroDriver_V2.10")
+			(part "SMBJ58CA")
+			(description "Bidirectional TVS 58V standoff 600W SMB")
+			(fields
+				(field
+					(name "Reference") "D")
+				(field
+					(name "Value") "SMBJ58CA")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Bidirectional TVS 58V standoff 600W SMB")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "A1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "A2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "MicroDriver_V2.10")
+			(part "TLV74333PDBVR")
+			(docs "https://lcsc.com/product-detail/Low-Dropout-Regulators-LDO_Texas-Instruments-TI-TLV74333PDBVR_C408972.html")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "TLV74333PDBVR")
+				(field
+					(name "Footprint") "Power Management (PMIC):SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BR")
+				(field
+					(name "Datasheet") "https://lcsc.com/product-detail/Low-Dropout-Regulators-LDO_Texas-Instruments-TI-TLV74333PDBVR_C408972.html")
+				(field
+					(name "Description")
+				)
+				(field
+					(name "Manufacturer") "TI(德州仪器)")
+				(field
+					(name "MPN") "TLV74333PDBVR")
+				(field
+					(name "LCSC Part") "C408972")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "IN")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "GND")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "EN")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "NC")
+					(type "passive")
+				)
+				(pin
+					(num "5")
+					(name "OUT")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "MicroDriver_V2.10")
+			(part "TP0.8")
+			(description "0.8mmTP测试点")
+			(footprints
+				(fp "*TP0.8*")
+			)
+			(fields
+				(field
+					(name "Reference")
+				)
+				(field
+					(name "Value")
+				)
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "0.8mmTP测试点")
+			)
+			(pins
+				(pin
+					(num "0")
+					(name "0")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Transistor_FET")
+			(part "Q_PMOS_GSD")
+			(description "P-MOSFET transistor, gate/source/drain")
+			(fields
+				(field
+					(name "Reference") "Q")
+				(field
+					(name "Value") "Q_PMOS_GSD")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "P-MOSFET transistor, gate/source/drain")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "G")
+					(type "input")
+				)
+				(pin
+					(num "2")
+					(name "S")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "D")
+					(type "passive")
+				)
+			)
+		)
+	)
+	(libraries
+		(library
+			(logical "Device")
+			(uri "${KICAD10_SYMBOL_DIR}/Device.kicad_sym")
+		)
+		(library
+			(logical "MicroDriver_V2.10")
+			(uri "${KIPRJMOD}/library/MicroDriver_V2.10.kicad_sym")
+		)
+	)
+	(nets
+		(net
+			(code "1")
+			(name "+3.3V")
+			(class "Default")
+			(node
+				(ref "C27")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C28")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R44")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R45")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "5")
+				(pinfunction "OUT_5")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "2")
+			(name "+5V")
+			(class "Default")
+			(node
+				(ref "C25")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C26")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C34")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R15")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R44")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "7")
+				(pinfunction "OUT_7")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "8")
+				(pinfunction "OUT_8")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "1")
+				(pinfunction "IN_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "3")
+				(pinfunction "EN_3")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "3")
+			(name "/ENCODER/CLK")
+			(class "Default")
+			(node
+				(ref "D12")
+				(pin "2")
+				(pinfunction "A_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R26")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "4")
+			(name "/ENCODER/DATA")
+			(class "Default")
+			(node
+				(ref "D13")
+				(pin "2")
+				(pinfunction "A_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R27")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "5")
+			(name "/ENCODER/EC-A")
+			(class "Default")
+			(node
+				(ref "D9")
+				(pin "2")
+				(pinfunction "A_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R23")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "6")
+			(name "/ENCODER/EC-B")
+			(class "Default")
+			(node
+				(ref "D10")
+				(pin "2")
+				(pinfunction "A_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R24")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "7")
+			(name "/ENCODER/EC-Z")
+			(class "Default")
+			(node
+				(ref "D11")
+				(pin "2")
+				(pinfunction "A_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R25")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "8")
+			(name "/ENCODER/ENCODER-A")
+			(class "Default")
+			(node
+				(ref "C35")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R23")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP01")
+				(pin "0")
+				(pinfunction "0_0")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "9")
+			(name "/ENCODER/ENCODER-B")
+			(class "Default")
+			(node
+				(ref "C36")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R24")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP02")
+				(pin "0")
+				(pinfunction "0_0")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "10")
+			(name "/ENCODER/ENCODER-Z")
+			(class "Default")
+			(node
+				(ref "C37")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R25")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP03")
+				(pin "0")
+				(pinfunction "0_0")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "11")
+			(name "/ENCODER/MA")
+			(class "Default")
+			(node
+				(ref "C38")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R26")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP04")
+				(pin "0")
+				(pinfunction "0_0")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "12")
+			(name "/ENCODER/MISO")
+			(class "Default")
+			(node
+				(ref "D17")
+				(pin "2")
+				(pinfunction "A_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R31")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "13")
+			(name "/ENCODER/MOSI")
+			(class "Default")
+			(node
+				(ref "D16")
+				(pin "2")
+				(pinfunction "A_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R30")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "14")
+			(name "/ENCODER/NSS")
+			(class "Default")
+			(node
+				(ref "D14")
+				(pin "2")
+				(pinfunction "A_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R28")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "15")
+			(name "/ENCODER/SCK")
+			(class "Default")
+			(node
+				(ref "D15")
+				(pin "2")
+				(pinfunction "A_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R29")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "16")
+			(name "/ENCODER/SLO")
+			(class "Default")
+			(node
+				(ref "C39")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R27")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP05")
+				(pin "0")
+				(pinfunction "0_0")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "17")
+			(name "/ENCODER/SPI-MISO")
+			(class "Default")
+			(node
+				(ref "C43")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R31")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP09")
+				(pin "0")
+				(pinfunction "0_0")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "18")
+			(name "/ENCODER/SPI-MOSI")
+			(class "Default")
+			(node
+				(ref "C42")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R30")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP08")
+				(pin "0")
+				(pinfunction "0_0")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "19")
+			(name "/ENCODER/SPI-NSS")
+			(class "Default")
+			(node
+				(ref "C40")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R28")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP06")
+				(pin "0")
+				(pinfunction "0_0")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "20")
+			(name "/ENCODER/SPI-SCK")
+			(class "Default")
+			(node
+				(ref "C41")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R29")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP07")
+				(pin "0")
+				(pinfunction "0_0")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "65")
+			(name "/POWER/AD-VBUS")
+			(class "Default")
+			(node
+				(ref "C24")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R19")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R20")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "75")
+			(name "EGND")
+			(class "Default")
+			(node
+				(ref "C14")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C18")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "D4")
+				(pin "1")
+				(pinfunction "A1_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "76")
+			(name "GND")
+			(class "Default")
+			(node
+				(ref "C15")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C16")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C17")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C18")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C20")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C20")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C21")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C21")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C22")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C23")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C24")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C25")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C26")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C27")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C28")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C34")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C35")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C36")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C37")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C38")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C39")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C40")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C41")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C42")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C43")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "D10")
+				(pin "1")
+				(pinfunction "K_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "D11")
+				(pin "1")
+				(pinfunction "K_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "D12")
+				(pin "1")
+				(pinfunction "K_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "D13")
+				(pin "1")
+				(pinfunction "K_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "D14")
+				(pin "1")
+				(pinfunction "K_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "D15")
+				(pin "1")
+				(pinfunction "K_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "D16")
+				(pin "1")
+				(pinfunction "K_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "D17")
+				(pin "1")
+				(pinfunction "K_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "D9")
+				(pin "1")
+				(pinfunction "K_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "LED3")
+				(pin "2")
+				(pinfunction "A_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R14")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R16")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R20")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "10")
+				(pinfunction "GND_10")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U2")
+				(pin "11")
+				(pinfunction "GND_11")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U2")
+				(pin "12")
+				(pinfunction "GND_12")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U2")
+				(pin "20")
+				(pinfunction "GND_20")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U2")
+				(pin "21")
+				(pinfunction "GND_21")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U2")
+				(pin "22")
+				(pinfunction "GND_22")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U2")
+				(pin "5")
+				(pinfunction "AGND_5")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U2")
+				(pin "6")
+				(pinfunction "FREQ_6")
+				(pintype "input")
+			)
+			(node
+				(ref "U2")
+				(pin "9")
+				(pinfunction "GND_9")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U3")
+				(pin "2")
+				(pinfunction "GND_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "77")
+			(name "Net-(LED3-K)")
+			(class "Default")
+			(node
+				(ref "LED3")
+				(pin "1")
+				(pinfunction "K_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R45")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "78")
+			(name "Net-(MOS1-G)")
+			(class "Default")
+			(node
+				(ref "C19")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "MOS1")
+				(pin "1")
+				(pinfunction "G_1")
+				(pintype "input")
+			)
+			(node
+				(ref "R14")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "79")
+			(name "Net-(U2-BST)")
+			(class "Default")
+			(node
+				(ref "U2")
+				(pin "15")
+				(pinfunction "SW_15")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "16")
+				(pinfunction "SW_16")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "17")
+				(pinfunction "BST_17")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "80")
+			(name "Net-(U2-FB)")
+			(class "Default")
+			(node
+				(ref "R15")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R16")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "4")
+				(pinfunction "FB_4")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "81")
+			(name "VBUS")
+			(class "Default")
+			(node
+				(ref "C14")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C15")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C16")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C17")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C22")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C23")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "MOS1")
+				(pin "3")
+				(pinfunction "D_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "R19")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "1")
+				(pinfunction "EN_1")
+				(pintype "input")
+			)
+			(node
+				(ref "U2")
+				(pin "23")
+				(pinfunction "VIN_23")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U2")
+				(pin "24")
+				(pinfunction "VIN_24")
+				(pintype "power_in")
+			)
+		)
+		(net
+			(code "82")
+			(name "VBUS_IN")
+			(class "Default")
+			(node
+				(ref "C19")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "D4")
+				(pin "2")
+				(pinfunction "A2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "MOS1")
+				(pin "2")
+				(pinfunction "S_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "83")
+			(name "unconnected-(U2-NC-Pad2)")
+			(class "Default")
+			(node
+				(ref "U2")
+				(pin "2")
+				(pinfunction "NC_2")
+				(pintype "no_connect")
+			)
+		)
+		(net
+			(code "84")
+			(name "unconnected-(U2-NC-Pad14)")
+			(class "Default")
+			(node
+				(ref "U2")
+				(pin "14")
+				(pinfunction "NC_14")
+				(pintype "no_connect")
+			)
+		)
+		(net
+			(code "85")
+			(name "unconnected-(U2-NC-Pad19)")
+			(class "Default")
+			(node
+				(ref "U2")
+				(pin "19")
+				(pinfunction "NC_19")
+				(pintype "no_connect")
+			)
+		)
+		(net
+			(code "86")
+			(name "unconnected-(U2-TP1-Pad13)")
+			(class "Default")
+			(node
+				(ref "U2")
+				(pin "13")
+				(pinfunction "TP1_13")
+				(pintype "no_connect")
+			)
+		)
+		(net
+			(code "87")
+			(name "unconnected-(U2-TP2-Pad18)")
+			(class "Default")
+			(node
+				(ref "U2")
+				(pin "18")
+				(pinfunction "TP2_18")
+				(pintype "no_connect")
+			)
+		)
+		(net
+			(code "88")
+			(name "unconnected-(U2-VCC-Pad3)")
+			(class "Default")
+			(node
+				(ref "U2")
+				(pin "3")
+				(pinfunction "VCC_3")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "89")
+			(name "unconnected-(U3-NC-Pad4)")
+			(class "Default")
+			(node
+				(ref "U3")
+				(pin "4")
+				(pinfunction "NC_4")
+				(pintype "passive+no_connect")
+			)
+		)
+	)
+)

@@ -1,0 +1,352 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "c98d356d-b1eb-5e26-b698-25494acc1b17")
+	(paper "A4")
+	(title_block
+		(rev "V2.10")
+	)
+	(lib_symbols)
+	(text "nSLEEP"
+		(exclude_from_sim no)
+		(at 22.86 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "02af74dc-a874-5ca4-9791-97d39189f3d4")
+	)
+	(text "VB"
+		(exclude_from_sim no)
+		(at 22.86 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "095054f2-b95f-5a83-8ab3-8f18886975d5")
+	)
+	(text "SOA"
+		(exclude_from_sim no)
+		(at 22.86 45.72 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0c7594dd-d205-5968-a4e1-9a47a0968680")
+	)
+	(text "MicroDriver V2.10 - MOTOR\n（本页按 PRJ_MicroDriver_V2.10.pdf 重建中）"
+		(exclude_from_sim no)
+		(at 20.32 15.24 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "0ff58870-48d0-5327-9b8c-c57c3429f802")
+	)
+	(text "SOC"
+		(exclude_from_sim no)
+		(at 22.86 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1024ba9f-bc00-5ef4-ad7f-a1da67904c04")
+	)
+	(text "PWMC"
+		(exclude_from_sim no)
+		(at 22.86 40.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1a2afc36-63f3-5f85-9a02-32e2ceab94b6")
+	)
+	(text "VA"
+		(exclude_from_sim no)
+		(at 22.86 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2610abec-9b0a-5ef9-ac38-bbcfca64faad")
+	)
+	(text "SOB"
+		(exclude_from_sim no)
+		(at 22.86 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "331d309f-754b-5fd1-8fa5-3aa16db5f5d3")
+	)
+	(text "MOTU"
+		(exclude_from_sim no)
+		(at 22.86 91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "57a8e9f6-118f-51a7-80be-7418ecbb5b93")
+	)
+	(text "VC"
+		(exclude_from_sim no)
+		(at 22.86 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6bf13351-7a44-5f92-88c1-99901151579c")
+	)
+	(text "PWMB"
+		(exclude_from_sim no)
+		(at 22.86 35.56 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "73547c10-9163-58ba-8e25-06b7bb4bf5e1")
+	)
+	(text "nFAULT"
+		(exclude_from_sim no)
+		(at 22.86 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "98266498-b90b-5fed-aaa6-af0d769423b3")
+	)
+	(text "PWMA"
+		(exclude_from_sim no)
+		(at 22.86 30.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "98e6e06c-c3a0-5275-bb0f-e607d2ebff43")
+	)
+	(text "MOTV"
+		(exclude_from_sim no)
+		(at 22.86 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c8b74bd8-28a7-5e44-b04f-9bc0c5ef5b58")
+	)
+	(text "AD-NTC1"
+		(exclude_from_sim no)
+		(at 22.86 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cde58bd5-713e-5ad2-94a7-4c6f85182638")
+	)
+	(text "MOTW"
+		(exclude_from_sim no)
+		(at 22.86 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ef25c903-3889-50c6-ba2f-4b6c35cf175e")
+	)
+	(hierarchical_label "SOA"
+		(shape output)
+		(at 20.32 45.72 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "033891a8-3a32-526d-97fd-d370b5400904")
+	)
+	(hierarchical_label "PWMB"
+		(shape input)
+		(at 20.32 35.56 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "13b9882d-c517-558e-932a-fb1e65039d80")
+	)
+	(hierarchical_label "VC"
+		(shape output)
+		(at 20.32 71.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1dca8ff2-ea4e-5336-a899-de7e24e43f9d")
+	)
+	(hierarchical_label "MOTW"
+		(shape output)
+		(at 20.32 101.6 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1ffb3afb-8646-507d-95c9-6c4da3a430bd")
+	)
+	(hierarchical_label "PWMC"
+		(shape input)
+		(at 20.32 40.64 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "23329450-fe03-5a60-9746-6d6ecfb3913a")
+	)
+	(hierarchical_label "nFAULT"
+		(shape output)
+		(at 20.32 86.36 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3684c673-0b49-50ed-9751-4ebfd9e68713")
+	)
+	(hierarchical_label "MOTV"
+		(shape output)
+		(at 20.32 96.52 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5a3593e6-4b0a-5839-84ea-e1336640d51c")
+	)
+	(hierarchical_label "SOC"
+		(shape output)
+		(at 20.32 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6ad87df1-5a70-56b1-9af6-17586ac41920")
+	)
+	(hierarchical_label "nSLEEP"
+		(shape input)
+		(at 20.32 81.28 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7670b2cc-d9bf-576f-8e04-91f56a88bd0b")
+	)
+	(hierarchical_label "PWMA"
+		(shape input)
+		(at 20.32 30.48 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8a821fac-6fe6-511f-9ea1-94509ef802a0")
+	)
+	(hierarchical_label "VB"
+		(shape output)
+		(at 20.32 66.04 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "acb43bd6-1e8a-5727-be81-4801d9bf44bf")
+	)
+	(hierarchical_label "AD-NTC1"
+		(shape output)
+		(at 20.32 76.2 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c2963327-29ba-5749-95aa-3c4cd96d925d")
+	)
+	(hierarchical_label "MOTU"
+		(shape output)
+		(at 20.32 91.44 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c736ccdc-d70b-55bc-aa26-c9555b3bb950")
+	)
+	(hierarchical_label "VA"
+		(shape output)
+		(at 20.32 60.96 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e1073301-eb0d-5d44-9921-bee502726101")
+	)
+	(hierarchical_label "SOB"
+		(shape output)
+		(at 20.32 50.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fa7a9836-495d-5a27-9a53-72ffa4722ec1")
+	)
+)

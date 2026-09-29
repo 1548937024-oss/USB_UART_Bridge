@@ -1,0 +1,660 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "ffbc209d-1414-5f9a-87df-655eedef213c")
+	(paper "A4")
+	(title_block
+		(rev "V2.10")
+	)
+	(lib_symbols)
+	(text "nSLEEP"
+		(exclude_from_sim no)
+		(at 22.86 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "02af74dc-a874-5ca4-9791-97d39189f3d4")
+	)
+	(text "VB"
+		(exclude_from_sim no)
+		(at 22.86 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "095054f2-b95f-5a83-8ab3-8f18886975d5")
+	)
+	(text "SOA"
+		(exclude_from_sim no)
+		(at 22.86 45.72 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0c7594dd-d205-5968-a4e1-9a47a0968680")
+	)
+	(text "SOC"
+		(exclude_from_sim no)
+		(at 22.86 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1024ba9f-bc00-5ef4-ad7f-a1da67904c04")
+	)
+	(text "SPI-MOSI"
+		(exclude_from_sim no)
+		(at 22.86 142.24 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "194b70aa-de67-554a-b166-5a6fe429d2a1")
+	)
+	(text "PWMC"
+		(exclude_from_sim no)
+		(at 22.86 40.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1a2afc36-63f3-5f85-9a02-32e2ceab94b6")
+	)
+	(text "ENCODER-Z"
+		(exclude_from_sim no)
+		(at 22.86 172.72 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1a7163e6-d061-58b9-bc70-f6660df74e9c")
+	)
+	(text "VA"
+		(exclude_from_sim no)
+		(at 22.86 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2610abec-9b0a-5ef9-ac38-bbcfca64faad")
+	)
+	(text "SOB"
+		(exclude_from_sim no)
+		(at 22.86 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "331d309f-754b-5fd1-8fa5-3aa16db5f5d3")
+	)
+	(text "I2C-SCL"
+		(exclude_from_sim no)
+		(at 22.86 121.92 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "42fa8b2f-0d7a-5d43-bf5e-1f464cbfefd6")
+	)
+	(text "RS485-RX"
+		(exclude_from_sim no)
+		(at 22.86 111.76 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "430ed7e3-2535-58ea-9efe-c5de496b443e")
+	)
+	(text "RS485-DIR"
+		(exclude_from_sim no)
+		(at 22.86 116.84 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5bd5c105-4eac-5cdc-9ea4-fd853bcf2cc6")
+	)
+	(text "CANFD-TX"
+		(exclude_from_sim no)
+		(at 22.86 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5c793d87-4624-599a-89bd-61f0f26b2418")
+	)
+	(text "AD-VBUS"
+		(exclude_from_sim no)
+		(at 22.86 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5dfe056a-2c57-5d6e-8ae9-9ecabfb5d51f")
+	)
+	(text "CANFD-RX"
+		(exclude_from_sim no)
+		(at 22.86 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "692ecf17-89d0-54e6-803e-be21c020ef6f")
+	)
+	(text "VC"
+		(exclude_from_sim no)
+		(at 22.86 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6bf13351-7a44-5f92-88c1-99901151579c")
+	)
+	(text "PWMB"
+		(exclude_from_sim no)
+		(at 22.86 35.56 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "73547c10-9163-58ba-8e25-06b7bb4bf5e1")
+	)
+	(text "MA"
+		(exclude_from_sim no)
+		(at 22.86 152.4 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "75219a24-fa86-5cb9-a904-7dcbadef3a64")
+	)
+	(text "ENCODER-A"
+		(exclude_from_sim no)
+		(at 22.86 162.56 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "791812c9-594b-506d-860a-acaf503352a3")
+	)
+	(text "SPI-NSS"
+		(exclude_from_sim no)
+		(at 22.86 132.08 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "82d8c809-70f0-5486-ba2b-6c1dba65121f")
+	)
+	(text "nFAULT"
+		(exclude_from_sim no)
+		(at 22.86 91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "98266498-b90b-5fed-aaa6-af0d769423b3")
+	)
+	(text "PWMA"
+		(exclude_from_sim no)
+		(at 22.86 30.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "98e6e06c-c3a0-5275-bb0f-e607d2ebff43")
+	)
+	(text "SPI-SCK"
+		(exclude_from_sim no)
+		(at 22.86 137.16 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b25f4511-431e-5467-ac46-c9a4d89721b4")
+	)
+	(text "SLO"
+		(exclude_from_sim no)
+		(at 22.86 157.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c27bfbf9-98bf-5bb7-80a3-12c562ad5cd8")
+	)
+	(text "I2C-SDA"
+		(exclude_from_sim no)
+		(at 22.86 127 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c7523926-62a7-5835-8881-c4fc3faba220")
+	)
+	(text "RS485-TX"
+		(exclude_from_sim no)
+		(at 22.86 106.68 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cb52e4d0-5a32-5ee5-9e8f-101fafebafd4")
+	)
+	(text "AD-NTC1"
+		(exclude_from_sim no)
+		(at 22.86 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cde58bd5-713e-5ad2-94a7-4c6f85182638")
+	)
+	(text "MicroDriver V2.10 - MCU\n（本页按 PRJ_MicroDriver_V2.10.pdf 重建中）"
+		(exclude_from_sim no)
+		(at 20.32 15.24 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "d0af518a-2448-58f4-bf88-4c271945fd56")
+	)
+	(text "SPI-MISO"
+		(exclude_from_sim no)
+		(at 22.86 147.32 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f1da2b22-8a4b-5152-9c96-3dd9741dae9b")
+	)
+	(text "ENCODER-B"
+		(exclude_from_sim no)
+		(at 22.86 167.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "feee82f9-b525-5fb7-b62e-6a7a8777ad27")
+	)
+	(hierarchical_label "nSLEEP"
+		(shape output)
+		(at 20.32 86.36 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "00888479-3a81-5059-b1e4-7be03cdd789b")
+	)
+	(hierarchical_label "SOA"
+		(shape input)
+		(at 20.32 45.72 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "033891a8-3a32-526d-97fd-d370b5400904")
+	)
+	(hierarchical_label "ENCODER-B"
+		(shape input)
+		(at 20.32 167.64 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "09c83188-56c9-5356-949a-8321704b7ced")
+	)
+	(hierarchical_label "RS485-TX"
+		(shape output)
+		(at 20.32 106.68 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0c5a7e19-b1bd-59ed-9ef8-89af59c7a83e")
+	)
+	(hierarchical_label "PWMB"
+		(shape output)
+		(at 20.32 35.56 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "13b9882d-c517-558e-932a-fb1e65039d80")
+	)
+	(hierarchical_label "SPI-SCK"
+		(shape output)
+		(at 20.32 137.16 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "19c78fa8-3084-538e-9d73-5fc2768d6ca7")
+	)
+	(hierarchical_label "VC"
+		(shape input)
+		(at 20.32 71.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1dca8ff2-ea4e-5336-a899-de7e24e43f9d")
+	)
+	(hierarchical_label "PWMC"
+		(shape output)
+		(at 20.32 40.64 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "23329450-fe03-5a60-9746-6d6ecfb3913a")
+	)
+	(hierarchical_label "SPI-MOSI"
+		(shape output)
+		(at 20.32 142.24 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2e4e5557-f2f8-5d8e-8665-8a01090b8d05")
+	)
+	(hierarchical_label "CANFD-RX"
+		(shape input)
+		(at 20.32 101.6 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3e260606-ed33-5ac1-9612-d613434f9b1c")
+	)
+	(hierarchical_label "CANFD-TX"
+		(shape output)
+		(at 20.32 96.52 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4575c8b1-15fd-59fe-b68d-50fea09e4a94")
+	)
+	(hierarchical_label "AD-VBUS"
+		(shape input)
+		(at 20.32 76.2 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "47571d6e-a35e-5bde-9c66-757346b5456d")
+	)
+	(hierarchical_label "SPI-MISO"
+		(shape input)
+		(at 20.32 147.32 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "498c0d05-6b6f-5d07-a736-100371191871")
+	)
+	(hierarchical_label "SOC"
+		(shape input)
+		(at 20.32 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6ad87df1-5a70-56b1-9af6-17586ac41920")
+	)
+	(hierarchical_label "ENCODER-A"
+		(shape input)
+		(at 20.32 162.56 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7735e7b4-4463-5b15-85fd-c57875e5ff92")
+	)
+	(hierarchical_label "SPI-NSS"
+		(shape output)
+		(at 20.32 132.08 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7c0bf895-bca0-5525-9ff6-bbbd2e100384")
+	)
+	(hierarchical_label "AD-NTC1"
+		(shape input)
+		(at 20.32 81.28 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7d27a1db-8274-5965-a4c7-3e5a44eb2c85")
+	)
+	(hierarchical_label "I2C-SDA"
+		(shape bidirectional)
+		(at 20.32 127 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "865605ee-0d18-5f5e-8e81-d1f27552998a")
+	)
+	(hierarchical_label "PWMA"
+		(shape output)
+		(at 20.32 30.48 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8a821fac-6fe6-511f-9ea1-94509ef802a0")
+	)
+	(hierarchical_label "I2C-SCL"
+		(shape bidirectional)
+		(at 20.32 121.92 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "92c355d9-0af7-5406-8b4e-4ecf358725fb")
+	)
+	(hierarchical_label "RS485-RX"
+		(shape input)
+		(at 20.32 111.76 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a0a5de2b-26af-5d6c-9f51-3005c2564d0d")
+	)
+	(hierarchical_label "VB"
+		(shape input)
+		(at 20.32 66.04 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "acb43bd6-1e8a-5727-be81-4801d9bf44bf")
+	)
+	(hierarchical_label "RS485-DIR"
+		(shape output)
+		(at 20.32 116.84 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c418852a-c9a2-5d1c-8eda-2c6f9f29464d")
+	)
+	(hierarchical_label "ENCODER-Z"
+		(shape input)
+		(at 20.32 172.72 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "caa1582f-5845-50c5-8a1b-9d6434aad664")
+	)
+	(hierarchical_label "VA"
+		(shape input)
+		(at 20.32 60.96 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e1073301-eb0d-5d44-9921-bee502726101")
+	)
+	(hierarchical_label "SLO"
+		(shape bidirectional)
+		(at 20.32 157.48 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f9a4263a-0a61-57c9-9783-a22de8365acb")
+	)
+	(hierarchical_label "SOB"
+		(shape input)
+		(at 20.32 50.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fa7a9836-495d-5a27-9a53-72ffa4722ec1")
+	)
+	(hierarchical_label "nFAULT"
+		(shape input)
+		(at 20.32 91.44 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fabdad1e-b56e-5345-9d38-e6a2504356f8")
+	)
+	(hierarchical_label "MA"
+		(shape output)
+		(at 20.32 152.4 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fe39b4e2-3444-574c-b773-e64fe36146d3")
+	)
+)

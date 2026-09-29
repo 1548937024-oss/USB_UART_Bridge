@@ -1,0 +1,286 @@
+ERC report (2026-09-29T21:03:32, Encoding UTF8)
+Report includes: Errors, Warnings, Exclusions
+
+***** Sheet /
+[pin_not_connected]: Pin not connected
+    ; error
+    @(25.40 mm, 101.60 mm): Hierarchical Sheet Pin 'PWMA'
+[pin_not_connected]: Pin not connected
+    ; error
+    @(25.40 mm, 104.14 mm): Hierarchical Sheet Pin 'PWMB'
+[pin_not_connected]: Pin not connected
+    ; error
+    @(25.40 mm, 106.68 mm): Hierarchical Sheet Pin 'PWMC'
+[pin_not_connected]: Pin not connected
+    ; error
+    @(25.40 mm, 109.22 mm): Hierarchical Sheet Pin 'nSLEEP'
+[hier_label_mismatch]: 图纸引脚 AD-VBUS 在子图纸内没有匹配的层次标签
+    ; error
+    @(93.98 mm, 33.02 mm): Hierarchical Sheet Pin 'AD-VBUS'
+[pin_not_connected]: Pin not connected
+    ; error
+    @(93.98 mm, 33.02 mm): Hierarchical Sheet Pin 'AD-VBUS'
+[pin_not_connected]: Pin not connected
+    ; error
+    @(93.98 mm, 101.60 mm): Hierarchical Sheet Pin 'SOA'
+[pin_not_connected]: Pin not connected
+    ; error
+    @(93.98 mm, 104.14 mm): Hierarchical Sheet Pin 'SOB'
+[pin_not_connected]: Pin not connected
+    ; error
+    @(93.98 mm, 106.68 mm): Hierarchical Sheet Pin 'SOC'
+[pin_not_connected]: Pin not connected
+    ; error
+    @(93.98 mm, 109.22 mm): Hierarchical Sheet Pin 'VA'
+[pin_not_connected]: Pin not connected
+    ; error
+    @(93.98 mm, 111.76 mm): Hierarchical Sheet Pin 'VB'
+[pin_not_connected]: Pin not connected
+    ; error
+    @(93.98 mm, 114.30 mm): Hierarchical Sheet Pin 'VC'
+[pin_not_connected]: Pin not connected
+    ; error
+    @(93.98 mm, 116.84 mm): Hierarchical Sheet Pin 'AD-NTC1'
+[pin_not_connected]: Pin not connected
+    ; error
+    @(93.98 mm, 119.38 mm): Hierarchical Sheet Pin 'nFAULT'
+[pin_not_connected]: Pin not connected
+    ; error
+    @(93.98 mm, 121.92 mm): Hierarchical Sheet Pin 'MOTU'
+[pin_not_connected]: Pin not connected
+    ; error
+    @(93.98 mm, 124.46 mm): Hierarchical Sheet Pin 'MOTV'
+[pin_not_connected]: Pin not connected
+    ; error
+    @(93.98 mm, 127.00 mm): Hierarchical Sheet Pin 'MOTW'
+[pin_not_connected]: Pin not connected
+    ; error
+    @(193.04 mm, 33.02 mm): Hierarchical Sheet Pin 'MA'
+[pin_not_connected]: Pin not connected
+    ; error
+    @(193.04 mm, 35.56 mm): Hierarchical Sheet Pin 'SPI-NSS'
+[pin_not_connected]: Pin not connected
+    ; error
+    @(193.04 mm, 38.10 mm): Hierarchical Sheet Pin 'SPI-SCK'
+[pin_not_connected]: Pin not connected
+    ; error
+    @(193.04 mm, 40.64 mm): Hierarchical Sheet Pin 'SPI-MOSI'
+[pin_not_connected]: Pin not connected
+    ; error
+    @(261.62 mm, 33.02 mm): Hierarchical Sheet Pin 'ENCODER-A'
+[pin_not_connected]: Pin not connected
+    ; error
+    @(261.62 mm, 35.56 mm): Hierarchical Sheet Pin 'ENCODER-B'
+[pin_not_connected]: Pin not connected
+    ; error
+    @(261.62 mm, 38.10 mm): Hierarchical Sheet Pin 'ENCODER-Z'
+[pin_not_connected]: Pin not connected
+    ; error
+    @(261.62 mm, 40.64 mm): Hierarchical Sheet Pin 'SLO'
+[pin_not_connected]: Pin not connected
+    ; error
+    @(261.62 mm, 43.18 mm): Hierarchical Sheet Pin 'SPI-MISO'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 30.48 mm): Hierarchical Label 'PWMA'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 35.56 mm): Hierarchical Label 'PWMB'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 40.64 mm): Hierarchical Label 'PWMC'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 45.72 mm): Hierarchical Label 'SOA'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 50.80 mm): Hierarchical Label 'SOB'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 55.88 mm): Hierarchical Label 'SOC'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 60.96 mm): Hierarchical Label 'VA'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 66.04 mm): Hierarchical Label 'VB'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 71.12 mm): Hierarchical Label 'VC'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 76.20 mm): Hierarchical Label 'AD-NTC1'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 81.28 mm): Hierarchical Label 'nSLEEP'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 86.36 mm): Hierarchical Label 'nFAULT'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 91.44 mm): Hierarchical Label 'MOTU'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 96.52 mm): Hierarchical Label 'MOTV'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 101.60 mm): Hierarchical Label 'MOTW'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 30.48 mm): Hierarchical Label 'PWMA'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 35.56 mm): Hierarchical Label 'PWMB'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 40.64 mm): Hierarchical Label 'PWMC'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 45.72 mm): Hierarchical Label 'SOA'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 50.80 mm): Hierarchical Label 'SOB'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 55.88 mm): Hierarchical Label 'SOC'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 60.96 mm): Hierarchical Label 'VA'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 66.04 mm): Hierarchical Label 'VB'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 71.12 mm): Hierarchical Label 'VC'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 76.20 mm): Hierarchical Label 'AD-VBUS'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 81.28 mm): Hierarchical Label 'AD-NTC1'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 86.36 mm): Hierarchical Label 'nSLEEP'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 91.44 mm): Hierarchical Label 'nFAULT'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 96.52 mm): Hierarchical Label 'CANFD-TX'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 101.60 mm): Hierarchical Label 'CANFD-RX'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 106.68 mm): Hierarchical Label 'RS485-TX'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 111.76 mm): Hierarchical Label 'RS485-RX'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 116.84 mm): Hierarchical Label 'RS485-DIR'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 121.92 mm): Hierarchical Label 'I2C-SCL'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 127.00 mm): Hierarchical Label 'I2C-SDA'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 132.08 mm): Hierarchical Label 'SPI-NSS'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 137.16 mm): Hierarchical Label 'SPI-SCK'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 142.24 mm): Hierarchical Label 'SPI-MOSI'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 147.32 mm): Hierarchical Label 'SPI-MISO'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 152.40 mm): Hierarchical Label 'MA'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 157.48 mm): Hierarchical Label 'SLO'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 162.56 mm): Hierarchical Label 'ENCODER-A'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 167.64 mm): Hierarchical Label 'ENCODER-B'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 172.72 mm): Hierarchical Label 'ENCODER-Z'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 30.48 mm): Hierarchical Label 'CANFD-TX'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 35.56 mm): Hierarchical Label 'CANFD-RX'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 40.64 mm): Hierarchical Label 'RS485-TX'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 45.72 mm): Hierarchical Label 'RS485-RX'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 50.80 mm): Hierarchical Label 'RS485-DIR'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 55.88 mm): Hierarchical Label 'CANH'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 60.96 mm): Hierarchical Label 'CANL'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 66.04 mm): Hierarchical Label 'RS485-A'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 71.12 mm): Hierarchical Label 'RS485-B'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 30.48 mm): Hierarchical Label 'ENCODER-A'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 35.56 mm): Hierarchical Label 'ENCODER-B'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 40.64 mm): Hierarchical Label 'ENCODER-Z'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 45.72 mm): Hierarchical Label 'MA'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 50.80 mm): Hierarchical Label 'SLO'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 55.88 mm): Hierarchical Label 'SPI-NSS'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 60.96 mm): Hierarchical Label 'SPI-SCK'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 66.04 mm): Hierarchical Label 'SPI-MOSI'
+[label_dangling]: Label not connected
+    ; error
+    @(20.32 mm, 71.12 mm): Hierarchical Label 'SPI-MISO'
+
+***** Sheet /POWER/
+
+***** Sheet /MOTOR/
+
+***** Sheet /MCU/
+
+***** Sheet /communication/
+
+***** Sheet /ENCODER/
+
+ ** ERC messages: 88  Errors 88  Warnings 0
+
+ ** Ignored checks:
+    - Global label only appears once in the schematic
+    - Four connection points are joined together
+    - SPICE model issue
+    - Assigned footprint doesn't match footprint filters
