@@ -1,0 +1,4155 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "8bfbda49-1f9f-5d9b-8809-8cce360145bd")
+	(paper "A4")
+	(title_block
+		(title "LA150C RDIVER V1.00")
+		(date "2026-10-04")
+		(rev "V1.00")
+		(comment 1 "LA150C 集成驱动器原理图")
+	)
+	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "LA150C_RDIVER_V1.00:DF52-4P-0.8C"
+			(pin_names
+				(offset 0.762)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "DF52-4P-0.8C"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "DF52 0.8mm 4pin connector, VCC/GND/CANH/CANL"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "DF52-4P-0.8C"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "Hirose"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "DF52-4P-0.8C_0_1"
+				(rectangle
+					(start -5.08 6.35)
+					(end 5.08 -6.35)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "DF52-4P-0.8C_1_0"
+				(pin passive line
+					(at -8.89 3.81 0)
+					(length 3.81)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -8.89 1.27 0)
+					(length 3.81)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -8.89 -1.27 0)
+					(length 3.81)
+					(name "CANH"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -8.89 -3.81 0)
+					(length 3.81)
+					(name "CANL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "LA150C_RDIVER_V1.00:GND"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "LA150C_RDIVER_V1.00:PWR_3V3"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_3V3"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_3V3_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "PWR_3V3_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "LA150C_RDIVER_V1.00:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "LA150C_RDIVER_V1.00:SWD-1X5-1.27"
+			(pin_names
+				(offset 0.762)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SWD-1X5-1.27"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "1x5 1.27mm SWD debug header"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "SWD-1X5-1.27"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SWD-1X5-1.27_0_1"
+				(rectangle
+					(start -5.08 7.62)
+					(end 5.08 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "SWD-1X5-1.27_1_0"
+				(pin passive line
+					(at -8.89 5.08 0)
+					(length 3.81)
+					(name "PWR_3V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -8.89 2.54 0)
+					(length 3.81)
+					(name "SWDIO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -8.89 0 0)
+					(length 3.81)
+					(name "SWCLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -8.89 -2.54 0)
+					(length 3.81)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -8.89 -5.08 0)
+					(length 3.81)
+					(name "NRST"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "LA150C_RDIVER_V1.00:VBUS"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "VBUS"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"VBUS\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "VBUS_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "VBUS_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "LA150C_RDIVER_V1.00:VBUS_IN"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "VBUS_IN"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"VBUS\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "VBUS_IN_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "VBUS_IN_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(rectangle
+		(start 20.32 186.69)
+		(end 107.95 193.04)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "075f4bf2-fd68-5edb-b5f2-7f7183aa7b08")
+	)
+	(rectangle
+		(start 35.56 186.69)
+		(end 35.56 203.2)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "0793fcb1-a4d2-5476-a591-da8a335b5a5f")
+	)
+	(rectangle
+		(start 76.2 186.69)
+		(end 76.2 203.2)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "9874bcee-edcc-5bc3-a5cc-6f4faa8324bb")
+	)
+	(rectangle
+		(start 58.42 186.69)
+		(end 58.42 203.2)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "a7176c7a-f3c3-53f2-a2e4-0e489ead3840")
+	)
+	(rectangle
+		(start 20.32 186.69)
+		(end 107.95 203.2)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "c4d61a11-b261-5006-9d70-58e85c85bfc5")
+	)
+	(text "电源流向：VBUS_IN(8~14V) → [P-MOS 反接保护] → VBUS → [SCT2230MLUAR 同步降压] → PWR_3V3 → [MP6543H V3P3 + 磁珠] → PWR_3V3A"
+		(exclude_from_sim no)
+		(at 20.32 15.24 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "19bce907-3dea-5f77-b309-65edf1370aa2")
+	)
+	(text "LA150C RDIVER V1.00 - TOP\n层次页：POWER / MCU / MOTOR / ENCODER / COMMUNICATION"
+		(exclude_from_sim no)
+		(at 20.32 12.7 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "3ce48bc6-423c-55e2-b478-9bdb0e75e79b")
+	)
+	(text "2026-10-04"
+		(exclude_from_sim no)
+		(at 36.83 199.39 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5053f951-66c1-5d6a-968e-7dc47ee1887c")
+	)
+	(text "测试点：TP1/2/3 = MOT_U/V/W；TP4/5 = FORCE_P/N（一维力传感器预留）\nTP6 = VBUS 8~14V；TP7 = PWR_3V3 3.3V ±5%"
+		(exclude_from_sim no)
+		(at 20.32 183.39 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6214bd45-e64b-5b2f-b747-ac340080ce87")
+	)
+	(text "Changes"
+		(exclude_from_sim no)
+		(at 77.47 191.77 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7cef36d6-9e24-5157-b6bc-02a5025f7827")
+	)
+	(text "Codex"
+		(exclude_from_sim no)
+		(at 59.69 199.39 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "90cadd7c-44ac-5f74-8b0d-a9ded546d155")
+	)
+	(text "Author"
+		(exclude_from_sim no)
+		(at 59.69 191.77 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "94fb723f-695e-5fcb-abf3-9d0c749d9c06")
+	)
+	(text "Date"
+		(exclude_from_sim no)
+		(at 36.83 191.77 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9ecfe035-1a72-5a1e-98a6-13414624a070")
+	)
+	(text "V1.00"
+		(exclude_from_sim no)
+		(at 21.59 199.39 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9f0c46dc-0721-59df-b00f-3e1c1d6664ed")
+	)
+	(text "Altium 导入 → 脚本化重绘"
+		(exclude_from_sim no)
+		(at 77.47 199.39 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ad794c00-0bd0-52eb-8954-92f958d28ca6")
+	)
+	(text "Rev"
+		(exclude_from_sim no)
+		(at 21.59 191.77 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d3510e6c-b908-54c0-93df-a2ecab317f6f")
+	)
+	(text "整机对外接口：DF52-4P-0.8C  PIN1 VCC / PIN2 GND / PIN3 CANFD_H / PIN4 CANFD_L（线序与 QS02 规格书一致）； U/V/W 与 SWD 不引出到该连接器"
+		(exclude_from_sim no)
+		(at 20.32 17.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f5161c66-134e-51db-8ac1-c485345a5ec7")
+	)
+	(wire
+		(pts
+			(xy 167.64 100.33) (xy 172.72 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0132b118-8166-5352-b8aa-f074d52708b5")
+	)
+	(wire
+		(pts
+			(xy 36.83 166.37) (xy 31.75 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "030fd070-0d75-56cf-877c-bfa9e3b4f309")
+	)
+	(wire
+		(pts
+			(xy 36.83 171.45) (xy 31.75 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07e6b06e-ff48-57e2-a8b8-1317ab742c4b")
+	)
+	(wire
+		(pts
+			(xy 165.1 81.28) (xy 187.96 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0986597d-ec5f-50ba-aa71-a7f480c020a5")
+	)
+	(wire
+		(pts
+			(xy 167.64 115.57) (xy 172.72 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b0a62c7-48e1-5411-8842-888720dd1fa3")
+	)
+	(wire
+		(pts
+			(xy 36.83 148.59) (xy 31.75 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0bf78e1d-9fc8-5cd8-8a17-c964da69602a")
+	)
+	(wire
+		(pts
+			(xy 88.9 148.59) (xy 76.2 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e6ffa28-86c6-5cb1-a925-842833abc2e9")
+	)
+	(wire
+		(pts
+			(xy 88.9 138.43) (xy 76.2 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "136ae893-f2c0-53da-9a1a-4e0578056f8b")
+	)
+	(wire
+		(pts
+			(xy 167.64 130.81) (xy 172.72 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1fe32e16-4c46-5e79-b1f0-a35c64e61c46")
+	)
+	(wire
+		(pts
+			(xy 66.04 76.2) (xy 88.9 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21432fb6-c41a-5c2c-a1ea-ec2f5ee0f52b")
+	)
+	(wire
+		(pts
+			(xy 36.83 153.67) (xy 31.75 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3246a618-dedc-50eb-b541-6789d05bcaf1")
+	)
+	(wire
+		(pts
+			(xy 165.1 45.72) (xy 187.96 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3397804e-5e61-5643-ab0e-793d64312a2d")
+	)
+	(wire
+		(pts
+			(xy 66.04 81.28) (xy 76.2 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39b85a18-764b-50aa-a606-6576196f5931")
+	)
+	(wire
+		(pts
+			(xy 36.83 168.91) (xy 31.75 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e702acc-5c65-5da4-a428-5f4e0223ea29")
+	)
+	(wire
+		(pts
+			(xy 88.9 153.67) (xy 76.2 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e7e4b8c-19fb-5a1e-8b70-d9281f9ba6af")
+	)
+	(wire
+		(pts
+			(xy 165.1 66.04) (xy 187.96 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "441fcb8c-85ea-5670-9ddd-0604018920bc")
+	)
+	(wire
+		(pts
+			(xy 36.83 151.13) (xy 31.75 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d5d89ab-b1a7-5aec-bce5-82bee4b63833")
+	)
+	(wire
+		(pts
+			(xy 36.83 163.83) (xy 31.75 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "503ed8cf-f8c8-555b-b9c5-ff0921884624")
+	)
+	(wire
+		(pts
+			(xy 66.04 111.76) (xy 88.9 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a7a908e-a0f6-5bcb-8cdc-e4f2a7d0b2ea")
+	)
+	(wire
+		(pts
+			(xy 165.1 60.96) (xy 187.96 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7faece61-91d6-5248-b738-e6bfbe86d50d")
+	)
+	(wire
+		(pts
+			(xy 66.04 121.92) (xy 88.9 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83b49ab8-62e2-54e3-8ece-6e1a06340ec2")
+	)
+	(wire
+		(pts
+			(xy 88.9 143.51) (xy 76.2 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ad3d0c1-ac67-55a8-91f5-82a66779a89c")
+	)
+	(wire
+		(pts
+			(xy 66.04 86.36) (xy 76.2 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d05175a-628e-59af-8ad3-3a143beaf2ad")
+	)
+	(wire
+		(pts
+			(xy 167.64 125.73) (xy 172.72 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90cfdbdf-efa1-5fa0-a388-607def8052bb")
+	)
+	(wire
+		(pts
+			(xy 36.83 173.99) (xy 31.75 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "910739d3-2a5c-598c-90b5-de56962d2967")
+	)
+	(wire
+		(pts
+			(xy 243.84 66.04) (xy 254 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94069302-5f9b-5211-92d5-5f2b4e38385b")
+	)
+	(wire
+		(pts
+			(xy 66.04 71.12) (xy 88.9 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b909e0d-0a18-59cf-a7ee-18861fe9490e")
+	)
+	(wire
+		(pts
+			(xy 165.1 40.64) (xy 187.96 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c95e85c-5cb5-5649-8cf0-f832614aee86")
+	)
+	(wire
+		(pts
+			(xy 167.64 110.49) (xy 172.72 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d8efb69-d41a-58be-8fbe-9afb4aa850c5")
+	)
+	(wire
+		(pts
+			(xy 66.04 116.84) (xy 88.9 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9eaad0a5-11d7-5d2a-8c3a-bed7dbb7ed96")
+	)
+	(wire
+		(pts
+			(xy 66.04 45.72) (xy 88.9 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa1b1daa-3565-5bcd-b76c-cb27c7f46e2d")
+	)
+	(wire
+		(pts
+			(xy 167.64 120.65) (xy 172.72 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4e0fa60-b5f9-5412-a5d2-349431666d2f")
+	)
+	(wire
+		(pts
+			(xy 243.84 71.12) (xy 254 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "baeecec1-502c-501b-8f77-fdc2e4475426")
+	)
+	(wire
+		(pts
+			(xy 243.84 60.96) (xy 254 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5c70017-90dd-5925-95dd-d5720428fba6")
+	)
+	(wire
+		(pts
+			(xy 165.1 76.2) (xy 187.96 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dad8e837-8f0a-5ebb-bc76-3f1942262dce")
+	)
+	(wire
+		(pts
+			(xy 36.83 156.21) (xy 31.75 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc3e6a0a-947a-5a10-a11c-6b5512329506")
+	)
+	(wire
+		(pts
+			(xy 167.64 105.41) (xy 172.72 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5617b73-b918-57da-b95c-09fac62a73fc")
+	)
+	(wire
+		(pts
+			(xy 165.1 91.44) (xy 187.96 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8c55d26-540d-5f5b-abd1-ba2bafe12193")
+	)
+	(wire
+		(pts
+			(xy 165.1 35.56) (xy 187.96 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8c89c78-8bf1-534b-8e0e-bff723b7e339")
+	)
+	(wire
+		(pts
+			(xy 165.1 30.48) (xy 187.96 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e939ab3b-289b-5622-8159-3dcbd046166f")
+	)
+	(wire
+		(pts
+			(xy 165.1 55.88) (xy 187.96 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ebee195a-dfe7-5e95-9cb5-68d79f30b54e")
+	)
+	(wire
+		(pts
+			(xy 165.1 50.8) (xy 187.96 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed628031-92c2-53c7-864f-b3fcd0524c4d")
+	)
+	(wire
+		(pts
+			(xy 165.1 86.36) (xy 187.96 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4415907-3b40-5c16-b4e5-25a514b04920")
+	)
+	(wire
+		(pts
+			(xy 88.9 158.75) (xy 76.2 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f62156c9-a107-52f9-90e4-fc23c5d89108")
+	)
+	(label "CANL"
+		(at 31.75 156.21 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "098d1685-055f-5b41-8777-5c743d374f57")
+	)
+	(label "MOT_V"
+		(at 254 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "11ab6884-537d-5eaf-b25b-48b3d7775da7")
+	)
+	(label "FORCE_N"
+		(at 172.72 120.65 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "12e6cd54-67e0-5e3f-96c6-de75883f9cd9")
+	)
+	(label "FORCE_P"
+		(at 172.72 115.57 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1a4daf3f-152c-5d9f-a168-b3b1dfa63fbe")
+	)
+	(label "NRST"
+		(at 76.2 158.75 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "23521743-15b4-5a3e-8537-0138ccc49da3")
+	)
+	(label "FORCE_P"
+		(at 76.2 138.43 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "25db2b1e-1c16-5b2e-b2e0-ff734dd16781")
+	)
+	(label "NRST"
+		(at 31.75 173.99 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "525cfe97-0b5c-59a9-bc17-b12472deaa89")
+	)
+	(label "MOT_V"
+		(at 172.72 105.41 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "61adac07-9b29-5563-b2dc-5fae1fab665f")
+	)
+	(label "MOT_U"
+		(at 254 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8fb3d2ae-57cd-5820-bcd2-3b1094273746")
+	)
+	(label "SWCLK"
+		(at 76.2 153.67 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "934c409e-55fe-51da-ae40-a3ed34681145")
+	)
+	(label "SWDIO"
+		(at 76.2 148.59 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "98ca3045-09c5-583c-90ea-82a9c259be09")
+	)
+	(label "CANL"
+		(at 76.2 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a418ed8b-1e7d-5e0b-b287-2cfbbfa08ab7")
+	)
+	(label "CANH"
+		(at 76.2 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a57cadc4-6506-500d-ae2a-c5bdaa15f2df")
+	)
+	(label "MOT_W"
+		(at 254 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c5ea7aae-2a67-579a-ad1b-b41815a6378c")
+	)
+	(label "MOT_W"
+		(at 172.72 110.49 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c7dfef3a-8630-595f-8fce-51b5945d5b28")
+	)
+	(label "CANH"
+		(at 31.75 153.67 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d46f9059-8c3e-5040-a4a8-2ba30317ebf2")
+	)
+	(label "SWCLK"
+		(at 31.75 168.91 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d4ed9ef2-c06d-5c09-bd67-538ae7b940e4")
+	)
+	(label "FORCE_N"
+		(at 76.2 143.51 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d9d26452-3571-572d-9974-9262a13ae994")
+	)
+	(label "SWDIO"
+		(at 31.75 166.37 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ec100f39-cdf5-5639-891a-700d8520dfca")
+	)
+	(label "MOT_U"
+		(at 172.72 100.33 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ed4de4f9-000b-5d1a-8be6-b96ff8a2572e")
+	)
+	(symbol
+		(lib_id "LA150C_RDIVER_V1.00:GND")
+		(at 31.75 151.13 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "04d751ce-757e-5559-8018-16825bcee2c5")
+		(property "Reference" "#PWR904"
+			(at 30.48 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "GND"
+			(at 34.29 151.765 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" ""
+			(at 31.75 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 31.75 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 31.75 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(pin "1"
+			(uuid "ae3214fd-6288-5562-8cae-f753407aa321")
+		)
+		(instances
+			(project "LA150C_RDIVER_V1.00"
+				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd"
+					(reference "#PWR904")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 167.64 100.33 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2b0be19f-c2fd-50d8-9ebf-5974abb4f03e")
+		(property "Reference" "TP1"
+			(at 167.64 95.758 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "TP0.8"
+			(at 167.64 93.218 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 167.64 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 167.64 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "φ0.8 测试点，电机 U 相"
+			(at 167.64 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(pin "1"
+			(uuid "f0c4dcbb-6069-55f8-96c3-38f317bcd8a2")
+		)
+		(instances
+			(project "LA150C_RDIVER_V1.00"
+				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd"
+					(reference "TP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 167.64 105.41 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2e6ee012-89e6-5347-a312-a79718df52d0")
+		(property "Reference" "TP2"
+			(at 167.64 100.838 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "TP0.8"
+			(at 167.64 98.298 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 167.64 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 167.64 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "φ0.8 测试点，电机 V 相"
+			(at 167.64 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(pin "1"
+			(uuid "c04b31b2-8bba-5355-8ae0-0c0f7bc24443")
+		)
+		(instances
+			(project "LA150C_RDIVER_V1.00"
+				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd"
+					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LA150C_RDIVER_V1.00:PWR_3V3")
+		(at 31.75 163.83 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "39dc236a-85f6-56d8-ac2b-572a167e11f2")
+		(property "Reference" "#PWR901"
+			(at 30.988 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "PWR_3V3"
+			(at 34.29 164.465 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" ""
+			(at 31.75 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 31.75 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 31.75 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(pin "1"
+			(uuid "4ec1d7fa-d05a-5d9f-8ac0-a259ed045165")
+		)
+		(instances
+			(project "LA150C_RDIVER_V1.00"
+				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd"
+					(reference "#PWR901")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LA150C_RDIVER_V1.00:SWD-1X5-1.27")
+		(at 45.72 168.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4c010e32-c913-5efa-8e9e-f9859d22df61")
+		(property "Reference" "J2"
+			(at 36.83 160.02 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "SWD-1X5-1.27"
+			(at 36.83 157.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" ""
+			(at 45.72 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.72 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "1x5 1.27mm SWD 调试排针"
+			(at 45.72 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "MPN" "SWD-1X5-1.27"
+			(at 45.72 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(pin "1"
+			(uuid "00a3e6f8-7fce-50ec-be74-8febfb90c762")
+		)
+		(pin "2"
+			(uuid "8b3672a2-b4d7-5681-a982-7f996ee37769")
+		)
+		(pin "3"
+			(uuid "89c76332-cf7a-5f20-84d4-e1e4d3d46b22")
+		)
+		(pin "4"
+			(uuid "ecbfa948-026f-5fd8-8aeb-ae3817396979")
+		)
+		(pin "5"
+			(uuid "efa32ead-478d-58b2-a44a-197112ab04db")
+		)
+		(instances
+			(project "LA150C_RDIVER_V1.00"
+				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LA150C_RDIVER_V1.00:PWR_FLAG")
+		(at 31.75 151.13 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "57807b9b-caa5-5ba4-8d3a-189df2ce5287")
+		(property "Reference" "#FLG901"
+			(at 30.734 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 34.29 151.765 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" ""
+			(at 31.75 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 31.75 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 31.75 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(pin "1"
+			(uuid "a405e942-da88-57f7-894a-61b05e76a1f7")
+		)
+		(instances
+			(project "LA150C_RDIVER_V1.00"
+				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd"
+					(reference "#FLG901")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LA150C_RDIVER_V1.00:PWR_3V3")
+		(at 172.72 130.81 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5ce96a8e-b5a9-52c4-8931-eaa7d1cc5fd5")
+		(property "Reference" "#PWR906"
+			(at 171.958 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "PWR_3V3"
+			(at 175.26 131.445 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" ""
+			(at 172.72 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.72 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 172.72 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(pin "1"
+			(uuid "6b78049e-7736-5ce7-a05c-1a45e2fca171")
+		)
+		(instances
+			(project "LA150C_RDIVER_V1.00"
+				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd"
+					(reference "#PWR906")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 167.64 125.73 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5fd59cd7-5467-5aa8-b60d-4d5ddfb9f78d")
+		(property "Reference" "TP6"
+			(at 167.64 121.158 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "TP0.8"
+			(at 167.64 118.618 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 167.64 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 167.64 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "φ0.8 测试点，VBUS 电源轨"
+			(at 167.64 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(pin "1"
+			(uuid "215ffe4c-bd75-5c63-909e-95a4c9f9220a")
+		)
+		(instances
+			(project "LA150C_RDIVER_V1.00"
+				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd"
+					(reference "TP6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LA150C_RDIVER_V1.00:PWR_FLAG")
+		(at 31.75 148.59 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "63b85cf3-c1ea-53ef-a628-c301aaa17a1d")
+		(property "Reference" "#FLG900"
+			(at 30.734 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 34.29 149.225 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" ""
+			(at 31.75 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 31.75 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 31.75 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(pin "1"
+			(uuid "569b3f5e-cfb0-52c0-8bee-7f04acfcb784")
+		)
+		(instances
+			(project "LA150C_RDIVER_V1.00"
+				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd"
+					(reference "#FLG900")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 167.64 110.49 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "739bb37b-873b-559e-a616-e97422c1d789")
+		(property "Reference" "TP3"
+			(at 167.64 105.918 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "TP0.8"
+			(at 167.64 103.378 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 167.64 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 167.64 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "φ0.8 测试点，电机 W 相"
+			(at 167.64 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(pin "1"
+			(uuid "cfb07ae7-b041-5009-a4d0-8291d848c470")
+		)
+		(instances
+			(project "LA150C_RDIVER_V1.00"
+				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd"
+					(reference "TP3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 167.64 130.81 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7e449593-a465-580e-9e99-2593bf280058")
+		(property "Reference" "TP7"
+			(at 167.64 126.238 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "TP0.8"
+			(at 167.64 123.698 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 167.64 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 167.64 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "φ0.8 测试点，PWR_3V3 电源轨"
+			(at 167.64 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(pin "1"
+			(uuid "cb02a247-3e6d-5ac2-8979-518336cad64c")
+		)
+		(instances
+			(project "LA150C_RDIVER_V1.00"
+				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd"
+					(reference "TP7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LA150C_RDIVER_V1.00:DF52-4P-0.8C")
+		(at 45.72 152.4 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8a9456c8-0894-5de9-a60e-31b732920737")
+		(property "Reference" "J1"
+			(at 36.83 144.78 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "DF52-4P-0.8C"
+			(at 36.83 142.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" ""
+			(at 45.72 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.72 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "DF52-4P-0.8C 整机对外连接器"
+			(at 45.72 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "MPN" "DF52-4P-0.8C"
+			(at 45.72 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Manufacturer" "Hirose"
+			(at 45.72 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(pin "1"
+			(uuid "1754c0e3-102a-5f13-8428-b793cb7fdb45")
+		)
+		(pin "2"
+			(uuid "5a10ddf2-4dc0-56c3-b4dd-262f6fc065c5")
+		)
+		(pin "3"
+			(uuid "a61dab41-67b0-543f-b6e4-95490944d817")
+		)
+		(pin "4"
+			(uuid "52625783-f0a0-5e2f-8dcc-dc55174047e9")
+		)
+		(instances
+			(project "LA150C_RDIVER_V1.00"
+				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LA150C_RDIVER_V1.00:VBUS")
+		(at 172.72 125.73 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ad607543-9b5a-5ce4-9fa7-4b2a3869e33a")
+		(property "Reference" "#PWR905"
+			(at 171.958 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 175.26 126.365 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" ""
+			(at 172.72 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.72 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 172.72 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(pin "1"
+			(uuid "e603d163-a886-5a41-839c-256534c4554c")
+		)
+		(instances
+			(project "LA150C_RDIVER_V1.00"
+				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd"
+					(reference "#PWR905")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 167.64 120.65 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b3623d5d-a806-554a-9429-dcd0afbba033")
+		(property "Reference" "TP5"
+			(at 167.64 116.078 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "TP0.8"
+			(at 167.64 113.538 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 167.64 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 167.64 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "φ0.8 测试点，一维力传感器预留输入 N"
+			(at 167.64 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(pin "1"
+			(uuid "02191385-8f5c-5017-96fc-0fb3917bd680")
+		)
+		(instances
+			(project "LA150C_RDIVER_V1.00"
+				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd"
+					(reference "TP5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 167.64 115.57 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bb5fd90d-ad6a-542d-b7eb-1ed84dd9e31c")
+		(property "Reference" "TP4"
+			(at 167.64 110.998 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "TP0.8"
+			(at 167.64 108.458 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 167.64 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 167.64 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "φ0.8 测试点，一维力传感器预留输入 P"
+			(at 167.64 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(pin "1"
+			(uuid "76705933-6b62-5b34-a539-9009fcbffa81")
+		)
+		(instances
+			(project "LA150C_RDIVER_V1.00"
+				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd"
+					(reference "TP4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LA150C_RDIVER_V1.00:VBUS_IN")
+		(at 31.75 148.59 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cd7abff8-c15d-5789-82a2-968cd6ac26c2")
+		(property "Reference" "#PWR903"
+			(at 30.988 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "VBUS_IN"
+			(at 34.29 149.225 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" ""
+			(at 31.75 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 31.75 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 31.75 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(pin "1"
+			(uuid "c093490d-004e-555f-b842-a258544d4a54")
+		)
+		(instances
+			(project "LA150C_RDIVER_V1.00"
+				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd"
+					(reference "#PWR903")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LA150C_RDIVER_V1.00:GND")
+		(at 31.75 171.45 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f8a8d98b-4565-5464-a165-66bb24294043")
+		(property "Reference" "#PWR902"
+			(at 30.48 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "GND"
+			(at 34.29 172.085 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" ""
+			(at 31.75 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 31.75 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 31.75 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(pin "1"
+			(uuid "51b972ca-1800-5e20-86b3-acd184d0e6ce")
+		)
+		(instances
+			(project "LA150C_RDIVER_V1.00"
+				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd"
+					(reference "#PWR902")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 88.9 20.32)
+		(size 76.2 142.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+			(color 128 0 0 1)
+		)
+		(fill
+			(color 128 255 128 1)
+		)
+		(uuid "07baf6c9-443b-535b-ae5c-72067acbe97f")
+		(property "Sheetname" "MCU"
+			(at 88.9 17.78 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "SCH_LA150C_MCU_V1.00.kicad_sch"
+			(at 88.9 20.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(pin "AD_VBUS" input
+			(at 88.9 45.72 180)
+			(uuid "5d6d4501-98dd-5ead-a5af-eb6cf535fabd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CAN0_TX" output
+			(at 88.9 71.12 180)
+			(uuid "980041f7-df85-5cf8-ac48-35ecce8a794d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CAN0_RX" input
+			(at 88.9 76.2 180)
+			(uuid "95fb2ff5-b067-52d5-a02d-ffb8bd35d0a4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SPI2_SCK" output
+			(at 88.9 111.76 180)
+			(uuid "b41a4b69-b619-5380-8e35-6df6394d2669")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SPI2_MISO" input
+			(at 88.9 116.84 180)
+			(uuid "ed038276-daad-5369-8eb6-809e9fe37b7f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SPI2_CSN" output
+			(at 88.9 121.92 180)
+			(uuid "f812d89f-ec38-5411-9bbc-705c28153e4f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "FORCE_P" input
+			(at 88.9 138.43 180)
+			(uuid "967a36f0-23bf-5e7e-b39f-2ba15706fc85")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "FORCE_N" input
+			(at 88.9 143.51 180)
+			(uuid "1e03f23b-e9c0-56d2-844e-3d20d441969b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SWDIO" bidirectional
+			(at 88.9 148.59 180)
+			(uuid "41e6d523-bf3f-5c94-b912-451c2a80702d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SWCLK" input
+			(at 88.9 153.67 180)
+			(uuid "a3bb1c29-ed2d-5145-a32f-5c3b1e925a55")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "NRST" bidirectional
+			(at 88.9 158.75 180)
+			(uuid "caff0f98-6e10-54ff-a8b3-19f0e7fc409f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PWM_A" output
+			(at 165.1 30.48 0)
+			(uuid "b55a09a3-498e-5280-8b3c-4219ad406c13")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "EN_A" output
+			(at 165.1 35.56 0)
+			(uuid "43e8fb0b-2bc7-5004-a757-1047250f7d46")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PWM_B" output
+			(at 165.1 40.64 0)
+			(uuid "da56fed5-8e86-53c8-af0b-4fd916f4d57c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "EN_B" output
+			(at 165.1 45.72 0)
+			(uuid "977f8e00-4833-53dc-8cdc-ebaecf420c41")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PWM_C" output
+			(at 165.1 50.8 0)
+			(uuid "b43c0219-9996-566d-9f1d-4b9ad69693eb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "EN_C" output
+			(at 165.1 55.88 0)
+			(uuid "ee24d150-4ef0-52dd-85e9-41aeb77f9daa")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "nSLEEP" output
+			(at 165.1 60.96 0)
+			(uuid "ac689416-969c-5e5e-a2f1-003c17562fb9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "nFAULT" input
+			(at 165.1 66.04 0)
+			(uuid "ce6bc2b0-11c0-515e-b731-861ff3c664c8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SO_A" input
+			(at 165.1 76.2 0)
+			(uuid "fe530dc9-d5e3-59d4-8895-af1f3a66e98a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SO_B" input
+			(at 165.1 81.28 0)
+			(uuid "0af5cc8d-2f0a-523f-9916-1d7b7e0f6264")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SO_C" input
+			(at 165.1 86.36 0)
+			(uuid "5c530c4b-d117-559b-8e1c-c9531b02fbc9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "AD_NTC" input
+			(at 165.1 91.44 0)
+			(uuid "402d3898-f725-5abc-9a2d-c1a1bca88a10")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "LA150C_RDIVER_V1.00"
+				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 20.32 63.5)
+		(size 45.72 33.02)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+			(color 128 0 0 1)
+		)
+		(fill
+			(color 128 255 128 1)
+		)
+		(uuid "d34be655-b805-5872-ac3c-ff5e37085fe8")
+		(property "Sheetname" "communication"
+			(at 20.32 60.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "SCH_LA150C_communication_V1.00.kicad_sch"
+			(at 20.32 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(pin "CAN0_TX" input
+			(at 66.04 71.12 0)
+			(uuid "e0c2c59b-e4bf-514f-a03f-313d9d5869d5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CAN0_RX" output
+			(at 66.04 76.2 0)
+			(uuid "f3a2596c-2937-51c1-a170-5945a4eb84f4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CANH" bidirectional
+			(at 66.04 81.28 0)
+			(uuid "92a99176-3e31-55ab-8529-cc93075be140")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CANL" bidirectional
+			(at 66.04 86.36 0)
+			(uuid "61041cee-d783-5492-a116-39ccf0473a08")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "LA150C_RDIVER_V1.00"
+				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 187.96 20.32)
+		(size 55.88 142.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+			(color 128 0 0 1)
+		)
+		(fill
+			(color 128 255 128 1)
+		)
+		(uuid "f65d106c-768b-5baa-b2fa-305e579eb962")
+		(property "Sheetname" "MOTOR"
+			(at 187.96 17.78 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "SCH_LA150C_DRIVER_V1.00.kicad_sch"
+			(at 187.96 20.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(pin "PWM_A" input
+			(at 187.96 30.48 180)
+			(uuid "5d65bc24-0828-5147-b176-c2351d406024")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "EN_A" input
+			(at 187.96 35.56 180)
+			(uuid "beb5cee0-cc0a-543a-b029-7a4464b85af9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PWM_B" input
+			(at 187.96 40.64 180)
+			(uuid "675a3e34-e013-5af2-b08f-8393b01f0d06")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "EN_B" input
+			(at 187.96 45.72 180)
+			(uuid "c7039d04-494a-517f-9411-729840adfed0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PWM_C" input
+			(at 187.96 50.8 180)
+			(uuid "3f95f2c7-16b5-5e0a-8df8-8c3e2a20944e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "EN_C" input
+			(at 187.96 55.88 180)
+			(uuid "2dbc4210-bc39-53c6-b509-ee4cecff27ce")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "nSLEEP" input
+			(at 187.96 60.96 180)
+			(uuid "1cb6e068-f1e4-5970-af7b-9a1e921aee06")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "nFAULT" output
+			(at 187.96 66.04 180)
+			(uuid "0452bd71-227a-512e-8eca-2258aa0a4594")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SO_A" output
+			(at 187.96 76.2 180)
+			(uuid "916793da-9208-5150-9830-7cfd1c342212")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SO_B" output
+			(at 187.96 81.28 180)
+			(uuid "2d535a9c-b260-5deb-afca-25afbaa796c1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SO_C" output
+			(at 187.96 86.36 180)
+			(uuid "bc06605f-d226-5a8a-a6b4-0cef3b4a40b3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "AD_NTC" output
+			(at 187.96 91.44 180)
+			(uuid "9e011b97-e899-5abd-9ca0-ea544d3167af")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MOT_U" output
+			(at 243.84 60.96 0)
+			(uuid "73925a5f-5df0-5e59-b278-5e5b71e97227")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "MOT_V" output
+			(at 243.84 66.04 0)
+			(uuid "afd779b4-a832-574b-89c0-cc4e3c15a7dc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "MOT_W" output
+			(at 243.84 71.12 0)
+			(uuid "38d0eaac-7e9b-5e9e-8766-8090427cc6e4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "LA150C_RDIVER_V1.00"
+				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 20.32 20.32)
+		(size 45.72 33.02)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+			(color 128 0 0 1)
+		)
+		(fill
+			(color 128 255 128 1)
+		)
+		(uuid "f83d8889-4e36-52ba-b794-5483b81faaff")
+		(property "Sheetname" "POWER"
+			(at 20.32 17.78 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "SCH_LA150C_POWER_V1.00.kicad_sch"
+			(at 20.32 20.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(pin "AD_VBUS" output
+			(at 66.04 45.72 0)
+			(uuid "5d8a9929-dcd1-5662-bc36-79390a635f49")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "LA150C_RDIVER_V1.00"
+				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 20.32 106.68)
+		(size 45.72 27.94)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+			(color 128 0 0 1)
+		)
+		(fill
+			(color 128 255 128 1)
+		)
+		(uuid "f92db1b0-5029-52e8-9e58-5cfde85c6269")
+		(property "Sheetname" "ENCODER"
+			(at 20.32 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "SCH_LA150C_ENCODER_V1.00.kicad_sch"
+			(at 20.32 106.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(pin "SPI2_SCK" input
+			(at 66.04 111.76 0)
+			(uuid "0a7f73b1-5c38-504e-8780-bb82df3403bb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SPI2_MISO" output
+			(at 66.04 116.84 0)
+			(uuid "a15e905e-4e9c-556a-a4f1-5622fb10872b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SPI2_CSN" input
+			(at 66.04 121.92 0)
+			(uuid "08565ac1-0ad2-5d5b-98fb-29239dfa0b2c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "LA150C_RDIVER_V1.00"
+				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

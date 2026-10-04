@@ -1,0 +1,26 @@
+	(kicad_sch
+		(version 20251024)
+		(generator "eeschema")
+		(generator_version "10.0")
+		(uuid "ab848f6e-c72e-4a1f-b72b-fe45c11c2173")
+		(paper "A4")
+		(title_block
+			(title "LA150C RDIVER V1.00")
+			(date "2026-10-04")
+			(rev "V1.00")
+			(company "三花智控")
+			(comment 1 "LA150C 集成驱动器原理图")
+			(comment 2 "LA150C-RDIVER-SCH-001")
+			(comment 3 "设计图纸")
+			(comment 4 "评审通过")
+			(comment 5 "蒋工")
+			(comment 6 "待定")
+			(comment 7 "硬件设计部")
+		)
+		(lib_symbols)
+		(sheet_instances
+			(path "/"
+				(page "1")
+			)
+		)
+	)

@@ -1,0 +1,31 @@
+(sym_lib_table
+	(version 7)
+	(lib
+		(name "LA150C_RDIVER_V1.00")
+		(type "KiCad")
+		(uri "${KIPRJMOD}/library/LA150C_RDIVER_V1.00.kicad_sym")
+		(options "")
+		(descr "LA150C RDIVER V1.00 project symbols")
+	)
+	(lib
+		(name "Device")
+		(type "KiCad")
+		(uri "${KICAD10_SYMBOL_DIR}/Device.kicad_sym")
+		(options "")
+		(descr "KiCad standard device symbols")
+	)
+	(lib
+		(name "Connector")
+		(type "KiCad")
+		(uri "${KICAD10_SYMBOL_DIR}/Connector.kicad_sym")
+		(options "")
+		(descr "KiCad standard connector symbols")
+	)
+	(lib
+		(name "Transistor_FET")
+		(type "KiCad")
+		(uri "${KICAD10_SYMBOL_DIR}/Transistor_FET.kicad_sym")
+		(options "")
+		(descr "KiCad standard FET symbols")
+	)
+)
