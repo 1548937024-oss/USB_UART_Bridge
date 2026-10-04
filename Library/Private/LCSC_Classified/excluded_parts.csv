@@ -1,0 +1,9 @@
+LCSC,Reason,Replacement
+C124020,Preferred manufacturer datasheet unavailable; actual design uses another CAN FD transceiver.,C30111221
+C19077266,Legacy LCSC code not found and device identity/package not confirmed.,
+C54318468,Legacy BOM placeholder without confirmed MPN or package.,
+C9900093456,Legacy LCSC code not found and device identity/package not confirmed.,
+C9900198844,Legacy BOM placeholder without confirmed MPN or package.,
+C9900232088,Legacy BOM placeholder without confirmed MPN or package.,
+C9900301658,Replaced by SLESD11LE5.0C.,C54582078
+C9900304380,Legacy BOM placeholder without confirmed MPN or package.,

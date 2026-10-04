@@ -15,7 +15,7 @@
     )
     (property
       "Value"
-      "MT6701QT-ACD_C49257133"
+      "暂无料号25"
       (at 0 -15.24 0)
       (effects (font (size 1.27 1.27) ))
     )
@@ -28,14 +28,14 @@
     )
     (property
       "Datasheet"
-      "https://www.lcsc.com/datasheet/C49257133.pdf"
+      "https://datasheet.lcsc.com/datasheet/pdf/935357a86952b28e12ac9bd3d186d5d1.pdf?productCode=C49257133"
       (at 0 -20.32 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
     )
     (property
       "Manufacturer"
-      "NOVOSENSE(纳芯微)"
+      "NOVOSENSE"
       (at 0 -22.86 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
@@ -53,6 +53,36 @@
       (at 0 -27.94 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
+    )
+    (property "DatasheetRev" "Rev1.5"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "DatasheetDate" "2021-03"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "LocalDatasheet" "../datasheets/C49257133/MT6701_Rev1.5_2021.03.pdf"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "ki_keywords" "Magnetic Sensors/Angle, Linear Position Measuring"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "ki_description" "QFN-16(3x3) Angle, Linear Position Measuring"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "Description" "QFN-16(3x3) Angle, Linear Position Measuring"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
     )
     (symbol "MT6701QT-ACD_C49257133_0_1"
       (rectangle
@@ -225,10 +255,25 @@
     )
     (property
       "ki_keywords"
-      "Position Sensor"
+      "Magnetic Sensors/Angle, Linear Position Measuring"
       (at 0 -27.94 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
+    )
+    (property "ki_description" "MA735 magnetic angle sensor, QFN-14 2x2mm"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "Description" "MA735 magnetic angle sensor, QFN-14 2x2mm"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "LocalDatasheet" "../datasheets/C7433196/MA735GGU-Z.pdf"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
     )
     (symbol "MA735GGU-Z_0_1"
       (rectangle
@@ -342,7 +387,7 @@
     )
     (property
       "Value"
-      "IC-PVL"
+      "iC-PVL"
       (at 0 -15.24 0)
       (effects (font (size 1.27 1.27) ))
     )
@@ -355,7 +400,7 @@
     )
     (property
       "Datasheet"
-      "https://www.lcsc.com/datasheet/C9900009343.pdf"
+      "https://atta.szlcsc.com/upload/public/pdf/source/20260917/41A48149B31B33F1461152DD9086207D.pdf"
       (at 0 -20.32 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
@@ -373,6 +418,31 @@
       (at 0 -25.40 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
+    )
+    (property "Manufacturer" "IC-HAUS"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "ki_keywords" "Magnetic Sensors/Angle, Linear Position Measuring"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "ki_description" "iC-PVL QFN16 4x4 Linear Hall Sensor"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "Description" "iC-PVL QFN16 4x4 Linear Hall Sensor"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "LocalDatasheet" "../datasheets/C9900009343/iC-PVL.pdf"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
     )
     (symbol "IC-PVL_0_1"
       (rectangle

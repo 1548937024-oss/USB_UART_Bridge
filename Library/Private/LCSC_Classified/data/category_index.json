@@ -1,8 +1,8 @@
 {
-  "parts": 105,
+  "parts": 102,
   "top_categories": {
     "Capacitors": 27,
-    "Circuit Protection": 2,
+    "Circuit Protection": 1,
     "Connectors": 7,
     "Crystals, Oscillators, Resonators": 1,
     "Diodes": 2,
@@ -10,13 +10,13 @@
     "Filters": 2,
     "Inductors, Coils, Chokes": 2,
     "Industrial control electrical": 1,
-    "Interface": 4,
-    "Magnetic Sensors": 5,
+    "Interface": 3,
+    "Magnetic Sensors": 3,
     "Memory": 1,
-    "Motor Driver ICs": 2,
+    "Motor Driver ICs": 3,
     "Optoelectronics": 3,
-    "Power Management (PMIC)": 7,
-    "Resistors": 27,
+    "Power Management (PMIC)": 6,
+    "Resistors": 28,
     "Sensors": 1,
     "Switches": 1,
     "Transistors": 8
@@ -30,11 +30,6 @@
     {
       "top": "Circuit Protection",
       "sub": "ESD Protection",
-      "parts": 1
-    },
-    {
-      "top": "Circuit Protection",
-      "sub": "TVS Diodes",
       "parts": 1
     },
     {
@@ -85,12 +80,12 @@
     {
       "top": "Interface",
       "sub": "Drivers, Receivers, Transceivers",
-      "parts": 4
+      "parts": 3
     },
     {
       "top": "Magnetic Sensors",
       "sub": "Angle, Linear Position Measuring",
-      "parts": 5
+      "parts": 3
     },
     {
       "top": "Memory",
@@ -105,17 +100,12 @@
     {
       "top": "Motor Driver ICs",
       "sub": "Motor Drivers, Controllers",
-      "parts": 1
+      "parts": 2
     },
     {
       "top": "Optoelectronics",
       "sub": "LED Indication - Discrete",
       "parts": 3
-    },
-    {
-      "top": "Power Management (PMIC)",
-      "sub": "Power Modules",
-      "parts": 1
     },
     {
       "top": "Power Management (PMIC)",
@@ -130,7 +120,7 @@
     {
       "top": "Resistors",
       "sub": "Chip Resistor - Surface Mount",
-      "parts": 27
+      "parts": 28
     },
     {
       "top": "Sensors",
@@ -144,13 +134,8 @@
     },
     {
       "top": "Transistors",
-      "sub": "Single FETs MOSFETs",
-      "parts": 1
-    },
-    {
-      "top": "Transistors",
       "sub": "Thyristors",
-      "parts": 7
+      "parts": 8
     }
   ]
 }

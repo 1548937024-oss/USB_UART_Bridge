@@ -13,6 +13,30 @@ from pathlib import Path
 
 
 INVALID_PATH_CHARS = re.compile(r'[<>:"/\\|?*]+')
+PART_FIELDS = (
+    "LCSC",
+    "MPN",
+    "Manufacturer",
+    "Description",
+    "Category",
+    "Symbol",
+    "Footprint",
+    "Value",
+    "Package",
+    "Datasheet",
+    "DatasheetRev",
+    "DatasheetDate",
+    "LocalDatasheet",
+    "Model3D",
+    "Lifecycle",
+    "Source",
+    "SourceFootprint",
+    "LCSC_URL",
+    "Specifications",
+    "Notes",
+    "ReviewStatus",
+    "SourceBundles",
+)
 
 
 def sanitize_path_segment(value: str) -> str:
@@ -25,7 +49,44 @@ def read_csv(path: Path) -> list[dict[str, str]]:
         return list(csv.DictReader(handle))
 
 
-def merge_rows(paths: list[Path], overrides: dict[str, dict[str, str]]) -> list[dict[str, str]]:
+def append_note(row: dict[str, str], note: str) -> None:
+    if not note:
+        return
+    existing_notes = (row.get("Notes") or "").strip()
+    if note not in existing_notes:
+        row["Notes"] = f"{existing_notes}; {note}".strip("; ")
+
+
+def apply_overrides(
+    row: dict[str, str],
+    category_overrides: dict[str, dict[str, str]],
+    metadata_overrides: dict[str, dict[str, str]],
+) -> None:
+    lcsc = row["LCSC"]
+    override = category_overrides.get(lcsc, {})
+    if override.get("Category"):
+        row["Category"] = override["Category"]
+    append_note(row, (override.get("Notes") or "").strip())
+
+    override = metadata_overrides.get(lcsc, {})
+    for field, value in override.items():
+        if field == "LCSC" or not value:
+            continue
+        if field == "Notes":
+            append_note(row, value)
+        else:
+            row[field] = value
+
+    if row.get("ReviewStatus") in {"LOOKUP_FAILED", "LCSC_CONFLICT"}:
+        row["ReviewStatus"] = "CLASSIFIED_PARTIAL"
+
+
+def merge_rows(
+    paths: list[Path],
+    category_overrides: dict[str, dict[str, str]],
+    metadata_overrides: dict[str, dict[str, str]],
+    excluded: dict[str, dict[str, str]],
+) -> list[dict[str, str]]:
     merged: dict[str, dict[str, str]] = {}
 
     for path in paths:
@@ -33,8 +94,21 @@ def merge_rows(paths: list[Path], overrides: dict[str, dict[str, str]]) -> list[
             lcsc = (row.get("LCSC") or "").strip().upper()
             if not lcsc:
                 continue
+            if lcsc in excluded:
+                continue
 
-            result = merged.setdefault(lcsc, dict(row))
+            result = merged.setdefault(
+                lcsc,
+                {field: "" for field in PART_FIELDS},
+            )
+            for field in PART_FIELDS:
+                if field == "LCSC":
+                    continue
+                value = (row.get(field) or "").strip()
+                if value:
+                    result[field] = value
+            result["LCSC"] = lcsc
+
             source_name = path.parent.name
             previous_sources = result.get("SourceBundles", "")
             sources = {
@@ -46,18 +120,8 @@ def merge_rows(paths: list[Path], overrides: dict[str, dict[str, str]]) -> list[
                 sources.add(source_name)
             result["SourceBundles"] = "; ".join(sorted(sources))
 
-            override = overrides.get(lcsc, {})
-            if override.get("Category"):
-                result["Category"] = override["Category"]
-            if override.get("Notes"):
-                existing_notes = (result.get("Notes") or "").strip()
-                override_note = override["Notes"]
-                if override_note not in existing_notes:
-                    result["Notes"] = (
-                        f"{existing_notes}; {override_note}".strip("; ")
-                    )
-            if result.get("ReviewStatus") in {"LOOKUP_FAILED", "LCSC_CONFLICT"}:
-                result["ReviewStatus"] = "CLASSIFIED_PARTIAL"
+    for row in merged.values():
+        apply_overrides(row, category_overrides, metadata_overrides)
 
     return sorted(merged.values(), key=lambda row: row["LCSC"])
 
@@ -85,21 +149,44 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("inputs", nargs="+", type=Path)
     parser.add_argument("--overrides", type=Path)
+    parser.add_argument("--metadata-overrides", type=Path)
+    parser.add_argument("--exclude-parts", type=Path)
     parser.add_argument("--output-dir", type=Path, required=True)
     args = parser.parse_args()
 
     output_dir = args.output_dir.resolve()
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    overrides: dict[str, dict[str, str]] = {}
+    category_overrides: dict[str, dict[str, str]] = {}
     if args.overrides:
-        overrides = {
+        category_overrides = {
             (row.get("LCSC") or "").strip().upper(): row
             for row in read_csv(args.overrides.resolve())
             if (row.get("LCSC") or "").strip()
         }
 
-    rows = merge_rows([path.resolve() for path in args.inputs], overrides)
+    metadata_overrides: dict[str, dict[str, str]] = {}
+    if args.metadata_overrides:
+        metadata_overrides = {
+            (row.get("LCSC") or "").strip().upper(): row
+            for row in read_csv(args.metadata_overrides.resolve())
+            if (row.get("LCSC") or "").strip()
+        }
+
+    excluded: dict[str, dict[str, str]] = {}
+    if args.exclude_parts:
+        excluded = {
+            (row.get("LCSC") or "").strip().upper(): row
+            for row in read_csv(args.exclude_parts.resolve())
+            if (row.get("LCSC") or "").strip()
+        }
+
+    rows = merge_rows(
+        [path.resolve() for path in args.inputs],
+        category_overrides,
+        metadata_overrides,
+        excluded,
+    )
     if not rows:
         raise RuntimeError("No parts found")
 
@@ -123,7 +210,11 @@ def main() -> int:
         shutil.rmtree(category_dir)
     category_dir.mkdir(parents=True, exist_ok=True)
 
-    all_fields = list(rows[0].keys())
+    all_fields = list(PART_FIELDS)
+    for row in rows:
+        for field in row:
+            if field not in all_fields:
+                all_fields.append(field)
     with (data_dir / "all_parts.csv").open(
         "w", newline="", encoding="utf-8-sig"
     ) as handle:

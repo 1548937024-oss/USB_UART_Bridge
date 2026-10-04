@@ -15,7 +15,7 @@
     )
     (property
       "Value"
-      "FNR4030S220MT"
+      "22uH"
       (at 0 -5.08 0)
       (effects (font (size 1.27 1.27) ))
     )
@@ -28,14 +28,14 @@
     )
     (property
       "Datasheet"
-      "https://lcsc.com/product-detail/Power-Inductors_22uH-20-1-0A_C167883.html"
+      "https://datasheet.lcsc.com/datasheet/pdf/a0b12ba9dfe6b9e66b6bb852b7c71c03.pdf?productCode=C167883"
       (at 0 -10.16 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
     )
     (property
       "Manufacturer"
-      "cjiang(长江微电)"
+      "cjiang"
       (at 0 -12.70 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
@@ -56,10 +56,25 @@
     )
     (property
       "ki_keywords"
-      "Power Inductors"
+      "Inductors, Coils, Chokes/Fixed Inductors"
       (at 0 -20.32 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
+    )
+    (property "ki_description" "1.2A 22uH ±20% 1.4A 292mΩ Magnetic Shielded Inductor SMD,4x4mm Fixed Inductors RoHS"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "Description" "1.2A 22uH ±20% 1.4A 292mΩ Magnetic Shielded Inductor SMD,4x4mm Fixed Inductors RoHS"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "LocalDatasheet" "../datasheets/C167883/FNR4030S220MT.pdf"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
     )
     (symbol "FNR4030S220MT_0_1"
       (arc
@@ -117,7 +132,7 @@
     )
     (property
       "Value"
-      "FXL0530-R10-M"
+      "100nH"
       (at 0 -5.08 0)
       (effects (font (size 1.27 1.27) ))
     )
@@ -130,14 +145,14 @@
     )
     (property
       "Datasheet"
-      "https://lcsc.com/product-detail/Power-Inductors_cjiang-Changjiang-Microelectronics-Tech-FXL0530-R10-M_C524586.html"
+      "https://datasheet.lcsc.com/datasheet/pdf/7ccab6d15d9e909aa3f3d55ed931dfcf.pdf?productCode=C524586"
       (at 0 -10.16 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
     )
     (property
       "Manufacturer"
-      "cjiang(长江微电)"
+      "cjiang"
       (at 0 -12.70 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
@@ -158,10 +173,25 @@
     )
     (property
       "ki_keywords"
-      "Power Inductors"
+      "Inductors, Coils, Chokes/Fixed Inductors"
       (at 0 -20.32 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
+    )
+    (property "ki_description" "25A 100nH ±20% 3mΩ 33A Molded inductor SMD,5.4x5.2mm Fixed Inductors RoHS"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "Description" "25A 100nH ±20% 3mΩ 33A Molded inductor SMD,5.4x5.2mm Fixed Inductors RoHS"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "LocalDatasheet" "../datasheets/C524586/FXL0530-R10-M.pdf"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
     )
     (symbol "FXL0530-R10-M_0_1"
       (arc

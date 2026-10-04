@@ -1,0 +1,17 @@
+{
+  "parts": 102,
+  "downloaded": 1,
+  "copied_from_cache": 0,
+  "existing_or_skipped": 0,
+  "failed": 0,
+  "missing_source": 0,
+  "results": [
+    {
+      "LCSC": "C114761",
+      "MPN": "RC0402FR-0715KL",
+      "Status": "downloaded",
+      "Datasheet": "https://atta.szlcsc.com/upload/public/pdf/source/20250610/89E4D743C004A82A45145C7A2CC3A578.pdf",
+      "LocalDatasheet": "../datasheets/C114761/RC0402FR-0715KL.pdf"
+    }
+  ]
+}

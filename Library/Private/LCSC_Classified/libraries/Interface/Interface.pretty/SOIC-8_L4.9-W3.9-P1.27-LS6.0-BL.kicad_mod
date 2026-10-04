@@ -41,9 +41,9 @@
 	(fp_line (start -2.45 -1.95) (end 2.45 -1.95) (layer F.CrtYd) (width 0.05))
 	(fp_line (start 2.45 -1.95) (end 2.45 1.95) (layer F.CrtYd) (width 0.05))
 	(fp_line (start 2.45 1.95) (end -2.45 1.95) (layer F.CrtYd) (width 0.05))
-	(model "D:/办公相关/项目相关/三花/03-灵巧手项目/O-外置驱动器/Library/Private/LCSC_Classified/libraries/Interface/Interface.3dshapes/SOIC-8_L4.9-W3.9-H1.7-LS6.0-P1.27.wrl"
-		(offset (xyz 0.000 0.000 0.000))
-		(scale (xyz 1 1 1))
-		(rotate (xyz 0 0 0))
-	)
+	(model "${LCSC_LIB_ROOT}/Interface/Interface.3dshapes/SOIC-8_L4.9-W3.9-H1.7-LS6.0-P1.27.wrl"
+			(offset (xyz 0.000 0.000 0.000))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
+		)
 )

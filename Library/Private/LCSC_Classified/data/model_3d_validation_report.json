@@ -1,0 +1,369 @@
+{
+  "footprint_files_changed": 39,
+  "models_normalized": 0,
+  "models_valid": 21,
+  "models_missing": 0,
+  "models_pruned": 39,
+  "entries": [
+    {
+      "Footprint": "C0201",
+      "Model": "${LCSC_LIB_ROOT}/Capacitors/Capacitors.3dshapes/C0201_L0.6-W0.3-H0.3.wrl",
+      "Action": "PRUNED",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Capacitors\\Capacitors.3dshapes\\C0201_L0.6-W0.3-H0.3.wrl"
+    },
+    {
+      "Footprint": "C0402",
+      "Model": "${LCSC_LIB_ROOT}/Capacitors/Capacitors.3dshapes/C0402_L1.0-W0.5-H0.5.wrl",
+      "Action": "KEEP",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Capacitors\\Capacitors.3dshapes\\C0402_L1.0-W0.5-H0.5.wrl"
+    },
+    {
+      "Footprint": "C0603",
+      "Model": "${LCSC_LIB_ROOT}/Capacitors/Capacitors.3dshapes/C0603_L1.6-W0.8-H0.8.wrl",
+      "Action": "KEEP",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Capacitors\\Capacitors.3dshapes\\C0603_L1.6-W0.8-H0.8.wrl"
+    },
+    {
+      "Footprint": "C0805",
+      "Model": "${LCSC_LIB_ROOT}/Capacitors/Capacitors.3dshapes/C0805_L2.0-W1.3-H1.3.wrl",
+      "Action": "KEEP",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Capacitors\\Capacitors.3dshapes\\C0805_L2.0-W1.3-H1.3.wrl"
+    },
+    {
+      "Footprint": "C1206",
+      "Model": "${LCSC_LIB_ROOT}/Capacitors/Capacitors.3dshapes/C1206_L3.2-W1.6-H1.3.wrl",
+      "Action": "PRUNED",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Capacitors\\Capacitors.3dshapes\\C1206_L3.2-W1.6-H1.3.wrl"
+    },
+    {
+      "Footprint": "C1210",
+      "Model": "${LCSC_LIB_ROOT}/Capacitors/Capacitors.3dshapes/C1210_L3.2-W2.5-H2.5.wrl",
+      "Action": "PRUNED",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Capacitors\\Capacitors.3dshapes\\C1210_L3.2-W2.5-H2.5.wrl"
+    },
+    {
+      "Footprint": "C_0201_0603Metric",
+      "Model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+      "Action": "KEEP",
+      "ResolvedPath": "D:\\KiCad10.0\\share\\kicad\\3dmodels\\Capacitor_SMD.3dshapes\\C_0201_0603Metric.step"
+    },
+    {
+      "Footprint": "C_0402_1005Metric",
+      "Model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+      "Action": "KEEP",
+      "ResolvedPath": "D:\\KiCad10.0\\share\\kicad\\3dmodels\\Capacitor_SMD.3dshapes\\C_0402_1005Metric.step"
+    },
+    {
+      "Footprint": "D_0201_0603Metric",
+      "Model": "${LCSC_LIB_ROOT}/Circuit Protection/Circuit Protection.3dshapes/DFN0603-2L-BI-1.wrl",
+      "Action": "KEEP",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Circuit Protection\\Circuit Protection.3dshapes\\DFN0603-2L-BI-1.wrl"
+    },
+    {
+      "Footprint": "CONN-SMD_2P-P1.25_BM02B-GHS-TBT-LF-SN",
+      "Model": "${LCSC_LIB_ROOT}/Connectors/Connectors.3dshapes/CONN-SMD_GH1.25-LS-2P.wrl",
+      "Action": "PRUNED",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Connectors\\Connectors.3dshapes\\CONN-SMD_GH1.25-LS-2P.wrl"
+    },
+    {
+      "Footprint": "CONN-SMD_BM05B-GHS-TBT",
+      "Model": "${LCSC_LIB_ROOT}/Connectors/Connectors.3dshapes/CONN-SMD_BM05B-GHS-TBT.wrl",
+      "Action": "KEEP",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Connectors\\Connectors.3dshapes\\CONN-SMD_BM05B-GHS-TBT.wrl"
+    },
+    {
+      "Footprint": "CONN-SMD_GT-A0801WRS-108BBT01",
+      "Model": "${LCSC_LIB_ROOT}/Connectors/Connectors.3dshapes/CONN-SMD_GT-A0801WRS-108BBT01.wrl",
+      "Action": "PRUNED",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Connectors\\Connectors.3dshapes\\CONN-SMD_GT-A0801WRS-108BBT01.wrl"
+    },
+    {
+      "Footprint": "CONN-TH_GREENCONN_GPCA101-0502A001C1AA",
+      "Model": "${LCSC_LIB_ROOT}/Connectors/Connectors.3dshapes/CONN-TH_GREENCONN_GPCA101-0502A001C1AA.wrl",
+      "Action": "PRUNED",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Connectors\\Connectors.3dshapes\\CONN-TH_GREENCONN_GPCA101-0502A001C1AA.wrl"
+    },
+    {
+      "Footprint": "CONN-TH_SM08B-SRSS-TB-LF-SN",
+      "Model": "${LCSC_LIB_ROOT}/Connectors/Connectors.3dshapes/CONN-SMD_SR1.00-WS-8P.wrl",
+      "Action": "PRUNED",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Connectors\\Connectors.3dshapes\\CONN-SMD_SR1.00-WS-8P.wrl"
+    },
+    {
+      "Footprint": "HDR-TH_3P-P2.54-V-M_PZ254V-11-03P",
+      "Model": "${LCSC_LIB_ROOT}/Connectors/Connectors.3dshapes/HDR-TH_3P-P2.54-V-M_PZ254V-11-03P.wrl",
+      "Action": "PRUNED",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Connectors\\Connectors.3dshapes\\HDR-TH_3P-P2.54-V-M_PZ254V-11-03P.wrl"
+    },
+    {
+      "Footprint": "HDR-TH_6P-P2.54-V-M-R2-C3-S2.54",
+      "Model": "${LCSC_LIB_ROOT}/Connectors/Connectors.3dshapes/HDR-TH_6P-P2.54-V-M-R2-C3-S2.54.wrl",
+      "Action": "PRUNED",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Connectors\\Connectors.3dshapes\\HDR-TH_6P-P2.54-V-M-R2-C3-S2.54.wrl"
+    },
+    {
+      "Footprint": "CRYSTAL-SMD_3P-L3.2-W1.3-P1.2-BL-1",
+      "Model": "${LCSC_LIB_ROOT}/Crystals, Oscillators, Resonators/Crystals, Oscillators, Resonators.3dshapes/CRYSTAL-SMD_3P-L3.2-W1.3-P1.2-BL.wrl",
+      "Action": "PRUNED",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Crystals, Oscillators, Resonators\\Crystals, Oscillators, Resonators.3dshapes\\CRYSTAL-SMD_3P-L3.2-W1.3-P1.2-BL.wrl"
+    },
+    {
+      "Footprint": "D_SOD-123",
+      "Model": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step",
+      "Action": "KEEP",
+      "ResolvedPath": "D:\\KiCad10.0\\share\\kicad\\3dmodels\\Diode_SMD.3dshapes\\D_SOD-123.step"
+    },
+    {
+      "Footprint": "SOT-323_SC-70",
+      "Model": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-323_SC-70.step",
+      "Action": "KEEP",
+      "ResolvedPath": "D:\\KiCad10.0\\share\\kicad\\3dmodels\\Package_TO_SOT_SMD.3dshapes\\SOT-323_SC-70.step"
+    },
+    {
+      "Footprint": "ucBGA-64_4x4mm_Layout8x8_P0.4mm",
+      "Model": "${KICAD10_3DMODEL_DIR}/Package_BGA.3dshapes/ucBGA-64_4x4mm_Layout8x8_P0.4mm.step",
+      "Action": "KEEP",
+      "ResolvedPath": "D:\\KiCad10.0\\share\\kicad\\3dmodels\\Package_BGA.3dshapes\\ucBGA-64_4x4mm_Layout8x8_P0.4mm.step"
+    },
+    {
+      "Footprint": "UFQFPN-48_L7.0-W7.0-P0.50-BL-EP5.6",
+      "Model": "${LCSC_LIB_ROOT}/Embedded Processors & Controllers/Embedded Processors & Controllers.3dshapes/UFQFPN-48_L7.0-W7.0-H0.6-P0.50.wrl",
+      "Action": "PRUNED",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Embedded Processors & Controllers\\Embedded Processors & Controllers.3dshapes\\UFQFPN-48_L7.0-W7.0-H0.6-P0.50.wrl"
+    },
+    {
+      "Footprint": "IND-SMD_4P-L4.5-W3.2-TL",
+      "Model": "${LCSC_LIB_ROOT}/Filters/Filters.3dshapes/IND-SMD_4P-L4.5-W3.2-H2.6.wrl",
+      "Action": "PRUNED",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Filters\\Filters.3dshapes\\IND-SMD_4P-L4.5-W3.2-H2.6.wrl"
+    },
+    {
+      "Footprint": "L_0402_1005Metric",
+      "Model": "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0402_1005Metric.step",
+      "Action": "KEEP",
+      "ResolvedPath": "D:\\KiCad10.0\\share\\kicad\\3dmodels\\Inductor_SMD.3dshapes\\L_0402_1005Metric.step"
+    },
+    {
+      "Footprint": "IND-SMD_L4.0-W4.0_FNR40XXS",
+      "Model": "${LCSC_LIB_ROOT}/Inductors, Coils, Chokes/Inductors, Coils, Chokes.3dshapes/IND-SMD_L4.0-W4.0-H2.6_FNR40XXS.wrl",
+      "Action": "PRUNED",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Inductors, Coils, Chokes\\Inductors, Coils, Chokes.3dshapes\\IND-SMD_L4.0-W4.0-H2.6_FNR40XXS.wrl"
+    },
+    {
+      "Footprint": "IND-SMD_L5.2-W5.4",
+      "Model": "${LCSC_LIB_ROOT}/Inductors, Coils, Chokes/Inductors, Coils, Chokes.3dshapes/IND-SMD_L5.2-W5.4.wrl",
+      "Action": "PRUNED",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Inductors, Coils, Chokes\\Inductors, Coils, Chokes.3dshapes\\IND-SMD_L5.2-W5.4.wrl"
+    },
+    {
+      "Footprint": "CONN-TH_XT30UPB-M",
+      "Model": "${LCSC_LIB_ROOT}/Industrial control electrical/Industrial control electrical.3dshapes/CONN-TH_XT30UPB-M.wrl",
+      "Action": "PRUNED",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Industrial control electrical\\Industrial control electrical.3dshapes\\CONN-TH_XT30UPB-M.wrl"
+    },
+    {
+      "Footprint": "SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL",
+      "Model": "${LCSC_LIB_ROOT}/Interface/Interface.3dshapes/SOIC-8_L4.9-W3.9-H1.7-LS6.0-P1.27.wrl",
+      "Action": "PRUNED",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Interface\\Interface.3dshapes\\SOIC-8_L4.9-W3.9-H1.7-LS6.0-P1.27.wrl"
+    },
+    {
+      "Footprint": "SOT-23-8_L2.9-W1.6-P0.65-LS2.8-BR",
+      "Model": "${LCSC_LIB_ROOT}/Interface/Interface.3dshapes/SOT-23-8_L2.9-W1.6-H1.5-LS2.8-P0.65.wrl",
+      "Action": "PRUNED",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Interface\\Interface.3dshapes\\SOT-23-8_L2.9-W1.6-H1.5-LS2.8-P0.65.wrl"
+    },
+    {
+      "Footprint": "QFN-16_L4.0-W4.0-P0.65-TL-EP2.7",
+      "Model": "${LCSC_LIB_ROOT}/Magnetic Sensors/Magnetic Sensors.3dshapes/QFN-16_L4.0-W4.0-H1.0-P0.65.wrl",
+      "Action": "PRUNED",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Magnetic Sensors\\Magnetic Sensors.3dshapes\\QFN-16_L4.0-W4.0-H1.0-P0.65.wrl"
+    },
+    {
+      "Footprint": "UTQFN-14_L2.0-W2.0-P0.40-TL",
+      "Model": "${LCSC_LIB_ROOT}/Magnetic Sensors/Magnetic Sensors.3dshapes/UTQFN-14_L2.0-W2.0-P0.40-TL.wrl",
+      "Action": "PRUNED",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Magnetic Sensors\\Magnetic Sensors.3dshapes\\UTQFN-14_L2.0-W2.0-P0.40-TL.wrl"
+    },
+    {
+      "Footprint": "VQFN-16_L3.0-W3.0-P0.50-TL-EP1.7",
+      "Model": "${LCSC_LIB_ROOT}/Magnetic Sensors/Magnetic Sensors.3dshapes/VQFN-16_L3.0-W3.0-H1.0-P0.50.wrl",
+      "Action": "PRUNED",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Magnetic Sensors\\Magnetic Sensors.3dshapes\\VQFN-16_L3.0-W3.0-H1.0-P0.50.wrl"
+    },
+    {
+      "Footprint": "UDFN-8_L3.0-W2.0-P0.50-TL",
+      "Model": "${LCSC_LIB_ROOT}/Memory/Memory.3dshapes/UDFN-8_L2.0-W3.0-H0.6-P0.50.wrl",
+      "Action": "PRUNED",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Memory\\Memory.3dshapes\\UDFN-8_L2.0-W3.0-H0.6-P0.50.wrl"
+    },
+    {
+      "Footprint": "QFN-24_L4.0-W3.0-P0.40-TL-EP",
+      "Model": "${LCSC_LIB_ROOT}/Motor Driver ICs/Motor Driver ICs.3dshapes/QFN-24_L4.0-W3.0-P0.40-TL-EP.wrl",
+      "Action": "KEEP",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Motor Driver ICs\\Motor Driver ICs.3dshapes\\QFN-24_L4.0-W3.0-P0.40-TL-EP.wrl"
+    },
+    {
+      "Footprint": "VQFN-24_L4.0-W4.0-P0.50-TL-EP2.5",
+      "Model": "${LCSC_LIB_ROOT}/Motor Driver ICs/Motor Driver ICs.3dshapes/VQFN-24_L4.0-W4.0-P0.50-TL-EP2.5.wrl",
+      "Action": "KEEP",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Motor Driver ICs\\Motor Driver ICs.3dshapes\\VQFN-24_L4.0-W4.0-P0.50-TL-EP2.5.wrl"
+    },
+    {
+      "Footprint": "VQFN-28_L6.0-W5.0-P0.50-TL-EP4.0",
+      "Model": "${LCSC_LIB_ROOT}/Motor Driver ICs/Motor Driver ICs.3dshapes/VQFN-28_L6.0-W5.0-P0.50-TL-EP4.0.wrl",
+      "Action": "PRUNED",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Motor Driver ICs\\Motor Driver ICs.3dshapes\\VQFN-28_L6.0-W5.0-P0.50-TL-EP4.0.wrl"
+    },
+    {
+      "Footprint": "LED0402-FD_YELLOW",
+      "Model": "${LCSC_LIB_ROOT}/Optoelectronics/Optoelectronics.3dshapes/LED0402-FD_YELLOW.wrl",
+      "Action": "PRUNED",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Optoelectronics\\Optoelectronics.3dshapes\\LED0402-FD_YELLOW.wrl"
+    },
+    {
+      "Footprint": "LED0402-RD",
+      "Model": "${LCSC_LIB_ROOT}/Optoelectronics/Optoelectronics.3dshapes/LED0402_L1.0-W0.5-H0.2.wrl",
+      "Action": "PRUNED",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Optoelectronics\\Optoelectronics.3dshapes\\LED0402_L1.0-W0.5-H0.2.wrl"
+    },
+    {
+      "Footprint": "LED_0402_1005Metric",
+      "Model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0402_1005Metric.step",
+      "Action": "KEEP",
+      "ResolvedPath": "D:\\KiCad10.0\\share\\kicad\\3dmodels\\LED_SMD.3dshapes\\LED_0402_1005Metric.step"
+    },
+    {
+      "Footprint": "SO-8_L4.9-W3.9-P1.27-LS6.0-BL-EP",
+      "Model": "${LCSC_LIB_ROOT}/Power Management (PMIC)/Power Management (PMIC).3dshapes/SO-8_L4.9-W3.9-H1.5-LS5.9-P1.27.wrl",
+      "Action": "PRUNED",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Power Management (PMIC)\\Power Management (PMIC).3dshapes\\SO-8_L4.9-W3.9-H1.5-LS5.9-P1.27.wrl"
+    },
+    {
+      "Footprint": "SOT-223_L6.5-W3.5-P2.30-LS7.0-BR",
+      "Model": "${LCSC_LIB_ROOT}/Power Management (PMIC)/Power Management (PMIC).3dshapes/SOT-223-4P_L6.5-W3.5-H1.6-LS7.0-P2.30.wrl",
+      "Action": "PRUNED",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Power Management (PMIC)\\Power Management (PMIC).3dshapes\\SOT-223-4P_L6.5-W3.5-H1.6-LS7.0-P2.30.wrl"
+    },
+    {
+      "Footprint": "SOT-23-5_L2.9-W1.6-P0.95-LS2.8-BR",
+      "Model": "${LCSC_LIB_ROOT}/Power Management (PMIC)/Power Management (PMIC).3dshapes/SOT-23-5_L2.9-W1.6-P0.95-LS2.8-BR.wrl",
+      "Action": "PRUNED",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Power Management (PMIC)\\Power Management (PMIC).3dshapes\\SOT-23-5_L2.9-W1.6-P0.95-LS2.8-BR.wrl"
+    },
+    {
+      "Footprint": "SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BR",
+      "Model": "${LCSC_LIB_ROOT}/Power Management (PMIC)/Power Management (PMIC).3dshapes/SOT-23-5_L2.9-W1.6-H1.1-LS2.8-P0.95.wrl",
+      "Action": "PRUNED",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Power Management (PMIC)\\Power Management (PMIC).3dshapes\\SOT-23-5_L2.9-W1.6-H1.1-LS2.8-P0.95.wrl"
+    },
+    {
+      "Footprint": "U-DFN2020-6_L2.0-W2.0-P0.65-BL-EP-1",
+      "Model": "${LCSC_LIB_ROOT}/Power Management (PMIC)/Power Management (PMIC).3dshapes/U-DFN2020-6_L2.0-W2.0-P0.65-BL-EP-1.wrl",
+      "Action": "PRUNED",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Power Management (PMIC)\\Power Management (PMIC).3dshapes\\U-DFN2020-6_L2.0-W2.0-P0.65-BL-EP-1.wrl"
+    },
+    {
+      "Footprint": "WDFN-6_L2.0-W2.0-P0.65-BL-EP",
+      "Model": "${LCSC_LIB_ROOT}/Power Management (PMIC)/Power Management (PMIC).3dshapes/WDFN-6_L2.0-W2.0-H0.8-P0.65.wrl",
+      "Action": "PRUNED",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Power Management (PMIC)\\Power Management (PMIC).3dshapes\\WDFN-6_L2.0-W2.0-H0.8-P0.65.wrl"
+    },
+    {
+      "Footprint": "R0201",
+      "Model": "${LCSC_LIB_ROOT}/Resistors/Resistors.3dshapes/R0201_L0.6-W0.3-H0.3.wrl",
+      "Action": "PRUNED",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Resistors\\Resistors.3dshapes\\R0201_L0.6-W0.3-H0.3.wrl"
+    },
+    {
+      "Footprint": "R0402",
+      "Model": "${LCSC_LIB_ROOT}/Resistors/Resistors.3dshapes/R0402_L1.0-W0.5-H0.4.wrl",
+      "Action": "KEEP",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Resistors\\Resistors.3dshapes\\R0402_L1.0-W0.5-H0.4.wrl"
+    },
+    {
+      "Footprint": "R0603",
+      "Model": "${LCSC_LIB_ROOT}/Resistors/Resistors.3dshapes/R0603.wrl",
+      "Action": "KEEP",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Resistors\\Resistors.3dshapes\\R0603.wrl"
+    },
+    {
+      "Footprint": "R2512",
+      "Model": "${LCSC_LIB_ROOT}/Resistors/Resistors.3dshapes/R2512_L6.3-W3.2-H0.6.wrl",
+      "Action": "PRUNED",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Resistors\\Resistors.3dshapes\\R2512_L6.3-W3.2-H0.6.wrl"
+    },
+    {
+      "Footprint": "R_0201_0603Metric",
+      "Model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+      "Action": "KEEP",
+      "ResolvedPath": "D:\\KiCad10.0\\share\\kicad\\3dmodels\\Resistor_SMD.3dshapes\\R_0201_0603Metric.step"
+    },
+    {
+      "Footprint": "R_0402_1005Metric",
+      "Model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+      "Action": "KEEP",
+      "ResolvedPath": "D:\\KiCad10.0\\share\\kicad\\3dmodels\\Resistor_SMD.3dshapes\\R_0402_1005Metric.step"
+    },
+    {
+      "Footprint": "R_0402_1005Metric",
+      "Model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+      "Action": "KEEP",
+      "ResolvedPath": "D:\\KiCad10.0\\share\\kicad\\3dmodels\\Resistor_SMD.3dshapes\\R_0402_1005Metric.step"
+    },
+    {
+      "Footprint": "SW-SMD_L3.9-W3.0-P4.45",
+      "Model": "${LCSC_LIB_ROOT}/Switches/Switches.3dshapes/SW-SMD_L3.9-W2.9-H2.0-LS4.8.wrl",
+      "Action": "PRUNED",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Switches\\Switches.3dshapes\\SW-SMD_L3.9-W2.9-H2.0-LS4.8.wrl"
+    },
+    {
+      "Footprint": "DFN0603-D_L0.6-W0.3-P0.34-BI",
+      "Model": "${LCSC_LIB_ROOT}/Transistors/Transistors.3dshapes/DFN0603-D_L0.6-W0.3--H0.3-P0.34-BI.wrl",
+      "Action": "PRUNED",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Transistors\\Transistors.3dshapes\\DFN0603-D_L0.6-W0.3--H0.3-P0.34-BI.wrl"
+    },
+    {
+      "Footprint": "PDFN-8_L3.3-W3.3-P0.65-BL",
+      "Model": "${LCSC_LIB_ROOT}/Transistors/Transistors.3dshapes/PDFN-8_L3.3-W3.3-H0.8-P0.65.wrl",
+      "Action": "PRUNED",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Transistors\\Transistors.3dshapes\\PDFN-8_L3.3-W3.3-H0.8-P0.65.wrl"
+    },
+    {
+      "Footprint": "PG-TDSON-8_L5.0-W6.0-P1.27-LS6.2-BL-EP",
+      "Model": "${LCSC_LIB_ROOT}/Transistors/Transistors.3dshapes/PG-TDSON-8_L5.0-W6.0-H1.0-P1.27.wrl",
+      "Action": "PRUNED",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Transistors\\Transistors.3dshapes\\PG-TDSON-8_L5.0-W6.0-H1.0-P1.27.wrl"
+    },
+    {
+      "Footprint": "SMB_L4.6-W3.6-LS5.3-BI",
+      "Model": "${LCSC_LIB_ROOT}/Transistors/Transistors.3dshapes/SMB_L4.6-W3.6-LS5.3-BI.wrl",
+      "Action": "PRUNED",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Transistors\\Transistors.3dshapes\\SMB_L4.6-W3.6-LS5.3-BI.wrl"
+    },
+    {
+      "Footprint": "SMB_L4.6-W3.6-LS5.4-BI",
+      "Model": "${LCSC_LIB_ROOT}/Transistors/Transistors.3dshapes/SMB_L4.6-W3.6-LS5.4-BI.wrl",
+      "Action": "PRUNED",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Transistors\\Transistors.3dshapes\\SMB_L4.6-W3.6-LS5.4-BI.wrl"
+    },
+    {
+      "Footprint": "SOD-123_L2.8-W1.8-LS3.7-BI",
+      "Model": "${LCSC_LIB_ROOT}/Transistors/Transistors.3dshapes/SOD-123_L2.8-W1.8-LS3.7-BI.wrl",
+      "Action": "PRUNED",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Transistors\\Transistors.3dshapes\\SOD-123_L2.8-W1.8-LS3.7-BI.wrl"
+    },
+    {
+      "Footprint": "SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR",
+      "Model": "${LCSC_LIB_ROOT}/Transistors/Transistors.3dshapes/SOT-23-3P_L2.9-W1.3-H1.0-LS2.4-P0.95.wrl",
+      "Action": "KEEP",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Transistors\\Transistors.3dshapes\\SOT-23-3P_L2.9-W1.3-H1.0-LS2.4-P0.95.wrl"
+    },
+    {
+      "Footprint": "SOT-23_L2.9-W1.3-P1.90-LS2.4-BR",
+      "Model": "${LCSC_LIB_ROOT}/Transistors/Transistors.3dshapes/SOT-23-3P_L2.9-W1.3-H1.0-LS2.4-P0.95.wrl",
+      "Action": "KEEP",
+      "ResolvedPath": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Transistors\\Transistors.3dshapes\\SOT-23-3P_L2.9-W1.3-H1.0-LS2.4-P0.95.wrl"
+    }
+  ]
+}

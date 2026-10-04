@@ -16,6 +16,9 @@ import urllib.error
 import urllib.request
 from pathlib import Path
 
+from hide_passive_pin_names import hide_pin_names_in_file
+from library_metadata import remove_model_references, update_symbol_library_metadata
+
 
 USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -53,6 +56,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--state-file", type=Path, required=True)
     parser.add_argument("--limit", type=int)
+    parser.add_argument("--lcsc", nargs="+")
     parser.add_argument("--retry-failed", action="store_true")
     parser.add_argument("--retry-not-found", action="store_true")
     return parser.parse_args()
@@ -126,6 +130,7 @@ def fetch_component_data(
 def convert_part(
     lcsc: str,
     category: str,
+    row: dict[str, str],
     library_root: Path,
     easyeda_package: Path,
     cache_dir: Path,
@@ -172,6 +177,12 @@ def convert_part(
     if "Failed to fetch data from EasyEDA API" in output:
         return False, "failed"
     if "Created Kicad symbol" in output and "Created Kicad footprint" in output:
+        symbol_library = output_base.with_suffix(".kicad_sym")
+        if category in {"Resistors", "Capacitors"}:
+            hide_pin_names_in_file(symbol_library)
+        update_symbol_library_metadata(symbol_library, {lcsc: row})
+        for footprint in output_base.with_suffix(".pretty").glob("*.kicad_mod"):
+            remove_model_references(footprint)
         return True, "converted"
     return False, "failed"
 
@@ -189,10 +200,13 @@ def main() -> int:
         rows = list(csv.DictReader(handle))
 
     pending = []
+    requested = {value.strip().upper() for value in (args.lcsc or [])}
     for row in rows:
         lcsc = (row.get("LCSC") or "").strip().upper()
         category = (row.get("LibraryCategory") or "").strip()
         if not lcsc or not category:
+            continue
+        if requested and lcsc not in requested:
             continue
         if row.get("ConversionStatus") == "CONVERTED":
             continue
@@ -203,7 +217,7 @@ def main() -> int:
             continue
         if previous_status in {"failed", "rate_limited"} and not args.retry_failed:
             continue
-        pending.append((lcsc, category))
+        pending.append((lcsc, category, row))
 
     if args.limit is not None:
         pending = pending[: args.limit]
@@ -212,12 +226,13 @@ def main() -> int:
     failures = 0
     opener = build_easyeda_opener() if pending else None
 
-    for index, (lcsc, category) in enumerate(pending, start=1):
+    for index, (lcsc, category, row) in enumerate(pending, start=1):
         if opener is None:
             raise RuntimeError("EasyEDA session was not initialized")
         ok, status = convert_part(
             lcsc,
             category,
+            row,
             library_root,
             easyeda_package,
             cache_dir,

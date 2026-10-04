@@ -114,4 +114,9 @@
 		(layer F.CrtYd)
 		(width 0.05)
 	)
+	(model "${LCSC_LIB_ROOT}/Transistors/Transistors.3dshapes/SOT-23-3P_L2.9-W1.3-H1.0-LS2.4-P0.95.wrl"
+		(offset (xyz 0.000 0.000 0.000))
+		(scale (xyz 1 1 1))
+		(rotate (xyz 0 0 180))
+	)
 )

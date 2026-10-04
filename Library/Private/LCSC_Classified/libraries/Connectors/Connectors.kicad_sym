@@ -15,7 +15,7 @@
     )
     (property
       "Value"
-      "BM05B-GHS-TBT"
+      ""
       (at 0 -15.24 0)
       (effects (font (size 1.27 1.27) ))
     )
@@ -28,7 +28,7 @@
     )
     (property
       "Datasheet"
-      "https://lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_JST-Sales-America-BM05B-GHS-TBT-LF-SN-N_C189891.html"
+      "https://datasheet.lcsc.com/datasheet/pdf/145d85af57fc54ac5a4f36dce2b36dd3.pdf?productCode=C189891"
       (at 0 -20.32 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
@@ -56,10 +56,25 @@
     )
     (property
       "ki_keywords"
-      "Wire To Board / Wire To Wire Connector"
+      "Connectors/Headers, Male Pins"
       (at 0 -30.48 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
+    )
+    (property "ki_description" "Connector Header 5 position 1.25mm Pitch 1A Surface Mount,Vertical -25℃~+85℃"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "Description" "Connector Header 5 position 1.25mm Pitch 1A Surface Mount,Vertical -25℃~+85℃"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "LocalDatasheet" "../datasheets/C189891/BM05B-GHS-TBT(LF)(SN)(N).pdf"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
     )
     (symbol "BM05B-GHS-TBT_0_1"
       (rectangle
@@ -131,7 +146,7 @@
     )
     (property
       "Value"
-      "SM08B-SRSS-TB"
+      "9990000051498"
       (at 0 -19.05 0)
       (effects (font (size 1.27 1.27) ))
     )
@@ -144,7 +159,7 @@
     )
     (property
       "Datasheet"
-      "https://lcsc.com/product-detail/Others_JST-Sales-America__JST-Sales-America-SM08B-SRSS-TB-LF-SN_C160407.html"
+      "https://datasheet.lcsc.com/datasheet/pdf/e03a82bcc66e3c3589917313e54d45e2.pdf?productCode=C160407"
       (at 0 -24.13 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
@@ -172,10 +187,25 @@
     )
     (property
       "ki_keywords"
-      "Wire To Board / Wire To Wire Connector"
+      "Connectors/Headers, Male Pins"
       (at 0 -34.29 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
+    )
+    (property "ki_description" "Connector Header 8 position 1mm Pitch 1A Surface Mount, Right Angle -25℃~+85℃"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "Description" "Connector Header 8 position 1mm Pitch 1A Surface Mount, Right Angle -25℃~+85℃"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "LocalDatasheet" "../datasheets/C160407/SM08B-SRSS-TB(LF)(SN).pdf"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
     )
     (symbol "SM08B-SRSS-TB_0_1"
       (rectangle
@@ -265,7 +295,7 @@
     )
     (property
       "Value"
-      "BM02B-GHS-TBT"
+      "58"
       (at 0 -11.43 0)
       (effects (font (size 1.27 1.27) ))
     )
@@ -278,7 +308,7 @@
     )
     (property
       "Datasheet"
-      "https://lcsc.com/product-detail/Connectors_JST_BM02B-GHS-TBT-LF-SN_GHseries-socket-1-2P-pitch1-25mm-SMD_C161690.html"
+      "https://datasheet.lcsc.com/datasheet/pdf/6c69dfd9744c15167b2bdb9469440f45.pdf?productCode=C161690"
       (at 0 -16.51 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
@@ -306,10 +336,25 @@
     )
     (property
       "ki_keywords"
-      "Wire To Board / Wire To Wire Connector"
+      "Connectors/Headers, Male Pins"
       (at 0 -26.67 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
+    )
+    (property "ki_description" "Connector Header 2 position 1.25mm Pitch 1A Surface Mount,Vertical -25℃~+85℃"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "Description" "Connector Header 2 position 1.25mm Pitch 1A Surface Mount,Vertical -25℃~+85℃"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "LocalDatasheet" "../datasheets/C161690/BM02B-GHS-TBT(LF)(SN).pdf"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
     )
     (symbol "BM02B-GHS-TBT_0_1"
       (rectangle
@@ -357,7 +402,7 @@
     )
     (property
       "Value"
-      "PZ254V-11-03P_C2937625"
+      "10"
       (at 0 -7.62 0)
       (effects (font (size 1.27 1.27) ))
     )
@@ -370,14 +415,14 @@
     )
     (property
       "Datasheet"
-      "https://www.lcsc.com/datasheet/C2937625.pdf"
+      "https://datasheet.lcsc.com/datasheet/pdf/3b85a1cdf6ed945f2e278f00c1e42442.pdf?productCode=C2937625"
       (at 0 -12.70 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
     )
     (property
       "Manufacturer"
-      "XFCN(兴飞)"
+      "XFCN"
       (at 0 -15.24 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
@@ -398,10 +443,25 @@
     )
     (property
       "ki_keywords"
-      "Pin Headers"
+      "Connectors/Headers, Male Pins"
       (at 0 -22.86 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
+    )
+    (property "ki_description" "Pin Header 3 Position 2.54mm Pitch Single Row Through Hole -40℃~+105℃"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "Description" "Pin Header 3 Position 2.54mm Pitch Single Row Through Hole -40℃~+105℃"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "LocalDatasheet" "../datasheets/C2937625/PZ254V-11-03P.pdf"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
     )
     (symbol "PZ254V-11-03P_C2937625_0_1"
       (rectangle
@@ -449,7 +509,7 @@
     )
     (property
       "Value"
-      "PZ254V-12-6P"
+      "12"
       (at 0 -7.62 0)
       (effects (font (size 1.27 1.27) ))
     )
@@ -462,14 +522,14 @@
     )
     (property
       "Datasheet"
-      "https://lcsc.com/product-detail/Pin-Header-Female-Header_XFCN-PZ254V-12-6P_C492420.html"
+      "https://datasheet.lcsc.com/datasheet/pdf/50ec9710cee52ae98bff43fbb8887c5b.pdf?productCode=C492420"
       (at 0 -12.70 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
     )
     (property
       "Manufacturer"
-      "XFCN(兴飞)"
+      "XFCN"
       (at 0 -15.24 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
@@ -490,10 +550,25 @@
     )
     (property
       "ki_keywords"
-      "Pin Headers"
+      "Connectors/Headers, Male Pins"
       (at 0 -22.86 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
+    )
+    (property "ki_description" "Pin Header 6 Position 2.54mm Pitch Dual Row Through Hole -40℃~+105℃"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "Description" "Pin Header 6 Position 2.54mm Pitch Dual Row Through Hole -40℃~+105℃"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "LocalDatasheet" "../datasheets/C492420/PZ254V-12-6P.pdf"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
     )
     (symbol "PZ254V-12-6P_0_1"
       (rectangle
@@ -559,7 +634,7 @@
     )
     (property
       "Value"
-      "GPCA101-0502A001C1AA"
+      "GPCA101-0502A"
       (at 0 -10.16 0)
       (effects (font (size 1.27 1.27) ))
     )
@@ -572,14 +647,14 @@
     )
     (property
       "Datasheet"
-      "https://www.lcsc.com/datasheet/C5138889.pdf"
+      "https://datasheet.lcsc.com/datasheet/pdf/9791ba8c859df0647813150b8f9162a2.pdf?productCode=C5138889"
       (at 0 -15.24 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
     )
     (property
       "Manufacturer"
-      "GREENCONN(格康)"
+      "GREENCONN"
       (at 0 -17.78 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
@@ -600,10 +675,25 @@
     )
     (property
       "ki_keywords"
-      "Pin Headers"
+      "Connectors/Headers, Male Pins"
       (at 0 -25.40 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
+    )
+    (property "ki_description" "Pin Header 5 Position 1mm Pitch Single Row Through Hole -40℃~+105℃"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "Description" "Pin Header 5 Position 1mm Pitch Single Row Through Hole -40℃~+105℃"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "LocalDatasheet" "../datasheets/C5138889/GPCA101-0502A001C1AA.pdf"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
     )
     (symbol "GPCA101-0502A001C1AA_0_1"
       (rectangle
@@ -663,7 +753,7 @@
     )
     (property
       "Value"
-      "GT-A0801WRS-108BBT01"
+      "9990000051497"
       (at 0 -19.05 0)
       (effects (font (size 1.27 1.27) ))
     )
@@ -676,14 +766,14 @@
     )
     (property
       "Datasheet"
-      "https://www.lcsc.com/datasheet/C54334395.pdf"
+      "https://datasheet.lcsc.com/datasheet/pdf/280a0ac82606d05a19e9b62f8ac57389.pdf?productCode=C54334395"
       (at 0 -24.13 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
     )
     (property
       "Manufacturer"
-      "G-Switch(品赞)"
+      "G-Switch"
       (at 0 -26.67 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
@@ -701,6 +791,26 @@
       (at 0 -31.75 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
+    )
+    (property "ki_keywords" "Connectors/Headers, Male Pins"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "ki_description" "Surface Mount, Right Angle 100V 8 1 0.8mm 800mA 8P -40℃~+85℃ Tin Black 1x8P SMD,P=0.8mm,Surface Mount,Right Angle Headers, Male Pins"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "Description" "Surface Mount, Right Angle 100V 8 1 0.8mm 800mA 8P -40℃~+85℃ Tin Black 1x8P SMD,P=0.8mm,Surface Mount,Right Angle Headers, Male Pins"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "LocalDatasheet" "../datasheets/C54334395/GT-A0801WRS-108BBT01.pdf"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
     )
     (symbol "GT-A0801WRS-108BBT01_0_1"
       (rectangle

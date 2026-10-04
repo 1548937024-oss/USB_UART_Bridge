@@ -1,0 +1,80 @@
+{
+  "successes": [
+    {
+      "LCSC": "C106225",
+      "Footprint": "R0201",
+      "Model3D": "${LCSC_LIB_ROOT}/Resistors/Resistors.3dshapes/R0201_L0.6-W0.3-H0.3.wrl"
+    },
+    {
+      "LCSC": "C19077592",
+      "Footprint": "SMB_L4.6-W3.6-LS5.4-BI",
+      "Model3D": "${LCSC_LIB_ROOT}/Transistors/Transistors.3dshapes/SMB_L4.6-W3.6-LS5.4-BI.wrl"
+    },
+    {
+      "LCSC": "C477928",
+      "Footprint": "SO-8_L4.9-W3.9-P1.27-LS6.0-BL-EP",
+      "Model3D": "${LCSC_LIB_ROOT}/Power Management (PMIC)/Power Management (PMIC).3dshapes/SO-8_L4.9-W3.9-H1.5-LS5.9-P1.27.wrl"
+    },
+    {
+      "LCSC": "C52148452",
+      "Footprint": "SOD-123_L2.8-W1.8-LS3.7-BI",
+      "Model3D": "${LCSC_LIB_ROOT}/Transistors/Transistors.3dshapes/SOD-123_L2.8-W1.8-LS3.7-BI.wrl"
+    },
+    {
+      "LCSC": "C57928",
+      "Footprint": "SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL",
+      "Model3D": "${LCSC_LIB_ROOT}/Interface/Interface.3dshapes/SOIC-8_L4.9-W3.9-H1.7-LS6.0-P1.27.wrl"
+    },
+    {
+      "LCSC": "C3003063",
+      "Footprint": "SOT-223_L6.5-W3.5-P2.30-LS7.0-BR",
+      "Model3D": "${LCSC_LIB_ROOT}/Power Management (PMIC)/Power Management (PMIC).3dshapes/SOT-223-4P_L6.5-W3.5-H1.6-LS7.0-P2.30.wrl"
+    },
+    {
+      "LCSC": "C3743587",
+      "Footprint": "SOT-23-5_L2.9-W1.6-P0.95-LS2.8-BR",
+      "Model3D": "${LCSC_LIB_ROOT}/Power Management (PMIC)/Power Management (PMIC).3dshapes/SOT-23-5_L2.9-W1.6-P0.95-LS2.8-BR.wrl"
+    },
+    {
+      "LCSC": "C408972",
+      "Footprint": "SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BR",
+      "Model3D": "${LCSC_LIB_ROOT}/Power Management (PMIC)/Power Management (PMIC).3dshapes/SOT-23-5_L2.9-W1.6-H1.1-LS2.8-P0.95.wrl"
+    },
+    {
+      "LCSC": "C30111221",
+      "Footprint": "SOT-23-8_L2.9-W1.6-P0.65-LS2.8-BR",
+      "Model3D": "${LCSC_LIB_ROOT}/Interface/Interface.3dshapes/SOT-23-8_L2.9-W1.6-H1.5-LS2.8-P0.65.wrl"
+    },
+    {
+      "LCSC": "C44209887",
+      "Footprint": "U-DFN2020-6_L2.0-W2.0-P0.65-BL-EP-1",
+      "Model3D": "${LCSC_LIB_ROOT}/Power Management (PMIC)/Power Management (PMIC).3dshapes/U-DFN2020-6_L2.0-W2.0-P0.65-BL-EP-1.wrl"
+    },
+    {
+      "LCSC": "C1342773",
+      "Footprint": "UFQFPN-48_L7.0-W7.0-P0.50-BL-EP5.6",
+      "Model3D": "${LCSC_LIB_ROOT}/Embedded Processors & Controllers/Embedded Processors & Controllers.3dshapes/UFQFPN-48_L7.0-W7.0-H0.6-P0.50.wrl"
+    },
+    {
+      "LCSC": "C7433196",
+      "Footprint": "UTQFN-14_L2.0-W2.0-P0.40-TL",
+      "Model3D": "${LCSC_LIB_ROOT}/Magnetic Sensors/Magnetic Sensors.3dshapes/UTQFN-14_L2.0-W2.0-P0.40-TL.wrl"
+    },
+    {
+      "LCSC": "C49257133",
+      "Footprint": "VQFN-16_L3.0-W3.0-P0.50-TL-EP1.7",
+      "Model3D": "${LCSC_LIB_ROOT}/Magnetic Sensors/Magnetic Sensors.3dshapes/VQFN-16_L3.0-W3.0-H1.0-P0.50.wrl"
+    },
+    {
+      "LCSC": "C47023655",
+      "Footprint": "VQFN-28_L6.0-W5.0-P0.50-TL-EP4.0",
+      "Model3D": "${LCSC_LIB_ROOT}/Motor Driver ICs/Motor Driver ICs.3dshapes/VQFN-28_L6.0-W5.0-P0.50-TL-EP4.0.wrl"
+    },
+    {
+      "LCSC": "C5381667",
+      "Footprint": "WDFN-6_L2.0-W2.0-P0.65-BL-EP",
+      "Model3D": "${LCSC_LIB_ROOT}/Power Management (PMIC)/Power Management (PMIC).3dshapes/WDFN-6_L2.0-W2.0-H0.8-P0.65.wrl"
+    }
+  ],
+  "failures": []
+}

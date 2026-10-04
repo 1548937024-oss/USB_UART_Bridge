@@ -9,6 +9,7 @@ $LibraryRoot = (Resolve-Path -LiteralPath $LibraryRoot).Path
 $KiCadConfigRoot = (Resolve-Path -LiteralPath $KiCadConfigRoot).Path
 $SymbolTablePath = Join-Path $KiCadConfigRoot 'sym-lib-table'
 $FootprintTablePath = Join-Path $KiCadConfigRoot 'fp-lib-table'
+$CommonConfigPath = Join-Path $KiCadConfigRoot 'kicad_common.json'
 
 if (-not (Test-Path -LiteralPath $SymbolTablePath)) {
     throw "KiCad symbol table not found: $SymbolTablePath"
@@ -16,15 +17,43 @@ if (-not (Test-Path -LiteralPath $SymbolTablePath)) {
 if (-not (Test-Path -LiteralPath $FootprintTablePath)) {
     throw "KiCad footprint table not found: $FootprintTablePath"
 }
+if (-not (Test-Path -LiteralPath $CommonConfigPath)) {
+    throw "KiCad common config not found: $CommonConfigPath"
+}
 
 $Timestamp = Get-Date -Format 'yyyyMMdd-HHmmss'
 Copy-Item -LiteralPath $SymbolTablePath -Destination "$SymbolTablePath.backup-$Timestamp" -Force
 Copy-Item -LiteralPath $FootprintTablePath -Destination "$FootprintTablePath.backup-$Timestamp" -Force
+Copy-Item -LiteralPath $CommonConfigPath -Destination "$CommonConfigPath.backup-$Timestamp" -Force
 
 function Convert-ToKiCadPath {
     param([string]$Path)
     return $Path.Replace('\', '/')
 }
+
+function Set-LibraryRootVariable {
+    param(
+        [string]$ConfigPath,
+        [string]$LibraryPath
+    )
+
+    $config = Get-Content -LiteralPath $ConfigPath -Raw | ConvertFrom-Json
+    if ($null -eq $config.environment) {
+        $config | Add-Member -NotePropertyName environment -NotePropertyValue ([pscustomobject]@{ vars = $null }) -Force
+    }
+    if ($null -eq $config.environment.vars) {
+        $config.environment | Add-Member -NotePropertyName vars -NotePropertyValue ([pscustomobject]@{}) -Force
+    }
+    $config.environment.vars | Add-Member -NotePropertyName LCSC_LIB_ROOT -NotePropertyValue (Convert-ToKiCadPath $LibraryPath) -Force
+    $json = $config | ConvertTo-Json -Depth 100
+    [System.IO.File]::WriteAllText(
+        $ConfigPath,
+        $json + "`r`n",
+        [System.Text.UTF8Encoding]::new($false)
+    )
+}
+
+Set-LibraryRootVariable -ConfigPath $CommonConfigPath -LibraryPath $LibraryRoot
 
 function Add-LibraryEntries {
     param(
@@ -103,6 +132,7 @@ $footprintResult = Add-LibraryEntries -TablePath $FootprintTablePath -EntryKind 
 $report = [pscustomobject]@{
     timestamp = $Timestamp
     library_root = $LibraryRoot
+    library_root_variable = 'LCSC_LIB_ROOT'
     symbol_table = $SymbolTablePath
     footprint_table = $FootprintTablePath
     symbols_added = @($symbolResult.Added)

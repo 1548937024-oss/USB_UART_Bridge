@@ -15,7 +15,7 @@
     )
     (property
       "Value"
-      "NV24C08MUW3VLTBG"
+      "9990000051491"
       (at 0 -10.16 0)
       (effects (font (size 1.27 1.27) ))
     )
@@ -28,14 +28,14 @@
     )
     (property
       "Datasheet"
-      "https://www.lcsc.com/datasheet/C894119.pdf"
+      "https://datasheet.lcsc.com/datasheet/pdf/a68f5d32ca862db2f9685fb6653c0c50.pdf?productCode=C894119"
       (at 0 -15.24 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
     )
     (property
       "Manufacturer"
-      "onsemi(安森美)"
+      "onsemi"
       (at 0 -17.78 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
@@ -56,10 +56,25 @@
     )
     (property
       "ki_keywords"
-      "Pre-ordered Products"
+      "Memory/Memory"
       (at 0 -25.40 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
+    )
+    (property "ki_description" "8Kbit 1MHz I2C UDFN-8(2x3) Memory RoHS"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "Description" "8Kbit 1MHz I2C UDFN-8(2x3) Memory RoHS"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "LocalDatasheet" "../datasheets/C894119/NV24C08MUW3VLTBG.pdf"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
     )
     (symbol "NV24C08MUW3VLTBG_0_1"
       (rectangle

@@ -50,7 +50,7 @@
 	(fp_line (start -2.00 -2.00) (end 2.00 -2.00) (layer F.CrtYd) (width 0.05))
 	(fp_line (start 2.00 -2.00) (end 2.00 2.00) (layer F.CrtYd) (width 0.05))
 	(fp_line (start 2.00 2.00) (end -2.00 2.00) (layer F.CrtYd) (width 0.05))
-	(model "D:/办公相关/项目相关/三花/03-灵巧手项目/O-外置驱动器/Library/Private/LCSC_Classified/libraries/Motor Driver ICs/Motor Driver ICs.3dshapes/VQFN-24_L4.0-W4.0-P0.50-TL-EP2.5.wrl"
+	(model "${LCSC_LIB_ROOT}/Motor Driver ICs/Motor Driver ICs.3dshapes/VQFN-24_L4.0-W4.0-P0.50-TL-EP2.5.wrl"
 		(offset (xyz 0.000 0.000 0.000))
 		(scale (xyz 1 1 1))
 		(rotate (xyz 0 0 0))

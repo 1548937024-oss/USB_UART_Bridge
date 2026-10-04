@@ -21,9 +21,9 @@
 	(fp_line (start -0.30 -0.16) (end 0.31 -0.16) (layer F.CrtYd) (width 0.05))
 	(fp_line (start 0.31 -0.16) (end 0.31 0.15) (layer F.CrtYd) (width 0.05))
 	(fp_line (start 0.31 0.15) (end -0.30 0.15) (layer F.CrtYd) (width 0.05))
-	(model "D:/办公相关/项目相关/三花/03-灵巧手项目/O-外置驱动器/Library/Private/LCSC_Classified/libraries/Transistors/Transistors.3dshapes/DFN0603-D_L0.6-W0.3--H0.3-P0.34-BI.wrl"
-		(offset (xyz 0.000 0.000 0.000))
-		(scale (xyz 1 1 1))
-		(rotate (xyz 0 0 0))
-	)
+	(model "${LCSC_LIB_ROOT}/Transistors/Transistors.3dshapes/DFN0603-D_L0.6-W0.3--H0.3-P0.34-BI.wrl"
+			(offset (xyz 0.000 0.000 0.000))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
+		)
 )

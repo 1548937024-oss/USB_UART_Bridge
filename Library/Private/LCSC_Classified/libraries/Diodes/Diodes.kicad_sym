@@ -123,6 +123,16 @@
 				)
 			)
 		)
+		(property "ki_description" "Zener Diode 13V 370mW Surface Mount SOD-123"
+			(at 0 0 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "LocalDatasheet" "../datasheets/C5224095/BZT52C13Q-7-F.pdf"
+			(at 0 0 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
+		)
 		(symbol "BZT52C13Q-7-F_0_1"
 			(polyline
 				(pts
@@ -317,6 +327,16 @@
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(property "ki_description" "Diode Array 1 Pair Series Connection 100V 215mA Surface Mount SOT-323-3"
+			(at 0 0 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "LocalDatasheet" "../datasheets/C78879/LBAV99WT1G.pdf"
+			(at 0 0 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
 		)
 		(symbol "LBAV99WT1G_0_1"
 			(polyline

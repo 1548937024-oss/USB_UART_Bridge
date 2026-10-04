@@ -26,9 +26,9 @@
 	(fp_line (start 0.50 -0.25) (end 0.50 0.25) (layer F.CrtYd) (width 0.05))
 	(fp_line (start 0.50 0.25) (end -0.50 0.25) (layer F.CrtYd) (width 0.05))
 	(fp_poly (pts (xy -1.132484 0.349580) (xy -1.132484 -0.342824) (xy -1.284884 -0.342824) (xy -1.284884 0.349580) (xy -1.132484 0.349580)) (stroke (width 0) (type solid)) (fill solid) (layer "F.SilkS"))
-	(model "D:/办公相关/项目相关/三花/03-灵巧手项目/O-外置驱动器/Library/Private/LCSC_Classified/libraries/Optoelectronics/Optoelectronics.3dshapes/LED0402_L1.0-W0.5-H0.2.wrl"
-		(offset (xyz 0.000 0.000 0.000))
-		(scale (xyz 1 1 1))
-		(rotate (xyz 0 0 0))
-	)
+	(model "${LCSC_LIB_ROOT}/Optoelectronics/Optoelectronics.3dshapes/LED0402_L1.0-W0.5-H0.2.wrl"
+			(offset (xyz 0.000 0.000 0.000))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
+		)
 )

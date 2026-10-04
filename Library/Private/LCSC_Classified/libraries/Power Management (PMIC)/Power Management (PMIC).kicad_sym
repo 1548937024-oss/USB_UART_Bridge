@@ -15,7 +15,7 @@
     )
     (property
       "Value"
-      "AZ1117CH2-5.0TRG1"
+      ""
       (at 0 -7.62 0)
       (effects (font (size 1.27 1.27) ))
     )
@@ -28,14 +28,14 @@
     )
     (property
       "Datasheet"
-      "https://www.lcsc.com/datasheet/C3003063.pdf"
+      "https://datasheet.lcsc.com/datasheet/pdf/73ec83269ecc00393489beefcda77d62.pdf?productCode=C3003063"
       (at 0 -12.70 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
     )
     (property
       "Manufacturer"
-      "DIODES(美台)"
+      "DIODES"
       (at 0 -15.24 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
@@ -56,10 +56,25 @@
     )
     (property
       "ki_keywords"
-      "Linear Voltage Regulators (LDO)"
+      "Power Management (PMIC)/Voltage Regulators - Linear, Low Drop Out (LDO) Regulators"
       (at 0 -22.86 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
+    )
+    (property "ki_description" "Linear Voltage Regulator IC Positive Fixed 1 Output 1.35A SOT-223"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "Description" "Linear Voltage Regulator IC Positive Fixed 1 Output 1.35A SOT-223"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "LocalDatasheet" "../datasheets/C3003063/AZ1117CH2-5.0TRG1.pdf"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
     )
     (symbol "AZ1117CH2-5.0TRG1_0_1"
       (rectangle
@@ -113,7 +128,7 @@
     )
     (property
       "Value"
-      "TLV74033PDBVR_C3743587"
+      ""
       (at 0 -7.62 0)
       (effects (font (size 1.27 1.27) ))
     )
@@ -126,14 +141,14 @@
     )
     (property
       "Datasheet"
-      "https://www.lcsc.com/datasheet/C3743587.pdf"
+      "https://datasheet.lcsc.com/datasheet/pdf/74cc79715a6266a346ca70f60eeb6334.pdf?productCode=C3743587"
       (at 0 -12.70 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
     )
     (property
       "Manufacturer"
-      "TI(德州仪器)"
+      "TI"
       (at 0 -15.24 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
@@ -154,10 +169,25 @@
     )
     (property
       "ki_keywords"
-      "Linear Voltage Regulators (LDO)"
+      "Power Management (PMIC)/Voltage Regulators - Linear, Low Drop Out (LDO) Regulators"
       (at 0 -22.86 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
+    )
+    (property "ki_description" "Linear Voltage Regulator IC Positive Fixed 1 Output 300mA SOT-23-5"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "Description" "Linear Voltage Regulator IC Positive Fixed 1 Output 300mA SOT-23-5"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "LocalDatasheet" "../datasheets/C3743587/TLV74033PDBVR.pdf"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
     )
     (symbol "TLV74033PDBVR_C3743587_0_1"
       (rectangle
@@ -217,7 +247,7 @@
     )
     (property
       "Value"
-      "TLV74333PDBVR"
+      "9990000051470"
       (at 0 -7.62 0)
       (effects (font (size 1.27 1.27) ))
     )
@@ -230,14 +260,14 @@
     )
     (property
       "Datasheet"
-      "https://lcsc.com/product-detail/Low-Dropout-Regulators-LDO_Texas-Instruments-TI-TLV74333PDBVR_C408972.html"
+      "https://datasheet.lcsc.com/datasheet/pdf/50b52a610636e868c962d6e98c6380b1.pdf?productCode=C408972"
       (at 0 -12.70 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
     )
     (property
       "Manufacturer"
-      "TI(德州仪器)"
+      "TI"
       (at 0 -15.24 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
@@ -258,10 +288,25 @@
     )
     (property
       "ki_keywords"
-      "Linear Voltage Regulators (LDO)"
+      "Power Management (PMIC)/Voltage Regulators - Linear, Low Drop Out (LDO) Regulators"
       (at 0 -22.86 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
+    )
+    (property "ki_description" "3.3V Positive Fixed SOT-23-5 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators RoHS"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "Description" "3.3V Positive Fixed SOT-23-5 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators RoHS"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "LocalDatasheet" "../datasheets/C408972/TLV74333PDBVR.pdf"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
     )
     (symbol "TLV74333PDBVR_0_1"
       (rectangle
@@ -321,7 +366,7 @@
     )
     (property
       "Value"
-      "AP7375-33FDCW-7"
+      "9990000056331"
       (at 0 -8.89 0)
       (effects (font (size 1.27 1.27) ))
     )
@@ -334,14 +379,14 @@
     )
     (property
       "Datasheet"
-      "https://www.lcsc.com/datasheet/C44209887.pdf"
+      "https://datasheet.lcsc.com/datasheet/pdf/50aee3d4c5b227be75fbc9098ae4266b.pdf?productCode=C44209887"
       (at 0 -13.97 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
     )
     (property
       "Manufacturer"
-      "DIODES(美台)"
+      "DIODES"
       (at 0 -16.51 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
@@ -359,6 +404,26 @@
       (at 0 -21.59 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
+    )
+    (property "ki_keywords" "Power Management (PMIC)/Voltage Regulators - Linear, Low Drop Out (LDO) Regulators"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "ki_description" "3.3V Positive Fixed U-DFN2020-6 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "Description" "3.3V Positive Fixed U-DFN2020-6 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "LocalDatasheet" "../datasheets/C44209887/AP7375-33FDCW-7.pdf"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
     )
     (symbol "AP7375-33FDCW-7_0_1"
       (rectangle
@@ -430,7 +495,7 @@
     )
     (property
       "Value"
-      "LM5164DDAR"
+      ""
       (at 0 -10.16 0)
       (effects (font (size 1.27 1.27) ))
     )
@@ -443,14 +508,14 @@
     )
     (property
       "Datasheet"
-      "https://lcsc.com/product-detail/DC-DC-Converters_Texas-Instruments-Texas-Instruments-LM5164DDAR_C477928.html"
+      "https://datasheet.lcsc.com/datasheet/pdf/0adc8e389ed3e6197be57b9940aa6370.pdf?productCode=C477928"
       (at 0 -15.24 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
     )
     (property
       "Manufacturer"
-      "TI(德州仪器)"
+      "TI"
       (at 0 -17.78 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
@@ -471,10 +536,25 @@
     )
     (property
       "ki_keywords"
-      "DC-DC Converters"
+      "Power Management (PMIC)/Voltage Regulators - DC DC Switching Regulators"
       (at 0 -25.40 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
+    )
+    (property "ki_description" "1MHz Step-down type Adjustable 1A SO-8-EP Voltage Regulators - DC DC Switching Regulators RoHS"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "Description" "1MHz Step-down type Adjustable 1A SO-8-EP Voltage Regulators - DC DC Switching Regulators RoHS"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "LocalDatasheet" "../datasheets/C477928/LM5164DDAR.pdf"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
     )
     (symbol "LM5164DDAR_0_1"
       (rectangle
@@ -558,7 +638,7 @@
     )
     (property
       "Value"
-      "AP7347DQ-33FDZW-7"
+      "3.3V 500mA"
       (at 0 -8.89 0)
       (effects (font (size 1.27 1.27) ))
     )
@@ -571,14 +651,14 @@
     )
     (property
       "Datasheet"
-      "https://www.lcsc.com/datasheet/C5381667.pdf"
+      "https://atta.szlcsc.com/upload/public/pdf/source/20230314/3856240D523D935DC7C1B61A87430C15.pdf"
       (at 0 -13.97 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
     )
     (property
       "Manufacturer"
-      "DIODES(缇庡彴)"
+      "DIODES"
       (at 0 -16.51 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
@@ -599,10 +679,25 @@
     )
     (property
       "ki_keywords"
-      "Linear Voltage Regulators (LDO)"
+      "Power Management (PMIC)/Voltage Regulators - Linear, Low Drop Out (LDO) Regulators"
       (at 0 -24.13 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
+    )
+    (property "ki_description" "3.3V 500mA 5.5V Low Dropout Linear Regulator"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "Description" "3.3V 500mA 5.5V Low Dropout Linear Regulator"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "LocalDatasheet" "../datasheets/C5381667/AP7347DQ-33FDZW-7.pdf"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
     )
     (symbol "AP7347DQ-33FDZW-7_0_1"
       (rectangle

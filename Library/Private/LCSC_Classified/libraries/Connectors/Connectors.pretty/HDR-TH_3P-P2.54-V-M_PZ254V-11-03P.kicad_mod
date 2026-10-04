@@ -23,9 +23,9 @@
 	(fp_line (start -3.81 -1.25) (end 3.81 -1.25) (layer F.CrtYd) (width 0.05))
 	(fp_line (start 3.81 -1.25) (end 3.81 1.25) (layer F.CrtYd) (width 0.05))
 	(fp_line (start 3.81 1.25) (end -3.81 1.25) (layer F.CrtYd) (width 0.05))
-	(model "D:/办公相关/项目相关/三花/03-灵巧手项目/O-外置驱动器/Library/Private/LCSC_Classified/libraries/Connectors/Connectors.3dshapes/HDR-TH_3P-P2.54-V-M_PZ254V-11-03P.wrl"
-		(offset (xyz 0.000 0.000 0.000))
-		(scale (xyz 1 1 1))
-		(rotate (xyz 0 0 0))
-	)
+	(model "${LCSC_LIB_ROOT}/Connectors/Connectors.3dshapes/HDR-TH_3P-P2.54-V-M_PZ254V-11-03P.wrl"
+			(offset (xyz 0.000 0.000 0.000))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
+		)
 )

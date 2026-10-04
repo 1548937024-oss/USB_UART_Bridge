@@ -18,7 +18,7 @@
 				)
 			)
 		)
-		(property "Value" "AGM12N10AP"
+		(property "Value" "9980000531173"
 			(at 0 -10.16 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39,7 +39,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C17701055.pdf"
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/21584e9e0b8dd5776e6179ebabad0736.pdf?productCode=C17701055"
 			(at 0 -15.24 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -50,7 +50,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "N-Channel 100V 55A 83W Surface Mount PDFN3.3x3.3"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -61,7 +61,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "AGMSEMI(芯控源)"
+		(property "Manufacturer" "AGMSEMI"
 			(at 0 -17.78 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -93,6 +93,21 @@
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(property "ki_keywords" "Transistors/Thyristors/Single FETs, MOSFETs"
+			(at 0 0 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "ki_description" "N-Channel 100V 55A 83W Surface Mount PDFN3.3x3.3"
+			(at 0 0 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "LocalDatasheet" "../datasheets/C17701055/AGM12N10AP.pdf"
+			(at 0 0 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
 		)
 		(symbol "AGM12N10AP_0_1"
 			(rectangle
@@ -306,7 +321,7 @@
 				)
 			)
 		)
-		(property "Value" "BSC070N10NS5"
+		(property "Value" ""
 			(at 0 -11.43 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -327,7 +342,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/MOSFET_Infineon-Technologies-BSC070N10NS5_C534364.html"
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/85672115bc80b2ab20a76143a9527c0c.pdf?productCode=C534364"
 			(at 0 -16.51 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -338,7 +353,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "N-Channel 100V 80A 83W Surface Mount TDSON-8(5x6)"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -349,7 +364,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Infineon(英飞凌)"
+		(property "Manufacturer" "Infineon"
 			(at 0 -19.05 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -382,7 +397,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "MOSFETs"
+		(property "ki_keywords" "Transistors/Thyristors/Single FETs, MOSFETs"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -392,6 +407,16 @@
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(property "ki_description" "N-Channel 100V 80A 83W Surface Mount TDSON-8(5x6)"
+			(at 0 0 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "LocalDatasheet" "../datasheets/C534364/BSC070N10NS5.pdf"
+			(at 0 0 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
 		)
 		(symbol "BSC070N10NS5_0_1"
 			(rectangle
@@ -605,7 +630,7 @@
 				)
 			)
 		)
-		(property "Value" "PESD1CAN,215"
+		(property "Value" "9980000554037"
 			(at 0 -15.24 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -626,7 +651,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Diodes-ESD_NXP_PESD1CAN_PESD1CAN_C15771.html"
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/f7e17f2784b44a479860aa1ec967b207.pdf?productCode=C15771"
 			(at 0 -20.32 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -637,7 +662,7 @@
 				)
 			)
 		)
-		(property "Description" "PESD1CAN"
+		(property "Description" "70VC Clamp 3A@8/20us Ipp ESD DIODE SOT-23"
 			(at 0 -33.02 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -648,7 +673,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Nexperia(安世)"
+		(property "Manufacturer" "Nexperia"
 			(at 0 -22.86 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -681,7 +706,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "ESD Protection Devices"
+		(property "ki_keywords" "Transistors/Thyristors/TVS Diodes"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -691,6 +716,16 @@
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(property "ki_description" "70VC Clamp 3A@8/20us Ipp ESD DIODE SOT-23"
+			(at 0 0 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "LocalDatasheet" "../datasheets/C15771/PESD1CAN,215.pdf"
+			(at 0 0 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
 		)
 		(symbol "PESD1CAN,215_0_1"
 			(rectangle
@@ -957,7 +992,7 @@
 				)
 			)
 		)
-		(property "Value" "PESDNC2XD5VB"
+		(property "Value" "9990000056296"
 			(at 0 -5.08 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -978,7 +1013,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Diodes-ESD_Shanghai-Prisemi-Elec-PESDNC2XD5VB_C110696.html"
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/564b35af898142568b511bab046231ec.pdf?productCode=C110696"
 			(at 0 -10.16 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -989,7 +1024,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "9.5VC Clamp 5A Ipp ESD DIODE DFN0603-2L"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1000,7 +1035,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Prisemi(芯导)"
+		(property "Manufacturer" "Shanghai Prisemi Elec"
 			(at 0 -12.7 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1033,7 +1068,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "ESD Protection Devices"
+		(property "ki_keywords" "Transistors/Thyristors/TVS Diodes"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1043,6 +1078,16 @@
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(property "ki_description" "9.5VC Clamp 5A Ipp ESD DIODE DFN0603-2L"
+			(at 0 0 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "LocalDatasheet" "../datasheets/C110696/PESDNC2XD5VB.pdf"
+			(at 0 0 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
 		)
 		(symbol "PESDNC2XD5VB_0_1"
 			(polyline
@@ -1212,7 +1257,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "TVS ESD SM712 CAN"
+		(property "ki_keywords" "Transistors/Thyristors/TVS Diodes"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1222,6 +1267,16 @@
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(property "ki_description" "SM712 bidirectional TVS diode array, SOT-23-3"
+			(at 0 0 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "LocalDatasheet" "../datasheets/C521963/SM712.pdf"
+			(at 0 0 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
 		)
 		(symbol "SM712_C521963_0_1"
 			(polyline
@@ -1381,7 +1436,7 @@
 				)
 			)
 		)
-		(property "Value" "SMBJ58CA_C19077592"
+		(property "Value" "9990000053188"
 			(at 0 -5.08 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1402,7 +1457,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C19077592.pdf"
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/29e006ceaae5808e6d17d021de7bda89.pdf?productCode=C19077592"
 			(at 0 -10.16 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1413,7 +1468,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "93.6VC Clamp 6.41A@10/1000us Ipp TVS DIODE DO-214AA(SMB)"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1424,7 +1479,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "R+O(宏嘉诚)"
+		(property "Manufacturer" "R+O"
 			(at 0 -12.7 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1457,7 +1512,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "TVS"
+		(property "ki_keywords" "Transistors/Thyristors/TVS Diodes"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1467,6 +1522,16 @@
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(property "ki_description" "93.6VC Clamp 6.41A@10/1000us Ipp TVS DIODE DO-214AA(SMB)"
+			(at 0 0 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "LocalDatasheet" "../datasheets/C19077592/SMBJ58CA.pdf"
+			(at 0 0 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
 		)
 		(symbol "SMBJ58CA_C19077592_0_1"
 			(polyline
@@ -1560,7 +1625,7 @@
 				)
 			)
 		)
-		(property "Value" "SMBJ58CA_C726882"
+		(property "Value" ""
 			(at 0 -5.08 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1581,7 +1646,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/TVS_TWGMC-SMBJ58CA_C726882.html"
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/a5de6b41e5c0fc8fd537b2d1bace2e83.pdf?productCode=C726882"
 			(at 0 -10.16 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1592,7 +1657,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "93.6VC Clamp 6.5A Ipp TVS DIODE DO-214AA(SMB)"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1603,7 +1668,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TWGMC(迪嘉)"
+		(property "Manufacturer" "TWGMC"
 			(at 0 -12.7 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1636,7 +1701,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "TVS"
+		(property "ki_keywords" "Transistors/Thyristors/TVS Diodes"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1646,6 +1711,16 @@
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(property "ki_description" "93.6VC Clamp 6.5A Ipp TVS DIODE DO-214AA(SMB)"
+			(at 0 0 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "LocalDatasheet" "../datasheets/C726882/SMBJ58CA.pdf"
+			(at 0 0 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
 		)
 		(symbol "SMBJ58CA_C726882_0_1"
 			(polyline
@@ -1763,7 +1838,7 @@
 				)
 			)
 		)
-		(property "Value" "SMF58CA_C52148452"
+		(property "Value" "9990000052691"
 			(at 0 -5.08 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1784,7 +1859,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C52148452.pdf"
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/90fba666de3fbaa9b789dc2bc0adbecf.pdf?productCode=C52148452"
 			(at 0 -10.16 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1795,7 +1870,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "95V 2.1A@10/1000us 200W@10/1000us 70.8V Bidirectional 58V SOD-123 TVS Diodes"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1806,7 +1881,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "YTL(亚特联)"
+		(property "Manufacturer" "YTL"
 			(at 0 -12.7 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1838,6 +1913,21 @@
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(property "ki_keywords" "Transistors/Thyristors/TVS Diodes"
+			(at 0 0 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "ki_description" "95V 2.1A@10/1000us 200W@10/1000us 70.8V Bidirectional 58V SOD-123 TVS Diodes"
+			(at 0 0 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "LocalDatasheet" "../datasheets/C52148452/SMF58CA.pdf"
+			(at 0 0 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
 		)
 		(symbol "SMF58CA_C52148452_0_1"
 			(polyline

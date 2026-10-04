@@ -25,9 +25,9 @@
 	(fp_line (start -0.80 1.45) (end -0.80 -1.45) (layer F.CrtYd) (width 0.05))
 	(fp_line (start -0.80 -1.45) (end 0.80 -1.45) (layer F.CrtYd) (width 0.05))
 	(fp_line (start 0.80 -1.45) (end 0.80 1.45) (layer F.CrtYd) (width 0.05))
-	(model "D:/办公相关/项目相关/三花/03-灵巧手项目/O-外置驱动器/Library/Private/LCSC_Classified/libraries/Power Management (PMIC)/Power Management (PMIC).3dshapes/SOT-23-5_L2.9-W1.6-P0.95-LS2.8-BR.wrl"
-		(offset (xyz 0.000 0.000 0.000))
-		(scale (xyz 1 1 1))
-		(rotate (xyz 0 0 270))
-	)
+	(model "${LCSC_LIB_ROOT}/Power Management (PMIC)/Power Management (PMIC).3dshapes/SOT-23-5_L2.9-W1.6-P0.95-LS2.8-BR.wrl"
+			(offset (xyz 0.000 0.000 0.000))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 270))
+		)
 )

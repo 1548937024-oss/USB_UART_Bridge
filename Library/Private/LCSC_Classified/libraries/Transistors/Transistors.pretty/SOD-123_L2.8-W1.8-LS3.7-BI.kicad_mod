@@ -33,9 +33,9 @@
 	(fp_line (start -1.35 -0.90) (end 1.35 -0.90) (layer F.CrtYd) (width 0.05))
 	(fp_line (start 1.35 -0.90) (end 1.35 0.90) (layer F.CrtYd) (width 0.05))
 	(fp_line (start 1.35 0.90) (end -1.35 0.90) (layer F.CrtYd) (width 0.05))
-	(model "D:/办公相关/项目相关/三花/03-灵巧手项目/O-外置驱动器/Library/Private/LCSC_Classified/libraries/Transistors/Transistors.3dshapes/SOD-123_L2.8-W1.8-LS3.7-BI.wrl"
-		(offset (xyz 0.000 0.000 0.000))
-		(scale (xyz 1 1 1))
-		(rotate (xyz 0 0 0))
-	)
+	(model "${LCSC_LIB_ROOT}/Transistors/Transistors.3dshapes/SOD-123_L2.8-W1.8-LS3.7-BI.wrl"
+			(offset (xyz 0.000 0.000 0.000))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
+		)
 )

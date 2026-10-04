@@ -15,7 +15,7 @@
     )
     (property
       "Value"
-      "CSTNE8M00G52A000R0"
+      "9990000052803"
       (at 0 -7.62 0)
       (effects (font (size 1.27 1.27) ))
     )
@@ -28,14 +28,14 @@
     )
     (property
       "Datasheet"
-      "https://www.lcsc.com/datasheet/C1851993.pdf"
+      "https://datasheet.lcsc.com/datasheet/pdf/6229da9b14529ef4c771661e98fded14.pdf?productCode=C1851993"
       (at 0 -12.70 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
     )
     (property
       "Manufacturer"
-      "muRata(村田)"
+      "muRata"
       (at 0 -15.24 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
@@ -56,10 +56,25 @@
     )
     (property
       "ki_keywords"
-      "Ceramic Resonators"
+      "Crystals, Oscillators, Resonators/Resonators"
       (at 0 -22.86 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
+    )
+    (property "ki_description" "8MHz 10pF 40Ω SMD3213-3P Resonators RoHS"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "Description" "8MHz 10pF 40Ω SMD3213-3P Resonators RoHS"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "LocalDatasheet" "../datasheets/C1851993/CSTNE8M00G52A000R0.pdf"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
     )
     (symbol "CSTNE8M00G52A000R0_0_1"
       (rectangle

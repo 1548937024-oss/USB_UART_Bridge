@@ -37,9 +37,9 @@
 	(fp_line (start -4.30 -0.74) (end -3.65 -0.74) (layer F.CrtYd) (width 0.05))
 	(fp_line (start -3.65 -0.74) (end -3.65 -0.76) (layer F.CrtYd) (width 0.05))
 	(fp_line (start -3.65 -0.76) (end -3.65 -1.14) (layer F.CrtYd) (width 0.05))
-	(model "D:/办公相关/项目相关/三花/03-灵巧手项目/O-外置驱动器/Library/Private/LCSC_Classified/libraries/Connectors/Connectors.3dshapes/CONN-SMD_GT-A0801WRS-108BBT01.wrl"
-		(offset (xyz 0.000 0.000 0.000))
-		(scale (xyz 1 1 1))
-		(rotate (xyz 0 0 0))
-	)
+	(model "${LCSC_LIB_ROOT}/Connectors/Connectors.3dshapes/CONN-SMD_GT-A0801WRS-108BBT01.wrl"
+			(offset (xyz 0.000 0.000 0.000))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
+		)
 )

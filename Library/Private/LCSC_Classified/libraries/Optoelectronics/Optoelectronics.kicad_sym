@@ -15,7 +15,7 @@
     )
     (property
       "Value"
-      "XL-1005UBC_C22355736"
+      "XL-1005UBC"
       (at 0 -6.35 0)
       (effects (font (size 1.27 1.27) ))
     )
@@ -28,14 +28,14 @@
     )
     (property
       "Datasheet"
-      "https://www.lcsc.com/datasheet/C22355736.pdf"
+      "https://datasheet.lcsc.com/datasheet/pdf/7c777665dc6740ac42e09f3da6cdf7af.pdf?productCode=C22355736"
       (at 0 -11.43 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
     )
     (property
       "Manufacturer"
-      "XINGLIGHT(成兴光)"
+      "XINGLIGHT"
       (at 0 -13.97 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
@@ -56,10 +56,25 @@
     )
     (property
       "ki_keywords"
-      "Light Emitting Diodes (LED)"
+      "Optoelectronics/LED Indication - Discrete"
       (at 0 -21.59 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
+    )
+    (property "ki_description" "Blue 465nm LED Indication - Discrete 3.3V 0402"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "Description" "Blue 465nm LED Indication - Discrete 3.3V 0402"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "LocalDatasheet" "../datasheets/C22355736/XL-1005UBC.pdf"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
     )
     (symbol "XL-1005UBC_C22355736_0_1"
       (polyline
@@ -145,7 +160,7 @@
     )
     (property
       "Value"
-      "XL-1005UYC_C25503856"
+      "91"
       (at 0 -6.35 0)
       (effects (font (size 1.27 1.27) ))
     )
@@ -158,14 +173,14 @@
     )
     (property
       "Datasheet"
-      "https://www.lcsc.com/datasheet/C25503856.pdf"
+      "https://datasheet.lcsc.com/datasheet/pdf/cca508f795cf6b2e43a998379b7431c6.pdf?productCode=C25503856"
       (at 0 -11.43 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
     )
     (property
       "Manufacturer"
-      "XINGLIGHT(成兴光)"
+      "XINGLIGHT"
       (at 0 -13.97 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
@@ -183,6 +198,26 @@
       (at 0 -19.05 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
+    )
+    (property "ki_keywords" "Optoelectronics/LED Indication - Discrete"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "ki_description" "Yellow 590nm LED Indication - Discrete 2.4V 0402"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "Description" "Yellow 590nm LED Indication - Discrete 2.4V 0402"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "LocalDatasheet" "../datasheets/C25503856/XL-1005UYC.pdf"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
     )
     (symbol "XL-1005UYC_C25503856_0_1"
       (polyline
@@ -311,7 +346,7 @@
   				)
   			)
   		)
-  		(property "Description" "Light emitting diode"
+  		(property "Description" "Emerald Green 531nm LED Indication - Discrete 3V 0402"
   			(at 0 0 0)
   			(show_name no)
   			(do_not_autoplace no)
@@ -383,6 +418,11 @@
         (hide yes)
         (effects (font (size 1.27 1.27)))
       )
+  		(property "LocalDatasheet" "../datasheets/C965793/XL-1005UGC.pdf"
+  			(at 0 0 0)
+  			(hide yes)
+  			(effects (font (size 1.27 1.27)))
+  		)
   		(symbol "XL-1005UGC_0_1"
   			(polyline
   				(pts

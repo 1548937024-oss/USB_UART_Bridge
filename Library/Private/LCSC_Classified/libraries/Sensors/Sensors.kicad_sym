@@ -57,7 +57,7 @@
   				)
   			)
   		)
-  		(property "Description" "Temperature dependent resistor, negative temperature coefficient"
+  		(property "Description" "NTC Thermistor 10kΩ Surface Mount 0402"
   			(at 0 0 0)
   			(show_name no)
   			(do_not_autoplace no)
@@ -118,6 +118,11 @@
         (hide yes)
         (effects (font (size 1.27 1.27)))
       )
+  		(property "LocalDatasheet" "../datasheets/C77131/NCP15XH103F03RC.pdf"
+  			(at 0 0 0)
+  			(hide yes)
+  			(effects (font (size 1.27 1.27)))
+  		)
   		(symbol "NCP15XH103F03RC_0_1"
   			(arc
   				(start -3.175 2.413)

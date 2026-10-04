@@ -10,6 +10,8 @@ import re
 from dataclasses import dataclass
 from pathlib import Path
 
+from hide_passive_pin_names import hide_pin_names_in_file
+
 
 @dataclass(frozen=True)
 class StandardMapping:
@@ -106,6 +108,14 @@ STANDARD_MAPPINGS = (
         "R_0402_1005Metric",
     ),
     StandardMapping(
+        "C114761",
+        "Resistors",
+        "Device",
+        "R",
+        "Resistor_SMD",
+        "R_0402_1005Metric",
+    ),
+    StandardMapping(
         "C851693",
         "Resistors",
         "Device",
@@ -138,21 +148,13 @@ STANDARD_MAPPINGS = (
         "LED_0402_1005Metric",
     ),
     StandardMapping(
-        "C9900198844",
-        "Circuit Protection",
-        "Device",
-        "D_TVS",
-        "Diode_SMD",
-        "D_SOD-323",
-    ),
-    StandardMapping(
-        "C9900301658",
+        "C54582078",
         "Circuit Protection",
         "Device",
         "D_TVS",
         "Diode_SMD",
         "D_0201_0603Metric",
-        output_symbol="DE5VS06BA",
+        output_symbol="SLESD11LE5.0C",
     ),
 )
 
@@ -320,8 +322,10 @@ def convert_symbol(
         "Reference": mapping.reference or None,
         "Value": (row.get("Value") or "").strip() or output_symbol,
         "Footprint": f"{mapping.category}:{output_footprint}",
-        "Datasheet": (row.get("Datasheet") or "").strip()
-        or (row.get("LCSC_URL") or "").strip(),
+        "Datasheet": (row.get("Datasheet") or "").strip(),
+        "DatasheetRev": (row.get("DatasheetRev") or "").strip(),
+        "DatasheetDate": (row.get("DatasheetDate") or "").strip(),
+        "LocalDatasheet": (row.get("LocalDatasheet") or "").strip(),
         "Manufacturer": (row.get("Manufacturer") or "").strip(),
         "MPN": (row.get("MPN") or "").strip(),
         "LCSC Part": row["LCSC"].strip(),
@@ -343,6 +347,8 @@ def convert_symbol(
     indented_block = "\n".join(f"  {line}" for line in block.splitlines())
     library_text = f"{library_text}\n\n{indented_block}\n)\n"
     symbol_library.write_text(library_text, encoding="utf-8")
+    if mapping.category in {"Resistors", "Capacitors"}:
+        hide_pin_names_in_file(symbol_library)
 
     source_footprint = (
         kicad_root

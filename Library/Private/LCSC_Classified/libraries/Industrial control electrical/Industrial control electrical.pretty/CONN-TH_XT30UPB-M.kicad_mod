@@ -35,9 +35,9 @@
 	(fp_line (start -5.10 -2.80) (end 5.10 -2.80) (layer F.CrtYd) (width 0.05))
 	(fp_line (start 5.10 -2.80) (end 5.10 2.80) (layer F.CrtYd) (width 0.05))
 	(fp_line (start 5.10 2.80) (end -5.10 2.80) (layer F.CrtYd) (width 0.05))
-	(model "D:/办公相关/项目相关/三花/03-灵巧手项目/O-外置驱动器/Library/Private/LCSC_Classified/libraries/Industrial control electrical/Industrial control electrical.3dshapes/CONN-TH_XT30UPB-M.wrl"
-		(offset (xyz 0.000 0.000 0.000))
-		(scale (xyz 1 1 1))
-		(rotate (xyz 0 0 0))
-	)
+	(model "${LCSC_LIB_ROOT}/Industrial control electrical/Industrial control electrical.3dshapes/CONN-TH_XT30UPB-M.wrl"
+			(offset (xyz 0.000 0.000 0.000))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
+		)
 )

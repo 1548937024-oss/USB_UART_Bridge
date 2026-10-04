@@ -74,9 +74,9 @@
 	(fp_line (start 3.50 -3.50) (end 3.50 3.50) (layer F.CrtYd) (width 0.05))
 	(fp_line (start 3.50 3.50) (end -3.50 3.50) (layer F.CrtYd) (width 0.05))
 	(fp_line (start -3.50 3.50) (end -3.50 -3.50) (layer F.CrtYd) (width 0.05))
-	(model "D:/办公相关/项目相关/三花/03-灵巧手项目/O-外置驱动器/Library/Private/LCSC_Classified/libraries/Embedded Processors & Controllers/Embedded Processors & Controllers.3dshapes/UFQFPN-48_L7.0-W7.0-H0.6-P0.50.wrl"
-		(offset (xyz 0.000 0.000 0.000))
-		(scale (xyz 1 1 1))
-		(rotate (xyz 0 0 270))
-	)
+	(model "${LCSC_LIB_ROOT}/Embedded Processors & Controllers/Embedded Processors & Controllers.3dshapes/UFQFPN-48_L7.0-W7.0-H0.6-P0.50.wrl"
+			(offset (xyz 0.000 0.000 0.000))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 270))
+		)
 )

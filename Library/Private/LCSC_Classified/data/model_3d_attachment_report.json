@@ -1,0 +1,20 @@
+[
+  {
+    "Footprint": "QFN-24_L4.0-W3.0-P0.40-TL-EP",
+    "Model": "QFN-24_L4.0-W3.0-P0.40-TL-EP",
+    "Wrl": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Motor Driver ICs\\Motor Driver ICs.3dshapes\\QFN-24_L4.0-W3.0-P0.40-TL-EP.wrl",
+    "Step": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Motor Driver ICs\\Motor Driver ICs.3dshapes\\QFN-24_L4.0-W3.0-P0.40-TL-EP.step"
+  },
+  {
+    "Footprint": "SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR",
+    "Model": "SOT-23-3P_L2.9-W1.3-H1.0-LS2.4-P0.95",
+    "Wrl": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Transistors\\Transistors.3dshapes\\SOT-23-3P_L2.9-W1.3-H1.0-LS2.4-P0.95.wrl",
+    "Step": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Transistors\\Transistors.3dshapes\\SOT-23-3P_L2.9-W1.3-H1.0-LS2.4-P0.95.step"
+  },
+  {
+    "Footprint": "D_0201_0603Metric",
+    "Model": "DFN0603-2L-BI-1",
+    "Wrl": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Circuit Protection\\Circuit Protection.3dshapes\\DFN0603-2L-BI-1.wrl",
+    "Step": "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\Library\\Private\\LCSC_Classified\\libraries\\Circuit Protection\\Circuit Protection.3dshapes\\DFN0603-2L-BI-1.step"
+  }
+]

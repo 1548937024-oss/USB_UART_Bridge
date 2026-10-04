@@ -15,7 +15,7 @@
     )
     (property
       "Value"
-      "XT30UPB-M"
+      "9990000051495"
       (at 0 -6.35 0)
       (effects (font (size 1.27 1.27) ))
     )
@@ -28,14 +28,14 @@
     )
     (property
       "Datasheet"
-      "https://lcsc.com/product-detail/Power-Connectors_Changzhou-Amass-Elec-XT30UPB-M_C428721.html"
+      "https://datasheet.lcsc.com/datasheet/pdf/ba32a477f0fac99ad6765808470a63b9.pdf?productCode=C428721"
       (at 0 -11.43 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
     )
     (property
       "Manufacturer"
-      "AMASS(艾迈斯)"
+      "Changzhou Amass Elec"
       (at 0 -13.97 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
@@ -56,10 +56,25 @@
     )
     (property
       "ki_keywords"
-      "Power Connectors"
+      "Industrial control electrical/Power Connectors"
       (at 0 -21.59 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
+    )
+    (property "ki_description" "Power Connectors"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "Description" "Power Connectors"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
+    )
+    (property "LocalDatasheet" "../datasheets/C428721/XT30UPB-M.pdf"
+    	(at 0 0 0)
+    	(hide yes)
+    	(effects (font (size 1.27 1.27)))
     )
     (symbol "XT30UPB-M_0_1"
       (rectangle
