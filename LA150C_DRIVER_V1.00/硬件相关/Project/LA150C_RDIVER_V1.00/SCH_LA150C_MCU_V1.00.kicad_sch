@@ -2651,8 +2651,8 @@
 		)
 	)
 	(rectangle
-		(start 55.88 163.83)
-		(end 104.14 190.5)
+		(start 55.88 170.18)
+		(end 104.14 196.85)
 		(stroke
 			(width 0.254)
 			(type solid)
@@ -2663,8 +2663,8 @@
 		(uuid "820969cc-122a-59a7-bf7a-e4f16720dfca")
 	)
 	(rectangle
-		(start 99.06 41.91)
-		(end 205.74 160.02)
+		(start 90.17 29.21)
+		(end 223.52 165.1)
 		(stroke
 			(width 0.254)
 			(type solid)
@@ -2684,17 +2684,6 @@
 			(justify left bottom)
 		)
 		(uuid "3ccb4e3f-b028-57d8-a00d-10eba292b6ae")
-	)
-	(text "LA150C RDIVER V1.00 - MCU\nGD32F503REL7 LQFP-64：168MHz / 512KB Flash / TIMER7 三相 PWM / 3×ADC 注入组 / SPI2 / CAN0 / SWD"
-		(exclude_from_sim no)
-		(at 20.32 15.24 0)
-		(effects
-			(font
-				(size 1.5 1.5)
-			)
-			(justify left bottom)
-		)
-		(uuid "3ce48bc6-423c-55e2-b478-9bdb0e75e79b")
 	)
 	(text "G  GD32F503REL7 主控"
 		(exclude_from_sim no)
@@ -2742,7 +2731,7 @@
 	)
 	(text "H  8MHz 时钟 (CSTCE8M00G52-R0)"
 		(exclude_from_sim no)
-		(at 58.42 166.37 0)
+		(at 58.42 172.72 0)
 		(effects
 			(font
 				(size 1.5 1.5)
@@ -2762,14 +2751,25 @@
 		)
 		(uuid "b4ef0b46-d54c-5894-8502-9b0646938fc7")
 	)
+	(text "LA150C RDIVER V1.00 - MCU\nGD32F503REL7 LQFP-64：168MHz / 512KB Flash / TIMER7 三相 PWM / 3×ADC 注入组 / SPI2 / CAN0 / SWD"
+		(exclude_from_sim no)
+		(at 20.32 15.24 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "c9fb3bcb-7074-4632-a6a2-398704297a58")
+	)
 	(junction
-		(at 91.44 68.58)
+		(at 85.09 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "08a74a33-39b4-5907-9f83-b723838cedd6")
 	)
 	(junction
-		(at 114.3 68.58)
+		(at 107.95 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0ce7c36d-6177-565a-8607-6560f288a6d1")
@@ -2781,13 +2781,13 @@
 		(uuid "13053e96-e335-5876-974e-bb592fa7de2d")
 	)
 	(junction
-		(at 90.17 176.53)
+		(at 90.17 182.88)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "223a11ae-15c6-573c-9b8c-d72138331043")
 	)
 	(junction
-		(at 114.3 57.15)
+		(at 107.95 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2394b024-a2bb-5256-ad5c-4d5b3a5c2eda")
@@ -2799,37 +2799,37 @@
 		(uuid "3a9ac08e-0234-584d-bb72-9fd4fea6ffea")
 	)
 	(junction
-		(at 72.39 176.53)
+		(at 72.39 182.88)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3e57caa0-45d0-56f1-b6fd-176a4887819f")
 	)
 	(junction
-		(at 106.68 68.58)
+		(at 100.33 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "40e77587-1c05-506c-a7a8-628c5b7b6508")
 	)
 	(junction
-		(at 83.82 57.15)
+		(at 77.47 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "57cbbcec-3f7c-5223-b16c-d2f9048cc10b")
 	)
 	(junction
-		(at 121.92 57.15)
+		(at 115.57 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "601d9a28-fa5a-5569-9bd2-9f41ad2cd6b6")
 	)
 	(junction
-		(at 83.82 68.58)
+		(at 77.47 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6f37fff6-a5a0-5586-b065-2995a25ff19f")
 	)
 	(junction
-		(at 99.06 57.15)
+		(at 92.71 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "72bea4d2-2850-5ae8-b4b5-2639184e3fff")
@@ -2853,13 +2853,13 @@
 		(uuid "9831dce1-349c-5382-a841-8a4d45bfc621")
 	)
 	(junction
-		(at 91.44 57.15)
+		(at 85.09 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9ef49c06-a422-5b9b-82a5-0c2745799f6b")
 	)
 	(junction
-		(at 106.68 57.15)
+		(at 100.33 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a7285b27-fc87-5ae9-88c1-5302ef2914ed")
@@ -2901,7 +2901,7 @@
 		(uuid "efa32013-fa32-5232-ace8-2050f1eb5de4")
 	)
 	(junction
-		(at 99.06 68.58)
+		(at 92.71 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f8a2614e-de26-5031-8793-2201bd6d0573")
@@ -3022,7 +3022,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 59.69) (xy 171.45 62.23)
+			(xy 177.8 59.69) (xy 177.8 62.23)
 		)
 		(stroke
 			(width 0)
@@ -3042,7 +3042,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 66.04) (xy 83.82 68.58)
+			(xy 77.47 66.04) (xy 77.47 68.58)
 		)
 		(stroke
 			(width 0)
@@ -3062,7 +3062,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 66.04) (xy 106.68 68.58)
+			(xy 100.33 66.04) (xy 100.33 68.58)
 		)
 		(stroke
 			(width 0)
@@ -3072,7 +3072,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 163.83) (xy 90.17 176.53)
+			(xy 90.17 170.18) (xy 90.17 182.88)
 		)
 		(stroke
 			(width 0)
@@ -3102,7 +3102,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 57.15) (xy 99.06 58.42)
+			(xy 92.71 57.15) (xy 92.71 58.42)
 		)
 		(stroke
 			(width 0)
@@ -3132,7 +3132,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 57.15) (xy 106.68 58.42)
+			(xy 100.33 57.15) (xy 100.33 58.42)
 		)
 		(stroke
 			(width 0)
@@ -3212,7 +3212,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 176.53) (xy 72.39 176.53)
+			(xy 66.04 182.88) (xy 72.39 182.88)
 		)
 		(stroke
 			(width 0)
@@ -3232,7 +3232,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 176.53) (xy 90.17 176.53)
+			(xy 96.52 182.88) (xy 90.17 182.88)
 		)
 		(stroke
 			(width 0)
@@ -3272,7 +3272,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 57.15) (xy 121.92 58.42)
+			(xy 115.57 57.15) (xy 115.57 58.42)
 		)
 		(stroke
 			(width 0)
@@ -3282,7 +3282,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 57.15) (xy 91.44 58.42)
+			(xy 85.09 57.15) (xy 85.09 58.42)
 		)
 		(stroke
 			(width 0)
@@ -3332,7 +3332,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 57.15) (xy 114.3 58.42)
+			(xy 107.95 57.15) (xy 107.95 58.42)
 		)
 		(stroke
 			(width 0)
@@ -3362,7 +3362,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 137.16) (xy 158.75 161.29)
+			(xy 158.75 137.16) (xy 158.75 167.64)
 		)
 		(stroke
 			(width 0)
@@ -3372,7 +3372,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 137.16) (xy 161.29 163.83)
+			(xy 161.29 137.16) (xy 161.29 170.18)
 		)
 		(stroke
 			(width 0)
@@ -3382,7 +3382,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 52.07) (xy 83.82 57.15)
+			(xy 77.47 52.07) (xy 77.47 57.15)
 		)
 		(stroke
 			(width 0)
@@ -3402,7 +3402,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 66.04) (xy 114.3 68.58)
+			(xy 107.95 66.04) (xy 107.95 68.58)
 		)
 		(stroke
 			(width 0)
@@ -3442,7 +3442,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 161.29) (xy 72.39 176.53)
+			(xy 72.39 167.64) (xy 72.39 182.88)
 		)
 		(stroke
 			(width 0)
@@ -3452,7 +3452,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 57.15) (xy 83.82 58.42)
+			(xy 77.47 57.15) (xy 77.47 58.42)
 		)
 		(stroke
 			(width 0)
@@ -3492,7 +3492,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 52.07) (xy 171.45 52.07)
+			(xy 158.75 52.07) (xy 177.8 52.07)
 		)
 		(stroke
 			(width 0)
@@ -3512,7 +3512,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 62.23) (xy 171.45 62.23)
+			(xy 163.83 62.23) (xy 177.8 62.23)
 		)
 		(stroke
 			(width 0)
@@ -3522,7 +3522,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 71.12) (xy 110.49 71.12)
+			(xy 124.46 71.12) (xy 104.14 71.12)
 		)
 		(stroke
 			(width 0)
@@ -3532,7 +3532,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 184.15) (xy 81.28 186.69)
+			(xy 81.28 190.5) (xy 81.28 193.04)
 		)
 		(stroke
 			(width 0)
@@ -3552,7 +3552,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 66.04) (xy 99.06 68.58)
+			(xy 92.71 66.04) (xy 92.71 68.58)
 		)
 		(stroke
 			(width 0)
@@ -3562,7 +3562,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 66.04) (xy 121.92 68.58)
+			(xy 115.57 66.04) (xy 115.57 68.58)
 		)
 		(stroke
 			(width 0)
@@ -3572,7 +3572,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 161.29) (xy 72.39 161.29)
+			(xy 158.75 167.64) (xy 72.39 167.64)
 		)
 		(stroke
 			(width 0)
@@ -3592,7 +3592,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 68.58) (xy 121.92 68.58)
+			(xy 77.47 68.58) (xy 115.57 68.58)
 		)
 		(stroke
 			(width 0)
@@ -3612,7 +3612,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 57.15) (xy 156.21 57.15)
+			(xy 77.47 57.15) (xy 156.21 57.15)
 		)
 		(stroke
 			(width 0)
@@ -3632,7 +3632,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 66.04) (xy 91.44 68.58)
+			(xy 85.09 66.04) (xy 85.09 68.58)
 		)
 		(stroke
 			(width 0)
@@ -3682,7 +3682,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 163.83) (xy 90.17 163.83)
+			(xy 161.29 170.18) (xy 90.17 170.18)
 		)
 		(stroke
 			(width 0)
@@ -3922,7 +3922,7 @@
 	)
 	(hierarchical_label "SO_A"
 		(shape input)
-		(at 110.49 71.12 180)
+		(at 104.14 71.12 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3955,7 +3955,7 @@
 	)
 	(symbol
 		(lib_id "LA150C_RDIVER_V1.00:GRM033Z71C104KE14D")
-		(at 106.68 62.23 0)
+		(at 100.33 62.23 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3964,8 +3964,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00f7c914-46e9-584d-bb98-d8dd65ac53bf")
-		(property "Reference" "C29"
-			(at 104.648 57.15 0)
+		(property "Reference" "C16"
+			(at 98.298 57.15 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3976,7 +3976,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 104.648 54.61 0)
+			(at 98.298 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3987,7 +3987,7 @@
 			)
 		)
 		(property "Footprint" "Capacitors:C0201"
-			(at 106.68 62.23 0)
+			(at 100.33 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3999,7 +3999,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/C668346.pdf"
-			(at 106.68 62.23 0)
+			(at 100.33 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4011,7 +4011,7 @@
 			)
 		)
 		(property "Description" "0201 100nF 16V VDD 去耦"
-			(at 106.68 62.23 0)
+			(at 100.33 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4023,7 +4023,7 @@
 			)
 		)
 		(property "MPN" "GRM033Z71C104KE14D"
-			(at 106.68 62.23 0)
+			(at 100.33 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4035,7 +4035,7 @@
 			)
 		)
 		(property "LCSC Part" "C668346"
-			(at 106.68 62.23 0)
+			(at 100.33 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4047,7 +4047,7 @@
 			)
 		)
 		(property "Manufacturer" "muRata(村田)"
-			(at 106.68 62.23 0)
+			(at 100.33 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4067,7 +4067,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/07baf6c9-443b-535b-ae5c-72067acbe97f"
-					(reference "C29")
+					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -4084,7 +4084,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1377560f-866c-5f27-90b5-d4958ed03cd8")
-		(property "Reference" "#PWR503"
+		(property "Reference" "#PWR023"
 			(at 157.988 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -4149,7 +4149,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/07baf6c9-443b-535b-ae5c-72067acbe97f"
-					(reference "#PWR503")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -4166,7 +4166,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1e10bf90-fe05-549a-9f71-1865b6969192")
-		(property "Reference" "#PWR505"
+		(property "Reference" "#PWR028"
 			(at 139.7 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -4231,7 +4231,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/07baf6c9-443b-535b-ae5c-72067acbe97f"
-					(reference "#PWR505")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -4248,7 +4248,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "21bb2188-57d3-56cf-b1a3-907246dba22d")
-		(property "Reference" "#PWR504"
+		(property "Reference" "#PWR025"
 			(at 162.56 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -4261,7 +4261,7 @@
 			)
 		)
 		(property "Value" "AGND"
-			(at 166.37 62.865 0)
+			(at 165.608 64.516 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4313,7 +4313,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/07baf6c9-443b-535b-ae5c-72067acbe97f"
-					(reference "#PWR504")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -4321,7 +4321,7 @@
 	)
 	(symbol
 		(lib_id "LA150C_RDIVER_V1.00:GND")
-		(at 66.04 184.15 0)
+		(at 66.04 190.5 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4330,8 +4330,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "295a5e01-d303-5064-9ab3-2ce40674f895")
-		(property "Reference" "#PWR511"
-			(at 64.77 182.88 0)
+		(property "Reference" "#PWR032"
+			(at 64.77 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4343,7 +4343,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 68.58 184.785 0)
+			(at 68.58 191.135 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4354,7 +4354,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 66.04 184.15 0)
+			(at 66.04 190.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4366,7 +4366,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 66.04 184.15 0)
+			(at 66.04 190.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4378,7 +4378,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 66.04 184.15 0)
+			(at 66.04 190.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4395,7 +4395,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/07baf6c9-443b-535b-ae5c-72067acbe97f"
-					(reference "#PWR511")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -4412,7 +4412,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2d53cfe0-1744-5bab-b8d7-07dc77eb7ed9")
-		(property "Reference" "U1"
+		(property "Reference" "U2"
 			(at 124.46 62.23 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4701,7 +4701,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/07baf6c9-443b-535b-ae5c-72067acbe97f"
-					(reference "U1")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -4709,7 +4709,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 83.82 62.23 0)
+		(at 77.47 62.23 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4718,8 +4718,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3e39577f-fca4-5797-a069-701a1f096de4")
-		(property "Reference" "C33"
-			(at 81.788 57.15 0)
+		(property "Reference" "C13"
+			(at 75.438 57.15 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4730,7 +4730,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 81.788 54.61 0)
+			(at 75.438 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4741,7 +4741,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 83.82 62.23 0)
+			(at 77.47 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4753,7 +4753,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 83.82 62.23 0)
+			(at 77.47 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4765,7 +4765,7 @@
 			)
 		)
 		(property "Description" "0805 10uF 16V 体电容"
-			(at 83.82 62.23 0)
+			(at 77.47 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4785,7 +4785,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/07baf6c9-443b-535b-ae5c-72067acbe97f"
-					(reference "C33")
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -4802,7 +4802,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "44f36d99-1946-5a3b-b1d4-6e9b846758d1")
-		(property "Reference" "C36"
+		(property "Reference" "C19"
 			(at 114.808 147.32 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4905,7 +4905,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/07baf6c9-443b-535b-ae5c-72067acbe97f"
-					(reference "C36")
+					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -4922,7 +4922,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "493bed4e-86c1-5099-90eb-2a11b64461ec")
-		(property "Reference" "R33"
+		(property "Reference" "R9"
 			(at 125.984 139.7 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5025,7 +5025,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/07baf6c9-443b-535b-ae5c-72067acbe97f"
-					(reference "R33")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -5042,7 +5042,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "50a8cae0-b562-52f1-a133-b4ffb808780a")
-		(property "Reference" "#PWR508"
+		(property "Reference" "#PWR031"
 			(at 115.57 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -5107,7 +5107,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/07baf6c9-443b-535b-ae5c-72067acbe97f"
-					(reference "#PWR508")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -5115,7 +5115,7 @@
 	)
 	(symbol
 		(lib_id "LA150C_RDIVER_V1.00:GRM033Z71C104KE14D")
-		(at 121.92 62.23 0)
+		(at 115.57 62.23 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5124,8 +5124,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "51dc52b6-f16b-5c00-b581-d5225ce85a47")
-		(property "Reference" "C31"
-			(at 119.888 57.15 0)
+		(property "Reference" "C18"
+			(at 113.538 57.15 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5136,7 +5136,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 119.888 54.61 0)
+			(at 113.538 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5147,7 +5147,7 @@
 			)
 		)
 		(property "Footprint" "Capacitors:C0201"
-			(at 121.92 62.23 0)
+			(at 115.57 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5159,7 +5159,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/C668346.pdf"
-			(at 121.92 62.23 0)
+			(at 115.57 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5171,7 +5171,7 @@
 			)
 		)
 		(property "Description" "0201 100nF 16V VDD 去耦"
-			(at 121.92 62.23 0)
+			(at 115.57 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5183,7 +5183,7 @@
 			)
 		)
 		(property "MPN" "GRM033Z71C104KE14D"
-			(at 121.92 62.23 0)
+			(at 115.57 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5195,7 +5195,7 @@
 			)
 		)
 		(property "LCSC Part" "C668346"
-			(at 121.92 62.23 0)
+			(at 115.57 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5207,7 +5207,7 @@
 			)
 		)
 		(property "Manufacturer" "muRata(村田)"
-			(at 121.92 62.23 0)
+			(at 115.57 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5227,7 +5227,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/07baf6c9-443b-535b-ae5c-72067acbe97f"
-					(reference "C31")
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -5235,7 +5235,7 @@
 	)
 	(symbol
 		(lib_id "LA150C_RDIVER_V1.00:GRM033Z71C104KE14D")
-		(at 99.06 62.23 0)
+		(at 92.71 62.23 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5244,8 +5244,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "77990ae5-920d-5e91-a3ab-894f40650c1f")
-		(property "Reference" "C28"
-			(at 97.028 57.15 0)
+		(property "Reference" "C15"
+			(at 90.678 57.15 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5256,7 +5256,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 97.028 54.61 0)
+			(at 90.678 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5267,7 +5267,7 @@
 			)
 		)
 		(property "Footprint" "Capacitors:C0201"
-			(at 99.06 62.23 0)
+			(at 92.71 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5279,7 +5279,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/C668346.pdf"
-			(at 99.06 62.23 0)
+			(at 92.71 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5291,7 +5291,7 @@
 			)
 		)
 		(property "Description" "0201 100nF 16V VDD 去耦"
-			(at 99.06 62.23 0)
+			(at 92.71 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5303,7 +5303,7 @@
 			)
 		)
 		(property "MPN" "GRM033Z71C104KE14D"
-			(at 99.06 62.23 0)
+			(at 92.71 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5315,7 +5315,7 @@
 			)
 		)
 		(property "LCSC Part" "C668346"
-			(at 99.06 62.23 0)
+			(at 92.71 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5327,7 +5327,7 @@
 			)
 		)
 		(property "Manufacturer" "muRata(村田)"
-			(at 99.06 62.23 0)
+			(at 92.71 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5347,7 +5347,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/07baf6c9-443b-535b-ae5c-72067acbe97f"
-					(reference "C28")
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -5364,7 +5364,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7c5d2176-2c26-5e95-8c2e-c2e6acd3a196")
-		(property "Reference" "#PWR507"
+		(property "Reference" "#PWR027"
 			(at 126.238 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -5429,7 +5429,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/07baf6c9-443b-535b-ae5c-72067acbe97f"
-					(reference "#PWR507")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -5437,7 +5437,7 @@
 	)
 	(symbol
 		(lib_id "LA150C_RDIVER_V1.00:GND")
-		(at 81.28 186.69 0)
+		(at 81.28 193.04 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5446,8 +5446,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9fd9751f-bc3a-5eac-8eb2-5e14be79e047")
-		(property "Reference" "#PWR510"
-			(at 80.01 185.42 0)
+		(property "Reference" "#PWR034"
+			(at 80.01 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5459,7 +5459,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 83.82 187.325 0)
+			(at 83.82 193.675 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5470,7 +5470,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 81.28 186.69 0)
+			(at 81.28 193.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5482,7 +5482,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 81.28 186.69 0)
+			(at 81.28 193.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5494,7 +5494,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 81.28 186.69 0)
+			(at 81.28 193.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5511,7 +5511,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/07baf6c9-443b-535b-ae5c-72067acbe97f"
-					(reference "#PWR510")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -5519,7 +5519,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 66.04 180.34 0)
+		(at 66.04 186.69 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5528,8 +5528,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a3f5a3aa-984e-56cc-be77-bcca5cfc830a")
-		(property "Reference" "C37"
-			(at 64.008 175.26 0)
+		(property "Reference" "C20"
+			(at 64.008 181.61 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5540,7 +5540,7 @@
 			)
 		)
 		(property "Value" "10pF"
-			(at 64.008 172.72 0)
+			(at 64.008 179.07 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5551,7 +5551,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 66.04 180.34 0)
+			(at 66.04 186.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5563,7 +5563,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 66.04 180.34 0)
+			(at 66.04 186.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5575,7 +5575,7 @@
 			)
 		)
 		(property "Description" "0201 10pF 50V 谐振器负载"
-			(at 66.04 180.34 0)
+			(at 66.04 186.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5595,7 +5595,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/07baf6c9-443b-535b-ae5c-72067acbe97f"
-					(reference "C37")
+					(reference "C20")
 					(unit 1)
 				)
 			)
@@ -5603,7 +5603,7 @@
 	)
 	(symbol
 		(lib_id "LA150C_RDIVER_V1.00:GND")
-		(at 83.82 68.58 0)
+		(at 77.47 68.58 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5612,8 +5612,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a6544af5-5205-516c-b4fa-882160eb0c12")
-		(property "Reference" "#PWR502"
-			(at 82.55 67.31 0)
+		(property "Reference" "#PWR026"
+			(at 76.2 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5625,7 +5625,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 86.36 69.215 0)
+			(at 80.01 69.215 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5636,7 +5636,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 83.82 68.58 0)
+			(at 77.47 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5648,7 +5648,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 83.82 68.58 0)
+			(at 77.47 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5660,7 +5660,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 83.82 68.58 0)
+			(at 77.47 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5677,7 +5677,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/07baf6c9-443b-535b-ae5c-72067acbe97f"
-					(reference "#PWR502")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -5694,7 +5694,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b202e415-c49c-50db-9c24-a664b665323e")
-		(property "Reference" "C34"
+		(property "Reference" "C11"
 			(at 161.798 50.8 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5797,7 +5797,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/07baf6c9-443b-535b-ae5c-72067acbe97f"
-					(reference "C34")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -5805,7 +5805,7 @@
 	)
 	(symbol
 		(lib_id "LA150C_RDIVER_V1.00:GRM033Z71C104KE14D")
-		(at 114.3 62.23 0)
+		(at 107.95 62.23 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5814,8 +5814,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b4b3d228-0b97-5d6c-bd83-caca39ccdf47")
-		(property "Reference" "C30"
-			(at 112.268 57.15 0)
+		(property "Reference" "C17"
+			(at 105.918 57.15 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5826,7 +5826,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 112.268 54.61 0)
+			(at 105.918 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5837,7 +5837,7 @@
 			)
 		)
 		(property "Footprint" "Capacitors:C0201"
-			(at 114.3 62.23 0)
+			(at 107.95 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5849,7 +5849,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/C668346.pdf"
-			(at 114.3 62.23 0)
+			(at 107.95 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5861,7 +5861,7 @@
 			)
 		)
 		(property "Description" "0201 100nF 16V VDD 去耦"
-			(at 114.3 62.23 0)
+			(at 107.95 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5873,7 +5873,7 @@
 			)
 		)
 		(property "MPN" "GRM033Z71C104KE14D"
-			(at 114.3 62.23 0)
+			(at 107.95 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5885,7 +5885,7 @@
 			)
 		)
 		(property "LCSC Part" "C668346"
-			(at 114.3 62.23 0)
+			(at 107.95 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5897,7 +5897,7 @@
 			)
 		)
 		(property "Manufacturer" "muRata(村田)"
-			(at 114.3 62.23 0)
+			(at 107.95 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5917,7 +5917,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/07baf6c9-443b-535b-ae5c-72067acbe97f"
-					(reference "C30")
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -5934,7 +5934,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ce323d4f-b371-5d7b-a702-aa7ab33386c5")
-		(property "Reference" "#PWR506"
+		(property "Reference" "#PWR029"
 			(at 149.86 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -5999,7 +5999,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/07baf6c9-443b-535b-ae5c-72067acbe97f"
-					(reference "#PWR506")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -6007,7 +6007,7 @@
 	)
 	(symbol
 		(lib_id "LA150C_RDIVER_V1.00:CSTCE8M00G52-R0")
-		(at 81.28 176.53 0)
+		(at 81.28 182.88 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6017,7 +6017,7 @@
 		(dnp no)
 		(uuid "cfdb0c21-15f4-5f9e-a104-588625e4e70b")
 		(property "Reference" "X1"
-			(at 72.39 171.45 0)
+			(at 72.39 177.8 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6028,7 +6028,7 @@
 			)
 		)
 		(property "Value" "CSTCE8M00G52-R0"
-			(at 72.39 168.91 0)
+			(at 72.39 175.26 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6039,7 +6039,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 81.28 176.53 0)
+			(at 81.28 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6051,7 +6051,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 81.28 176.53 0)
+			(at 81.28 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6063,7 +6063,7 @@
 			)
 		)
 		(property "Description" "8MHz 三端陶瓷谐振器 SMD-3225"
-			(at 81.28 176.53 0)
+			(at 81.28 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6075,7 +6075,7 @@
 			)
 		)
 		(property "MPN" "CSTCE8M00G52-R0"
-			(at 81.28 176.53 0)
+			(at 81.28 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6087,7 +6087,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata"
-			(at 81.28 176.53 0)
+			(at 81.28 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6118,7 +6118,7 @@
 	)
 	(symbol
 		(lib_id "LA150C_RDIVER_V1.00:CL05Y105KP6VPNC")
-		(at 171.45 55.88 0)
+		(at 177.8 55.88 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6127,8 +6127,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "dc3d1ea0-8c36-5fdc-bf1e-1f464943742f")
-		(property "Reference" "C35"
-			(at 169.418 50.8 0)
+		(property "Reference" "C12"
+			(at 175.768 50.8 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6139,7 +6139,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 169.418 48.26 0)
+			(at 175.768 48.26 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6150,7 +6150,7 @@
 			)
 		)
 		(property "Footprint" "Capacitors:C0402"
-			(at 171.45 55.88 0)
+			(at 177.8 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6162,7 +6162,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/C2803380.pdf"
-			(at 171.45 55.88 0)
+			(at 177.8 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6174,7 +6174,7 @@
 			)
 		)
 		(property "Description" "0402 1uF 10V VDDA"
-			(at 171.45 55.88 0)
+			(at 177.8 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6186,7 +6186,7 @@
 			)
 		)
 		(property "MPN" "CL05Y105KP6VPNC"
-			(at 171.45 55.88 0)
+			(at 177.8 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6198,7 +6198,7 @@
 			)
 		)
 		(property "LCSC Part" "C2803380"
-			(at 171.45 55.88 0)
+			(at 177.8 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6210,7 +6210,7 @@
 			)
 		)
 		(property "Manufacturer" "SAMSUNG(三星)"
-			(at 171.45 55.88 0)
+			(at 177.8 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6230,7 +6230,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/07baf6c9-443b-535b-ae5c-72067acbe97f"
-					(reference "C35")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -6238,7 +6238,7 @@
 	)
 	(symbol
 		(lib_id "LA150C_RDIVER_V1.00:PWR_3V3")
-		(at 83.82 52.07 0)
+		(at 77.47 52.07 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6247,8 +6247,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e08296dd-22d2-5045-a413-d8287510e29d")
-		(property "Reference" "#PWR501"
-			(at 83.058 48.26 0)
+		(property "Reference" "#PWR024"
+			(at 76.708 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6260,7 +6260,7 @@
 			)
 		)
 		(property "Value" "PWR_3V3"
-			(at 86.36 52.705 0)
+			(at 80.01 52.705 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6271,7 +6271,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 83.82 52.07 0)
+			(at 77.47 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6283,7 +6283,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 83.82 52.07 0)
+			(at 77.47 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6295,7 +6295,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 83.82 52.07 0)
+			(at 77.47 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6312,7 +6312,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/07baf6c9-443b-535b-ae5c-72067acbe97f"
-					(reference "#PWR501")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -6320,7 +6320,7 @@
 	)
 	(symbol
 		(lib_id "LA150C_RDIVER_V1.00:GND")
-		(at 96.52 184.15 0)
+		(at 96.52 190.5 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6329,8 +6329,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f14e969a-cec0-5d96-9ce7-07717e93ba59")
-		(property "Reference" "#PWR512"
-			(at 95.25 182.88 0)
+		(property "Reference" "#PWR033"
+			(at 95.25 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6342,7 +6342,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 99.06 184.785 0)
+			(at 99.06 191.135 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6353,7 +6353,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 96.52 184.15 0)
+			(at 96.52 190.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6365,7 +6365,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 96.52 184.15 0)
+			(at 96.52 190.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6377,7 +6377,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 96.52 184.15 0)
+			(at 96.52 190.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6394,7 +6394,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/07baf6c9-443b-535b-ae5c-72067acbe97f"
-					(reference "#PWR512")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -6402,7 +6402,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 96.52 180.34 0)
+		(at 96.52 186.69 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6411,8 +6411,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f2326b79-120d-5c92-8c09-e80876229387")
-		(property "Reference" "C38"
-			(at 94.488 175.26 0)
+		(property "Reference" "C21"
+			(at 94.488 181.61 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6423,7 +6423,7 @@
 			)
 		)
 		(property "Value" "10pF"
-			(at 94.488 172.72 0)
+			(at 94.488 179.07 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6434,7 +6434,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 96.52 180.34 0)
+			(at 96.52 186.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6446,7 +6446,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 96.52 180.34 0)
+			(at 96.52 186.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6458,7 +6458,7 @@
 			)
 		)
 		(property "Description" "0201 10pF 50V 谐振器负载"
-			(at 96.52 180.34 0)
+			(at 96.52 186.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6478,7 +6478,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/07baf6c9-443b-535b-ae5c-72067acbe97f"
-					(reference "C38")
+					(reference "C21")
 					(unit 1)
 				)
 			)
@@ -6495,7 +6495,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f8367b08-f2ae-58c3-8c39-f154cd699fab")
-		(property "Reference" "#PWR509"
+		(property "Reference" "#PWR030"
 			(at 154.94 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -6560,7 +6560,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/07baf6c9-443b-535b-ae5c-72067acbe97f"
-					(reference "#PWR509")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -6568,7 +6568,7 @@
 	)
 	(symbol
 		(lib_id "LA150C_RDIVER_V1.00:GRM033Z71C104KE14D")
-		(at 91.44 62.23 0)
+		(at 85.09 62.23 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6577,8 +6577,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fbb019e8-ad64-553b-a98c-a2d18cf9a10f")
-		(property "Reference" "C32"
-			(at 89.408 57.15 0)
+		(property "Reference" "C14"
+			(at 83.058 57.15 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6589,7 +6589,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 89.408 54.61 0)
+			(at 83.058 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6600,7 +6600,7 @@
 			)
 		)
 		(property "Footprint" "Capacitors:C0201"
-			(at 91.44 62.23 0)
+			(at 85.09 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6612,7 +6612,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/C668346.pdf"
-			(at 91.44 62.23 0)
+			(at 85.09 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6624,7 +6624,7 @@
 			)
 		)
 		(property "Description" "0201 100nF 16V VBAT 去耦"
-			(at 91.44 62.23 0)
+			(at 85.09 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6636,7 +6636,7 @@
 			)
 		)
 		(property "MPN" "GRM033Z71C104KE14D"
-			(at 91.44 62.23 0)
+			(at 85.09 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6648,7 +6648,7 @@
 			)
 		)
 		(property "LCSC Part" "C668346"
-			(at 91.44 62.23 0)
+			(at 85.09 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6660,7 +6660,7 @@
 			)
 		)
 		(property "Manufacturer" "muRata(村田)"
-			(at 91.44 62.23 0)
+			(at 85.09 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6680,7 +6680,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/07baf6c9-443b-535b-ae5c-72067acbe97f"
-					(reference "C32")
+					(reference "C14")
 					(unit 1)
 				)
 			)

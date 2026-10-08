@@ -2011,7 +2011,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "04d751ce-757e-5559-8018-16825bcee2c5")
-		(property "Reference" "#PWR904"
+		(property "Reference" "#PWR04"
 			(at 30.48 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -2076,7 +2076,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd"
-					(reference "#PWR904")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -2257,7 +2257,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "39dc236a-85f6-56d8-ac2b-572a167e11f2")
-		(property "Reference" "#PWR901"
+		(property "Reference" "#PWR05"
 			(at 30.988 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -2322,7 +2322,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd"
-					(reference "#PWR901")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -2444,7 +2444,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "57807b9b-caa5-5ba4-8d3a-189df2ce5287")
-		(property "Reference" "#FLG901"
+		(property "Reference" "#FLG02"
 			(at 30.734 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -2510,7 +2510,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd"
-					(reference "#FLG901")
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
@@ -2527,7 +2527,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5ce96a8e-b5a9-52c4-8931-eaa7d1cc5fd5")
-		(property "Reference" "#PWR906"
+		(property "Reference" "#PWR02"
 			(at 171.958 127 0)
 			(hide yes)
 			(show_name no)
@@ -2592,7 +2592,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd"
-					(reference "#PWR906")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -2691,7 +2691,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "63b85cf3-c1ea-53ef-a628-c301aaa17a1d")
-		(property "Reference" "#FLG900"
+		(property "Reference" "#FLG01"
 			(at 30.734 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -2757,7 +2757,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd"
-					(reference "#FLG900")
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
@@ -3052,7 +3052,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ad607543-9b5a-5ce4-9fa7-4b2a3869e33a")
-		(property "Reference" "#PWR905"
+		(property "Reference" "#PWR01"
 			(at 171.958 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -3117,7 +3117,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd"
-					(reference "#PWR905")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -3298,7 +3298,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cd7abff8-c15d-5789-82a2-968cd6ac26c2")
-		(property "Reference" "#PWR903"
+		(property "Reference" "#PWR03"
 			(at 30.988 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -3363,7 +3363,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd"
-					(reference "#PWR903")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -3380,7 +3380,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f8a8d98b-4565-5464-a165-66bb24294043")
-		(property "Reference" "#PWR902"
+		(property "Reference" "#PWR06"
 			(at 30.48 170.18 0)
 			(hide yes)
 			(show_name no)
@@ -3445,7 +3445,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd"
-					(reference "#PWR902")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
