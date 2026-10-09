@@ -10960,7 +10960,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LA150C_RDIVER_V1.00:ECLGA2.5X1.7-7L"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
