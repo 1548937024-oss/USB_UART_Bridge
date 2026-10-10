@@ -8,7 +8,7 @@ Blocks, from hardware design doc §3.3 / §3.4 / §3.6:
      nFAULT pull-up / RC;
 * B  三相电流采样: per phase R_up = R_dn = 8.06k to PWR_3V3A / AGND,
      100R series + 100pF to the ADC;
-* C  电机温度检测 NTC (NCP15XH103F03RC) with a 10k reference and 100nF.
+* C  电机温度检测 NTC (NCP15XH103F03RC) with NTC pull-up and 6.8k to ground.
 
 Datasheet correction carried into the drawing: SA/SB/SC are the motor phase
 outputs.  The 8.06k termination network belongs on the SOA/SOB/SOC current
@@ -84,7 +84,6 @@ def main() -> int:
 
     # --- control inputs -> hierarchical ports
     for net, point, shape in (
-        ("EN_A", ena, "input"), ("EN_B", enb, "input"), ("EN_C", enc, "input"),
         ("PWM_A", pwma, "input"), ("PWM_B", pwmb, "input"), ("PWM_C", pwmc, "input"),
     ):
         sheet.wire(point[0], point[1], 35.56, point[1])
@@ -93,7 +92,8 @@ def main() -> int:
     sheet.hier_label("nSLEEP", 35.56, nsleep[1], shape="input", rotation=180)
     sheet.text(
         "note:pwm",
-        "ENx 为使能（内部下拉），PWMx 为斩波输入；MP6543H 真值表 ENx=1,PWMx=1→VIN；ENx=1,PWMx=0→GND；ENx=0→高阻",
+        "ENx 由 10k 上拉到 3.3V 常使能，不由 MCU 控制；PWMx 由 MCU 三相 PWM 驱动。"
+        " MP6543H 真值表 ENx=1,PWMx=1→VIN；ENx=1,PWMx=0→GND→内部互补输出。",
         22.86,
         30.48,
         1.27,
@@ -105,6 +105,28 @@ def main() -> int:
         33.02,
         1.27,
     )
+
+    # --- ENx pull-up to 3.3V, no MCU control.  Local labels keep the three
+    # pull-ups outside the MP6543 body and avoid crossing the PWM rows.
+    for net, point, stub_x in (
+        ("EN_A_PU", ena, 53.34),
+        ("EN_B_PU", enb, 50.8),
+        ("EN_C_PU", enc, 48.26),
+    ):
+        sheet.wire(point[0], point[1], stub_x, point[1])
+        sheet.label(net, stub_x, point[1], rotation=180)
+    for refc, net, x, cy in (
+        ("R34", "EN_A_PU", 34.29, 69.85),
+        ("R35", "EN_B_PU", 38.1, 80.01),
+        ("R36", "EN_C_PU", 30.48, 86.36),
+    ):
+        sheet.component("Device:R", refc, "10K", x, cy, footprint="",
+                        description="0201 10K 1% EN pull-up to 3V3")
+        top = sheet.pin("Device:R", x, cy, 0, "1")
+        bottom = sheet.pin("Device:R", x, cy, 0, "2")
+        power("PWR_3V3", top[0], top[1])
+        sheet.wire(bottom[0], bottom[1], 45.72, bottom[1])
+        sheet.label(net, 45.72, bottom[1])
 
     # --- OC_ADJ to PGND -> OCP typ 6.2A
     sheet.wire(ocadj[0], ocadj[1], 53.34, ocadj[1])
@@ -119,7 +141,7 @@ def main() -> int:
     sheet.wire(40.64, 64.77, 40.64, rail_y)
     sheet.wire(40.64, rail_y, 45.72, rail_y)
     for refc, val, desc, x in (
-        ("C19", "10uF", "1210 10uF 25V", 50.8),
+        ("C19", "1uF", "0603 1uF 50V X7R", 50.8),
         ("C20", "100nF", "0402 100nF 50V", 58.42),
     ):
         sheet.component("Device:C", refc, val, x, 73.66, footprint="", description=desc)
@@ -143,7 +165,8 @@ def main() -> int:
     # --- V3P3 bypass + ferrite to PWR_3V3A
     sheet.wire(114.3, 110.49, 114.3, 113.03)
     sheet.label("V3P3_DRV", 114.3, 110.49)
-    sheet.component("Device:C", "C21", "4.7uF", 114.3, 116.84, footprint="", description="0603 4.7uF 10V")
+    sheet.component("Device:C", "C21", "10uF", 114.3, 116.84, footprint="",
+                    description="0603 10uF 10V X7R")
     c21_a = sheet.pin("Device:C", 114.3, 116.84, 0, "1")
     c21_b = sheet.pin("Device:C", 114.3, 116.84, 0, "2")
     sheet.wire(c21_b[0], c21_b[1], c21_b[0], 123.19)
@@ -163,7 +186,7 @@ def main() -> int:
     sheet.junction(129.54, fb1_b[1])
     sheet.text(
         "note:v3p3",
-        "V3P3（内部 LDO，3.3V/100mA，power_out）→ C21 4.7µF → 磁珠 FB1 → PWR_3V3A 供 MCU VDDA/VREFP",
+        "V3P3（内部 LDO，3.3V/100mA，power_out）→ C21 10µF X7R → 磁珠 FB1 → PWR_3V3A 供 MCU VDDA/VREFP",
         120.65,
         133.35,
         1.27,
@@ -190,7 +213,7 @@ def main() -> int:
     node_y = 111.76
     sheet.wire(152.4, node_y, 172.72, node_y)
     sheet.hier_label("nFAULT", 172.72, node_y, shape="output", rotation=0)
-    sheet.component("Device:R", "R22", "10K", 152.4, 107.95, footprint="", description="0201 10K 1%")
+    sheet.component("Device:R", "R22", "1K", 152.4, 107.95, footprint="", description="0201 1K 1%")
     r22_a = sheet.pin("Device:R", 152.4, 107.95, 0, "1")
     r22_b = sheet.pin("Device:R", 152.4, 107.95, 0, "2")
     power("PWR_3V3A", r22_a[0], 100.33)
@@ -202,7 +225,13 @@ def main() -> int:
     sheet.junction(c23_a[0], node_y)
     sheet.wire(c23_b[0], c23_b[1], c23_b[0], 121.92)
     power("AGND", c23_b[0], 121.92)
-    sheet.text("note:nfault", "nFAULT 开漏：R22 10k 上拉到 PWR_3V3A，C23 100nF 去抖（τ≈1ms）", 120.65, 140.97, 1.27)
+    sheet.text(
+        "note:nfault",
+        "nFAULT 开漏：R22 1k 上拉到 PWR_3V3A，C23 100nF 去抖（τ≈100µs，QS01 V1.1 口径）",
+        120.65,
+        140.97,
+        1.27,
+    )
 
     # --- motor phases and power ground
     for net, point, ty in (
@@ -234,7 +263,7 @@ def main() -> int:
     )
     sheet.text(
         "note:sense2",
-        "★ datasheet：8.06k 端接网络接在 SOA/SOB/SOC 电流采样输出上；QS02/本工程文档把它误写为 SA/SB/SC",
+        "★ datasheet：8.06k 端接网络接在 SOA/SOB/SOC 电流采样输出上；QS01/工程文档把它误写为 SA/SB/SC",
         213.36,
         143.51,
         1.27,
@@ -250,13 +279,13 @@ def main() -> int:
         node_x = 228.6
         # divider
         sheet.component("Device:R", f"R{26 + index}", "8.06K", node_x, base - 7.62,
-                        footprint="", description="0201 8.06K 0.5%（料号待确认）")
+                        footprint="", description="0201 8.06K 1%（QS01 EBOM）")
         rup_a = sheet.pin("Device:R", node_x, base - 7.62, 0, "1")
         rup_b = sheet.pin("Device:R", node_x, base - 7.62, 0, "2")
         power("PWR_3V3A", rup_a[0], rup_a[1] - 7.62)
         sheet.wire(rup_a[0], rup_a[1], rup_a[0], rup_a[1] - 7.62)
         sheet.component("Device:R", f"R{29 + index}", "8.06K", node_x, base + 7.62,
-                        footprint="", description="0201 8.06K 0.5%（料号待确认）")
+                        footprint="", description="0201 8.06K 1%（QS01 EBOM）")
         rdn_a = sheet.pin("Device:R", node_x, base + 7.62, 0, "1")
         rdn_b = sheet.pin("Device:R", node_x, base + 7.62, 0, "2")
         sheet.wire(rup_b[0], rup_b[1], rdn_a[0], rdn_a[1])
@@ -272,7 +301,7 @@ def main() -> int:
         sheet.wire(node_x, base, rs_a[0], rs_a[1])
         sheet.wire(rs_b[0], rs_b[1], 259.08, base)
         sheet.component("Device:C", cap, "100pF", node_x + 24.13, base + 3.81,
-                        footprint="", description="0201 100pF 50V")
+                        footprint="", description="0201 100pF 50V C0G")
         cp_a = sheet.pin("Device:C", node_x + 24.13, base + 3.81, 0, "1")
         cp_b = sheet.pin("Device:C", node_x + 24.13, base + 3.81, 0, "2")
         sheet.junction(cp_a[0], base)
@@ -284,7 +313,8 @@ def main() -> int:
     sheet.block("C  电机温度检测 NTC (NCP15XH103F03RC)", 20.32, 160.02, 203.2, 198.12)
     sheet.text(
         "note:ntc",
-        "3.3V → NTC → 节点 → Rref 10kΩ → AGND；25℃ 时 10k‖10k 得 1.65V 中点。NTC 位于电机/丝杠内部，经内部线束接入",
+        "3.3V → NTC → 节点 → Rref 6.8kΩ → AGND；25℃ 时节点约 1.335V。"
+        " 按 QS01 R25 = 6.8K 修改，NTC 位于电机/丝杠内部。",
         55.88,
         162.56,
         1.27,
@@ -295,7 +325,7 @@ def main() -> int:
     th_b = sheet.pin(f"{P}:NCP15XH103F03RC", 35.56, 172.72, 0, "2")
     power("PWR_3V3", th_a[0], 166.37)
     sheet.wire(th_a[0], th_a[1], th_a[0], 166.37)
-    sheet.component("Device:R", "R32", "10K", 35.56, 182.88, footprint="", description="0201 10K 0.5%")
+    sheet.component("Device:R", "R32", "6.8K", 35.56, 182.88, footprint="", description="0201 6.8K 1%")
     r32_a = sheet.pin("Device:R", 35.56, 182.88, 0, "1")
     r32_b = sheet.pin("Device:R", 35.56, 182.88, 0, "2")
     sheet.wire(th_b[0], th_b[1], r32_a[0], r32_a[1])

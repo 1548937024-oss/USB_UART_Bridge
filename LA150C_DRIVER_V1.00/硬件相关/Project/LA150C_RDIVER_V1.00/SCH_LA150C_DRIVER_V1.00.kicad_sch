@@ -11,212 +11,6 @@
 		(comment 1 "LA150C 集成驱动器原理图")
 	)
 	(lib_symbols
-		(symbol "Capacitors:GRM188D72A105KE01D"
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 0 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "1uF"
-				(at 0 -5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Capacitors:C0603"
-				(at 0 -7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/342cc637d93cd94474def6cbba680777.pdf?productCode=C23829972"
-				(at 0 -10.16 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "1uF ±10% 100V Ceramic Capacitor X7T 0603"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Manufacturer" "muRata"
-				(at 0 -12.7 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "MPN" "GRM188D72A105KE01D"
-				(at 0 -15.24 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC Part" "C23829972"
-				(at 0 -17.78 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LocalDatasheet" "../datasheets/C23829972/GRM188D72A105KE01D.pdf"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "Capacitors/Ceramic Capacitors"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "GRM188D72A105KE01D_0_1"
-				(polyline
-					(pts
-						(xy -0.51 0) (xy -2.54 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.51 -2.03) (xy -0.51 2.03)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.51 2.03) (xy 0.51 -2.03)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 0.51 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin unspecified line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -527,7 +321,7 @@
 					)
 				)
 			)
-			(property "Description" "600Ω@100MHz 1 Line Ferrite Bead 0402 300mA 520mΩ"
+			(property "Description" "Imported from legacy JLC paste BOM"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -561,6 +355,17 @@
 				)
 			)
 			(property "LCSC Part" "C76884"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LocalDatasheet" "../datasheets/Filters/Ferrite Beads and Chips/C76884_BLM15AG601SN1D.pdf"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -683,6 +488,203 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "LA150C_RDIVER_V1.00:CL03C101JB3NNNC"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "0201-100pF-50V-5%"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Capacitors:C0201"
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C730413"
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Imported from legacy JLC paste BOM"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "Samsung Electro-Mechanics"
+				(at 0 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "CL03C101JB3NNNC"
+				(at 0 -15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" "C730413"
+				(at 0 -17.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LocalDatasheet" "../datasheets/Capacitors/Ceramic Capacitors/C730413_CL03C101JB3NNNC.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Capacitors/Ceramic Capacitors"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "CL03C101JB3NNNC_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "CL03C101JB3NNNC_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "LA150C_RDIVER_V1.00:CL05Y105KP6VPNC"
 			(pin_numbers
 				(hide yes)
@@ -705,7 +707,7 @@
 					)
 				)
 			)
-			(property "Value" "CL05Y105KP6VPNC"
+			(property "Value" "0402-1uF-10V-10%"
 				(at 0 -5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -726,7 +728,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://www.lcsc.com/datasheet/C2803380.pdf"
+			(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0b5a285c1df7dac78985feb71e334603.pdf?productCode=C2803380"
 				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -737,7 +739,7 @@
 					)
 				)
 			)
-			(property "Description" "Unpolarized capacitor"
+			(property "Description" "Imported from legacy JLC paste BOM"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -748,7 +750,7 @@
 					)
 				)
 			)
-			(property "Manufacturer" "SAMSUNG(三星)"
+			(property "Manufacturer" "Samsung Electro-Mechanics"
 				(at 0 -12.7 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -781,7 +783,18 @@
 					)
 				)
 			)
-			(property "ki_keywords" "Multilayer Ceramic Capacitors MLCC - SMD/SMT"
+			(property "LocalDatasheet" "../datasheets/Capacitors/Ceramic Capacitors/C2803380_CL05Y105KP6VPNC.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Capacitors/Ceramic Capacitors"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -869,193 +882,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "LA150C_RDIVER_V1.00:CL10A475KP8NNNC"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 0 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "CL10A475KP8NNNC"
-				(at 0 -5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Capacitors:C0603"
-				(at 0 -7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL10A475KP8NNNC_4-7uF-475-10-10V_C1705.html"
-				(at 0 -10.16 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "4.7uF (475) ±10% 10V"
-				(at 0 -22.86 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Manufacturer" "SAMSUNG(三星)"
-				(at 0 -12.7 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "MPN" "CL10A475KP8NNNC"
-				(at 0 -15.24 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC Part" "C1705"
-				(at 0 -17.78 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "CL10A475KP8NNNC_0_1"
-				(polyline
-					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "CL10A475KP8NNNC_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "LA150C_RDIVER_V1.00:FN03N100J500PLG"
+		(symbol "LA150C_RDIVER_V1.00:CL10B105KB8NQNC"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1078,7 +905,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "10pF"
+			(property "Value" "1uF"
 				(at 0.635 -2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1089,7 +916,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Capacitors:C_0201_0603Metric"
+			(property "Footprint" "Capacitors:C_0603_1608Metric"
 				(at 0.9652 -3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1100,7 +927,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/1497a6a2cea2f2b0acf5e045d2bc193c.pdf?productCode=C561710"
+			(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20221017/6871EB52164389FFC3A4F3737FD2F190.pdf"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1111,7 +938,7 @@
 					)
 				)
 			)
-			(property "Description" "10pF ±5% 50V Ceramic Capacitor C0G 0201"
+			(property "Description" "1uF ±10% 50V X7R 0603 ceramic capacitor"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1122,7 +949,7 @@
 					)
 				)
 			)
-			(property "Manufacturer" "PSA"
+			(property "DatasheetRev" ""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1133,7 +960,7 @@
 					)
 				)
 			)
-			(property "MPN" "FN03N100J500PLG"
+			(property "DatasheetDate" ""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1144,7 +971,40 @@
 					)
 				)
 			)
-			(property "LCSC Part" "C561710"
+			(property "LocalDatasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "SAMSUNG(三星)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "CL10B105KB8NQNC"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" "C5199872"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1166,7 +1026,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "FN03N100J500PLG_*"
+			(property "ki_fp_filters" "CL10B105KB8NQNC_*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1177,7 +1037,7 @@
 					)
 				)
 			)
-			(symbol "FN03N100J500PLG_0_1"
+			(symbol "CL10B105KB8NQNC_0_1"
 				(polyline
 					(pts
 						(xy -2.032 0.762) (xy 2.032 0.762)
@@ -1203,7 +1063,7 @@
 					)
 				)
 			)
-			(symbol "FN03N100J500PLG_1_1"
+			(symbol "CL10B105KB8NQNC_1_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 2.794)
@@ -1265,7 +1125,7 @@
 					)
 				)
 			)
-			(property "Value" "GRM033Z71C104KE14D"
+			(property "Value" "0201-100nF-16V-10%"
 				(at 0 -5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1286,7 +1146,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://www.lcsc.com/datasheet/C668346.pdf"
+			(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0fb4604782167a586c3dd1f22396ac96.pdf?productCode=C668346"
 				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1297,7 +1157,7 @@
 					)
 				)
 			)
-			(property "Description" "Unpolarized capacitor"
+			(property "Description" "Imported from legacy JLC paste BOM"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1308,7 +1168,7 @@
 					)
 				)
 			)
-			(property "Manufacturer" "muRata(村田)"
+			(property "Manufacturer" "muRata"
 				(at 0 -12.7 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1341,7 +1201,18 @@
 					)
 				)
 			)
-			(property "ki_keywords" "Multilayer Ceramic Capacitors MLCC - SMD/SMT"
+			(property "LocalDatasheet" "../datasheets/Capacitors/Ceramic Capacitors/C668346_GRM033Z71C104KE14D.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Capacitors/Ceramic Capacitors"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1529,6 +1400,17 @@
 					)
 				)
 			)
+			(property "LocalDatasheet" "../datasheets/Capacitors/Ceramic Capacitors/C77020_GRM155R71H104KE14D.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "ki_keywords" "Capacitors/Ceramic Capacitors"
 				(at 0 0 0)
 				(show_name no)
@@ -1578,6 +1460,227 @@
 				)
 			)
 			(symbol "GRM155R71H104KE14D_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "LA150C_RDIVER_V1.00:GRM188Z71A106KA73D"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "10uF"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Capacitors:C_0603_1608Metric"
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20220328/6A4892B7E841253269A84FFE395E0578.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "10uF ±10% 10V X7R 0603 ceramic capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "DatasheetRev" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "DatasheetDate" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LocalDatasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "muRata(村田)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "GRM188Z71A106KA73D"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" "C2959727"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Capacitors/Ceramic Capacitors"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "GRM188Z71A106KA73D_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GRM188Z71A106KA73D_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GRM188Z71A106KA73D_1_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 2.794)
@@ -2233,7 +2336,7 @@
 					)
 				)
 			)
-			(property "Description" "NTC Thermistor 10kΩ Surface Mount 0402"
+			(property "Description" "Imported from legacy JLC paste BOM"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2267,6 +2370,17 @@
 				)
 			)
 			(property "LCSC Part" "C77131"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LocalDatasheet" "../datasheets/Sensors/NTC Thermistors/C77131_NCP15XH103F03RC.pdf"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2954,7 +3068,7 @@
 					)
 				)
 			)
-			(property "Value" "100Ω"
+			(property "Value" "0201-100R-1%"
 				(at 0 0 90)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2986,7 +3100,7 @@
 					)
 				)
 			)
-			(property "Description" "50mW 100Ω 25V Thick Film Resistor ±1% ±200ppm/℃ 0201 Chip Resistor - Surface Mount RoHS"
+			(property "Description" "Imported from legacy JLC paste BOM"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3020,6 +3134,17 @@
 				)
 			)
 			(property "LCSC Part" "C77623"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LocalDatasheet" "../datasheets/Resistors/Chip Resistor - Surface Mount/C77623_RC0201FR-07100RL.pdf"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3127,7 +3252,7 @@
 					)
 				)
 			)
-			(property "Value" "RC0201FR-0710KL"
+			(property "Value" "0201-10K-1%"
 				(at 0 -5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3148,7 +3273,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_10KR-1002-1_C106225.html"
+			(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C106225"
 				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3159,7 +3284,7 @@
 					)
 				)
 			)
-			(property "Description" "Resistor"
+			(property "Description" "Imported from legacy JLC paste BOM"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3170,7 +3295,7 @@
 					)
 				)
 			)
-			(property "Manufacturer" "YAGEO(国巨)"
+			(property "Manufacturer" "YAGEO"
 				(at 0 -12.7 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3203,7 +3328,18 @@
 					)
 				)
 			)
-			(property "ki_keywords" "Resistors"
+			(property "LocalDatasheet" "../datasheets/Resistors/Chip Resistor - Surface Mount/C106225_RC0201FR-0710KL.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Resistors/Chip Resistor - Surface Mount"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3239,6 +3375,374 @@
 				)
 			)
 			(symbol "RC0201FR-0710KL_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "LA150C_RDIVER_V1.00:RC0201FR-071KL"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "0201-1K-1%"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Resistors:R0201"
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C138165"
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Imported from legacy JLC paste BOM"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "YAGEO"
+				(at 0 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "RC0201FR-071KL"
+				(at 0 -15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" "C138165"
+				(at 0 -17.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LocalDatasheet" "../datasheets/Resistors/Chip Resistor - Surface Mount/C138165_RC0201FR-071KL.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Resistors/Chip Resistor - Surface Mount"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "RC0201FR-071KL_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "RC0201FR-071KL_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "LA150C_RDIVER_V1.00:RC0201FR-076K8L"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "0201-6.8K-1%"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Resistors:R0201"
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C274877"
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Imported from legacy JLC paste BOM"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "YAGEO"
+				(at 0 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "RC0201FR-076K8L"
+				(at 0 -15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" "C274877"
+				(at 0 -17.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LocalDatasheet" "../datasheets/Resistors/Chip Resistor - Surface Mount/C274877_RC0201FR-076K8L.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Resistors/Chip Resistor - Surface Mount"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "RC0201FR-076K8L_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "RC0201FR-076K8L_1_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 1.27)
@@ -3443,8 +3947,8 @@
 		(uuid "5b5f58ca-186c-5e87-8b3f-b3757ab226df")
 	)
 	(rectangle
-		(start 20.32 157.48)
-		(end 203.2 195.58)
+		(start 20.32 160.02)
+		(end 203.2 198.12)
 		(stroke
 			(width 0.254)
 			(type solid)
@@ -3452,11 +3956,22 @@
 		(fill
 			(type none)
 		)
-		(uuid "f985b134-0d45-4280-90a0-0fdef84303f0")
+		(uuid "8c3cbe5f-c544-508f-8112-4d8986c8e631")
 	)
-	(text "V3P3（内部 LDO，3.3V/100mA，power_out）→ C21 4.7µF → 磁珠 FB1 → PWR_3V3A 供 MCU VDDA/VREFP"
+	(text "C  电机温度检测 NTC (NCP15XH103F03RC)"
 		(exclude_from_sim no)
-		(at 115.062 123.952 0)
+		(at 22.86 162.56 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "09b51a41-ea64-576b-a9c1-9c46cd033044")
+	)
+	(text "V3P3（内部 LDO，3.3V/100mA，power_out）→ C21 10µF X7R → 磁珠 FB1 → PWR_3V3A 供 MCU VDDA/VREFP"
+		(exclude_from_sim no)
+		(at 120.65 133.35 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3465,18 +3980,7 @@
 		)
 		(uuid "113b92f1-d0e6-5a46-9cb8-5473a3882bd3")
 	)
-	(text "C  电机温度检测 NTC (NCP15XH103F03RC)"
-		(exclude_from_sim no)
-		(at 22.86 160.02 0)
-		(effects
-			(font
-				(size 1.5 1.5)
-			)
-			(justify left bottom)
-		)
-		(uuid "11abdc86-24b1-4297-b73e-6414f2662cb2")
-	)
-	(text "ENx 为使能（内部下拉），PWMx 为斩波输入；MP6543H 真值表 ENx=1,PWMx=1→VIN；ENx=1,PWMx=0→GND；ENx=0→高阻"
+	(text "ENx 由 10k 上拉到 3.3V 常使能，不由 MCU 控制；PWMx 由 MCU 三相 PWM 驱动。 MP6543H 真值表 ENx=1,PWMx=1→VIN；ENx=1,PWMx=0→GND→内部互补输出。"
 		(exclude_from_sim no)
 		(at 22.86 30.48 0)
 		(effects
@@ -3489,7 +3993,7 @@
 	)
 	(text "VCP 电荷泵：C22 1µF 到 VIN，不能悬空，容值不足会导致高边驱动电压下跌"
 		(exclude_from_sim no)
-		(at 115.062 117.348 0)
+		(at 120.65 138.43 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3500,7 +4004,7 @@
 	)
 	(text "R_up = R_dn = 8.06kΩ，并联 4030Ω；G_CSA = 4030/4000 = 1.0075 V/A；V_zero = 1.65V"
 		(exclude_from_sim no)
-		(at 212.344 146.558 0)
+		(at 213.36 140.97 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3508,6 +4012,17 @@
 			(justify left bottom)
 		)
 		(uuid "33a891e8-595d-58f9-afb7-d1884addb437")
+	)
+	(text "LA150C RDIVER V1.00 - MOTOR\nMP6543HGL-Z 三相功率级（内置 6 管 110mΩ / 电荷泵 / LDO / 双向采样放大器）"
+		(exclude_from_sim no)
+		(at 20.32 15.24 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "3ce48bc6-423c-55e2-b478-9bdb0e75e79b")
 	)
 	(text "★ MCU 引脚表 4.1 的 TIMER7 通道标注与 datasheet 不一致（PC8=CH2、PA11=CH0），已按表 27 的引脚号绘制，待固件确认"
 		(exclude_from_sim no)
@@ -3544,7 +4059,7 @@
 	)
 	(text "LSS ×2 / GND / EP 直接连 PGND 平面"
 		(exclude_from_sim no)
-		(at 22.86 99.314 0)
+		(at 22.86 105.41 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3564,9 +4079,9 @@
 		)
 		(uuid "82dc944f-7e2a-583a-91d5-b73ec02ff0ca")
 	)
-	(text "nFAULT 开漏：R22 10k 上拉到 PWR_3V3A，C23 100nF 去抖（τ≈1ms）"
+	(text "nFAULT 开漏：R22 1k 上拉到 PWR_3V3A，C23 100nF 去抖（τ≈100µs，QS01 V1.1 口径）"
 		(exclude_from_sim no)
-		(at 115.062 119.888 0)
+		(at 120.65 140.97 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3577,7 +4092,7 @@
 	)
 	(text "★ 该方案把功率级本地地噪声带入 MCU 模拟域，VDDA 零点噪声需样机实测；备选是独立 LDO 供模拟 3.3V"
 		(exclude_from_sim no)
-		(at 115.062 126.492 0)
+		(at 120.65 135.89 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3586,31 +4101,9 @@
 		)
 		(uuid "a6b1ed8d-e187-5deb-bda6-abda270ba12c")
 	)
-	(text "3.3V → NTC → 节点 → Rref 10kΩ → AGND；25℃ 时 10k‖10k 得 1.65V 中点。NTC 位于电机/丝杠内部，经内部线束接入"
+	(text "★ datasheet：8.06k 端接网络接在 SOA/SOB/SOC 电流采样输出上；QS01/工程文档把它误写为 SA/SB/SC"
 		(exclude_from_sim no)
-		(at 55.88 160.02 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "bf217e33-644a-474b-9803-adc80a585923")
-	)
-	(text "过温降额 85℃ / 硬停机 110℃；固件须用查表或二阶拟合，禁止单系数线性标定"
-		(exclude_from_sim no)
-		(at 22.352 193.802 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c163944b-bf62-4ac7-8857-f52f6e1b61e0")
-	)
-	(text "★ datasheet：8.06k 端接网络接在 SOA/SOB/SOC 电流采样输出上；QS02/本工程文档把它误写为 SA/SB/SC"
-		(exclude_from_sim no)
-		(at 212.344 149.098 0)
+		(at 213.36 143.51 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3619,9 +4112,20 @@
 		)
 		(uuid "d35aee38-285f-542e-85f8-304912a66cb8")
 	)
+	(text "3.3V → NTC → 节点 → Rref 6.8kΩ → AGND；25℃ 时节点约 1.335V。 按 QS01 R25 = 6.8K 修改，NTC 位于电机/丝杠内部。"
+		(exclude_from_sim no)
+		(at 55.88 162.56 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ea1f5df6-f840-585b-a08f-7886b459cf02")
+	)
 	(text "SA/SB/SC 为三相输出，半桥节点直连电机 U/V/W"
 		(exclude_from_sim no)
-		(at 24.638 88.138 0)
+		(at 22.86 100.33 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3630,634 +4134,172 @@
 		)
 		(uuid "eefce978-9faa-53bd-beff-1c622edf6653")
 	)
-	(text "LA150C RDIVER V1.00 - MOTOR\nMP6543HGL-Z 三相功率级（内置 6 管 110mΩ / 电荷泵 / LDO / 双向采样放大器）"
+	(text "过温降额 85℃ / 硬停机 110℃；固件须用查表或二阶拟合，禁止单系数线性标定"
 		(exclude_from_sim no)
-		(at 20.32 15.24 0)
+		(at 22.86 193.04 0)
 		(effects
 			(font
-				(size 1.5 1.5)
+				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "fb8c6926-7f6a-4e19-a2e5-b72366bdf956")
+		(uuid "f9b007c3-0423-5613-98fa-da19080657cf")
 	)
 	(junction
-		(at 76.2 48.26)
+		(at 152.4 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "04cc1185-418f-53f2-a0d2-5f60bb916da6")
-	)
-	(junction
-		(at 252.73 121.92)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "16e9bd0f-17a5-58ce-bb01-95e5ae9f8dfc")
-	)
-	(junction
-		(at 50.8 175.26)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "16fd1956-2661-4084-97ee-bc43de8265fb")
-	)
-	(junction
-		(at 35.56 186.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1de2fde0-d6e8-4751-9d02-1377cf229561")
-	)
-	(junction
-		(at 228.6 45.72)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "21672be3-1680-5015-bd1d-a80503c448a2")
-	)
-	(junction
-		(at 252.73 45.72)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "40ed5a39-4e37-5db0-8c0a-7c9a7d7af5ce")
-	)
-	(junction
-		(at 78.74 48.26)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "42c7ff7b-3819-5de2-b171-fb067cf86b81")
-	)
-	(junction
-		(at 228.6 121.92)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "43d44d1d-c256-5e81-9d48-7c5d567764ba")
-	)
-	(junction
-		(at 43.18 48.26)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5046cd57-859a-4dd0-8d50-4389baec1cb4")
-	)
-	(junction
-		(at 54.61 48.26)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6bbf9509-f020-5fa5-be19-3c367da987db")
-	)
-	(junction
-		(at 86.36 96.52)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8b206bde-ec2d-5c5b-9a2e-94d659a4b43c")
-	)
-	(junction
-		(at 252.73 83.82)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9585acb4-9b0c-51fc-8ad2-09e62ab6e582")
-	)
-	(junction
-		(at 107.95 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a1972e9e-582e-5e61-ab23-14af0a3388e3")
+		(uuid "055a28de-e99b-55fa-927c-35e8faf16a96")
 	)
 	(junction
 		(at 228.6 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b30805dd-bf3d-561f-872d-ebaecdce4620")
+		(uuid "20b2c274-11e5-5bc8-ad0d-198fc8c65f86")
 	)
 	(junction
-		(at 123.19 95.25)
+		(at 35.56 177.8)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b403f637-a8a7-524e-8520-d7c7610a9aad")
+		(uuid "274829e6-0ac0-5705-bfbc-b1ff4ac995ca")
 	)
 	(junction
-		(at 83.82 96.52)
+		(at 76.2 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c01e1d9f-3cc7-5a18-a969-fba02d158719")
+		(uuid "2cf90e8e-dc85-5c90-9563-7b2685ca35ce")
 	)
 	(junction
-		(at 166.37 95.25)
+		(at 58.42 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c1c0ed90-7ecd-53b9-a9e4-f6eb3ad9e22f")
+		(uuid "33bc2de2-0e7c-55df-8ffd-57486094eb3a")
 	)
 	(junction
-		(at 35.56 175.26)
+		(at 73.66 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c715e582-3c4e-461e-ae28-e4b0f2db254a")
+		(uuid "37201e2f-18bf-5dd6-9123-9ca2c7a17d5b")
 	)
 	(junction
-		(at 81.28 96.52)
+		(at 78.74 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "db3e188d-5a88-5c63-9b0c-34e3961df112")
+		(uuid "376424f3-41af-5a9b-8a27-e84513427b3a")
+	)
+	(junction
+		(at 83.82 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "40b98eae-70f0-53a4-b6d6-d106cbcf03cc")
+	)
+	(junction
+		(at 81.28 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5efcaaa5-95ec-5238-94da-692810f2f63f")
+	)
+	(junction
+		(at 252.73 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5f6aa7b8-75a3-5ab9-bff4-160db23f3047")
+	)
+	(junction
+		(at 114.3 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6288ec0b-689a-5e65-8fea-2c9809366375")
+	)
+	(junction
+		(at 163.83 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7b2fac50-f604-50c1-8c01-9d4cfee52cd3")
+	)
+	(junction
+		(at 50.8 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7ed4bc68-1cd2-5895-941a-9a002e8a2f74")
+	)
+	(junction
+		(at 252.73 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "81644b5b-2b0f-5b36-bbc6-eba9b2fd83f2")
+	)
+	(junction
+		(at 78.74 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "93776a6c-9d26-5d88-a3ac-dd2225fd8f6c")
+	)
+	(junction
+		(at 35.56 187.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "abdcacd5-88b6-58e1-bc6f-52d1d572ac35")
+	)
+	(junction
+		(at 252.73 121.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b3493df6-ac7f-5fbb-a2c5-98cf355f112c")
+	)
+	(junction
+		(at 76.2 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b4252cf2-09d3-5bb9-83c3-0befe255dea8")
+	)
+	(junction
+		(at 129.54 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c202ff2f-4189-5385-b482-d142e464409a")
+	)
+	(junction
+		(at 50.8 177.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c4657c7c-ac7d-5868-a434-85b06c69deeb")
+	)
+	(junction
+		(at 228.6 121.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c759573b-4794-58fc-a3ed-306ef1f6bc15")
+	)
+	(junction
+		(at 228.6 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ce0412c2-df11-5a2a-a23f-a1826435b40b")
 	)
 	(no_connect
-		(at 95.25 80.01)
+		(at 92.71 96.52)
 		(uuid "8ea1b9ec-eb75-539d-a218-ab3fe0e54f5b")
 	)
 	(wire
 		(pts
-			(xy 81.28 88.9) (xy 81.28 96.52)
+			(xy 76.2 74.93) (xy 76.2 69.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "02075096-6a58-5bff-a73c-41008c60c7d5")
+		(uuid "0b4def08-3259-56a4-96c8-f5308a440d3e")
 	)
 	(wire
 		(pts
-			(xy 35.56 175.26) (xy 63.5 175.26)
+			(xy 228.6 57.15) (xy 228.6 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "07ca0b69-30fc-4189-9233-b10e2fc77154")
-	)
-	(wire
-		(pts
-			(xy 35.56 186.69) (xy 50.8 186.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0d42105e-a485-41b8-8958-3d5befebe825")
-	)
-	(wire
-		(pts
-			(xy 78.74 48.26) (xy 78.74 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0e5c5cef-c59c-46a1-af41-e0c9b22ba60e")
-	)
-	(wire
-		(pts
-			(xy 76.2 88.9) (xy 76.2 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1979e630-331a-5e96-a147-f54168bd679a")
-	)
-	(wire
-		(pts
-			(xy 214.63 83.82) (xy 228.6 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2073bf89-262a-4da4-96c5-5e748d79d27d")
-	)
-	(wire
-		(pts
-			(xy 215.9 121.92) (xy 228.6 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "20fd82cf-69e7-4c00-a926-8f2ed9c1eb54")
-	)
-	(wire
-		(pts
-			(xy 107.95 105.41) (xy 107.95 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "22593b06-28d1-41cd-ae20-81f460d247ba")
-	)
-	(wire
-		(pts
-			(xy 62.23 77.47) (xy 38.1 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2304ecc2-ce4f-5c82-bdc7-2839211bbcd5")
-	)
-	(wire
-		(pts
-			(xy 62.23 74.93) (xy 38.1 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "23553eb7-fab1-50a1-a0d7-17d1f55491c4")
-	)
-	(wire
-		(pts
-			(xy 228.6 133.35) (xy 228.6 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2524f082-a929-5b25-b764-666ff7071063")
-	)
-	(wire
-		(pts
-			(xy 95.25 72.39) (xy 102.87 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2893e87b-4cb9-5ffa-81a2-5a1de605f71f")
-	)
-	(wire
-		(pts
-			(xy 95.25 67.31) (xy 102.87 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "305f419a-d743-510d-a94a-8ea49f9f9334")
-	)
-	(wire
-		(pts
-			(xy 107.95 91.44) (xy 107.95 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "31031d51-272f-5ac5-8968-3c66f3ec3743")
-	)
-	(wire
-		(pts
-			(xy 62.23 69.85) (xy 38.1 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "32369823-f0d2-5d01-b700-55373160a65e")
-	)
-	(wire
-		(pts
-			(xy 76.2 127) (xy 58.42 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "32cf2c5d-8129-54f9-9445-96580789df3b")
-	)
-	(wire
-		(pts
-			(xy 228.6 95.25) (xy 228.6 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "33968b20-8b5a-50c8-b78e-ff6916938b80")
-	)
-	(wire
-		(pts
-			(xy 50.8 182.88) (xy 50.8 186.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "345694fc-9cd8-47bb-a895-d5f60438bffe")
-	)
-	(wire
-		(pts
-			(xy 81.28 48.26) (xy 81.28 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "37231dc9-d989-5ce6-a4f2-467d46366705")
-	)
-	(wire
-		(pts
-			(xy 95.25 77.47) (xy 102.87 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "38b71835-8588-5984-a0ef-049dbbf53d2b")
-	)
-	(wire
-		(pts
-			(xy 120.65 95.25) (xy 125.73 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3b473ef3-f2b6-55dd-91f1-119798a2b6fc")
-	)
-	(wire
-		(pts
-			(xy 35.56 166.37) (xy 35.56 163.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3f3ecc32-f041-4132-9b35-b5547669de90")
-	)
-	(wire
-		(pts
-			(xy 166.37 106.68) (xy 166.37 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3f84905c-4441-4a3d-82cb-dd6b44993d52")
-	)
-	(wire
-		(pts
-			(xy 54.61 58.42) (xy 54.61 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "425cabad-a516-48b8-9aee-26d31097be97")
-	)
-	(wire
-		(pts
-			(xy 71.12 88.9) (xy 71.12 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4be9b624-4351-51c6-9c8b-e5743ea77b4e")
-	)
-	(wire
-		(pts
-			(xy 35.56 173.99) (xy 35.56 176.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4c652339-ecc0-4f05-9777-a8900c95e5ad")
-	)
-	(wire
-		(pts
-			(xy 228.6 41.91) (xy 228.6 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4f524c93-713d-5da1-88d7-be135e14d4ae")
-	)
-	(wire
-		(pts
-			(xy 252.73 53.34) (xy 252.73 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "572bbb7c-4a75-55b0-b092-c6addcd0899f")
-	)
-	(wire
-		(pts
-			(xy 55.88 80.01) (xy 55.88 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5daf7ae6-242f-5727-9c6f-7d20f27cf3f1")
-	)
-	(wire
-		(pts
-			(xy 35.56 184.15) (xy 35.56 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "60617f8a-0a79-4a6e-9783-5caa937dc1e1")
-	)
-	(wire
-		(pts
-			(xy 95.25 64.77) (xy 102.87 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6d722d4f-cbad-53bd-b40d-b93c875efbcb")
-	)
-	(wire
-		(pts
-			(xy 243.84 121.92) (xy 259.08 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6e994a52-9e9b-5578-8f24-ae61736680b4")
-	)
-	(wire
-		(pts
-			(xy 154.94 83.82) (xy 154.94 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6f42bdac-664a-5329-928a-ba3b58c1e311")
-	)
-	(wire
-		(pts
-			(xy 83.82 88.9) (xy 83.82 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "72bf600a-1562-5ed0-b83e-adb6182cc554")
-	)
-	(wire
-		(pts
-			(xy 62.23 67.31) (xy 38.1 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "732c5a81-df38-5cae-ba1c-9e459147889b")
-	)
-	(wire
-		(pts
-			(xy 73.66 88.9) (xy 73.66 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "75a4c17a-653c-5130-b384-b6256efc3bab")
-	)
-	(wire
-		(pts
-			(xy 62.23 64.77) (xy 38.1 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "77653f90-888c-50c2-9584-1ca898ec5ba6")
-	)
-	(wire
-		(pts
-			(xy 71.12 116.84) (xy 58.42 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7d1f87d1-549a-5c1c-8154-9573e34f2553")
-	)
-	(wire
-		(pts
-			(xy 139.7 92.71) (xy 139.7 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7e37652a-6703-5956-9eed-d212d0f1c184")
-	)
-	(wire
-		(pts
-			(xy 228.6 45.72) (xy 236.22 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8b5d4377-379a-5dcb-8790-aa8708a523a5")
-	)
-	(wire
-		(pts
-			(xy 62.23 82.55) (xy 38.1 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8cd05378-8e27-5a54-90d0-00d35ab58e1b")
-	)
-	(wire
-		(pts
-			(xy 125.73 92.71) (xy 125.73 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8dcd93b3-afaa-5442-a1e1-8e06a9f43d3b")
-	)
-	(wire
-		(pts
-			(xy 228.6 34.29) (xy 228.6 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "92e2b384-f32f-5c9a-9552-869d1884b186")
-	)
-	(wire
-		(pts
-			(xy 228.6 110.49) (xy 228.6 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "96528b11-ddf1-526b-ae2b-f401aec8fc7b")
-	)
-	(wire
-		(pts
-			(xy 62.23 72.39) (xy 38.1 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "96ad4eda-7658-5d81-b3d8-c556b799ed49")
-	)
-	(wire
-		(pts
-			(xy 54.61 49.53) (xy 54.61 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "98bc22b1-5729-4c4d-9d54-317109f6de34")
-	)
-	(wire
-		(pts
-			(xy 86.36 88.9) (xy 86.36 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9c57acc5-d145-5b8c-856e-2128d5068cb1")
-	)
-	(wire
-		(pts
-			(xy 62.23 80.01) (xy 55.88 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9e2a809b-e955-5a3a-811e-2c014592744a")
-	)
-	(wire
-		(pts
-			(xy 139.7 107.95) (xy 139.7 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9fd3e368-17c2-49d3-8365-cf85f283623a")
-	)
-	(wire
-		(pts
-			(xy 252.73 91.44) (xy 252.73 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a739b118-af8d-5c75-a83c-255be170dcdb")
+		(uuid "13628dec-05d5-5443-818b-8bb95c8c5c27")
 	)
 	(wire
 		(pts
@@ -4267,37 +4309,37 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "a83b29b0-003d-5522-8acb-f7aa1d701c02")
+		(uuid "1c579b26-04fa-5b22-9c64-a3139007f3f1")
 	)
 	(wire
 		(pts
-			(xy 149.86 107.95) (xy 139.7 107.95)
+			(xy 92.71 91.44) (xy 100.33 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a8ec345e-48ed-4802-8e9e-30b147227fa8")
+		(uuid "1c7b948f-9a83-50f0-9e58-c8ffa2d45a0f")
 	)
 	(wire
 		(pts
-			(xy 228.6 72.39) (xy 228.6 68.58)
+			(xy 92.71 83.82) (xy 100.33 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a9c59797-066a-5590-acfc-629988b17687")
+		(uuid "1cb5565e-efbc-5195-a08d-7c3aac59039d")
 	)
 	(wire
 		(pts
-			(xy 76.2 48.26) (xy 76.2 58.42)
+			(xy 68.58 133.35) (xy 55.88 133.35)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b1ca12fc-329d-43ef-a45c-ef0f1aa37ff2")
+		(uuid "1ebdabfe-a75a-5ee5-9ba2-eb1fcb2acf13")
 	)
 	(wire
 		(pts
@@ -4307,107 +4349,67 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "b69cf57f-46de-5c20-a826-e75813e8b77d")
+		(uuid "2303711b-cf30-59b8-9f7c-2007ecb503ef")
 	)
 	(wire
 		(pts
-			(xy 228.6 57.15) (xy 228.6 58.42)
+			(xy 59.69 96.52) (xy 53.34 96.52)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b79b79da-ad1b-5450-930f-0ab33823d47a")
+		(uuid "26cc11ef-b1d8-5719-a0c7-9b20e861e7df")
 	)
 	(wire
 		(pts
-			(xy 78.74 96.52) (xy 86.36 96.52)
+			(xy 59.69 93.98) (xy 35.56 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b99aa42f-ac35-58d3-a87b-fe3cf2ca4e04")
+		(uuid "2eb2adbb-7716-5d66-8d34-966d9f7f87ae")
 	)
 	(wire
 		(pts
-			(xy 252.73 129.54) (xy 252.73 137.16)
+			(xy 78.74 105.41) (xy 78.74 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c071c7cb-bc66-5e01-a306-8c43560b2a32")
+		(uuid "2ee0cf9b-2165-52fa-b44e-c42135fd457a")
 	)
 	(wire
 		(pts
-			(xy 43.18 43.18) (xy 43.18 48.26)
+			(xy 35.56 186.69) (xy 35.56 187.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c44737a8-8805-54a7-aff1-32e6b16c06d5")
+		(uuid "2f1695a1-0033-5ff6-afec-bd21e9491411")
 	)
 	(wire
 		(pts
-			(xy 214.63 45.72) (xy 228.6 45.72)
+			(xy 228.6 41.91) (xy 228.6 49.53)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cbc966dc-fb84-4f99-83bc-350e335ae40a")
+		(uuid "37ca675d-a5f4-5d06-87f2-32e2870388f1")
 	)
 	(wire
 		(pts
-			(xy 228.6 83.82) (xy 236.22 83.82)
+			(xy 127 111.76) (xy 132.08 111.76)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cbca5e69-61cd-5d86-9732-c8b89243021d")
-	)
-	(wire
-		(pts
-			(xy 107.95 95.25) (xy 113.03 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "db132010-6adf-5208-92f4-265da2c304bb")
-	)
-	(wire
-		(pts
-			(xy 43.18 48.26) (xy 81.28 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dbbddaf9-a083-51f9-8b4b-99f5568be803")
-	)
-	(wire
-		(pts
-			(xy 78.74 88.9) (xy 78.74 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dbdd4ed0-fa69-5cdd-8f7d-f90c520f9578")
-	)
-	(wire
-		(pts
-			(xy 95.25 74.93) (xy 102.87 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ddb579f3-60c7-5030-8cd0-8f8bd5765aa1")
+		(uuid "3a2fc3c5-7d42-53b6-b54a-128565a95674")
 	)
 	(wire
 		(pts
@@ -4417,57 +4419,37 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "e07d0f46-5053-54eb-ae29-4ebcbe755598")
+		(uuid "3a410525-a970-51b3-98b2-6fe85576fc7b")
 	)
 	(wire
 		(pts
-			(xy 95.25 69.85) (xy 102.87 69.85)
+			(xy 228.6 72.39) (xy 228.6 64.77)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ed156003-52cd-5e41-ae61-2059f8067aeb")
+		(uuid "3a8d7ac6-d1e3-5b3c-91bd-9413134a86de")
 	)
 	(wire
 		(pts
-			(xy 166.37 97.79) (xy 166.37 95.25)
+			(xy 73.66 74.93) (xy 73.66 69.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "eeb1900c-3379-4ffd-b1a6-d09f1cffd209")
+		(uuid "4171f149-952b-5195-8795-907ca2862104")
 	)
 	(wire
 		(pts
-			(xy 73.66 121.92) (xy 58.42 121.92)
+			(xy 76.2 113.03) (xy 83.82 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f4046bab-6d18-5e3c-b30e-e81ff84fcc02")
-	)
-	(wire
-		(pts
-			(xy 154.94 95.25) (xy 175.26 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f8fb00ec-2e6c-5b42-b237-2224d84189ee")
-	)
-	(wire
-		(pts
-			(xy 228.6 118.11) (xy 228.6 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fccd4785-cf9e-5f48-887b-d890969c5cc4")
+		(uuid "41b00790-6ab8-5a44-9d2f-5a890d2d05b4")
 	)
 	(wire
 		(pts
@@ -4477,10 +4459,530 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "fdbb9512-f763-55f1-97f3-0ebfd9bc3f3c")
+		(uuid "485174f7-d454-58a6-a9cd-34dd775f703f")
+	)
+	(wire
+		(pts
+			(xy 78.74 74.93) (xy 78.74 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "485fea24-8b44-5b62-abf8-be83b15553a2")
+	)
+	(wire
+		(pts
+			(xy 146.05 120.65) (xy 146.05 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4bc1ee1b-d630-58ca-b03f-b2c658115beb")
+	)
+	(wire
+		(pts
+			(xy 252.73 129.54) (xy 252.73 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e859088-99d7-580f-b308-2e05dac3cec4")
+	)
+	(wire
+		(pts
+			(xy 40.64 69.85) (xy 45.72 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51a18812-0109-5cbd-9c1b-89422de11db5")
+	)
+	(wire
+		(pts
+			(xy 68.58 105.41) (xy 68.58 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c14e0a2-909d-5e94-8cd0-29b2435c3fb0")
+	)
+	(wire
+		(pts
+			(xy 252.73 91.44) (xy 252.73 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f358ce3-e44a-5ba6-ae21-f8b37a14e0a5")
+	)
+	(wire
+		(pts
+			(xy 59.69 81.28) (xy 53.34 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6030f095-10cb-5cad-81d0-6e1893cd837e")
+	)
+	(wire
+		(pts
+			(xy 35.56 187.96) (xy 50.8 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62615a7b-e0e0-5c16-a046-35f2e61702bf")
+	)
+	(wire
+		(pts
+			(xy 228.6 133.35) (xy 228.6 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "650e84a2-c7d9-5420-95f2-cfc5d6eacf09")
+	)
+	(wire
+		(pts
+			(xy 146.05 110.49) (xy 146.05 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68c42fd1-a33a-565e-8649-77d7016b9919")
+	)
+	(wire
+		(pts
+			(xy 40.64 64.77) (xy 40.64 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73e38f3e-8f17-5435-8e1e-d077e6127fe4")
+	)
+	(wire
+		(pts
+			(xy 228.6 45.72) (xy 236.22 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74d1c5b4-767a-5658-b3ef-f16419c3b2b4")
+	)
+	(wire
+		(pts
+			(xy 73.66 105.41) (xy 73.66 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "780d17cd-17f4-58ca-8f12-1f5db187a5cf")
+	)
+	(wire
+		(pts
+			(xy 92.71 86.36) (xy 100.33 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c7273e8-59e7-565e-af83-ebf5309cf810")
+	)
+	(wire
+		(pts
+			(xy 252.73 53.34) (xy 252.73 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "820715cd-4c06-5753-b82c-f05251f5fc4f")
+	)
+	(wire
+		(pts
+			(xy 59.69 83.82) (xy 50.8 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "841b4cee-d750-512e-a7aa-e9ec66fccc3d")
+	)
+	(wire
+		(pts
+			(xy 34.29 73.66) (xy 45.72 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8cee0a95-d7f1-5700-818e-0b5d41c8d79b")
+	)
+	(wire
+		(pts
+			(xy 45.72 69.85) (xy 78.74 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8fc48aa2-e27c-5522-a8d0-bfd7a08a0c12")
+	)
+	(wire
+		(pts
+			(xy 59.69 88.9) (xy 35.56 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96a8668f-229f-5c26-b89d-c380f7534ed1")
+	)
+	(wire
+		(pts
+			(xy 59.69 99.06) (xy 35.56 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99253f51-1b5a-501a-9ed7-aa752f5d0faa")
+	)
+	(wire
+		(pts
+			(xy 152.4 100.33) (xy 152.4 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "996d6e91-927d-5b17-97fb-6e6a297f4569")
+	)
+	(wire
+		(pts
+			(xy 71.12 138.43) (xy 55.88 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e147d59-bbc6-53da-b267-cb9a8511e98d")
+	)
+	(wire
+		(pts
+			(xy 81.28 105.41) (xy 81.28 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3e2da1a-c61b-510a-9ea6-063139b4cfb0")
+	)
+	(wire
+		(pts
+			(xy 92.71 88.9) (xy 100.33 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a82f6509-e788-5e9f-bff8-327e44105cf3")
+	)
+	(wire
+		(pts
+			(xy 35.56 176.53) (xy 35.56 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a84757b7-5df6-57bc-9b70-3977581669ec")
+	)
+	(wire
+		(pts
+			(xy 35.56 177.8) (xy 63.5 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac93f30b-e4f1-56de-9c62-c419f714f875")
+	)
+	(wire
+		(pts
+			(xy 83.82 105.41) (xy 83.82 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af62172c-5c45-5bdd-95d5-1be1d46ae71f")
+	)
+	(wire
+		(pts
+			(xy 38.1 83.82) (xy 45.72 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "afb30bde-8aa8-577e-98c9-a5fcc93f6d23")
+	)
+	(wire
+		(pts
+			(xy 71.12 105.41) (xy 71.12 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2482423-5c0d-5402-a08d-18d5c84c7f54")
+	)
+	(wire
+		(pts
+			(xy 114.3 111.76) (xy 119.38 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2c17ccf-c767-5534-a6dd-15f441cb9808")
+	)
+	(wire
+		(pts
+			(xy 163.83 119.38) (xy 163.83 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bec2ded0-17f4-5876-ae87-770dffa25751")
+	)
+	(wire
+		(pts
+			(xy 114.3 120.65) (xy 114.3 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2247065-8634-54c8-bbc5-618493cb2acb")
+	)
+	(wire
+		(pts
+			(xy 92.71 81.28) (xy 100.33 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c40e257c-0ccc-5bec-b8b9-e5b31afcb4c5")
+	)
+	(wire
+		(pts
+			(xy 228.6 83.82) (xy 236.22 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4dfbd5a-29ee-5731-b91f-ca18771190a4")
+	)
+	(wire
+		(pts
+			(xy 228.6 95.25) (xy 228.6 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c934b111-ba3f-599d-92f6-078214e9dbdd")
+	)
+	(wire
+		(pts
+			(xy 92.71 93.98) (xy 100.33 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c945f15a-a0a4-56c3-83d7-2af8a980fd95")
+	)
+	(wire
+		(pts
+			(xy 30.48 90.17) (xy 45.72 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0d5e975-56d5-553e-88b4-5a6f01ed5bce")
+	)
+	(wire
+		(pts
+			(xy 59.69 86.36) (xy 48.26 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d21bbff5-76b5-5bfe-bd70-81859b91e8f6")
+	)
+	(wire
+		(pts
+			(xy 114.3 110.49) (xy 114.3 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "daa3b691-f375-5aa0-88fc-e7fe7ab6a21d")
+	)
+	(wire
+		(pts
+			(xy 152.4 111.76) (xy 172.72 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de036632-0aea-5411-a857-cf83748cb98e")
+	)
+	(wire
+		(pts
+			(xy 59.69 91.44) (xy 35.56 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de7e57a2-f323-5768-8cd8-bc72eeb03029")
+	)
+	(wire
+		(pts
+			(xy 50.8 185.42) (xy 50.8 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e31dbf96-5ca4-5e7b-81bf-e7906389d6c5")
+	)
+	(wire
+		(pts
+			(xy 132.08 109.22) (xy 132.08 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e33d3c8e-e5cd-54b5-aacc-3f9c6c2f6c16")
+	)
+	(wire
+		(pts
+			(xy 76.2 105.41) (xy 76.2 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4fc01e5-b2b7-5a62-9a57-c4abc292719f")
+	)
+	(wire
+		(pts
+			(xy 228.6 110.49) (xy 228.6 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5711dd1-3707-504a-ac8c-b8f54e3965e7")
+	)
+	(wire
+		(pts
+			(xy 228.6 34.29) (xy 228.6 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e78abc03-e008-55e6-9b94-3d4e361a72a2")
+	)
+	(wire
+		(pts
+			(xy 35.56 168.91) (xy 35.56 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed334037-5987-501b-b7bf-00a5e4044874")
+	)
+	(wire
+		(pts
+			(xy 73.66 143.51) (xy 55.88 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f37cd9e2-eb02-56cc-b625-515c11cf9476")
+	)
+	(wire
+		(pts
+			(xy 243.84 121.92) (xy 259.08 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb12ed25-2998-55b5-8a00-bea0d697ea79")
+	)
+	(wire
+		(pts
+			(xy 228.6 118.11) (xy 228.6 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fcfd483c-ed98-5d19-a814-20406cea277e")
+	)
+	(wire
+		(pts
+			(xy 53.34 96.52) (xy 53.34 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "feb05e52-e9f0-572f-8e90-631ed9fd87ed")
+	)
+	(label "EN_B_PU"
+		(at 45.72 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0f809227-9313-56fe-804d-f815358a23ff")
 	)
 	(label "SOC_RAW"
-		(at 102.87 69.85 0)
+		(at 100.33 86.36 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4490,17 +4992,17 @@
 		(uuid "16054e5b-36e6-51d1-96d7-5a9a9b69ecc1")
 	)
 	(label "VCP_DRV"
-		(at 149.86 107.95 180)
+		(at 146.05 110.49 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "2946168a-9ba1-5726-a0f3-6591e419e53a")
 	)
 	(label "SOA_RAW"
-		(at 214.63 45.72 0)
+		(at 228.6 45.72 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4510,7 +5012,7 @@
 		(uuid "2fea6a8c-d4ac-5486-a7af-ef00e29a38dc")
 	)
 	(label "nFAULT"
-		(at 102.87 72.39 0)
+		(at 100.33 88.9 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4519,8 +5021,18 @@
 		)
 		(uuid "4f383525-604b-5a01-8cb8-1d96bd015f6d")
 	)
+	(label "EN_C_PU"
+		(at 45.72 90.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "50840e14-fcf0-5055-99db-50ddefc5943b")
+	)
 	(label "SOB_RAW"
-		(at 102.87 67.31 0)
+		(at 100.33 83.82 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4530,7 +5042,7 @@
 		(uuid "644455ab-533f-5ced-bdb2-e3d93305b637")
 	)
 	(label "SOA_RAW"
-		(at 102.87 64.77 0)
+		(at 100.33 81.28 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4539,8 +5051,28 @@
 		)
 		(uuid "67e5a434-a8d7-59b3-b2de-6af3cebb3888")
 	)
+	(label "EN_C_PU"
+		(at 48.26 86.36 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "718e3579-c4e8-56b5-b617-2e7bf338146d")
+	)
+	(label "EN_B_PU"
+		(at 50.8 83.82 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "850570c8-51aa-5573-9ada-53f23a26db53")
+	)
 	(label "V3P3_DRV"
-		(at 102.87 74.93 0)
+		(at 100.33 91.44 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4549,8 +5081,18 @@
 		)
 		(uuid "a22ed17d-0aa7-567b-80b9-abb4779274cb")
 	)
+	(label "EN_A_PU"
+		(at 53.34 81.28 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "aa1c19f6-80ea-585a-be28-003d8876a314")
+	)
 	(label "VCP_DRV"
-		(at 102.87 77.47 0)
+		(at 100.33 93.98 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4560,7 +5102,7 @@
 		(uuid "b5c07130-9029-596e-8364-cb7bb9984179")
 	)
 	(label "SOB_RAW"
-		(at 214.63 83.82 0)
+		(at 228.6 83.82 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4570,7 +5112,7 @@
 		(uuid "bc7d09aa-63ee-5104-8e56-12b3ef9edce3")
 	)
 	(label "SOC_RAW"
-		(at 215.9 121.92 0)
+		(at 228.6 121.92 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4579,8 +5121,18 @@
 		)
 		(uuid "cc81a231-1794-546a-b063-e165f04a8dec")
 	)
+	(label "EN_A_PU"
+		(at 45.72 73.66 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e47e07e1-0d10-5b70-89c0-c0630c1ea0a4")
+	)
 	(label "V3P3_DRV"
-		(at 107.95 91.44 0)
+		(at 114.3 110.49 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4602,7 +5154,7 @@
 	)
 	(hierarchical_label "MOT_V"
 		(shape output)
-		(at 58.42 121.92 180)
+		(at 55.88 138.43 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4613,7 +5165,7 @@
 	)
 	(hierarchical_label "nFAULT"
 		(shape output)
-		(at 175.26 95.25 0)
+		(at 172.72 111.76 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4624,7 +5176,7 @@
 	)
 	(hierarchical_label "PWM_B"
 		(shape input)
-		(at 38.1 74.93 180)
+		(at 35.56 91.44 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4633,20 +5185,9 @@
 		)
 		(uuid "53c6c130-34ed-535c-94d4-1e231b2c3fdc")
 	)
-	(hierarchical_label "EN_A"
-		(shape input)
-		(at 38.1 64.77 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "59063e06-91cc-57e4-b6dd-a84583b1e5ed")
-	)
 	(hierarchical_label "MOT_U"
 		(shape output)
-		(at 58.42 116.84 180)
+		(at 55.88 133.35 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4657,7 +5198,7 @@
 	)
 	(hierarchical_label "PWM_C"
 		(shape input)
-		(at 38.1 77.47 180)
+		(at 35.56 93.98 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4668,18 +5209,18 @@
 	)
 	(hierarchical_label "AD_NTC"
 		(shape output)
-		(at 63.5 175.26 0)
+		(at 63.5 177.8 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "90955afa-ab69-486f-93fe-d2dd4cc28221")
+		(uuid "a9c5b835-d37a-5889-bb74-4dcd100c9601")
 	)
 	(hierarchical_label "PWM_A"
 		(shape input)
-		(at 38.1 72.39 180)
+		(at 35.56 88.9 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4701,7 +5242,7 @@
 	)
 	(hierarchical_label "MOT_W"
 		(shape output)
-		(at 58.42 127 180)
+		(at 55.88 143.51 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4709,17 +5250,6 @@
 			(justify right)
 		)
 		(uuid "bb5e378d-5fbc-569a-ba09-79a6f91286f4")
-	)
-	(hierarchical_label "EN_C"
-		(shape input)
-		(at 38.1 69.85 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "bb6f3b0f-e5c9-59db-afca-86677951b251")
 	)
 	(hierarchical_label "SO_C"
 		(shape output)
@@ -4732,20 +5262,9 @@
 		)
 		(uuid "c0325e7e-76fe-5705-8dd7-ccd1c134713b")
 	)
-	(hierarchical_label "EN_B"
-		(shape input)
-		(at 38.1 67.31 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ce79790d-a07e-5cd0-b5e2-0bfdfaeaeceb")
-	)
 	(hierarchical_label "nSLEEP"
 		(shape input)
-		(at 38.1 82.55 180)
+		(at 35.56 99.06 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4765,8 +5284,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "030b3085-64d9-5d9d-b88a-b3dbf1a82ef2")
-		(property "Reference" "R11"
-			(at 240.792 42.418 90)
+		(property "Reference" "R23"
+			(at 236.22 43.434 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4777,7 +5296,7 @@
 			)
 		)
 		(property "Value" "100R"
-			(at 246.38 42.418 90)
+			(at 236.22 40.894 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4868,15 +5387,15 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
-					(reference "R11")
+					(reference "R23")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Capacitors:GRM188D72A105KE01D")
-		(at 43.18 53.34 270)
+		(lib_id "LA150C_RDIVER_V1.00:CL10B105KB8NQNC")
+		(at 50.8 73.66 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4884,32 +5403,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "03ab8d78-303a-4a15-b14d-848bf76166c2")
-		(property "Reference" "C23"
-			(at 46.99 52.0699 90)
+		(uuid "04aa1b03-0faf-5ed2-970c-d9935fbba6d5")
+		(property "Reference" "C19"
+			(at 48.768 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify left bottom)
 			)
 		)
 		(property "Value" "1uF"
-			(at 46.99 54.6099 90)
+			(at 48.768 66.04 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitors:C0603"
-			(at 35.56 53.34 0)
+		(property "Footprint" "Capacitors:C_0603_1608Metric"
+			(at 50.8 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4917,10 +5435,11 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left bottom)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/342cc637d93cd94474def6cbba680777.pdf?productCode=C23829972"
-			(at 33.02 53.34 0)
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20221017/6871EB52164389FFC3A4F3737FD2F190.pdf"
+			(at 50.8 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4928,10 +5447,11 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left bottom)
 			)
 		)
-		(property "Description" "1uF ±10% 100V Ceramic Capacitor X7T 0603"
-			(at 43.18 53.34 0)
+		(property "Description" "0603 1uF 50V X7R"
+			(at 50.8 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4939,10 +5459,11 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left bottom)
 			)
 		)
-		(property "Manufacturer" "muRata"
-			(at 30.48 53.34 0)
+		(property "MPN" "CL10B105KB8NQNC"
+			(at 50.8 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4950,10 +5471,11 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left bottom)
 			)
 		)
-		(property "MPN" "GRM188D72A105KE01D"
-			(at 27.94 53.34 0)
+		(property "LCSC Part" "C5199872"
+			(at 50.8 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4961,10 +5483,11 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left bottom)
 			)
 		)
-		(property "LCSC Part" "C23829972"
-			(at 25.4 53.34 0)
+		(property "Manufacturer" "SAMSUNG(三星)"
+			(at 50.8 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4972,29 +5495,19 @@
 				(font
 					(size 1.27 1.27)
 				)
-			)
-		)
-		(property "LocalDatasheet" "../datasheets/C23829972/GRM188D72A105KE01D.pdf"
-			(at 43.18 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
+				(justify left bottom)
 			)
 		)
 		(pin "1"
-			(uuid "4b0a9b3f-a87c-4df9-a920-b604cfce4225")
+			(uuid "078e68b4-7419-5a9a-8807-ceaa4e8397a9")
 		)
 		(pin "2"
-			(uuid "b6938747-bd15-4eb8-b341-f6460c69dca6")
+			(uuid "80d23176-be5c-5377-8a8e-365c64805780")
 		)
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
-					(reference "C23")
+					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -5002,7 +5515,7 @@
 	)
 	(symbol
 		(lib_id "LA150C_RDIVER_V1.00:RC0201FR-0710KL")
-		(at 35.56 180.34 0)
+		(at 34.29 69.85 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5010,9 +5523,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "14cdb747-db0d-4b80-a3b1-6a1ebf8f8a1a")
-		(property "Reference" "R20"
-			(at 34.544 175.26 0)
+		(uuid "06a602cf-8c19-587a-96d6-ac2ec9fd7da3")
+		(property "Reference" "R34"
+			(at 33.274 64.77 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5023,7 +5536,7 @@
 			)
 		)
 		(property "Value" "10K"
-			(at 34.544 172.72 0)
+			(at 33.274 62.23 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5034,7 +5547,7 @@
 			)
 		)
 		(property "Footprint" "Resistors:R0201"
-			(at 35.56 180.34 0)
+			(at 34.29 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5045,8 +5558,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_10KR-1002-1_C106225.html"
-			(at 35.56 180.34 0)
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C106225"
+			(at 34.29 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5057,8 +5570,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Description" "0201 10K 0.5%"
-			(at 35.56 180.34 0)
+		(property "Description" "0201 10K 1% EN pull-up to 3V3"
+			(at 34.29 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5070,7 +5583,7 @@
 			)
 		)
 		(property "MPN" "RC0201FR-0710KL"
-			(at 35.56 180.34 0)
+			(at 34.29 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5082,7 +5595,7 @@
 			)
 		)
 		(property "LCSC Part" "C106225"
-			(at 35.56 180.34 0)
+			(at 34.29 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5093,8 +5606,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Manufacturer" "YAGEO(国巨)"
-			(at 35.56 180.34 0)
+		(property "Manufacturer" "YAGEO"
+			(at 34.29 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5106,23 +5619,23 @@
 			)
 		)
 		(pin "1"
-			(uuid "372ac7df-dc2f-4633-8b20-2ffc1a55bab8")
+			(uuid "e1c4584d-b597-5157-a1be-9a67feea90cd")
 		)
 		(pin "2"
-			(uuid "93046f50-2f59-480b-b463-4ae1b56c8e99")
+			(uuid "b8efbbdb-6010-5cf3-8c5f-3b9b2fc8eb81")
 		)
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
-					(reference "R20")
+					(reference "R34")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LA150C_RDIVER_V1.00:AGND")
-		(at 252.73 57.15 0)
+		(lib_id "LA150C_RDIVER_V1.00:PGND")
+		(at 76.2 113.03 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5131,8 +5644,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "19e0e60e-7321-5ec4-b52c-941bc6e11a10")
-		(property "Reference" "#PWR037"
-			(at 251.46 55.88 0)
+		(property "Reference" "#PWR413"
+			(at 74.93 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5143,8 +5656,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "AGND"
-			(at 255.016 60.198 0)
+		(property "Value" "PGND"
+			(at 78.74 113.665 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5155,7 +5668,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 252.73 57.15 0)
+			(at 76.2 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5167,7 +5680,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 252.73 57.15 0)
+			(at 76.2 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5178,8 +5691,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 252.73 57.15 0)
+		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
+			(at 76.2 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5196,7 +5709,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
-					(reference "#PWR037")
+					(reference "#PWR413")
 					(unit 1)
 				)
 			)
@@ -5213,8 +5726,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1d3cfb84-c17d-5a35-aed6-a2ac7e07e0c4")
-		(property "Reference" "R10"
-			(at 229.87 37.084 0)
+		(property "Reference" "R26"
+			(at 227.584 33.02 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5225,7 +5738,7 @@
 			)
 		)
 		(property "Value" "8.06K"
-			(at 229.87 38.862 0)
+			(at 227.584 30.48 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5259,7 +5772,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Description" "0201 8.06K 0.5%（料号待确认）"
+		(property "Description" "0201 8.06K 1%（QS01 EBOM）"
 			(at 228.6 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -5280,15 +5793,15 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
-					(reference "R10")
+					(reference "R26")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LA150C_RDIVER_V1.00:PGND")
-		(at 86.36 96.52 0)
+		(lib_id "LA150C_RDIVER_V1.00:VBUS")
+		(at 146.05 121.92 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5297,8 +5810,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1fdc9c64-986c-5139-b35e-79b25bea6ecb")
-		(property "Reference" "#PWR047"
-			(at 85.09 95.25 0)
+		(property "Reference" "#PWR410"
+			(at 145.288 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5309,8 +5822,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "PGND"
-			(at 88.9 97.155 0)
+		(property "Value" "VBUS"
+			(at 148.59 122.555 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5321,7 +5834,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 86.36 96.52 0)
+			(at 146.05 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5333,7 +5846,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 86.36 96.52 0)
+			(at 146.05 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5344,8 +5857,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 86.36 96.52 0)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 146.05 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5362,14 +5875,14 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
-					(reference "#PWR047")
+					(reference "#PWR410")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LA150C_RDIVER_V1.00:FN03N100J500PLG")
+		(lib_id "LA150C_RDIVER_V1.00:CL03C101JB3NNNC")
 		(at 252.73 125.73 0)
 		(unit 1)
 		(body_style 1)
@@ -5379,8 +5892,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "20a418d0-cafc-5d50-931d-c8c8cd91ab5d")
-		(property "Reference" "C29"
-			(at 255.778 125.476 0)
+		(property "Reference" "C26"
+			(at 250.698 120.65 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5391,7 +5904,7 @@
 			)
 		)
 		(property "Value" "100pF"
-			(at 255.778 127.508 0)
+			(at 250.698 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5401,7 +5914,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitors:C_0201_0603Metric"
+		(property "Footprint" "Capacitors:C0201"
 			(at 252.73 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -5413,7 +5926,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/1497a6a2cea2f2b0acf5e045d2bc193c.pdf?productCode=C561710"
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C730413"
 			(at 252.73 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -5425,7 +5938,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Description" "0201 100pF 50V"
+		(property "Description" "0201 100pF 50V C0G"
 			(at 252.73 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -5437,7 +5950,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "MPN" "FN03N100J500PLG"
+		(property "MPN" "CL03C101JB3NNNC"
 			(at 252.73 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -5449,7 +5962,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "LCSC Part" "C561710"
+		(property "LCSC Part" "C730413"
 			(at 252.73 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -5461,7 +5974,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Manufacturer" "PSA"
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 252.73 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -5482,7 +5995,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
-					(reference "C29")
+					(reference "C26")
 					(unit 1)
 				)
 			)
@@ -5499,8 +6012,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "20d0f47f-8619-585a-8498-fc90736c27d9")
-		(property "Reference" "R18"
-			(at 241.046 118.872 90)
+		(property "Reference" "R25"
+			(at 236.22 119.634 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5511,7 +6024,7 @@
 			)
 		)
 		(property "Value" "100R"
-			(at 246.634 118.618 90)
+			(at 236.22 117.094 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5602,7 +6115,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
-					(reference "R18")
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -5610,7 +6123,7 @@
 	)
 	(symbol
 		(lib_id "LA150C_RDIVER_V1.00:AGND")
-		(at 166.37 106.68 0)
+		(at 228.6 137.16 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5618,9 +6131,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "366bf3a8-beb9-5cfb-bab2-d39d58e8dbe4")
-		(property "Reference" "#PWR050"
-			(at 165.1 105.41 0)
+		(uuid "2156e194-69e0-5e2d-a418-7531e4832c6b")
+		(property "Reference" "#PWR421"
+			(at 227.33 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5632,7 +6145,7 @@
 			)
 		)
 		(property "Value" "AGND"
-			(at 168.91 107.315 0)
+			(at 231.14 137.795 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5643,7 +6156,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 166.37 106.68 0)
+			(at 228.6 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5655,7 +6168,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 166.37 106.68 0)
+			(at 228.6 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5667,7 +6180,291 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 166.37 106.68 0)
+			(at 228.6 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(pin "1"
+			(uuid "47892da5-a2fe-5f77-88e8-db7bcf7c60fd")
+		)
+		(instances
+			(project "LA150C_RDIVER_V1.00"
+				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
+					(reference "#PWR421")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LA150C_RDIVER_V1.00:AGND")
+		(at 35.56 187.96 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "273531e8-18a7-561c-9b88-6c15ab85a7f2")
+		(property "Reference" "#PWR424"
+			(at 34.29 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "AGND"
+			(at 38.1 188.595 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" ""
+			(at 35.56 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 35.56 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
+			(at 35.56 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(pin "1"
+			(uuid "6d4fb26c-f587-5916-893d-2cdae5679496")
+		)
+		(instances
+			(project "LA150C_RDIVER_V1.00"
+				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
+					(reference "#PWR424")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LA150C_RDIVER_V1.00:RC0201FR-076K8L")
+		(at 35.56 182.88 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2822b986-0d85-5086-8346-5bc6c9bc739a")
+		(property "Reference" "R32"
+			(at 34.544 177.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "6.8K"
+			(at 34.544 175.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Resistors:R0201"
+			(at 35.56 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C274877"
+			(at 35.56 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "0201 6.8K 1%"
+			(at 35.56 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "MPN" "RC0201FR-076K8L"
+			(at 35.56 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "LCSC Part" "C274877"
+			(at 35.56 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 35.56 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(pin "1"
+			(uuid "798ad775-4111-53d0-85fc-5384c6b8780b")
+		)
+		(pin "2"
+			(uuid "57cdebd4-fec4-516f-9b02-bd5165b79408")
+		)
+		(instances
+			(project "LA150C_RDIVER_V1.00"
+				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
+					(reference "R32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LA150C_RDIVER_V1.00:PWR_3V3A")
+		(at 132.08 109.22 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "366bf3a8-beb9-5cfb-bab2-d39d58e8dbe4")
+		(property "Reference" "#PWR409"
+			(at 131.318 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "PWR_3V3A"
+			(at 134.62 109.855 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" ""
+			(at 132.08 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3VA\""
+			(at 132.08 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5684,7 +6481,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
-					(reference "#PWR050")
+					(reference "#PWR409")
 					(unit 1)
 				)
 			)
@@ -5692,7 +6489,7 @@
 	)
 	(symbol
 		(lib_id "LA150C_RDIVER_V1.00:PGND")
-		(at 54.61 58.42 0)
+		(at 53.34 110.49 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5701,8 +6498,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "369325f1-4cd7-5d6b-96aa-11af89d51d79")
-		(property "Reference" "#PWR039"
-			(at 53.34 57.15 0)
+		(property "Reference" "#PWR404"
+			(at 52.07 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5714,7 +6511,7 @@
 			)
 		)
 		(property "Value" "PGND"
-			(at 56.388 60.706 0)
+			(at 55.88 111.125 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5725,7 +6522,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 54.61 58.42 0)
+			(at 53.34 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5737,7 +6534,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 54.61 58.42 0)
+			(at 53.34 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5749,7 +6546,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 54.61 58.42 0)
+			(at 53.34 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5766,7 +6563,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
-					(reference "#PWR039")
+					(reference "#PWR404")
 					(unit 1)
 				)
 			)
@@ -5774,7 +6571,7 @@
 	)
 	(symbol
 		(lib_id "LA150C_RDIVER_V1.00:GRM155R71H104KE14D")
-		(at 54.61 53.34 0)
+		(at 58.42 73.66 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5783,8 +6580,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "392bce5a-c327-58a9-93cf-28d96fc6074d")
-		(property "Reference" "C24"
-			(at 58.166 53.086 0)
+		(property "Reference" "C20"
+			(at 56.388 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5795,7 +6592,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 57.912 55.372 0)
+			(at 56.388 66.04 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5806,7 +6603,7 @@
 			)
 		)
 		(property "Footprint" "Capacitors:C_0402_1005Metric"
-			(at 54.61 53.34 0)
+			(at 58.42 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5818,7 +6615,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/64ac52ef9cc4e1905eba7e2ece85e662.pdf?productCode=C77020"
-			(at 54.61 53.34 0)
+			(at 58.42 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5830,7 +6627,7 @@
 			)
 		)
 		(property "Description" "0402 100nF 50V"
-			(at 54.61 53.34 0)
+			(at 58.42 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5842,7 +6639,7 @@
 			)
 		)
 		(property "MPN" "GRM155R71H104KE14D"
-			(at 54.61 53.34 0)
+			(at 58.42 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5854,7 +6651,7 @@
 			)
 		)
 		(property "LCSC Part" "C77020"
-			(at 54.61 53.34 0)
+			(at 58.42 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5866,7 +6663,7 @@
 			)
 		)
 		(property "Manufacturer" "muRata"
-			(at 54.61 53.34 0)
+			(at 58.42 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5886,15 +6683,15 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
-					(reference "C24")
+					(reference "C20")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LA150C_RDIVER_V1.00:PWR_3V3A")
-		(at 125.73 92.71 0)
+		(lib_id "LA150C_RDIVER_V1.00:PGND")
+		(at 50.8 77.47 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5903,8 +6700,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3a567cb1-cd21-551c-a3b6-ea0754f863b5")
-		(property "Reference" "#PWR044"
-			(at 124.968 88.9 0)
+		(property "Reference" "#PWR406"
+			(at 49.53 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5915,8 +6712,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "PWR_3V3A"
-			(at 127 91.694 0)
+		(property "Value" "PGND"
+			(at 53.34 78.105 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5927,7 +6724,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 125.73 92.71 0)
+			(at 50.8 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5939,7 +6736,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 125.73 92.71 0)
+			(at 50.8 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5950,8 +6747,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3VA\""
-			(at 125.73 92.71 0)
+		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
+			(at 50.8 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5968,15 +6765,15 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
-					(reference "#PWR044")
+					(reference "#PWR406")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LA150C_RDIVER_V1.00:PGND")
-		(at 43.18 58.42 0)
+		(lib_id "LA150C_RDIVER_V1.00:PWR_3V3")
+		(at 30.48 82.55 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5985,8 +6782,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3e8db42e-61db-5a29-b9b5-35082597fc44")
-		(property "Reference" "#PWR038"
-			(at 41.91 57.15 0)
+		(property "Reference" "#PWR403"
+			(at 29.718 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5997,8 +6794,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "PGND"
-			(at 44.704 60.706 0)
+		(property "Value" "PWR_3V3"
+			(at 33.02 83.185 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6009,7 +6806,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 43.18 58.42 0)
+			(at 30.48 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6021,7 +6818,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 43.18 58.42 0)
+			(at 30.48 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6032,8 +6829,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 43.18 58.42 0)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 30.48 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6050,7 +6847,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
-					(reference "#PWR038")
+					(reference "#PWR403")
 					(unit 1)
 				)
 			)
@@ -6067,8 +6864,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3f1369c1-5c94-5650-b3bb-bea594e6488e")
-		(property "Reference" "R12"
-			(at 230.124 52.324 0)
+		(property "Reference" "R29"
+			(at 227.584 48.26 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6079,7 +6876,7 @@
 			)
 		)
 		(property "Value" "8.06K"
-			(at 230.124 54.102 0)
+			(at 227.584 45.72 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6113,7 +6910,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Description" "0201 8.06K 0.5%（料号待确认）"
+		(property "Description" "0201 8.06K 1%（QS01 EBOM）"
 			(at 228.6 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -6134,7 +6931,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
-					(reference "R12")
+					(reference "R29")
 					(unit 1)
 				)
 			)
@@ -6142,7 +6939,7 @@
 	)
 	(symbol
 		(lib_id "LA150C_RDIVER_V1.00:GRM155R71H104KE14D")
-		(at 166.37 101.6 0)
+		(at 163.83 115.57 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6151,8 +6948,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "47661569-29b2-56fe-9e26-4765f171942b")
-		(property "Reference" "C28"
-			(at 170.434 101.6 0)
+		(property "Reference" "C23"
+			(at 161.798 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6163,7 +6960,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 164.338 93.98 0)
+			(at 161.798 107.95 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6174,7 +6971,7 @@
 			)
 		)
 		(property "Footprint" "Capacitors:C_0402_1005Metric"
-			(at 166.37 101.6 0)
+			(at 163.83 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6186,7 +6983,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/64ac52ef9cc4e1905eba7e2ece85e662.pdf?productCode=C77020"
-			(at 166.37 101.6 0)
+			(at 163.83 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6198,7 +6995,7 @@
 			)
 		)
 		(property "Description" "0402 100nF 16V"
-			(at 166.37 101.6 0)
+			(at 163.83 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6210,7 +7007,7 @@
 			)
 		)
 		(property "MPN" "GRM155R71H104KE14D"
-			(at 166.37 101.6 0)
+			(at 163.83 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6222,7 +7019,7 @@
 			)
 		)
 		(property "LCSC Part" "C77020"
-			(at 166.37 101.6 0)
+			(at 163.83 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6234,7 +7031,7 @@
 			)
 		)
 		(property "Manufacturer" "muRata"
-			(at 166.37 101.6 0)
+			(at 163.83 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6254,15 +7051,15 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
-					(reference "C28")
+					(reference "C23")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LA150C_RDIVER_V1.00:PGND")
-		(at 55.88 93.98 0)
+		(lib_id "LA150C_RDIVER_V1.00:PWR_3V3")
+		(at 34.29 66.04 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6271,8 +7068,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5247cc76-2907-5695-a72a-e77680ee42a4")
-		(property "Reference" "#PWR045"
-			(at 54.61 92.71 0)
+		(property "Reference" "#PWR401"
+			(at 33.528 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6283,8 +7080,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "PGND"
-			(at 58.42 94.615 0)
+		(property "Value" "PWR_3V3"
+			(at 36.83 66.675 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6295,7 +7092,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 55.88 93.98 0)
+			(at 34.29 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6307,7 +7104,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 55.88 93.98 0)
+			(at 34.29 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6318,8 +7115,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 55.88 93.98 0)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 34.29 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6336,127 +7133,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
-					(reference "#PWR045")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "LA150C_RDIVER_V1.00:NCP15XH103F03RC")
-		(at 35.56 170.18 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "52ea0c97-feb5-475c-b7a3-358e50b98125")
-		(property "Reference" "TH1"
-			(at 34.544 165.1 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Value" "NCP15XH103F03RC"
-			(at 34.544 162.56 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Footprint" "Sensors:R_0402_1005Metric"
-			(at 35.56 170.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/c9e5c9a36e405340079034c7608ac4b6.pdf?productCode=C77131"
-			(at 35.56 170.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Description" "0402 10kΩ B3380K NTC"
-			(at 35.56 170.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "MPN" "NCP15XH103F03RC"
-			(at 35.56 170.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "LCSC Part" "C77131"
-			(at 35.56 170.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Manufacturer" "muRata"
-			(at 35.56 170.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(pin "1"
-			(uuid "3e3eb156-5f33-49da-a2f3-f18321f929a4")
-		)
-		(pin "2"
-			(uuid "c183a198-ef0e-45cf-83dc-55db553f7852")
-		)
-		(instances
-			(project "LA150C_RDIVER_V1.00"
-				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
-					(reference "TH1")
+					(reference "#PWR401")
 					(unit 1)
 				)
 			)
@@ -6464,7 +7141,7 @@
 	)
 	(symbol
 		(lib_id "LA150C_RDIVER_V1.00:CL05Y105KP6VPNC")
-		(at 139.7 96.52 180)
+		(at 146.05 116.84 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6473,8 +7150,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "576cb4f3-17cf-5072-8499-a467227852a2")
-		(property "Reference" "C26"
-			(at 146.558 94.996 0)
+		(property "Reference" "C22"
+			(at 144.018 111.76 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6485,7 +7162,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 146.304 97.282 0)
+			(at 144.018 109.22 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6496,7 +7173,7 @@
 			)
 		)
 		(property "Footprint" "Capacitors:C0402"
-			(at 139.7 96.52 0)
+			(at 146.05 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6507,8 +7184,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C2803380.pdf"
-			(at 139.7 96.52 0)
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0b5a285c1df7dac78985feb71e334603.pdf?productCode=C2803380"
+			(at 146.05 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6520,7 +7197,7 @@
 			)
 		)
 		(property "Description" "0402 1uF 16V X7R 电荷泵"
-			(at 139.7 96.52 0)
+			(at 146.05 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6532,7 +7209,7 @@
 			)
 		)
 		(property "MPN" "CL05Y105KP6VPNC"
-			(at 139.7 96.52 0)
+			(at 146.05 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6544,7 +7221,7 @@
 			)
 		)
 		(property "LCSC Part" "C2803380"
-			(at 139.7 96.52 0)
+			(at 146.05 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6555,8 +7232,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Manufacturer" "SAMSUNG(三星)"
-			(at 139.7 96.52 0)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 146.05 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6576,7 +7253,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
-					(reference "C26")
+					(reference "C22")
 					(unit 1)
 				)
 			)
@@ -6593,8 +7270,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5b016cf4-64ed-53fa-b435-0ba02abd720d")
-		(property "Reference" "R14"
-			(at 240.792 80.772 90)
+		(property "Reference" "R24"
+			(at 236.22 81.534 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6605,7 +7282,7 @@
 			)
 		)
 		(property "Value" "100R"
-			(at 246.634 80.772 90)
+			(at 236.22 78.994 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6696,7 +7373,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
-					(reference "R14")
+					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -6704,7 +7381,7 @@
 	)
 	(symbol
 		(lib_id "LA150C_RDIVER_V1.00:PWR_3V3A")
-		(at 228.6 68.58 0)
+		(at 228.6 26.67 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6713,8 +7390,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5d94b669-b577-5771-84d3-4c9043184d93")
-		(property "Reference" "#PWR041"
-			(at 227.838 64.77 0)
+		(property "Reference" "#PWR414"
+			(at 227.838 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6726,7 +7403,7 @@
 			)
 		)
 		(property "Value" "PWR_3V3A"
-			(at 230.378 67.818 0)
+			(at 231.14 27.305 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6737,7 +7414,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 228.6 68.58 0)
+			(at 228.6 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6749,7 +7426,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 228.6 68.58 0)
+			(at 228.6 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6761,7 +7438,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3VA\""
-			(at 228.6 68.58 0)
+			(at 228.6 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6778,7 +7455,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
-					(reference "#PWR041")
+					(reference "#PWR414")
 					(unit 1)
 				)
 			)
@@ -6795,8 +7472,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "641f3834-3d68-5c91-855c-ba4cff91911f")
-		(property "Reference" "R19"
-			(at 230.378 128.778 0)
+		(property "Reference" "R31"
+			(at 227.584 124.46 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6807,7 +7484,7 @@
 			)
 		)
 		(property "Value" "8.06K"
-			(at 230.378 131.064 0)
+			(at 227.584 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6841,7 +7518,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Description" "0201 8.06K 0.5%（料号待确认）"
+		(property "Description" "0201 8.06K 1%（QS01 EBOM）"
 			(at 228.6 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -6862,15 +7539,15 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
-					(reference "R19")
+					(reference "R31")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LA150C_RDIVER_V1.00:PGND")
-		(at 107.95 106.68 0)
+		(lib_id "LA150C_RDIVER_V1.00:VBUS")
+		(at 40.64 64.77 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6879,8 +7556,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "69b6c261-95bb-51df-a557-2ff36fadf8a9")
-		(property "Reference" "#PWR049"
-			(at 106.68 105.41 0)
+		(property "Reference" "#PWR405"
+			(at 39.878 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6891,8 +7568,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "PGND"
-			(at 110.49 107.315 0)
+		(property "Value" "VBUS"
+			(at 43.18 65.405 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6903,7 +7580,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 107.95 106.68 0)
+			(at 40.64 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6915,7 +7592,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 107.95 106.68 0)
+			(at 40.64 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6926,8 +7603,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 107.95 106.68 0)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 40.64 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6944,127 +7621,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
-					(reference "#PWR049")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "LA150C_RDIVER_V1.00:GRM033Z71C104KE14D")
-		(at 50.8 179.07 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "6a55bb57-c54f-4d2d-8375-b42ff63d2071")
-		(property "Reference" "C30"
-			(at 48.768 173.99 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Value" "100nF"
-			(at 48.768 171.45 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Footprint" "Capacitors:C0201"
-			(at 50.8 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C668346.pdf"
-			(at 50.8 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Description" "0201 100nF 16V"
-			(at 50.8 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "MPN" "GRM033Z71C104KE14D"
-			(at 50.8 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "LCSC Part" "C668346"
-			(at 50.8 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Manufacturer" "muRata(村田)"
-			(at 50.8 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(pin "1"
-			(uuid "48f9cc71-5c2e-4391-b258-ab6cb5ee46f9")
-		)
-		(pin "2"
-			(uuid "907508dc-e8ad-49b2-833c-6b649579c2d3")
-		)
-		(instances
-			(project "LA150C_RDIVER_V1.00"
-				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
-					(reference "C30")
+					(reference "#PWR405")
 					(unit 1)
 				)
 			)
@@ -7072,7 +7629,7 @@
 	)
 	(symbol
 		(lib_id "LA150C_RDIVER_V1.00:BLM15AG601SN1D")
-		(at 116.84 95.25 90)
+		(at 123.19 111.76 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7082,7 +7639,7 @@
 		(dnp no)
 		(uuid "6e605360-8cd7-50af-8115-7640a8a91652")
 		(property "Reference" "FB1"
-			(at 117.602 96.52 90)
+			(at 119.38 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7093,7 +7650,7 @@
 			)
 		)
 		(property "Value" "600R"
-			(at 118.872 98.552 90)
+			(at 119.38 107.95 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7104,7 +7661,7 @@
 			)
 		)
 		(property "Footprint" "Filters:L_0402_1005Metric"
-			(at 116.84 95.25 0)
+			(at 123.19 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7116,7 +7673,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/f85b01b3a1a015a5ec4a9f03876e0063.pdf?productCode=C76884"
-			(at 116.84 95.25 0)
+			(at 123.19 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7128,7 +7685,7 @@
 			)
 		)
 		(property "Description" "0402 600Ω@100MHz 磁珠，隔离 V3P3 供 VDDA"
-			(at 116.84 95.25 0)
+			(at 123.19 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7140,7 +7697,7 @@
 			)
 		)
 		(property "MPN" "BLM15AG601SN1D"
-			(at 116.84 95.25 0)
+			(at 123.19 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7152,7 +7709,7 @@
 			)
 		)
 		(property "LCSC Part" "C76884"
-			(at 116.84 95.25 0)
+			(at 123.19 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7164,7 +7721,7 @@
 			)
 		)
 		(property "Manufacturer" "muRata"
-			(at 116.84 95.25 0)
+			(at 123.19 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7192,7 +7749,7 @@
 	)
 	(symbol
 		(lib_id "LA150C_RDIVER_V1.00:PWR_FLAG")
-		(at 123.19 95.25 0)
+		(at 129.54 111.76 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7201,8 +7758,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6eaf9936-b334-56c1-8755-77445060e7ce")
-		(property "Reference" "#FLG06"
-			(at 122.174 91.44 0)
+		(property "Reference" "#FLG400"
+			(at 128.524 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7214,7 +7771,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 125.73 95.885 0)
+			(at 132.08 112.395 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7226,7 +7783,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 123.19 95.25 0)
+			(at 129.54 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7238,7 +7795,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 123.19 95.25 0)
+			(at 129.54 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7250,7 +7807,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 123.19 95.25 0)
+			(at 129.54 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7267,7 +7824,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
-					(reference "#FLG06")
+					(reference "#FLG400")
 					(unit 1)
 				)
 			)
@@ -7284,8 +7841,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "79e17ca4-aa86-55e8-9db3-fd1812f42f98")
-		(property "Reference" "R16"
-			(at 230.124 90.424 0)
+		(property "Reference" "R30"
+			(at 227.584 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7296,7 +7853,7 @@
 			)
 		)
 		(property "Value" "8.06K"
-			(at 230.124 92.456 0)
+			(at 227.584 83.82 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7330,7 +7887,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Description" "0201 8.06K 0.5%（料号待确认）"
+		(property "Description" "0201 8.06K 1%（QS01 EBOM）"
 			(at 228.6 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -7351,15 +7908,15 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
-					(reference "R16")
+					(reference "R30")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LA150C_RDIVER_V1.00:VBUS")
-		(at 139.7 91.44 0)
+		(lib_id "LA150C_RDIVER_V1.00:PGND")
+		(at 58.42 77.47 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7368,8 +7925,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7bc6d165-27d7-5418-b365-649f17194603")
-		(property "Reference" "#PWR043"
-			(at 138.938 87.63 0)
+		(property "Reference" "#PWR407"
+			(at 57.15 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7380,8 +7937,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "VBUS"
-			(at 142.24 92.075 0)
+		(property "Value" "PGND"
+			(at 60.96 78.105 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7392,7 +7949,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 139.7 91.44 0)
+			(at 58.42 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7404,7 +7961,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 139.7 91.44 0)
+			(at 58.42 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7415,8 +7972,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 139.7 91.44 0)
+		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
+			(at 58.42 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7433,7 +7990,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
-					(reference "#PWR043")
+					(reference "#PWR407")
 					(unit 1)
 				)
 			)
@@ -7441,7 +7998,7 @@
 	)
 	(symbol
 		(lib_id "LA150C_RDIVER_V1.00:AGND")
-		(at 228.6 137.16 0)
+		(at 228.6 99.06 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7450,8 +8007,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "91d271ad-7ba5-5d90-a497-1e812b6b19ab")
-		(property "Reference" "#PWR052"
-			(at 227.33 135.89 0)
+		(property "Reference" "#PWR418"
+			(at 227.33 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7463,7 +8020,7 @@
 			)
 		)
 		(property "Value" "AGND"
-			(at 230.632 139.954 0)
+			(at 231.14 99.695 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7474,7 +8031,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 228.6 137.16 0)
+			(at 228.6 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7486,7 +8043,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 228.6 137.16 0)
+			(at 228.6 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7498,7 +8055,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 228.6 137.16 0)
+			(at 228.6 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7515,7 +8072,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
-					(reference "#PWR052")
+					(reference "#PWR418")
 					(unit 1)
 				)
 			)
@@ -7523,7 +8080,7 @@
 	)
 	(symbol
 		(lib_id "LA150C_RDIVER_V1.00:MP6543HGL-Z")
-		(at 78.74 73.66 0)
+		(at 76.2 90.17 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7532,8 +8089,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "956b4cba-6dd5-551a-a1ed-e8f0652b80f8")
-		(property "Reference" "U3"
-			(at 88.9 57.658 0)
+		(property "Reference" "U4"
+			(at 59.69 73.66 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7544,7 +8101,7 @@
 			)
 		)
 		(property "Value" "MP6543HGL-Z"
-			(at 88.9 59.69 0)
+			(at 59.69 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7555,7 +8112,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 78.74 73.66 0)
+			(at 76.2 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7567,7 +8124,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 78.74 73.66 0)
+			(at 76.2 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7579,7 +8136,7 @@
 			)
 		)
 		(property "Description" "22V/2A 三相功率级 QFN-24"
-			(at 78.74 73.66 0)
+			(at 76.2 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7591,7 +8148,7 @@
 			)
 		)
 		(property "MPN" "MP6543HGL-Z"
-			(at 78.74 73.66 0)
+			(at 76.2 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7603,7 +8160,7 @@
 			)
 		)
 		(property "LCSC Part" "C3681371"
-			(at 78.74 73.66 0)
+			(at 76.2 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7615,7 +8172,7 @@
 			)
 		)
 		(property "Manufacturer" "MPS"
-			(at 78.74 73.66 0)
+			(at 76.2 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7704,7 +8261,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
-					(reference "U3")
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -7721,8 +8278,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "95d2a680-de5f-5e29-90ae-e029d1de70b2")
-		(property "Reference" "R13"
-			(at 229.87 75.184 0)
+		(property "Reference" "R27"
+			(at 227.584 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7733,7 +8290,7 @@
 			)
 		)
 		(property "Value" "8.06K"
-			(at 229.87 77.216 0)
+			(at 227.584 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7767,7 +8324,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Description" "0201 8.06K 0.5%（料号待确认）"
+		(property "Description" "0201 8.06K 1%（QS01 EBOM）"
 			(at 228.6 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -7788,15 +8345,15 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
-					(reference "R13")
+					(reference "R27")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LA150C_RDIVER_V1.00:AGND")
-		(at 228.6 97.79 0)
+		(lib_id "LA150C_RDIVER_V1.00:PWR_3V3")
+		(at 35.56 166.37 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7804,9 +8361,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "9b1e0cb9-a86e-50d3-91ed-62d1a9a9f513")
-		(property "Reference" "#PWR048"
-			(at 227.33 96.52 0)
+		(uuid "977516b0-91ea-5681-9ffe-bb85f970da38")
+		(property "Reference" "#PWR423"
+			(at 34.798 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7817,8 +8374,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "AGND"
-			(at 231.14 100.33 0)
+		(property "Value" "PWR_3V3"
+			(at 38.1 167.005 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7829,7 +8386,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 228.6 97.79 0)
+			(at 35.56 166.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7841,7 +8398,89 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 228.6 97.79 0)
+			(at 35.56 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 35.56 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(pin "1"
+			(uuid "15841e3f-ad7a-5c2d-a957-8dcf4def7c6e")
+		)
+		(instances
+			(project "LA150C_RDIVER_V1.00"
+				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
+					(reference "#PWR423")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LA150C_RDIVER_V1.00:AGND")
+		(at 228.6 60.96 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9b1e0cb9-a86e-50d3-91ed-62d1a9a9f513")
+		(property "Reference" "#PWR415"
+			(at 227.33 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "AGND"
+			(at 231.14 61.595 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" ""
+			(at 228.6 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 228.6 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7853,7 +8492,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 228.6 97.79 0)
+			(at 228.6 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7870,7 +8509,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
-					(reference "#PWR048")
+					(reference "#PWR415")
 					(unit 1)
 				)
 			)
@@ -7878,7 +8517,7 @@
 	)
 	(symbol
 		(lib_id "LA150C_RDIVER_V1.00:PWR_3V3A")
-		(at 228.6 30.48 0)
+		(at 152.4 100.33 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7887,8 +8526,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9ca86d0d-2d4d-5899-8bea-5f4c8de67657")
-		(property "Reference" "#PWR035"
-			(at 227.838 26.67 0)
+		(property "Reference" "#PWR411"
+			(at 151.638 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7900,7 +8539,7 @@
 			)
 		)
 		(property "Value" "PWR_3V3A"
-			(at 229.87 29.464 0)
+			(at 154.94 100.965 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7911,7 +8550,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 228.6 30.48 0)
+			(at 152.4 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7923,7 +8562,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 228.6 30.48 0)
+			(at 152.4 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7935,7 +8574,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3VA\""
-			(at 228.6 30.48 0)
+			(at 152.4 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7952,14 +8591,14 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
-					(reference "#PWR035")
+					(reference "#PWR411")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LA150C_RDIVER_V1.00:FN03N100J500PLG")
+		(lib_id "LA150C_RDIVER_V1.00:CL03C101JB3NNNC")
 		(at 252.73 49.53 0)
 		(unit 1)
 		(body_style 1)
@@ -7969,7 +8608,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9d962da5-0008-5441-8eb2-1759caa07559")
-		(property "Reference" "C22"
+		(property "Reference" "C24"
 			(at 250.698 44.45 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7991,7 +8630,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitors:C_0201_0603Metric"
+		(property "Footprint" "Capacitors:C0201"
 			(at 252.73 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -8003,7 +8642,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/1497a6a2cea2f2b0acf5e045d2bc193c.pdf?productCode=C561710"
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C730413"
 			(at 252.73 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -8015,7 +8654,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Description" "0201 100pF 50V"
+		(property "Description" "0201 100pF 50V C0G"
 			(at 252.73 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -8027,7 +8666,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "MPN" "FN03N100J500PLG"
+		(property "MPN" "CL03C101JB3NNNC"
 			(at 252.73 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -8039,7 +8678,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "LCSC Part" "C561710"
+		(property "LCSC Part" "C730413"
 			(at 252.73 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -8051,7 +8690,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Manufacturer" "PSA"
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 252.73 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -8072,7 +8711,575 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
-					(reference "C22")
+					(reference "C24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LA150C_RDIVER_V1.00:AGND")
+		(at 252.73 57.15 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9f9e3e29-ade5-5c4a-81c1-6054650ebe8d")
+		(property "Reference" "#PWR416"
+			(at 251.46 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "AGND"
+			(at 255.27 57.785 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" ""
+			(at 252.73 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 252.73 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
+			(at 252.73 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(pin "1"
+			(uuid "1a8aa2d2-6bc3-5660-af91-d86d157714b1")
+		)
+		(instances
+			(project "LA150C_RDIVER_V1.00"
+				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
+					(reference "#PWR416")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LA150C_RDIVER_V1.00:PWR_3V3A")
+		(at 228.6 102.87 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a2bc8ddd-4301-5754-b849-4e814d75e380")
+		(property "Reference" "#PWR420"
+			(at 227.838 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "PWR_3V3A"
+			(at 231.14 103.505 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" ""
+			(at 228.6 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 228.6 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3VA\""
+			(at 228.6 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(pin "1"
+			(uuid "266db976-fd72-5614-918a-e28720646710")
+		)
+		(instances
+			(project "LA150C_RDIVER_V1.00"
+				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
+					(reference "#PWR420")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LA150C_RDIVER_V1.00:NCP15XH103F03RC")
+		(at 35.56 172.72 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "acd6d179-2536-589f-a504-1d1364cbfb3f")
+		(property "Reference" "TH1"
+			(at 34.544 167.64 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "NCP15XH103F03RC"
+			(at 34.544 165.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Sensors:R_0402_1005Metric"
+			(at 35.56 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/c9e5c9a36e405340079034c7608ac4b6.pdf?productCode=C77131"
+			(at 35.56 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "0402 10kΩ B3380K NTC"
+			(at 35.56 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "MPN" "NCP15XH103F03RC"
+			(at 35.56 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "LCSC Part" "C77131"
+			(at 35.56 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Manufacturer" "muRata"
+			(at 35.56 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(pin "1"
+			(uuid "b58087b3-b031-5003-837b-fd56accebd57")
+		)
+		(pin "2"
+			(uuid "3dcc332a-aaf3-50c6-8900-eaa6123e4fa3")
+		)
+		(instances
+			(project "LA150C_RDIVER_V1.00"
+				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
+					(reference "TH1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LA150C_RDIVER_V1.00:PWR_3V3")
+		(at 38.1 76.2 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b1c6875c-b3d6-5251-acb2-40e59088f55c")
+		(property "Reference" "#PWR402"
+			(at 37.338 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "PWR_3V3"
+			(at 40.64 76.835 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" ""
+			(at 38.1 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 38.1 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 38.1 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(pin "1"
+			(uuid "08233217-22d2-5a8c-a85d-d7e7b6f24d59")
+		)
+		(instances
+			(project "LA150C_RDIVER_V1.00"
+				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
+					(reference "#PWR402")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LA150C_RDIVER_V1.00:AGND")
+		(at 163.83 121.92 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b2b8674c-d0f9-516d-a106-9680f895fdb6")
+		(property "Reference" "#PWR412"
+			(at 162.56 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "AGND"
+			(at 166.37 122.555 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" ""
+			(at 163.83 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 163.83 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
+			(at 163.83 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(pin "1"
+			(uuid "d04a2ba7-609f-5a38-a9d3-4de4f44fe052")
+		)
+		(instances
+			(project "LA150C_RDIVER_V1.00"
+				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
+					(reference "#PWR412")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LA150C_RDIVER_V1.00:GRM188Z71A106KA73D")
+		(at 114.3 116.84 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b655b220-8045-5201-b285-6bbfe3c0a51f")
+		(property "Reference" "C21"
+			(at 112.268 111.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "10uF"
+			(at 112.268 109.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Capacitors:C_0603_1608Metric"
+			(at 114.3 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20220328/6A4892B7E841253269A84FFE395E0578.pdf"
+			(at 114.3 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "0603 10uF 10V X7R"
+			(at 114.3 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "MPN" "GRM188Z71A106KA73D"
+			(at 114.3 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "LCSC Part" "C2959727"
+			(at 114.3 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Manufacturer" "muRata(村田)"
+			(at 114.3 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(pin "1"
+			(uuid "2b71acf5-b590-5426-a96f-f9460fe1e8fc")
+		)
+		(pin "2"
+			(uuid "349d671e-9f39-53ed-845a-bdfd451b8fcc")
+		)
+		(instances
+			(project "LA150C_RDIVER_V1.00"
+				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
+					(reference "C21")
 					(unit 1)
 				)
 			)
@@ -8088,8 +9295,8 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "9f9e3e29-ade5-5c4a-81c1-6054650ebe8d")
-		(property "Reference" "#PWR046"
+		(uuid "b97eb217-4ea0-5981-b775-005564b7b71f")
+		(property "Reference" "#PWR419"
 			(at 251.46 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -8149,468 +9356,20 @@
 			)
 		)
 		(pin "1"
-			(uuid "1a8aa2d2-6bc3-5660-af91-d86d157714b1")
-		)
-		(instances
-			(project "LA150C_RDIVER_V1.00"
-				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
-					(reference "#PWR046")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "LA150C_RDIVER_V1.00:AGND")
-		(at 35.56 187.96 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "acac5abf-0a26-4fd6-9e9d-24936f07b5c2")
-		(property "Reference" "#PWR055"
-			(at 34.29 186.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Value" "AGND"
-			(at 38.1 190.5 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Footprint" ""
-			(at 35.56 187.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Datasheet" ""
-			(at 35.56 187.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 35.56 187.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(pin "1"
-			(uuid "88ea7887-ad46-47f2-8641-76f512312d4e")
-		)
-		(instances
-			(project "LA150C_RDIVER_V1.00"
-				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
-					(reference "#PWR055")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "LA150C_RDIVER_V1.00:VBUS")
-		(at 43.18 43.18 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "b1c6875c-b3d6-5251-acb2-40e59088f55c")
-		(property "Reference" "#PWR036"
-			(at 42.418 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Value" "VBUS"
-			(at 45.72 43.815 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Footprint" ""
-			(at 43.18 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Datasheet" ""
-			(at 43.18 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 43.18 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(pin "1"
-			(uuid "08233217-22d2-5a8c-a85d-d7e7b6f24d59")
-		)
-		(instances
-			(project "LA150C_RDIVER_V1.00"
-				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
-					(reference "#PWR036")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "LA150C_RDIVER_V1.00:AGND")
-		(at 228.6 58.42 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "b2b8674c-d0f9-516d-a106-9680f895fdb6")
-		(property "Reference" "#PWR040"
-			(at 227.33 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Value" "AGND"
-			(at 230.378 61.214 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Footprint" ""
-			(at 228.6 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Datasheet" ""
-			(at 228.6 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 228.6 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(pin "1"
-			(uuid "d04a2ba7-609f-5a38-a9d3-4de4f44fe052")
-		)
-		(instances
-			(project "LA150C_RDIVER_V1.00"
-				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
-					(reference "#PWR040")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "LA150C_RDIVER_V1.00:CL10A475KP8NNNC")
-		(at 107.95 101.6 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "b655b220-8045-5201-b285-6bbfe3c0a51f")
-		(property "Reference" "C27"
-			(at 98.806 102.616 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Value" "4.7uF"
-			(at 99.06 100.584 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Footprint" "Capacitors:C0603"
-			(at 107.95 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL10A475KP8NNNC_4-7uF-475-10-10V_C1705.html"
-			(at 107.95 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Description" "0603 4.7uF 10V"
-			(at 107.95 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "MPN" "CL10A475KP8NNNC"
-			(at 107.95 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "LCSC Part" "C1705"
-			(at 107.95 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Manufacturer" "SAMSUNG(三星)"
-			(at 107.95 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(pin "1"
-			(uuid "2b71acf5-b590-5426-a96f-f9460fe1e8fc")
-		)
-		(pin "2"
-			(uuid "349d671e-9f39-53ed-845a-bdfd451b8fcc")
-		)
-		(instances
-			(project "LA150C_RDIVER_V1.00"
-				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
-					(reference "C27")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "LA150C_RDIVER_V1.00:AGND")
-		(at 252.73 137.16 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "b97eb217-4ea0-5981-b775-005564b7b71f")
-		(property "Reference" "#PWR053"
-			(at 251.46 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Value" "AGND"
-			(at 254.762 139.954 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Footprint" ""
-			(at 252.73 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Datasheet" ""
-			(at 252.73 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 252.73 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(pin "1"
 			(uuid "8151bbce-74e9-53b1-bb1a-7ae7956fc088")
 		)
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
-					(reference "#PWR053")
+					(reference "#PWR419")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LA150C_RDIVER_V1.00:PWR_3V3")
-		(at 35.56 163.83 0)
+		(lib_id "LA150C_RDIVER_V1.00:AGND")
+		(at 252.73 133.35 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8618,9 +9377,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "c23de2d7-4a9d-48d4-ba78-b47b29f5a600")
-		(property "Reference" "#PWR054"
-			(at 34.798 160.02 0)
+		(uuid "c35868e5-b9ab-5e9b-961d-b7615338144f")
+		(property "Reference" "#PWR422"
+			(at 251.46 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8631,8 +9390,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "PWR_3V3"
-			(at 38.1 164.465 0)
+		(property "Value" "AGND"
+			(at 255.27 133.985 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8643,7 +9402,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 35.56 163.83 0)
+			(at 252.73 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8655,7 +9414,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 35.56 163.83 0)
+			(at 252.73 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8666,8 +9425,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 35.56 163.83 0)
+		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
+			(at 252.73 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8679,19 +9438,19 @@
 			)
 		)
 		(pin "1"
-			(uuid "c496082e-2d90-4f84-92ce-72cf023969e0")
+			(uuid "971a1e63-be99-5ef7-88bb-4858c87655b2")
 		)
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
-					(reference "#PWR054")
+					(reference "#PWR422")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LA150C_RDIVER_V1.00:FN03N100J500PLG")
+		(lib_id "LA150C_RDIVER_V1.00:CL03C101JB3NNNC")
 		(at 252.73 87.63 0)
 		(unit 1)
 		(body_style 1)
@@ -8723,7 +9482,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitors:C_0201_0603Metric"
+		(property "Footprint" "Capacitors:C0201"
 			(at 252.73 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -8735,7 +9494,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/1497a6a2cea2f2b0acf5e045d2bc193c.pdf?productCode=C561710"
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C730413"
 			(at 252.73 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -8747,7 +9506,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Description" "0201 100pF 50V"
+		(property "Description" "0201 100pF 50V C0G"
 			(at 252.73 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -8759,7 +9518,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "MPN" "FN03N100J500PLG"
+		(property "MPN" "CL03C101JB3NNNC"
 			(at 252.73 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -8771,7 +9530,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "LCSC Part" "C561710"
+		(property "LCSC Part" "C730413"
 			(at 252.73 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -8783,7 +9542,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Manufacturer" "PSA"
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 252.73 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -8811,8 +9570,8 @@
 		)
 	)
 	(symbol
-		(lib_id "LA150C_RDIVER_V1.00:PWR_3V3A")
-		(at 154.94 83.82 0)
+		(lib_id "LA150C_RDIVER_V1.00:PGND")
+		(at 114.3 123.19 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8821,8 +9580,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d769ae44-27ea-52c7-ab94-369a68bacf2e")
-		(property "Reference" "#PWR042"
-			(at 154.178 80.01 0)
+		(property "Reference" "#PWR408"
+			(at 113.03 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8833,8 +9592,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "PWR_3V3A"
-			(at 156.464 83.312 0)
+		(property "Value" "PGND"
+			(at 116.84 123.825 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8845,7 +9604,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 154.94 83.82 0)
+			(at 114.3 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8857,7 +9616,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 154.94 83.82 0)
+			(at 114.3 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8868,8 +9627,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3VA\""
-			(at 154.94 83.82 0)
+		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
+			(at 114.3 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8886,15 +9645,15 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
-					(reference "#PWR042")
+					(reference "#PWR408")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LA150C_RDIVER_V1.00:RC0201FR-0710KL")
-		(at 154.94 91.44 0)
+		(lib_id "LA150C_RDIVER_V1.00:RC0201FR-071KL")
+		(at 152.4 107.95 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8903,8 +9662,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "da7d2172-37e9-5b28-a6a6-a4f15472bba2")
-		(property "Reference" "R15"
-			(at 157.48 92.71 0)
+		(property "Reference" "R22"
+			(at 151.384 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8914,8 +9673,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "10K"
-			(at 157.48 90.424 0)
+		(property "Value" "1K"
+			(at 151.384 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8926,7 +9685,7 @@
 			)
 		)
 		(property "Footprint" "Resistors:R0201"
-			(at 154.94 91.44 0)
+			(at 152.4 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8937,8 +9696,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_10KR-1002-1_C106225.html"
-			(at 154.94 91.44 0)
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C138165"
+			(at 152.4 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8949,8 +9708,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Description" "0201 10K 1%"
-			(at 154.94 91.44 0)
+		(property "Description" "0201 1K 1%"
+			(at 152.4 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8961,8 +9720,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "MPN" "RC0201FR-0710KL"
-			(at 154.94 91.44 0)
+		(property "MPN" "RC0201FR-071KL"
+			(at 152.4 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8973,8 +9732,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "LCSC Part" "C106225"
-			(at 154.94 91.44 0)
+		(property "LCSC Part" "C138165"
+			(at 152.4 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8985,8 +9744,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Manufacturer" "YAGEO(国巨)"
-			(at 154.94 91.44 0)
+		(property "Manufacturer" "YAGEO"
+			(at 152.4 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9006,7 +9765,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
-					(reference "R15")
+					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -9014,7 +9773,7 @@
 	)
 	(symbol
 		(lib_id "LA150C_RDIVER_V1.00:PWR_3V3A")
-		(at 228.6 106.68 0)
+		(at 228.6 64.77 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9023,8 +9782,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "dacd8429-82e6-5236-8e71-4c89f27e2616")
-		(property "Reference" "#PWR051"
-			(at 227.838 102.87 0)
+		(property "Reference" "#PWR417"
+			(at 227.838 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9036,7 +9795,7 @@
 			)
 		)
 		(property "Value" "PWR_3V3A"
-			(at 230.378 105.918 0)
+			(at 231.14 65.405 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9047,7 +9806,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 228.6 106.68 0)
+			(at 228.6 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9059,7 +9818,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 228.6 106.68 0)
+			(at 228.6 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9071,7 +9830,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3VA\""
-			(at 228.6 106.68 0)
+			(at 228.6 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9088,7 +9847,367 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
-					(reference "#PWR051")
+					(reference "#PWR417")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LA150C_RDIVER_V1.00:GRM033Z71C104KE14D")
+		(at 50.8 181.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ecf37ea5-51de-5830-aa73-eee72f429168")
+		(property "Reference" "C27"
+			(at 48.768 176.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "100nF"
+			(at 48.768 173.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Capacitors:C0201"
+			(at 50.8 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0fb4604782167a586c3dd1f22396ac96.pdf?productCode=C668346"
+			(at 50.8 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "0201 100nF 16V"
+			(at 50.8 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "MPN" "GRM033Z71C104KE14D"
+			(at 50.8 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "LCSC Part" "C668346"
+			(at 50.8 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Manufacturer" "muRata"
+			(at 50.8 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(pin "1"
+			(uuid "27ba160f-d51c-54ee-9b68-935e062bcc4a")
+		)
+		(pin "2"
+			(uuid "1e147c2b-2652-53f1-8900-0f5253339280")
+		)
+		(instances
+			(project "LA150C_RDIVER_V1.00"
+				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
+					(reference "C27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LA150C_RDIVER_V1.00:RC0201FR-0710KL")
+		(at 38.1 80.01 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ef779c5a-eef1-5ba3-b389-a79ef3c5dd1a")
+		(property "Reference" "R35"
+			(at 37.084 74.93 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "10K"
+			(at 37.084 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Resistors:R0201"
+			(at 38.1 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C106225"
+			(at 38.1 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "0201 10K 1% EN pull-up to 3V3"
+			(at 38.1 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "MPN" "RC0201FR-0710KL"
+			(at 38.1 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "LCSC Part" "C106225"
+			(at 38.1 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 38.1 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(pin "1"
+			(uuid "e0817454-14ef-55fb-851a-0b423be1069a")
+		)
+		(pin "2"
+			(uuid "40f0990d-60d6-5cb4-9608-d53fe898ca81")
+		)
+		(instances
+			(project "LA150C_RDIVER_V1.00"
+				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
+					(reference "R35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LA150C_RDIVER_V1.00:RC0201FR-0710KL")
+		(at 30.48 86.36 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f6116b54-d53a-5397-80d9-37b8b958c8c6")
+		(property "Reference" "R36"
+			(at 29.464 81.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "10K"
+			(at 29.464 78.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Resistors:R0201"
+			(at 30.48 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C106225"
+			(at 30.48 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "0201 10K 1% EN pull-up to 3V3"
+			(at 30.48 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "MPN" "RC0201FR-0710KL"
+			(at 30.48 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "LCSC Part" "C106225"
+			(at 30.48 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 30.48 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(pin "1"
+			(uuid "fcc35fcb-3f40-5e5c-8298-b7809e25093d")
+		)
+		(pin "2"
+			(uuid "904a277c-ebc7-5074-b75a-718b5f9c7543")
+		)
+		(instances
+			(project "LA150C_RDIVER_V1.00"
+				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
+					(reference "R36")
 					(unit 1)
 				)
 			)
@@ -9105,8 +10224,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f96385da-6882-56fc-9972-4b3e345b86dd")
-		(property "Reference" "R17"
-			(at 230.378 113.284 0)
+		(property "Reference" "R28"
+			(at 227.584 109.22 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9117,7 +10236,7 @@
 			)
 		)
 		(property "Value" "8.06K"
-			(at 230.378 115.316 0)
+			(at 227.584 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9151,7 +10270,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Description" "0201 8.06K 0.5%（料号待确认）"
+		(property "Description" "0201 8.06K 1%（QS01 EBOM）"
 			(at 228.6 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -9172,7 +10291,7 @@
 		(instances
 			(project "LA150C_RDIVER_V1.00"
 				(path "/8bfbda49-1f9f-5d9b-8809-8cce360145bd/f65d106c-768b-5baa-b2fa-305e579eb962"
-					(reference "R17")
+					(reference "R28")
 					(unit 1)
 				)
 			)

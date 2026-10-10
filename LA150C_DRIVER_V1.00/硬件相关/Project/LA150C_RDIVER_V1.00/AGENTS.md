@@ -31,8 +31,8 @@
 3. **交付前必须跑 `scripts/validate.ps1`**，并且满足：
    ERC 0 错误 0 警告、几何审计无问题（含图框越界、器件重叠、走线穿体、
    落进标题栏区域、属性文字重叠）、PDF 文字不越出图框。
-4. **一条网络只放一个 `PWR_FLAG`。** 经过无源器件之后的电源/地网络要补旗标
-   （`VBUS`、`PWR_3V3A` 就是这种情况）。
+4. **一条网络只放一个 `PWR_FLAG`。** 外部连接器输入和经过无源器件之后的
+   电源/地网络要补旗标（`VBUS`、`PWR_3V3A` 就是这种情况）。
 5. **`#PWRxx` / `#FLGxx` 参考号必须唯一。** 同一页只允许一套递增编号。
 6. **跨页信号只走层次端口**；电源与地走工程电源符号，不用普通网络标签替代。
 7. **一切对象落在 1.27 mm 栅格上**；走线只允许水平/垂直。
@@ -61,9 +61,11 @@
 ## 符号库来源
 
 - 通用阻容与标准器件：KiCad 10 标准库（`Device` / `Connector` / `Transistor_FET`）；
-- 已有分类料号：`O-硬件设计/KICAD-Library/libraries/LCSC_Classified/libraries`；
-- datasheet 自建：`GD32F503REL7`、`MP6543HGL-Z`、`MT6701`、`TCAN3413DDFR`、
-  `SCT2230MLUAR`、`CSTCE8M00G52-R0`、`DF52-4P-0.8C`、`SWD-1X5-1.27`。
+- 已有分类料号：`O-硬件设计/Library/Private/LCSC_Classified/libraries`；
+- datasheet 自建：`GD32F503REL7`（BGA64）、`MP6543HGL-Z`、`TCAN3413DDFR`、
+  `SCT2230MLUAR`、`SWD-1X3-1.0`、`SOLDER_HOLES_4P_0.5MM`；
+- QS01/QS03 对齐料号：`MT6701QT-STD`、`SMF16CA`、`DE5VS06BA`、
+  `CSTNE8M00G52A000R0`。
 
 最终图纸只引用工程内 `library/LA150C_RDIVER_V1.00.kicad_sym` 与 KiCad 标准库，
 不把安装路径或用户私有路径写进原理图数据。
@@ -72,14 +74,26 @@
 
 - 不自动签署 EMC、安规、热设计或高速信号完整性结论。
 - 不在缺少 datasheet、机械尺寸与制造规则的情况下宣称可生产。
-- 母线 TVS、反接 P-MOS、22µF 输出电容、8.06k 端接与时钟源仍属待确认件，
-  不得在 BOM 中臆造料号。
-- 三处 datasheet 冲突（时钟公差、TIMER7 通道、电流采样端接对象）在关闭前
-  不得进入 PCB 阶段。
+- QS03 框图已取消反接 P-MOS；母线 TVS 已选 SMF16CA；MCU 时钟使用外置
+  驱动器同款 `CSTNE8M00G52A000R0`。
+- 板空间受限，本版取消 CAN CMC 和 60.2Ω/4.7nF 分裂终端，终端由系统/
+  线缆端实现；DCDC 输出改为单颗 10µF/10V X7R 0603，8.06k 端接仍属
+  待确认件。
+- TIMER7 通道与 CAN FD 位时序需固件确认；未关闭前不得进入 PCB 阶段。
 
 ## 当前状态
 
 - G3 原理图：ERC 0 错误 0 警告；网表、BOM、PDF 已导出；
   几何审计与 PDF 文字检查通过。
-- 待办：关闭 `docs/LA150C_设计说明与待确认项.md` 中的 10 项，
-  尤其是 1（时钟源）、2（TIMER7 通道）、3（采样端接对象）三项阻塞项。
+- QS01/QS03 对齐已完成：MCU 改为 BGA64、外部驱动器同款 8MHz 谐振器、
+  MT6701QT-STD 校正、CAN FD 仅保留 TCAN3413 + DE5VS06BA、DCDC 前端改为
+  SMF16CA + 10µF、nFAULT 改为 1k + 100nF，NTC 为 6.8k 下地。
+- MCU 分配已按 `软件相关/QS01-集成驱动器电机控制芯片GD32F503REL7资源配置表V1.xlsx`
+  V1.12 对齐：`SPI2_CSN=PA15/A7`、`SPI2_SCK=PB3/A5`、`SPI2_MISO=PC11/B6`、
+  `CANFD_RX=PB12/G8`、`CANFD_TX=PB13/G6`；MP6543 `ENA/ENB/ENC` 改为
+  10K 上拉 3.3V，不由 MCU 控制；`BOOT0` / `PB2-BOOT1` 均 10K 下拉。
+- 对外接口已改为：J1 `1=SWDIO / 2=GND / 3=SWCLK`，3 针 1.0mm；
+  J2 为 4 个 Ø0.5mm 焊接孔，Ø0.8mm 焊盘，2.54mm 间距，封装
+  `Solder_Holes_4P_0.5mm`。
+- 待办：关闭 `docs/LA150C_设计说明与待确认项.md` 中的 TIMER7 通道、
+  CAN FD 位时序和 8.06k 端接料号。

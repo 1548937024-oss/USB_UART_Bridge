@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Build the LA150C ENCODER sheet (MT6701, SSI mode).
+"""Build the LA150C ENCODER sheet (MT6701QT-STD, SSI mode).
 
-Hardware design doc §3.7: SSI frame = 14-bit angle + 4-bit field status +
-6-bit CRC, CLK 8 MHz, DO driven on the rising edge.  MODE must be tied high
-to VDD; tying it low silently selects ABZ, so the schematic calls it out.
+The symbol and footprint come from the classified LCSC library and match
+QS01 EBOM U5.  MT6701 pin 9 is W, pin 11 is U and pin 12 is V; this differs
+from the earlier local symbol and is the main pin-mapping correction here.
 """
 
 from __future__ import annotations
@@ -41,104 +41,118 @@ def main() -> int:
     )
     sheet.text(
         "title",
-        "LA150C RDIVER V1.00 - ENCODER\nMT6701 磁编码器 SSI：14bit 角度 + 4bit 磁场状态 + 6bit CRC，CLK 8MHz",
+        "LA150C RDIVER V1.00 - ENCODER\n"
+        "MT6701QT-STD 磁编码器 SSI：14bit 角度 + 4bit 磁场状态 + 6bit CRC，CLK 8MHz",
         20.32,
         15.24,
         1.5,
     )
-    sheet.block("E  磁编码器 MT6701 (SSI)", 22.86, 24.13, 231.14, 132.08)
+    sheet.block("E  磁编码器 MT6701QT-STD (SSI)", 22.86, 24.13, 261.62, 132.08)
 
-    u = f"{P}:MT6701"
-    ux, uy = 107.95, 90.17
-    sheet.component(u, "U2", "MT6701", ux, uy, footprint="", description="QFN-16 磁编码器")
+    u = f"{P}:MT6701QT-STD_C2913974"
+    ux, uy = 142.24, 100.33
+    sheet.component(
+        u,
+        "U2",
+        "MT6701QT-STD",
+        ux,
+        uy,
+        footprint="",
+        description="MT6701QT-STD 14-bit magnetic angle sensor, QFN-16",
+    )
 
-    def up(n):
+    def up(n: str) -> tuple[float, float]:
         return sheet.pin(u, ux, uy, 0, n)
 
-    push, a, b, z = up("5"), up("6"), up("7"), up("8")
-    nc1, nc2, nc3, nc4 = up("1"), up("2"), up("3"), up("4")
-    vdd, mode, out, uu, nc5, vv, ww, gnd = (
-        up("13"), up("14"), up("15"), up("9"), up("10"), up("11"), up("12"), up("16"),
-    )
-    ep = up("17")
-
-    # signal ports towards the MCU
-    sheet.wire(a[0], a[1], 66.04, a[1])
-    sheet.hier_label("SPI2_MISO", 66.04, a[1], shape="output", rotation=180)
-    sheet.text("note:a", "A/DO: SSI 数据输出，CLK 上升沿驱动", 26.67, 30.48, 1.27)
-    sheet.wire(b[0], b[1], 66.04, b[1])
-    sheet.hier_label("SPI2_SCK", 66.04, b[1], shape="input", rotation=180)
-    sheet.wire(z[0], z[1], 66.04, z[1])
-    sheet.hier_label("SPI2_CSN", 66.04, z[1], shape="input", rotation=180)
-
-    # power and MODE
-    rail_y = vdd[1]
-    sheet.wire(vdd[0], vdd[1], 139.7, rail_y)
-    sheet.power(f"{P}:PWR_3V3", "#PWR201", 139.7, 76.2)
-    sheet.wire(139.7, 76.2, 139.7, rail_y)
-
-    for refc, val, desc, x in (
-        ("C11", "100nF", "0402 100nF 16V", 127.0),
-        ("C12", "1uF", "0402 1uF 10V", 134.62),
+    # SSI signal pins: A/DO = 6, B/CLK = 7, Z/CSN = 8.
+    a, b, z = up("6"), up("7"), up("8")
+    for net, point, shape in (
+        ("SPI2_MISO", a, "output"),
+        ("SPI2_SCK", b, "input"),
+        ("SPI2_CSN", z, "input"),
     ):
-        sheet.component("Device:C", refc, val, x, 88.9, footprint="", description=desc)
-        top = sheet.pin("Device:C", x, 88.9, 0, "1")
-        bot = sheet.pin("Device:C", x, 88.9, 0, "2")
-        sheet.wire(x, rail_y, top[0], top[1])
-        sheet.junction(x, rail_y)
-        sheet.wire(bot[0], bot[1], bot[0], 97.79)
-    sheet.wire(127.0, 97.79, 134.62, 97.79)
-    sheet.power(f"{P}:GND", "#PWR202", 127.0, 97.79)
-    sheet.junction(127.0, 97.79)
+        sheet.wire(point[0], point[1], 66.04, point[1])
+        sheet.hier_label(net, 66.04, point[1], shape=shape, rotation=180)
 
-    # MODE tied to VDD -> SSI (must be annotated)
-    sheet.wire(mode[0], mode[1], 124.46, mode[1])
-    sheet.wire(124.46, mode[1], 124.46, rail_y)
-    sheet.junction(124.46, rail_y)
+    # VDD rail, MODE strap and local decoupling.
+    vdd, mode = up("13"), up("14")
+    rail_y = 96.52
+    sheet.component("Device:C", "C11", "100nF", 177.8, 100.33, footprint="",
+                    description="0201 100nF 16V VDD 去耦")
+    sheet.component("Device:C", "C12", "1uF", 185.42, 100.33, footprint="",
+                    description="0402 1uF 10V VDD 去耦")
+    c11_a = sheet.pin("Device:C", 177.8, 100.33, 0, "1")
+    c11_b = sheet.pin("Device:C", 177.8, 100.33, 0, "2")
+    c12_a = sheet.pin("Device:C", 185.42, 100.33, 0, "1")
+    c12_b = sheet.pin("Device:C", 185.42, 100.33, 0, "2")
+
+    # VDD pin -> rail -> power symbol.
+    sheet.wire(vdd[0], vdd[1], 172.72, vdd[1])
+    sheet.wire(172.72, vdd[1], 172.72, rail_y)
+    sheet.power(f"{P}:PWR_3V3", "#PWR201", 165.1, 92.71)
+    sheet.wire(165.1, 92.71, 165.1, rail_y)
+    sheet.junction(172.72, rail_y)
+
+    # MODE pin -> rail.
+    sheet.wire(mode[0], mode[1], 166.37, mode[1])
+    sheet.wire(166.37, mode[1], 166.37, rail_y)
+    sheet.junction(166.37, rail_y)
+    sheet.wire(165.1, rail_y, 185.42, rail_y)
+
+    # Decoupling caps sit directly on the rail; return to one local GND.
+    for top, bottom in ((c11_a, c11_b), (c12_a, c12_b)):
+        sheet.junction(top[0], rail_y)
+        sheet.wire(bottom[0], bottom[1], bottom[0], 107.95)
+    sheet.wire(c11_b[0], 107.95, c12_b[0], 107.95)
+    sheet.power(f"{P}:GND", "#PWR202", c11_b[0], 107.95)
+    sheet.junction(c11_b[0], 107.95)
     sheet.text(
         "note:mode",
-        "★ MODE 接 PWR_3V3 = SSI 模式；误接地会静默切到 ABZ，读到全 0 或跳变数据",
-        140.97,
-        mode[1] - 1.27,
+        "★ MODE(14) 接 PWR_3V3 = SSI；误接地会静默切到 ABZ。VDD(13) 就近 100nF + 1µF。",
+        194.31,
+        94.0,
         1.27,
     )
 
-    # ground
-    sheet.wire(gnd[0], gnd[1], 137.16, gnd[1])
-    sheet.wire(137.16, gnd[1], 137.16, 104.14)
-    sheet.power(f"{P}:GND", "#PWR203", 137.16, 104.14)
-    sheet.wire(ep[0], ep[1], ep[0], 109.22)
-    sheet.power(f"{P}:GND", "#PWR204", ep[0], 109.22)
+    # GND(16) and EP(17) return separately to avoid crossing the VDD rail.
+    gnd_pin, ep = up("16"), up("17")
+    sheet.wire(gnd_pin[0], gnd_pin[1], 160.02, gnd_pin[1])
+    sheet.wire(160.02, gnd_pin[1], 160.02, 111.76)
+    sheet.power(f"{P}:GND", "#PWR203", 160.02, 111.76)
+    sheet.wire(ep[0], ep[1], 195.58, ep[1])
+    sheet.wire(195.58, ep[1], 195.58, 111.76)
+    sheet.power(f"{P}:GND", "#PWR204", 195.58, 111.76)
 
-    # unused pins
-    for name, point in (
-        ("PUSH", push), ("OUT", out), ("U", uu), ("V", vv), ("W", ww),
-        ("NC1", nc1), ("NC2", nc2), ("NC3", nc3), ("NC4", nc4), ("NC5", nc5),
+    # Unused pins in SSI mode.
+    for point in (
+        up("1"), up("2"), up("3"), up("4"), up("5"),
+        up("9"), up("10"), up("11"), up("12"), up("15"),
     ):
         sheet.no_connect(point[0], point[1])
 
     sheet.text(
         "note:ssi",
-        "SSI：CSN 拉低 → 24 个 CLK → 14bit 角度 + 4bit 磁场状态 + 6bit CRC(X⁶+X+1, MSB first)。"
-        " 帧长 3µs + 5µs 传播延迟 → 125kHz 更新率，远高于 FOC 电流环需求。",
+        "SSI：CSN 拉低 → 24 个 CLK → 14bit 角度 + 4bit 磁场状态 + 6bit CRC"
+        "（X⁶+X+1, MSB first）；CLK 上升沿更新 DO。",
         26.67,
         118.11,
+        1.27,
+    )
+    sheet.text(
+        "note:pins",
+        "MT6701QT-STD 引脚校正：9=W、11=U、12=V；SSI 模式仅使用 6/7/8/13/14/16/17。",
+        26.67,
+        123.19,
         1.27,
     )
     sheet.text(
         "note:asm",
         "磁体 Ø6×2.5mm N35SH 径向两极，气隙 0.5~2.0mm（典型 1.0mm），偏心 ≤0.3mm（结构件，不上图）",
         26.67,
-        123.19,
-        1.27,
-    )
-    sheet.text(
-        "note:var",
-        "VDD 去耦 100nF + 1µF；U/V/W 与 PUSH/OUT/NC 在 SSI 模式下不用，全部置 no_connect",
-        26.67,
         128.27,
         1.27,
     )
+
     sheet.write()
     print(f"wrote {sheet.path}")
     return 0

@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "D:\\办公相关\\项目相关\\三花\\03-灵巧手项目\\O-硬件设计\\LA150C_DRIVER_V1.00\\硬件相关\\Project\\LA150C_RDIVER_V1.00\\LA150C_RDIVER_V1.00.kicad_sch")
-		(date "2026-10-04T21:27:36")
+		(date "2026-10-11T02:55:23")
 		(tool "Eeschema 10.0.6")
 		(textvar
 			(name "@CREATE DATE") "2026-09-22")
@@ -17,7 +17,7 @@
 		(textvar
 			(name "@SCHEMATIC NAME") "LA150C 集成驱动器")
 		(textvar
-			(name "@UPDATE DATE") "2026-10-04")
+			(name "@UPDATE DATE") "2026-10-11")
 		(textvar
 			(name "ADDRESS1") "L3, 12a Rodborough Rd")
 		(textvar
@@ -352,34 +352,28 @@
 	(components
 		(comp
 			(ref "J1")
-			(value "DF52-4P-0.8C")
-			(description "DF52-4P-0.8C 整机对外连接器")
+			(value "SWD-1X3-1.0")
+			(footprint "Connector_PinHeader_1.00mm:PinHeader_1x03_P1.00mm_Vertical")
+			(description "1x3 1.0mm SWD header: SWDIO/SWCLK/GND")
 			(fields
 				(field
-					(name "MPN") "DF52-4P-0.8C")
+					(name "MPN") "SWD-1X3-1.0")
 				(field
-					(name "Manufacturer") "Hirose")
-				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "Connector_PinHeader_1.00mm:PinHeader_1x03_P1.00mm_Vertical")
 				(field
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "DF52-4P-0.8C 整机对外连接器")
+					(name "Description") "1x3 1.0mm SWD header: SWDIO/SWCLK/GND")
 			)
 			(libsource
 				(lib "LA150C_RDIVER_V1.00")
-				(part "DF52-4P-0.8C")
-				(description "DF52 0.8mm 4pin connector, VCC/GND/CANH/CANL")
+				(part "SWD-1X3-1.0")
+				(description "QS01-compatible 1x3 1.0mm SWD header, 1 SWDIO / 2 GND / 3 SWCLK")
 			)
 			(property
 				(name "MPN")
-				(value "DF52-4P-0.8C")
-			)
-			(property
-				(name "Manufacturer")
-				(value "Hirose")
+				(value "SWD-1X3-1.0")
 			)
 			(property
 				(name "Sheetname")
@@ -407,37 +401,34 @@
 						(pin
 							(num "3")
 						)
-						(pin
-							(num "4")
-						)
 					)
 				)
 			)
 		)
 		(comp
 			(ref "J2")
-			(value "SWD-1X5-1.27")
-			(description "1x5 1.27mm SWD 调试排针")
+			(value "SOLDER_HOLES_4P_0.5MM")
+			(footprint "LA150C_RDIVER_V1.00:Solder_Holes_4P_0.5mm")
+			(description "4x 0.5mm solder holes, 0.8mm pad, 2.54mm pitch")
 			(fields
 				(field
-					(name "MPN") "SWD-1X5-1.27")
+					(name "MPN") "SOLDER_HOLES_4P_0.5MM")
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "LA150C_RDIVER_V1.00:Solder_Holes_4P_0.5mm")
 				(field
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "1x5 1.27mm SWD 调试排针")
+					(name "Description") "4x 0.5mm solder holes, 0.8mm pad, 2.54mm pitch")
 			)
 			(libsource
 				(lib "LA150C_RDIVER_V1.00")
-				(part "SWD-1X5-1.27")
-				(description "1x5 1.27mm SWD debug header")
+				(part "SOLDER_HOLES_4P_0.5MM")
+				(description "4x solder holes, 0.5mm drill, 0.8mm pad, 2.54mm pitch")
 			)
 			(property
 				(name "MPN")
-				(value "SWD-1X5-1.27")
+				(value "SOLDER_HOLES_4P_0.5MM")
 			)
 			(property
 				(name "Sheetname")
@@ -468,31 +459,34 @@
 						(pin
 							(num "4")
 						)
-						(pin
-							(num "5")
-						)
 					)
 				)
 			)
 		)
 		(comp
-			(ref "TP1")
-			(value "TP0.8")
-			(footprint "TestPoint:TestPoint_Pad_D1.0mm")
-			(description "φ0.8 测试点，电机 U 相")
+			(ref "J3")
+			(value "CON-1P-1.0mm*2.0mm-Rectangular")
+			(footprint "LA150C_RDIVER_V1.00:CON-1P-1.0mmx2.0mm-Rectangular")
+			(description "1.0 x 2.0 mm solder pad, motor U")
 			(fields
 				(field
-					(name "Footprint") "TestPoint:TestPoint_Pad_D1.0mm")
+					(name "MPN") "CON-1P-1.0mm*2.0mm-Rectangular")
+				(field
+					(name "Footprint") "LA150C_RDIVER_V1.00:CON-1P-1.0mmx2.0mm-Rectangular")
 				(field
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "φ0.8 测试点，电机 U 相")
+					(name "Description") "1.0 x 2.0 mm solder pad, motor U")
 			)
 			(libsource
-				(lib "Connector")
-				(part "TestPoint")
-				(description "test point")
+				(lib "LA150C_RDIVER_V1.00")
+				(part "CON-1P-1.0mmx2.0mm-Rectangular")
+				(description "One rectangular SMD solder pad, 1.0 mm x 2.0 mm")
+			)
+			(property
+				(name "MPN")
+				(value "CON-1P-1.0mm*2.0mm-Rectangular")
 			)
 			(property
 				(name "Sheetname")
@@ -502,22 +496,11 @@
 				(name "Sheetfile")
 				(value "LA150C_RDIVER_V1.00.kicad_sch")
 			)
-			(property
-				(name "exclude_from_bom")
-			)
-			(property
-				(name "ki_keywords")
-				(value "test point tp")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "Pin* Test*")
-			)
 			(sheetpath
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "2b0be19f-c2fd-50d8-9ebf-5974abb4f03e")
+			(tstamps "8594ce5b-e8db-5df6-88bc-92b98625f885")
 			(units
 				(unit
 					(name "A")
@@ -530,23 +513,29 @@
 			)
 		)
 		(comp
-			(ref "TP2")
-			(value "TP0.8")
-			(footprint "TestPoint:TestPoint_Pad_D1.0mm")
-			(description "φ0.8 测试点，电机 V 相")
+			(ref "J4")
+			(value "CON-1P-1.0mm*2.0mm-Rectangular")
+			(footprint "LA150C_RDIVER_V1.00:CON-1P-1.0mmx2.0mm-Rectangular")
+			(description "1.0 x 2.0 mm solder pad, motor V")
 			(fields
 				(field
-					(name "Footprint") "TestPoint:TestPoint_Pad_D1.0mm")
+					(name "MPN") "CON-1P-1.0mm*2.0mm-Rectangular")
+				(field
+					(name "Footprint") "LA150C_RDIVER_V1.00:CON-1P-1.0mmx2.0mm-Rectangular")
 				(field
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "φ0.8 测试点，电机 V 相")
+					(name "Description") "1.0 x 2.0 mm solder pad, motor V")
 			)
 			(libsource
-				(lib "Connector")
-				(part "TestPoint")
-				(description "test point")
+				(lib "LA150C_RDIVER_V1.00")
+				(part "CON-1P-1.0mmx2.0mm-Rectangular")
+				(description "One rectangular SMD solder pad, 1.0 mm x 2.0 mm")
+			)
+			(property
+				(name "MPN")
+				(value "CON-1P-1.0mm*2.0mm-Rectangular")
 			)
 			(property
 				(name "Sheetname")
@@ -556,22 +545,11 @@
 				(name "Sheetfile")
 				(value "LA150C_RDIVER_V1.00.kicad_sch")
 			)
-			(property
-				(name "exclude_from_bom")
-			)
-			(property
-				(name "ki_keywords")
-				(value "test point tp")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "Pin* Test*")
-			)
 			(sheetpath
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "2e6ee012-89e6-5347-a312-a79718df52d0")
+			(tstamps "54d6f0b8-698e-5a15-b3c6-10fcaa6f5a4f")
 			(units
 				(unit
 					(name "A")
@@ -584,23 +562,29 @@
 			)
 		)
 		(comp
-			(ref "TP3")
-			(value "TP0.8")
-			(footprint "TestPoint:TestPoint_Pad_D1.0mm")
-			(description "φ0.8 测试点，电机 W 相")
+			(ref "J5")
+			(value "CON-1P-1.0mm*2.0mm-Rectangular")
+			(footprint "LA150C_RDIVER_V1.00:CON-1P-1.0mmx2.0mm-Rectangular")
+			(description "1.0 x 2.0 mm solder pad, motor W")
 			(fields
 				(field
-					(name "Footprint") "TestPoint:TestPoint_Pad_D1.0mm")
+					(name "MPN") "CON-1P-1.0mm*2.0mm-Rectangular")
+				(field
+					(name "Footprint") "LA150C_RDIVER_V1.00:CON-1P-1.0mmx2.0mm-Rectangular")
 				(field
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "φ0.8 测试点，电机 W 相")
+					(name "Description") "1.0 x 2.0 mm solder pad, motor W")
 			)
 			(libsource
-				(lib "Connector")
-				(part "TestPoint")
-				(description "test point")
+				(lib "LA150C_RDIVER_V1.00")
+				(part "CON-1P-1.0mmx2.0mm-Rectangular")
+				(description "One rectangular SMD solder pad, 1.0 mm x 2.0 mm")
+			)
+			(property
+				(name "MPN")
+				(value "CON-1P-1.0mm*2.0mm-Rectangular")
 			)
 			(property
 				(name "Sheetname")
@@ -610,22 +594,11 @@
 				(name "Sheetfile")
 				(value "LA150C_RDIVER_V1.00.kicad_sch")
 			)
-			(property
-				(name "exclude_from_bom")
-			)
-			(property
-				(name "ki_keywords")
-				(value "test point tp")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "Pin* Test*")
-			)
 			(sheetpath
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "739bb37b-873b-559e-a616-e97422c1d789")
+			(tstamps "991eb79b-464d-5e5b-87a4-571aaabacabc")
 			(units
 				(unit
 					(name "A")
@@ -854,120 +827,54 @@
 			)
 		)
 		(comp
-			(ref "C1")
-			(value "47uF")
-			(description "1210 47uF 25V 低 ESR（料号待确认）")
+			(ref "TP8")
+			(value "TP0.8")
+			(footprint "TestPoint:TestPoint_Pad_D1.0mm")
+			(description "φ0.8 测试点，NRST 复位网络")
 			(fields
 				(field
-					(name "Part_Status") "母线储能电容 ≥47 µF/25 V 低 ESR，型号待确认")
-				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "TestPoint:TestPoint_Pad_D1.0mm")
 				(field
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "1210 47uF 25V 低 ESR（料号待确认）")
+					(name "Description") "φ0.8 测试点，NRST 复位网络")
 			)
 			(libsource
-				(lib "Device")
-				(part "C")
-				(description "Unpolarized capacitor")
-			)
-			(property
-				(name "Part_Status")
-				(value "母线储能电容 ≥47 µF/25 V 低 ESR，型号待确认")
+				(lib "Connector")
+				(part "TestPoint")
+				(description "test point")
 			)
 			(property
 				(name "Sheetname")
-				(value "POWER")
+				(value "LA150C_RDIVER_V1.00")
 			)
 			(property
 				(name "Sheetfile")
-				(value "SCH_LA150C_POWER_V1.00.kicad_sch")
+				(value "LA150C_RDIVER_V1.00.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
 			)
 			(property
 				(name "ki_keywords")
-				(value "cap capacitor")
+				(value "test point tp")
 			)
 			(property
 				(name "ki_fp_filters")
-				(value "C_*")
+				(value "Pin* Test*")
 			)
 			(sheetpath
-				(names "/POWER/")
-				(tstamps "/f83d8889-4e36-52ba-b794-5483b81faaff/")
+				(names "/")
+				(tstamps "/")
 			)
-			(tstamps "642e5764-1654-5c30-8029-d9dbb8a48348")
+			(tstamps "14c50944-c12b-5d8e-b192-a793930b1789")
 			(units
 				(unit
 					(name "A")
 					(pins
 						(pin
 							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "C2")
-			(value "100nF")
-			(description "0402 100nF 50V")
-			(fields
-				(field
-					(name "Part_Status") "输出电容 2 × 22 µF，具体料号待确认")
-				(field
-					(name "Footprint")
-				)
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "0402 100nF 50V")
-			)
-			(libsource
-				(lib "Device")
-				(part "C")
-				(description "Unpolarized capacitor")
-			)
-			(property
-				(name "Part_Status")
-				(value "输出电容 2 × 22 µF，具体料号待确认")
-			)
-			(property
-				(name "Sheetname")
-				(value "POWER")
-			)
-			(property
-				(name "Sheetfile")
-				(value "SCH_LA150C_POWER_V1.00.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "cap capacitor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "C_*")
-			)
-			(sheetpath
-				(names "/POWER/")
-				(tstamps "/f83d8889-4e36-52ba-b794-5483b81faaff/")
-			)
-			(tstamps "f1fcc91e-3d22-5196-a58a-199f90cd31df")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
 						)
 					)
 				)
@@ -975,40 +882,40 @@
 		)
 		(comp
 			(ref "C4")
-			(value "10uF")
-			(footprint "Capacitors:C1210")
-			(datasheet "https://www.lcsc.com/datasheet/C576517.pdf")
-			(description "1210 10uF 25V")
+			(value "1uF")
+			(footprint "Capacitors:C_0603_1608Metric")
+			(datasheet "https://atta.szlcsc.com/upload/public/pdf/source/20221017/6871EB52164389FFC3A4F3737FD2F190.pdf")
+			(description "0603 1uF 50V X7R")
 			(fields
 				(field
-					(name "MPN") "GRM32EC72A106KE05L")
+					(name "MPN") "CL10B105KB8NQNC")
 				(field
-					(name "LCSC Part") "C576517")
+					(name "LCSC Part") "C5199872")
 				(field
-					(name "Manufacturer") "muRata(村田)")
+					(name "Manufacturer") "SAMSUNG(三星)")
 				(field
-					(name "Footprint") "Capacitors:C1210")
+					(name "Footprint") "Capacitors:C_0603_1608Metric")
 				(field
-					(name "Datasheet") "https://www.lcsc.com/datasheet/C576517.pdf")
+					(name "Datasheet") "https://atta.szlcsc.com/upload/public/pdf/source/20221017/6871EB52164389FFC3A4F3737FD2F190.pdf")
 				(field
-					(name "Description") "1210 10uF 25V")
+					(name "Description") "0603 1uF 50V X7R")
 			)
 			(libsource
 				(lib "LA150C_RDIVER_V1.00")
-				(part "GRM32EC72A106KE05L")
-				(description "Unpolarized capacitor")
+				(part "CL10B105KB8NQNC")
+				(description "1uF ±10% 50V X7R 0603 ceramic capacitor")
 			)
 			(property
 				(name "MPN")
-				(value "GRM32EC72A106KE05L")
+				(value "CL10B105KB8NQNC")
 			)
 			(property
 				(name "LCSC Part")
-				(value "C576517")
+				(value "C5199872")
 			)
 			(property
 				(name "Manufacturer")
-				(value "muRata(村田)")
+				(value "SAMSUNG(三星)")
 			)
 			(property
 				(name "Sheetname")
@@ -1020,11 +927,11 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "Multilayer Ceramic Capacitors MLCC - SMD/SMT")
+				(value "Capacitors/Ceramic Capacitors")
 			)
 			(property
 				(name "ki_fp_filters")
-				(value "C_*")
+				(value "CL10B105KB8NQNC_*")
 			)
 			(sheetpath
 				(names "/POWER/")
@@ -1191,22 +1098,40 @@
 		)
 		(comp
 			(ref "C7")
-			(value "22uF")
-			(description "0805 22uF 10V（料号待确认）")
+			(value "10uF")
+			(footprint "Capacitors:C_0603_1608Metric")
+			(datasheet "https://atta.szlcsc.com/upload/public/pdf/source/20220328/6A4892B7E841253269A84FFE395E0578.pdf")
+			(description "0603 10uF 10V X7R")
 			(fields
 				(field
-					(name "Footprint")
-				)
+					(name "MPN") "GRM188Z71A106KA73D")
 				(field
-					(name "Datasheet")
-				)
+					(name "LCSC Part") "C2959727")
 				(field
-					(name "Description") "0805 22uF 10V（料号待确认）")
+					(name "Manufacturer") "muRata(村田)")
+				(field
+					(name "Footprint") "Capacitors:C_0603_1608Metric")
+				(field
+					(name "Datasheet") "https://atta.szlcsc.com/upload/public/pdf/source/20220328/6A4892B7E841253269A84FFE395E0578.pdf")
+				(field
+					(name "Description") "0603 10uF 10V X7R")
 			)
 			(libsource
-				(lib "Device")
-				(part "C")
-				(description "Unpolarized capacitor")
+				(lib "LA150C_RDIVER_V1.00")
+				(part "GRM188Z71A106KA73D")
+				(description "10uF ±10% 10V X7R 0603 ceramic capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "GRM188Z71A106KA73D")
+			)
+			(property
+				(name "LCSC Part")
+				(value "C2959727")
+			)
+			(property
+				(name "Manufacturer")
+				(value "muRata(村田)")
 			)
 			(property
 				(name "Sheetname")
@@ -1218,71 +1143,17 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "cap capacitor")
+				(value "Capacitors/Ceramic Capacitors")
 			)
 			(property
 				(name "ki_fp_filters")
-				(value "C_*")
+				(value "GRM188Z71A106KA73D_*")
 			)
 			(sheetpath
 				(names "/POWER/")
 				(tstamps "/f83d8889-4e36-52ba-b794-5483b81faaff/")
 			)
 			(tstamps "ed9657bc-9a2b-5a90-9c83-e6c3a44841a9")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "C8")
-			(value "22uF")
-			(description "0805 22uF 10V（料号待确认）")
-			(fields
-				(field
-					(name "Footprint")
-				)
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "0805 22uF 10V（料号待确认）")
-			)
-			(libsource
-				(lib "Device")
-				(part "C")
-				(description "Unpolarized capacitor")
-			)
-			(property
-				(name "Sheetname")
-				(value "POWER")
-			)
-			(property
-				(name "Sheetfile")
-				(value "SCH_LA150C_POWER_V1.00.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "cap capacitor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "C_*")
-			)
-			(sheetpath
-				(names "/POWER/")
-				(tstamps "/f83d8889-4e36-52ba-b794-5483b81faaff/")
-			)
-			(tstamps "8eb91559-5675-55a4-a814-267d422a6b8c")
 			(units
 				(unit
 					(name "A")
@@ -1372,39 +1243,39 @@
 		(comp
 			(ref "C10")
 			(value "100pF")
-			(footprint "Capacitors:C_0201_0603Metric")
-			(datasheet "https://datasheet.lcsc.com/datasheet/pdf/1497a6a2cea2f2b0acf5e045d2bc193c.pdf?productCode=C561710")
-			(description "0201 100pF 50V")
+			(footprint "Capacitors:C0201")
+			(datasheet "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C730413")
+			(description "0201 100pF 50V C0G")
 			(fields
 				(field
-					(name "MPN") "FN03N100J500PLG")
+					(name "MPN") "CL03C101JB3NNNC")
 				(field
-					(name "LCSC Part") "C561710")
+					(name "LCSC Part") "C730413")
 				(field
-					(name "Manufacturer") "PSA")
+					(name "Manufacturer") "Samsung Electro-Mechanics")
 				(field
-					(name "Footprint") "Capacitors:C_0201_0603Metric")
+					(name "Footprint") "Capacitors:C0201")
 				(field
-					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/1497a6a2cea2f2b0acf5e045d2bc193c.pdf?productCode=C561710")
+					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C730413")
 				(field
-					(name "Description") "0201 100pF 50V")
+					(name "Description") "0201 100pF 50V C0G")
 			)
 			(libsource
 				(lib "LA150C_RDIVER_V1.00")
-				(part "FN03N100J500PLG")
-				(description "10pF ±5% 50V Ceramic Capacitor C0G 0201")
+				(part "CL03C101JB3NNNC")
+				(description "Imported from legacy JLC paste BOM")
 			)
 			(property
 				(name "MPN")
-				(value "FN03N100J500PLG")
+				(value "CL03C101JB3NNNC")
 			)
 			(property
 				(name "LCSC Part")
-				(value "C561710")
+				(value "C730413")
 			)
 			(property
 				(name "Manufacturer")
-				(value "PSA")
+				(value "Samsung Electro-Mechanics")
 			)
 			(property
 				(name "Sheetname")
@@ -1420,7 +1291,7 @@
 			)
 			(property
 				(name "ki_fp_filters")
-				(value "FN03N100J500PLG_*")
+				(value "C_*")
 			)
 			(sheetpath
 				(names "/POWER/")
@@ -1442,29 +1313,41 @@
 			)
 		)
 		(comp
-			(ref "D1")
-			(value "SMCJ18A")
-			(description "SMC(DO-214AB) 18V 档 TVS（型号待确认）")
+			(ref "D3")
+			(value "SMF16CA")
+			(footprint "Circuit Protection:D_SOD-123F")
+			(datasheet "https://atta.szlcsc.com/upload/public/pdf/source/20250911/A9E208B97C1B87827444A0C468124C54.pdf")
+			(description "SOD-123FL 16V/200W bidirectional TVS")
 			(fields
 				(field
-					(name "Part_Status") "母线 TVS SMC/DO-214AB 18 V 档，具体型号待确认")
+					(name "MPN") "SMF16CA")
 				(field
-					(name "Footprint")
-				)
+					(name "LCSC Part") "C123805")
 				(field
-					(name "Datasheet")
-				)
+					(name "Manufacturer") "MDD(辰达半导体)")
 				(field
-					(name "Description") "SMC(DO-214AB) 18V 档 TVS（型号待确认）")
+					(name "Footprint") "Circuit Protection:D_SOD-123F")
+				(field
+					(name "Datasheet") "https://atta.szlcsc.com/upload/public/pdf/source/20250911/A9E208B97C1B87827444A0C468124C54.pdf")
+				(field
+					(name "Description") "SOD-123FL 16V/200W bidirectional TVS")
 			)
 			(libsource
-				(lib "Device")
-				(part "D_TVS")
-				(description "Bidirectional transient-voltage-suppression diode")
+				(lib "LA150C_RDIVER_V1.00")
+				(part "SMF16CA")
+				(description "16V 200W bidirectional TVS diode SOD-123FL")
 			)
 			(property
-				(name "Part_Status")
-				(value "母线 TVS SMC/DO-214AB 18 V 档，具体型号待确认")
+				(name "MPN")
+				(value "SMF16CA")
+			)
+			(property
+				(name "LCSC Part")
+				(value "C123805")
+			)
+			(property
+				(name "Manufacturer")
+				(value "MDD(辰达半导体)")
 			)
 			(property
 				(name "Sheetname")
@@ -1476,7 +1359,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "diode TVS thyrector")
+				(value "Circuit Protection/TVS Diodes")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -1486,138 +1369,7 @@
 				(names "/POWER/")
 				(tstamps "/f83d8889-4e36-52ba-b794-5483b81faaff/")
 			)
-			(tstamps "40c0c489-0058-558b-98cf-357f7fa9053a")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "Q1")
-			(value "PMOS")
-			(description "P-MOS 反接保护（型号待确认）")
-			(fields
-				(field
-					(name "Part_Status") "P-MOS 反接保护，型号待确认（母线 8~14 V，Vds ≥ 30 V）")
-				(field
-					(name "Footprint")
-				)
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "P-MOS 反接保护（型号待确认）")
-			)
-			(libsource
-				(lib "Transistor_FET")
-				(part "Q_PMOS_GSD")
-				(description "P-MOSFET transistor, gate/source/drain")
-			)
-			(property
-				(name "Part_Status")
-				(value "P-MOS 反接保护，型号待确认（母线 8~14 V，Vds ≥ 30 V）")
-			)
-			(property
-				(name "Sheetname")
-				(value "POWER")
-			)
-			(property
-				(name "Sheetfile")
-				(value "SCH_LA150C_POWER_V1.00.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "transistor PMOS P-MOS P-MOSFET")
-			)
-			(sheetpath
-				(names "/POWER/")
-				(tstamps "/f83d8889-4e36-52ba-b794-5483b81faaff/")
-			)
-			(tstamps "34a502b3-0698-56b7-9148-6b8c06f4bc2a")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "3")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "R1")
-			(value "10K")
-			(footprint "Resistors:R0201")
-			(datasheet "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_10KR-1002-1_C106225.html")
-			(description "0201 10K 1%")
-			(fields
-				(field
-					(name "MPN") "RC0201FR-0710KL")
-				(field
-					(name "LCSC Part") "C106225")
-				(field
-					(name "Manufacturer") "YAGEO(国巨)")
-				(field
-					(name "Footprint") "Resistors:R0201")
-				(field
-					(name "Datasheet") "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_10KR-1002-1_C106225.html")
-				(field
-					(name "Description") "0201 10K 1%")
-			)
-			(libsource
-				(lib "LA150C_RDIVER_V1.00")
-				(part "RC0201FR-0710KL")
-				(description "Resistor")
-			)
-			(property
-				(name "MPN")
-				(value "RC0201FR-0710KL")
-			)
-			(property
-				(name "LCSC Part")
-				(value "C106225")
-			)
-			(property
-				(name "Manufacturer")
-				(value "YAGEO(国巨)")
-			)
-			(property
-				(name "Sheetname")
-				(value "POWER")
-			)
-			(property
-				(name "Sheetfile")
-				(value "SCH_LA150C_POWER_V1.00.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "Resistors")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(sheetpath
-				(names "/POWER/")
-				(tstamps "/f83d8889-4e36-52ba-b794-5483b81faaff/")
-			)
-			(tstamps "76a71dbe-f36c-552e-9530-8468348a3ef5")
+			(tstamps "b539363d-14d6-539d-a559-ee5776a1f1a4")
 			(units
 				(unit
 					(name "A")
@@ -1689,16 +1441,16 @@
 		(comp
 			(ref "R4")
 			(value "31.6K")
-			(description "0402 31.6K 1%（料号待确认）")
+			(footprint "Resistors:R_0201_0603Metric")
+			(description "0201 31.6K 1%（料号待确认）")
 			(fields
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "Resistors:R_0201_0603Metric")
 				(field
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "0402 31.6K 1%（料号待确认）")
+					(name "Description") "0201 31.6K 1%（料号待确认）")
 			)
 			(libsource
 				(lib "Device")
@@ -1743,11 +1495,11 @@
 		(comp
 			(ref "R5")
 			(value "10.2K")
+			(footprint "Resistors:R_0201_0603Metric")
 			(description "0201 10.2K 1%（料号待确认）")
 			(fields
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "Resistors:R_0201_0603Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -1798,7 +1550,7 @@
 			(ref "R6")
 			(value "100K")
 			(footprint "Resistors:R0402")
-			(datasheet "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_100KR-1003-1_C60491.html")
+			(datasheet "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C60491")
 			(description "0402 100K 1%")
 			(fields
 				(field
@@ -1806,18 +1558,18 @@
 				(field
 					(name "LCSC Part") "C60491")
 				(field
-					(name "Manufacturer") "YAGEO(国巨)")
+					(name "Manufacturer") "YAGEO")
 				(field
 					(name "Footprint") "Resistors:R0402")
 				(field
-					(name "Datasheet") "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_100KR-1003-1_C60491.html")
+					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C60491")
 				(field
 					(name "Description") "0402 100K 1%")
 			)
 			(libsource
 				(lib "LA150C_RDIVER_V1.00")
 				(part "RC0402FR-07100KL")
-				(description "Resistor")
+				(description "Imported from legacy JLC paste BOM")
 			)
 			(property
 				(name "MPN")
@@ -1829,7 +1581,7 @@
 			)
 			(property
 				(name "Manufacturer")
-				(value "YAGEO(国巨)")
+				(value "YAGEO")
 			)
 			(property
 				(name "Sheetname")
@@ -1841,7 +1593,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "Resistors")
+				(value "Resistors/Chip Resistor - Surface Mount")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -1870,7 +1622,7 @@
 			(ref "R7")
 			(value "10K")
 			(footprint "Resistors:R0201")
-			(datasheet "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_10KR-1002-1_C106225.html")
+			(datasheet "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C106225")
 			(description "0201 10K 1%")
 			(fields
 				(field
@@ -1878,18 +1630,18 @@
 				(field
 					(name "LCSC Part") "C106225")
 				(field
-					(name "Manufacturer") "YAGEO(国巨)")
+					(name "Manufacturer") "YAGEO")
 				(field
 					(name "Footprint") "Resistors:R0201")
 				(field
-					(name "Datasheet") "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_10KR-1002-1_C106225.html")
+					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C106225")
 				(field
 					(name "Description") "0201 10K 1%")
 			)
 			(libsource
 				(lib "LA150C_RDIVER_V1.00")
 				(part "RC0201FR-0710KL")
-				(description "Resistor")
+				(description "Imported from legacy JLC paste BOM")
 			)
 			(property
 				(name "MPN")
@@ -1901,7 +1653,7 @@
 			)
 			(property
 				(name "Manufacturer")
-				(value "YAGEO(国巨)")
+				(value "YAGEO")
 			)
 			(property
 				(name "Sheetname")
@@ -1913,7 +1665,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "Resistors")
+				(value "Resistors/Chip Resistor - Surface Mount")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -1942,7 +1694,7 @@
 			(ref "R8")
 			(value "0R")
 			(footprint "Resistors:R0402")
-			(datasheet "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_0R-0R0-1_C106231.html")
+			(datasheet "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C106231")
 			(description "0402 0R 1%")
 			(fields
 				(field
@@ -1950,18 +1702,18 @@
 				(field
 					(name "LCSC Part") "C106231")
 				(field
-					(name "Manufacturer") "YAGEO(国巨)")
+					(name "Manufacturer") "YAGEO")
 				(field
 					(name "Footprint") "Resistors:R0402")
 				(field
-					(name "Datasheet") "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_0R-0R0-1_C106231.html")
+					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C106231")
 				(field
 					(name "Description") "0402 0R 1%")
 			)
 			(libsource
 				(lib "LA150C_RDIVER_V1.00")
 				(part "RC0402FR-070RL")
-				(description "Resistor")
+				(description "Imported from legacy JLC paste BOM")
 			)
 			(property
 				(name "MPN")
@@ -1973,7 +1725,7 @@
 			)
 			(property
 				(name "Manufacturer")
-				(value "YAGEO(国巨)")
+				(value "YAGEO")
 			)
 			(property
 				(name "Sheetname")
@@ -1985,7 +1737,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "Resistors")
+				(value "Resistors/Chip Resistor - Surface Mount")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -2014,7 +1766,7 @@
 			(ref "R9")
 			(value "0R")
 			(footprint "Resistors:R0402")
-			(datasheet "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_0R-0R0-1_C106231.html")
+			(datasheet "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C106231")
 			(description "0402 0R 1%")
 			(fields
 				(field
@@ -2022,18 +1774,18 @@
 				(field
 					(name "LCSC Part") "C106231")
 				(field
-					(name "Manufacturer") "YAGEO(国巨)")
+					(name "Manufacturer") "YAGEO")
 				(field
 					(name "Footprint") "Resistors:R0402")
 				(field
-					(name "Datasheet") "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_0R-0R0-1_C106231.html")
+					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C106231")
 				(field
 					(name "Description") "0402 0R 1%")
 			)
 			(libsource
 				(lib "LA150C_RDIVER_V1.00")
 				(part "RC0402FR-070RL")
-				(description "Resistor")
+				(description "Imported from legacy JLC paste BOM")
 			)
 			(property
 				(name "MPN")
@@ -2045,7 +1797,7 @@
 			)
 			(property
 				(name "Manufacturer")
-				(value "YAGEO(国巨)")
+				(value "YAGEO")
 			)
 			(property
 				(name "Sheetname")
@@ -2057,7 +1809,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "Resistors")
+				(value "Resistors/Chip Resistor - Surface Mount")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -2086,7 +1838,7 @@
 			(ref "R10")
 			(value "0R")
 			(footprint "Resistors:R0402")
-			(datasheet "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_0R-0R0-1_C106231.html")
+			(datasheet "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C106231")
 			(description "0402 0R 1%")
 			(fields
 				(field
@@ -2094,18 +1846,18 @@
 				(field
 					(name "LCSC Part") "C106231")
 				(field
-					(name "Manufacturer") "YAGEO(国巨)")
+					(name "Manufacturer") "YAGEO")
 				(field
 					(name "Footprint") "Resistors:R0402")
 				(field
-					(name "Datasheet") "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_0R-0R0-1_C106231.html")
+					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C106231")
 				(field
 					(name "Description") "0402 0R 1%")
 			)
 			(libsource
 				(lib "LA150C_RDIVER_V1.00")
 				(part "RC0402FR-070RL")
-				(description "Resistor")
+				(description "Imported from legacy JLC paste BOM")
 			)
 			(property
 				(name "MPN")
@@ -2117,7 +1869,7 @@
 			)
 			(property
 				(name "Manufacturer")
-				(value "YAGEO(国巨)")
+				(value "YAGEO")
 			)
 			(property
 				(name "Sheetname")
@@ -2129,7 +1881,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "Resistors")
+				(value "Resistors/Chip Resistor - Surface Mount")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -2237,7 +1989,7 @@
 			(ref "C28")
 			(value "100nF")
 			(footprint "Capacitors:C0201")
-			(datasheet "https://www.lcsc.com/datasheet/C668346.pdf")
+			(datasheet "https://datasheet.lcsc.com/datasheet/pdf/0fb4604782167a586c3dd1f22396ac96.pdf?productCode=C668346")
 			(description "0201 100nF 16V VDD 去耦")
 			(fields
 				(field
@@ -2245,18 +1997,18 @@
 				(field
 					(name "LCSC Part") "C668346")
 				(field
-					(name "Manufacturer") "muRata(村田)")
+					(name "Manufacturer") "muRata")
 				(field
 					(name "Footprint") "Capacitors:C0201")
 				(field
-					(name "Datasheet") "https://www.lcsc.com/datasheet/C668346.pdf")
+					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/0fb4604782167a586c3dd1f22396ac96.pdf?productCode=C668346")
 				(field
 					(name "Description") "0201 100nF 16V VDD 去耦")
 			)
 			(libsource
 				(lib "LA150C_RDIVER_V1.00")
 				(part "GRM033Z71C104KE14D")
-				(description "Unpolarized capacitor")
+				(description "Imported from legacy JLC paste BOM")
 			)
 			(property
 				(name "MPN")
@@ -2268,7 +2020,7 @@
 			)
 			(property
 				(name "Manufacturer")
-				(value "muRata(村田)")
+				(value "muRata")
 			)
 			(property
 				(name "Sheetname")
@@ -2280,7 +2032,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "Multilayer Ceramic Capacitors MLCC - SMD/SMT")
+				(value "Capacitors/Ceramic Capacitors")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -2309,7 +2061,7 @@
 			(ref "C29")
 			(value "100nF")
 			(footprint "Capacitors:C0201")
-			(datasheet "https://www.lcsc.com/datasheet/C668346.pdf")
+			(datasheet "https://datasheet.lcsc.com/datasheet/pdf/0fb4604782167a586c3dd1f22396ac96.pdf?productCode=C668346")
 			(description "0201 100nF 16V VDD 去耦")
 			(fields
 				(field
@@ -2317,18 +2069,18 @@
 				(field
 					(name "LCSC Part") "C668346")
 				(field
-					(name "Manufacturer") "muRata(村田)")
+					(name "Manufacturer") "muRata")
 				(field
 					(name "Footprint") "Capacitors:C0201")
 				(field
-					(name "Datasheet") "https://www.lcsc.com/datasheet/C668346.pdf")
+					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/0fb4604782167a586c3dd1f22396ac96.pdf?productCode=C668346")
 				(field
 					(name "Description") "0201 100nF 16V VDD 去耦")
 			)
 			(libsource
 				(lib "LA150C_RDIVER_V1.00")
 				(part "GRM033Z71C104KE14D")
-				(description "Unpolarized capacitor")
+				(description "Imported from legacy JLC paste BOM")
 			)
 			(property
 				(name "MPN")
@@ -2340,7 +2092,7 @@
 			)
 			(property
 				(name "Manufacturer")
-				(value "muRata(村田)")
+				(value "muRata")
 			)
 			(property
 				(name "Sheetname")
@@ -2352,7 +2104,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "Multilayer Ceramic Capacitors MLCC - SMD/SMT")
+				(value "Capacitors/Ceramic Capacitors")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -2381,7 +2133,7 @@
 			(ref "C30")
 			(value "100nF")
 			(footprint "Capacitors:C0201")
-			(datasheet "https://www.lcsc.com/datasheet/C668346.pdf")
+			(datasheet "https://datasheet.lcsc.com/datasheet/pdf/0fb4604782167a586c3dd1f22396ac96.pdf?productCode=C668346")
 			(description "0201 100nF 16V VDD 去耦")
 			(fields
 				(field
@@ -2389,18 +2141,18 @@
 				(field
 					(name "LCSC Part") "C668346")
 				(field
-					(name "Manufacturer") "muRata(村田)")
+					(name "Manufacturer") "muRata")
 				(field
 					(name "Footprint") "Capacitors:C0201")
 				(field
-					(name "Datasheet") "https://www.lcsc.com/datasheet/C668346.pdf")
+					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/0fb4604782167a586c3dd1f22396ac96.pdf?productCode=C668346")
 				(field
 					(name "Description") "0201 100nF 16V VDD 去耦")
 			)
 			(libsource
 				(lib "LA150C_RDIVER_V1.00")
 				(part "GRM033Z71C104KE14D")
-				(description "Unpolarized capacitor")
+				(description "Imported from legacy JLC paste BOM")
 			)
 			(property
 				(name "MPN")
@@ -2412,7 +2164,7 @@
 			)
 			(property
 				(name "Manufacturer")
-				(value "muRata(村田)")
+				(value "muRata")
 			)
 			(property
 				(name "Sheetname")
@@ -2424,7 +2176,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "Multilayer Ceramic Capacitors MLCC - SMD/SMT")
+				(value "Capacitors/Ceramic Capacitors")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -2453,7 +2205,7 @@
 			(ref "C31")
 			(value "100nF")
 			(footprint "Capacitors:C0201")
-			(datasheet "https://www.lcsc.com/datasheet/C668346.pdf")
+			(datasheet "https://datasheet.lcsc.com/datasheet/pdf/0fb4604782167a586c3dd1f22396ac96.pdf?productCode=C668346")
 			(description "0201 100nF 16V VDD 去耦")
 			(fields
 				(field
@@ -2461,18 +2213,18 @@
 				(field
 					(name "LCSC Part") "C668346")
 				(field
-					(name "Manufacturer") "muRata(村田)")
+					(name "Manufacturer") "muRata")
 				(field
 					(name "Footprint") "Capacitors:C0201")
 				(field
-					(name "Datasheet") "https://www.lcsc.com/datasheet/C668346.pdf")
+					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/0fb4604782167a586c3dd1f22396ac96.pdf?productCode=C668346")
 				(field
 					(name "Description") "0201 100nF 16V VDD 去耦")
 			)
 			(libsource
 				(lib "LA150C_RDIVER_V1.00")
 				(part "GRM033Z71C104KE14D")
-				(description "Unpolarized capacitor")
+				(description "Imported from legacy JLC paste BOM")
 			)
 			(property
 				(name "MPN")
@@ -2484,7 +2236,7 @@
 			)
 			(property
 				(name "Manufacturer")
-				(value "muRata(村田)")
+				(value "muRata")
 			)
 			(property
 				(name "Sheetname")
@@ -2496,7 +2248,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "Multilayer Ceramic Capacitors MLCC - SMD/SMT")
+				(value "Capacitors/Ceramic Capacitors")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -2525,7 +2277,7 @@
 			(ref "C32")
 			(value "100nF")
 			(footprint "Capacitors:C0201")
-			(datasheet "https://www.lcsc.com/datasheet/C668346.pdf")
+			(datasheet "https://datasheet.lcsc.com/datasheet/pdf/0fb4604782167a586c3dd1f22396ac96.pdf?productCode=C668346")
 			(description "0201 100nF 16V VBAT 去耦")
 			(fields
 				(field
@@ -2533,18 +2285,18 @@
 				(field
 					(name "LCSC Part") "C668346")
 				(field
-					(name "Manufacturer") "muRata(村田)")
+					(name "Manufacturer") "muRata")
 				(field
 					(name "Footprint") "Capacitors:C0201")
 				(field
-					(name "Datasheet") "https://www.lcsc.com/datasheet/C668346.pdf")
+					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/0fb4604782167a586c3dd1f22396ac96.pdf?productCode=C668346")
 				(field
 					(name "Description") "0201 100nF 16V VBAT 去耦")
 			)
 			(libsource
 				(lib "LA150C_RDIVER_V1.00")
 				(part "GRM033Z71C104KE14D")
-				(description "Unpolarized capacitor")
+				(description "Imported from legacy JLC paste BOM")
 			)
 			(property
 				(name "MPN")
@@ -2556,7 +2308,7 @@
 			)
 			(property
 				(name "Manufacturer")
-				(value "muRata(村田)")
+				(value "muRata")
 			)
 			(property
 				(name "Sheetname")
@@ -2568,7 +2320,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "Multilayer Ceramic Capacitors MLCC - SMD/SMT")
+				(value "Capacitors/Ceramic Capacitors")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -2596,21 +2348,39 @@
 		(comp
 			(ref "C33")
 			(value "10uF")
-			(description "0805 10uF 16V 体电容")
+			(footprint "Capacitors:C_0603_1608Metric")
+			(datasheet "https://atta.szlcsc.com/upload/public/pdf/source/20220328/6A4892B7E841253269A84FFE395E0578.pdf")
+			(description "0603 10uF 10V X7R 体电容")
 			(fields
 				(field
-					(name "Footprint")
-				)
+					(name "MPN") "GRM188Z71A106KA73D")
 				(field
-					(name "Datasheet")
-				)
+					(name "LCSC Part") "C2959727")
 				(field
-					(name "Description") "0805 10uF 16V 体电容")
+					(name "Manufacturer") "muRata(村田)")
+				(field
+					(name "Footprint") "Capacitors:C_0603_1608Metric")
+				(field
+					(name "Datasheet") "https://atta.szlcsc.com/upload/public/pdf/source/20220328/6A4892B7E841253269A84FFE395E0578.pdf")
+				(field
+					(name "Description") "0603 10uF 10V X7R 体电容")
 			)
 			(libsource
-				(lib "Device")
-				(part "C")
-				(description "Unpolarized capacitor")
+				(lib "LA150C_RDIVER_V1.00")
+				(part "GRM188Z71A106KA73D")
+				(description "10uF ±10% 10V X7R 0603 ceramic capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "GRM188Z71A106KA73D")
+			)
+			(property
+				(name "LCSC Part")
+				(value "C2959727")
+			)
+			(property
+				(name "Manufacturer")
+				(value "muRata(村田)")
 			)
 			(property
 				(name "Sheetname")
@@ -2622,11 +2392,11 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "cap capacitor")
+				(value "Capacitors/Ceramic Capacitors")
 			)
 			(property
 				(name "ki_fp_filters")
-				(value "C_*")
+				(value "GRM188Z71A106KA73D_*")
 			)
 			(sheetpath
 				(names "/MCU/")
@@ -2651,7 +2421,7 @@
 			(ref "C34")
 			(value "100nF")
 			(footprint "Capacitors:C0201")
-			(datasheet "https://www.lcsc.com/datasheet/C668346.pdf")
+			(datasheet "https://datasheet.lcsc.com/datasheet/pdf/0fb4604782167a586c3dd1f22396ac96.pdf?productCode=C668346")
 			(description "0201 100nF 16V VDDA")
 			(fields
 				(field
@@ -2659,18 +2429,18 @@
 				(field
 					(name "LCSC Part") "C668346")
 				(field
-					(name "Manufacturer") "muRata(村田)")
+					(name "Manufacturer") "muRata")
 				(field
 					(name "Footprint") "Capacitors:C0201")
 				(field
-					(name "Datasheet") "https://www.lcsc.com/datasheet/C668346.pdf")
+					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/0fb4604782167a586c3dd1f22396ac96.pdf?productCode=C668346")
 				(field
 					(name "Description") "0201 100nF 16V VDDA")
 			)
 			(libsource
 				(lib "LA150C_RDIVER_V1.00")
 				(part "GRM033Z71C104KE14D")
-				(description "Unpolarized capacitor")
+				(description "Imported from legacy JLC paste BOM")
 			)
 			(property
 				(name "MPN")
@@ -2682,7 +2452,7 @@
 			)
 			(property
 				(name "Manufacturer")
-				(value "muRata(村田)")
+				(value "muRata")
 			)
 			(property
 				(name "Sheetname")
@@ -2694,7 +2464,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "Multilayer Ceramic Capacitors MLCC - SMD/SMT")
+				(value "Capacitors/Ceramic Capacitors")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -2723,7 +2493,7 @@
 			(ref "C35")
 			(value "1uF")
 			(footprint "Capacitors:C0402")
-			(datasheet "https://www.lcsc.com/datasheet/C2803380.pdf")
+			(datasheet "https://datasheet.lcsc.com/datasheet/pdf/0b5a285c1df7dac78985feb71e334603.pdf?productCode=C2803380")
 			(description "0402 1uF 10V VDDA")
 			(fields
 				(field
@@ -2731,18 +2501,18 @@
 				(field
 					(name "LCSC Part") "C2803380")
 				(field
-					(name "Manufacturer") "SAMSUNG(三星)")
+					(name "Manufacturer") "Samsung Electro-Mechanics")
 				(field
 					(name "Footprint") "Capacitors:C0402")
 				(field
-					(name "Datasheet") "https://www.lcsc.com/datasheet/C2803380.pdf")
+					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/0b5a285c1df7dac78985feb71e334603.pdf?productCode=C2803380")
 				(field
 					(name "Description") "0402 1uF 10V VDDA")
 			)
 			(libsource
 				(lib "LA150C_RDIVER_V1.00")
 				(part "CL05Y105KP6VPNC")
-				(description "Unpolarized capacitor")
+				(description "Imported from legacy JLC paste BOM")
 			)
 			(property
 				(name "MPN")
@@ -2754,7 +2524,7 @@
 			)
 			(property
 				(name "Manufacturer")
-				(value "SAMSUNG(三星)")
+				(value "Samsung Electro-Mechanics")
 			)
 			(property
 				(name "Sheetname")
@@ -2766,7 +2536,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "Multilayer Ceramic Capacitors MLCC - SMD/SMT")
+				(value "Capacitors/Ceramic Capacitors")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -2795,7 +2565,7 @@
 			(ref "C36")
 			(value "100nF")
 			(footprint "Capacitors:C0201")
-			(datasheet "https://www.lcsc.com/datasheet/C668346.pdf")
+			(datasheet "https://datasheet.lcsc.com/datasheet/pdf/0fb4604782167a586c3dd1f22396ac96.pdf?productCode=C668346")
 			(description "0201 100nF 16V")
 			(fields
 				(field
@@ -2803,18 +2573,18 @@
 				(field
 					(name "LCSC Part") "C668346")
 				(field
-					(name "Manufacturer") "muRata(村田)")
+					(name "Manufacturer") "muRata")
 				(field
 					(name "Footprint") "Capacitors:C0201")
 				(field
-					(name "Datasheet") "https://www.lcsc.com/datasheet/C668346.pdf")
+					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/0fb4604782167a586c3dd1f22396ac96.pdf?productCode=C668346")
 				(field
 					(name "Description") "0201 100nF 16V")
 			)
 			(libsource
 				(lib "LA150C_RDIVER_V1.00")
 				(part "GRM033Z71C104KE14D")
-				(description "Unpolarized capacitor")
+				(description "Imported from legacy JLC paste BOM")
 			)
 			(property
 				(name "MPN")
@@ -2826,7 +2596,7 @@
 			)
 			(property
 				(name "Manufacturer")
-				(value "muRata(村田)")
+				(value "muRata")
 			)
 			(property
 				(name "Sheetname")
@@ -2838,7 +2608,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "Multilayer Ceramic Capacitors MLCC - SMD/SMT")
+				(value "Capacitors/Ceramic Capacitors")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -2864,118 +2634,10 @@
 			)
 		)
 		(comp
-			(ref "C37")
-			(value "10pF")
-			(description "0201 10pF 50V 谐振器负载")
-			(fields
-				(field
-					(name "Footprint")
-				)
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "0201 10pF 50V 谐振器负载")
-			)
-			(libsource
-				(lib "Device")
-				(part "C")
-				(description "Unpolarized capacitor")
-			)
-			(property
-				(name "Sheetname")
-				(value "MCU")
-			)
-			(property
-				(name "Sheetfile")
-				(value "SCH_LA150C_MCU_V1.00.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "cap capacitor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "C_*")
-			)
-			(sheetpath
-				(names "/MCU/")
-				(tstamps "/07baf6c9-443b-535b-ae5c-72067acbe97f/")
-			)
-			(tstamps "a3f5a3aa-984e-56cc-be77-bcca5cfc830a")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "C38")
-			(value "10pF")
-			(description "0201 10pF 50V 谐振器负载")
-			(fields
-				(field
-					(name "Footprint")
-				)
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "0201 10pF 50V 谐振器负载")
-			)
-			(libsource
-				(lib "Device")
-				(part "C")
-				(description "Unpolarized capacitor")
-			)
-			(property
-				(name "Sheetname")
-				(value "MCU")
-			)
-			(property
-				(name "Sheetfile")
-				(value "SCH_LA150C_MCU_V1.00.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "cap capacitor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "C_*")
-			)
-			(sheetpath
-				(names "/MCU/")
-				(tstamps "/07baf6c9-443b-535b-ae5c-72067acbe97f/")
-			)
-			(tstamps "f2326b79-120d-5c92-8c09-e80876229387")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
 			(ref "R33")
 			(value "10K")
 			(footprint "Resistors:R0201")
-			(datasheet "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_10KR-1002-1_C106225.html")
+			(datasheet "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C106225")
 			(description "0201 10K 1%")
 			(fields
 				(field
@@ -2983,18 +2645,18 @@
 				(field
 					(name "LCSC Part") "C106225")
 				(field
-					(name "Manufacturer") "YAGEO(国巨)")
+					(name "Manufacturer") "YAGEO")
 				(field
 					(name "Footprint") "Resistors:R0201")
 				(field
-					(name "Datasheet") "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_10KR-1002-1_C106225.html")
+					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C106225")
 				(field
 					(name "Description") "0201 10K 1%")
 			)
 			(libsource
 				(lib "LA150C_RDIVER_V1.00")
 				(part "RC0201FR-0710KL")
-				(description "Resistor")
+				(description "Imported from legacy JLC paste BOM")
 			)
 			(property
 				(name "MPN")
@@ -3006,7 +2668,7 @@
 			)
 			(property
 				(name "Manufacturer")
-				(value "YAGEO(国巨)")
+				(value "YAGEO")
 			)
 			(property
 				(name "Sheetname")
@@ -3018,7 +2680,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "Resistors")
+				(value "Resistors/Chip Resistor - Surface Mount")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -3044,9 +2706,154 @@
 			)
 		)
 		(comp
+			(ref "R37")
+			(value "10K")
+			(footprint "Resistors:R0201")
+			(datasheet "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C106225")
+			(description "0201 10K 1% BOOT0 pull-down")
+			(fields
+				(field
+					(name "MPN") "RC0201FR-0710KL")
+				(field
+					(name "LCSC Part") "C106225")
+				(field
+					(name "Manufacturer") "YAGEO")
+				(field
+					(name "Footprint") "Resistors:R0201")
+				(field
+					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C106225")
+				(field
+					(name "Description") "0201 10K 1% BOOT0 pull-down")
+			)
+			(libsource
+				(lib "LA150C_RDIVER_V1.00")
+				(part "RC0201FR-0710KL")
+				(description "Imported from legacy JLC paste BOM")
+			)
+			(property
+				(name "MPN")
+				(value "RC0201FR-0710KL")
+			)
+			(property
+				(name "LCSC Part")
+				(value "C106225")
+			)
+			(property
+				(name "Manufacturer")
+				(value "YAGEO")
+			)
+			(property
+				(name "Sheetname")
+				(value "MCU")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_LA150C_MCU_V1.00.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "Resistors/Chip Resistor - Surface Mount")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/MCU/")
+				(tstamps "/07baf6c9-443b-535b-ae5c-72067acbe97f/")
+			)
+			(tstamps "b46fc1c5-f46b-58d6-a4a9-4d7ccbbba16b")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R38")
+			(value "10K")
+			(footprint "Resistors:R0201")
+			(datasheet "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C106225")
+			(description "0201 10K 1% BOOT1 pull-down")
+			(fields
+				(field
+					(name "MPN") "RC0201FR-0710KL")
+				(field
+					(name "LCSC Part") "C106225")
+				(field
+					(name "Manufacturer") "YAGEO")
+				(field
+					(name "Footprint") "Resistors:R0201")
+				(field
+					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C106225")
+				(field
+					(name "Description") "0201 10K 1% BOOT1 pull-down")
+			)
+			(libsource
+				(lib "LA150C_RDIVER_V1.00")
+				(part "RC0201FR-0710KL")
+				(description "Imported from legacy JLC paste BOM")
+			)
+			(property
+				(name "MPN")
+				(value "RC0201FR-0710KL")
+			)
+			(property
+				(name "LCSC Part")
+				(value "C106225")
+			)
+			(property
+				(name "Manufacturer")
+				(value "YAGEO")
+			)
+			(property
+				(name "Sheetname")
+				(value "MCU")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_LA150C_MCU_V1.00.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "Resistors/Chip Resistor - Surface Mount")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/MCU/")
+				(tstamps "/07baf6c9-443b-535b-ae5c-72067acbe97f/")
+			)
+			(tstamps "24ea4a84-811e-5d9a-854d-7593a93c5065")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
 			(ref "U1")
 			(value "GD32F503REL7")
-			(description "Cortex-M4F MCU LQFP-64")
+			(footprint "Embedded Processors & Controllers:ucBGA-64_4x4mm_Layout8x8_P0.4mm")
+			(description "Cortex-M33 MCU BGA-64")
 			(fields
 				(field
 					(name "MPN") "GD32F503REL7")
@@ -3055,18 +2862,17 @@
 				(field
 					(name "Manufacturer") "GigaDevice")
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "Embedded Processors & Controllers:ucBGA-64_4x4mm_Layout8x8_P0.4mm")
 				(field
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "Cortex-M4F MCU LQFP-64")
+					(name "Description") "Cortex-M33 MCU BGA-64")
 			)
 			(libsource
 				(lib "LA150C_RDIVER_V1.00")
 				(part "GD32F503REL7")
-				(description "GD32F503REL7 Cortex-M4F MCU, LQFP-64, 512KB flash")
+				(description "GD32F503REL7 Cortex-M33 MCU, BGA-64, 512KB flash")
 			)
 			(property
 				(name "MPN")
@@ -3098,231 +2904,237 @@
 					(name "A")
 					(pins
 						(pin
-							(num "14")
+							(num "H5")
 						)
 						(pin
-							(num "15")
+							(num "E3")
 						)
 						(pin
-							(num "16")
+							(num "F3")
 						)
 						(pin
-							(num "17")
+							(num "H2")
 						)
 						(pin
-							(num "20")
+							(num "D4")
 						)
 						(pin
-							(num "21")
+							(num "E4")
 						)
 						(pin
-							(num "22")
+							(num "G3")
 						)
 						(pin
-							(num "23")
+							(num "H3")
 						)
 						(pin
-							(num "26")
+							(num "E5")
 						)
 						(pin
-							(num "27")
+							(num "F5")
 						)
 						(pin
-							(num "28")
+							(num "H4")
 						)
 						(pin
-							(num "58")
+							(num "A4")
 						)
 						(pin
-							(num "59")
+							(num "A3")
 						)
 						(pin
-							(num "29")
+							(num "H6")
 						)
 						(pin
-							(num "30")
+							(num "H7")
 						)
 						(pin
-							(num "33")
+							(num "G8")
 						)
 						(pin
-							(num "34")
+							(num "G6")
 						)
 						(pin
-							(num "35")
+							(num "F8")
 						)
 						(pin
-							(num "36")
+							(num "F7")
 						)
 						(pin
-							(num "8")
+							(num "E2")
 						)
 						(pin
-							(num "9")
+							(num "C3")
 						)
 						(pin
-							(num "10")
+							(num "D3")
 						)
 						(pin
-							(num "11")
+							(num "G4")
 						)
 						(pin
-							(num "24")
+							(num "D5")
 						)
 						(pin
-							(num "18")
+							(num "B2")
 						)
 						(pin
-							(num "31")
+							(num "B7")
 						)
 						(pin
-							(num "1")
+							(num "C2")
 						)
 						(pin
-							(num "47")
+							(num "G2")
 						)
 						(pin
-							(num "19")
+							(num "A1")
 						)
 						(pin
-							(num "63")
+							(num "G7")
 						)
 						(pin
-							(num "32")
+							(num "A8")
 						)
 						(pin
-							(num "12")
+							(num "F2")
 						)
 						(pin
-							(num "48")
+							(num "H1")
 						)
 						(pin
-							(num "7")
+							(num "D2")
 						)
 						(pin
-							(num "64")
+							(num "H8")
 						)
 						(pin
-							(num "60")
+							(num "B3")
 						)
 						(pin
-							(num "13")
+							(num "G1")
 						)
 						(pin
-							(num "5")
+							(num "E1")
 						)
 						(pin
-							(num "6")
+							(num "F1")
 						)
 						(pin
-							(num "54")
+							(num "B5")
 						)
 						(pin
-							(num "25")
+							(num "F4")
 						)
 						(pin
-							(num "37")
+							(num "E8")
 						)
 						(pin
-							(num "38")
+							(num "E7")
 						)
 						(pin
-							(num "39")
+							(num "F6")
 						)
 						(pin
-							(num "40")
+							(num "D8")
 						)
 						(pin
-							(num "51")
+							(num "C5")
 						)
 						(pin
-							(num "52")
+							(num "B6")
 						)
 						(pin
-							(num "53")
+							(num "A6")
 						)
 						(pin
-							(num "2")
+							(num "B1")
 						)
 						(pin
-							(num "3")
+							(num "C1")
 						)
 						(pin
-							(num "4")
+							(num "D1")
 						)
 						(pin
-							(num "41")
+							(num "E6")
 						)
 						(pin
-							(num "42")
+							(num "D7")
 						)
 						(pin
-							(num "43")
+							(num "D6")
 						)
 						(pin
-							(num "44")
+							(num "C8")
 						)
 						(pin
-							(num "45")
+							(num "B8")
 						)
 						(pin
-							(num "46")
+							(num "C7")
 						)
 						(pin
-							(num "49")
+							(num "C6")
 						)
 						(pin
-							(num "50")
+							(num "A7")
 						)
 						(pin
-							(num "55")
+							(num "A5")
 						)
 						(pin
-							(num "56")
+							(num "C4")
 						)
 						(pin
-							(num "57")
+							(num "B4")
 						)
 						(pin
-							(num "61")
+							(num "G5")
 						)
 						(pin
-							(num "62")
+							(num "A2")
 						)
 					)
 				)
 			)
 		)
 		(comp
-			(ref "X1")
-			(value "CSTCE8M00G52-R0")
-			(description "8MHz 三端陶瓷谐振器 SMD-3225")
+			(ref "Y1")
+			(value "CSTNE8M00G52A000R0")
+			(footprint "Crystals, Oscillators, Resonators:CRYSTAL-SMD_3P-L3.2-W1.3-P1.2-BL-1")
+			(datasheet "https://datasheet.lcsc.com/datasheet/pdf/6229da9b14529ef4c771661e98fded14.pdf?productCode=C1851993")
+			(description "External-driver 8MHz resonator, 10pF built-in, SMD3213-3P")
 			(fields
 				(field
-					(name "MPN") "CSTCE8M00G52-R0")
+					(name "MPN") "CSTNE8M00G52A000R0")
 				(field
-					(name "Manufacturer") "Murata")
+					(name "LCSC Part") "C1851993")
 				(field
-					(name "Footprint")
-				)
+					(name "Manufacturer") "muRata")
 				(field
-					(name "Datasheet")
-				)
+					(name "Footprint") "Crystals, Oscillators, Resonators:CRYSTAL-SMD_3P-L3.2-W1.3-P1.2-BL-1")
 				(field
-					(name "Description") "8MHz 三端陶瓷谐振器 SMD-3225")
+					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/6229da9b14529ef4c771661e98fded14.pdf?productCode=C1851993")
+				(field
+					(name "Description") "External-driver 8MHz resonator, 10pF built-in, SMD3213-3P")
 			)
 			(libsource
 				(lib "LA150C_RDIVER_V1.00")
-				(part "CSTCE8M00G52-R0")
-				(description "8MHz three-terminal ceramic resonator, SMD-3225")
+				(part "CSTNE8M00G52A000R0")
+				(description "Imported from legacy JLC paste BOM")
 			)
 			(property
 				(name "MPN")
-				(value "CSTCE8M00G52-R0")
+				(value "CSTNE8M00G52A000R0")
+			)
+			(property
+				(name "LCSC Part")
+				(value "C1851993")
 			)
 			(property
 				(name "Manufacturer")
-				(value "Murata")
+				(value "muRata")
 			)
 			(property
 				(name "Sheetname")
@@ -3332,11 +3144,15 @@
 				(name "Sheetfile")
 				(value "SCH_LA150C_MCU_V1.00.kicad_sch")
 			)
+			(property
+				(name "ki_keywords")
+				(value "Crystals, Oscillators, Resonators/Resonators")
+			)
 			(sheetpath
 				(names "/MCU/")
 				(tstamps "/07baf6c9-443b-535b-ae5c-72067acbe97f/")
 			)
-			(tstamps "cfdb0c21-15f4-5f9e-a104-588625e4e70b")
+			(tstamps "48688747-044d-509f-a468-189355773060")
 			(units
 				(unit
 					(name "A")
@@ -3356,40 +3172,40 @@
 		)
 		(comp
 			(ref "C19")
-			(value "10uF")
-			(footprint "Capacitors:C1210")
-			(datasheet "https://www.lcsc.com/datasheet/C576517.pdf")
-			(description "1210 10uF 25V")
+			(value "1uF")
+			(footprint "Capacitors:C_0603_1608Metric")
+			(datasheet "https://atta.szlcsc.com/upload/public/pdf/source/20221017/6871EB52164389FFC3A4F3737FD2F190.pdf")
+			(description "0603 1uF 50V X7R")
 			(fields
 				(field
-					(name "MPN") "GRM32EC72A106KE05L")
+					(name "MPN") "CL10B105KB8NQNC")
 				(field
-					(name "LCSC Part") "C576517")
+					(name "LCSC Part") "C5199872")
 				(field
-					(name "Manufacturer") "muRata(村田)")
+					(name "Manufacturer") "SAMSUNG(三星)")
 				(field
-					(name "Footprint") "Capacitors:C1210")
+					(name "Footprint") "Capacitors:C_0603_1608Metric")
 				(field
-					(name "Datasheet") "https://www.lcsc.com/datasheet/C576517.pdf")
+					(name "Datasheet") "https://atta.szlcsc.com/upload/public/pdf/source/20221017/6871EB52164389FFC3A4F3737FD2F190.pdf")
 				(field
-					(name "Description") "1210 10uF 25V")
+					(name "Description") "0603 1uF 50V X7R")
 			)
 			(libsource
 				(lib "LA150C_RDIVER_V1.00")
-				(part "GRM32EC72A106KE05L")
-				(description "Unpolarized capacitor")
+				(part "CL10B105KB8NQNC")
+				(description "1uF ±10% 50V X7R 0603 ceramic capacitor")
 			)
 			(property
 				(name "MPN")
-				(value "GRM32EC72A106KE05L")
+				(value "CL10B105KB8NQNC")
 			)
 			(property
 				(name "LCSC Part")
-				(value "C576517")
+				(value "C5199872")
 			)
 			(property
 				(name "Manufacturer")
-				(value "muRata(村田)")
+				(value "SAMSUNG(三星)")
 			)
 			(property
 				(name "Sheetname")
@@ -3401,11 +3217,11 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "Multilayer Ceramic Capacitors MLCC - SMD/SMT")
+				(value "Capacitors/Ceramic Capacitors")
 			)
 			(property
 				(name "ki_fp_filters")
-				(value "C_*")
+				(value "CL10B105KB8NQNC_*")
 			)
 			(sheetpath
 				(names "/MOTOR/")
@@ -3500,40 +3316,40 @@
 		)
 		(comp
 			(ref "C21")
-			(value "4.7uF")
-			(footprint "Capacitors:C0603")
-			(datasheet "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL10A475KP8NNNC_4-7uF-475-10-10V_C1705.html")
-			(description "0603 4.7uF 10V")
+			(value "10uF")
+			(footprint "Capacitors:C_0603_1608Metric")
+			(datasheet "https://atta.szlcsc.com/upload/public/pdf/source/20220328/6A4892B7E841253269A84FFE395E0578.pdf")
+			(description "0603 10uF 10V X7R")
 			(fields
 				(field
-					(name "MPN") "CL10A475KP8NNNC")
+					(name "MPN") "GRM188Z71A106KA73D")
 				(field
-					(name "LCSC Part") "C1705")
+					(name "LCSC Part") "C2959727")
 				(field
-					(name "Manufacturer") "SAMSUNG(三星)")
+					(name "Manufacturer") "muRata(村田)")
 				(field
-					(name "Footprint") "Capacitors:C0603")
+					(name "Footprint") "Capacitors:C_0603_1608Metric")
 				(field
-					(name "Datasheet") "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL10A475KP8NNNC_4-7uF-475-10-10V_C1705.html")
+					(name "Datasheet") "https://atta.szlcsc.com/upload/public/pdf/source/20220328/6A4892B7E841253269A84FFE395E0578.pdf")
 				(field
-					(name "Description") "0603 4.7uF 10V")
+					(name "Description") "0603 10uF 10V X7R")
 			)
 			(libsource
 				(lib "LA150C_RDIVER_V1.00")
-				(part "CL10A475KP8NNNC")
-				(description "4.7uF (475) ±10% 10V")
+				(part "GRM188Z71A106KA73D")
+				(description "10uF ±10% 10V X7R 0603 ceramic capacitor")
 			)
 			(property
 				(name "MPN")
-				(value "CL10A475KP8NNNC")
+				(value "GRM188Z71A106KA73D")
 			)
 			(property
 				(name "LCSC Part")
-				(value "C1705")
+				(value "C2959727")
 			)
 			(property
 				(name "Manufacturer")
-				(value "SAMSUNG(三星)")
+				(value "muRata(村田)")
 			)
 			(property
 				(name "Sheetname")
@@ -3545,11 +3361,11 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "Multilayer Ceramic Capacitors MLCC - SMD/SMT")
+				(value "Capacitors/Ceramic Capacitors")
 			)
 			(property
 				(name "ki_fp_filters")
-				(value "C_*")
+				(value "GRM188Z71A106KA73D_*")
 			)
 			(sheetpath
 				(names "/MOTOR/")
@@ -3574,7 +3390,7 @@
 			(ref "C22")
 			(value "1uF")
 			(footprint "Capacitors:C0402")
-			(datasheet "https://www.lcsc.com/datasheet/C2803380.pdf")
+			(datasheet "https://datasheet.lcsc.com/datasheet/pdf/0b5a285c1df7dac78985feb71e334603.pdf?productCode=C2803380")
 			(description "0402 1uF 16V X7R 电荷泵")
 			(fields
 				(field
@@ -3582,18 +3398,18 @@
 				(field
 					(name "LCSC Part") "C2803380")
 				(field
-					(name "Manufacturer") "SAMSUNG(三星)")
+					(name "Manufacturer") "Samsung Electro-Mechanics")
 				(field
 					(name "Footprint") "Capacitors:C0402")
 				(field
-					(name "Datasheet") "https://www.lcsc.com/datasheet/C2803380.pdf")
+					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/0b5a285c1df7dac78985feb71e334603.pdf?productCode=C2803380")
 				(field
 					(name "Description") "0402 1uF 16V X7R 电荷泵")
 			)
 			(libsource
 				(lib "LA150C_RDIVER_V1.00")
 				(part "CL05Y105KP6VPNC")
-				(description "Unpolarized capacitor")
+				(description "Imported from legacy JLC paste BOM")
 			)
 			(property
 				(name "MPN")
@@ -3605,7 +3421,7 @@
 			)
 			(property
 				(name "Manufacturer")
-				(value "SAMSUNG(三星)")
+				(value "Samsung Electro-Mechanics")
 			)
 			(property
 				(name "Sheetname")
@@ -3617,7 +3433,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "Multilayer Ceramic Capacitors MLCC - SMD/SMT")
+				(value "Capacitors/Ceramic Capacitors")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -3717,39 +3533,39 @@
 		(comp
 			(ref "C24")
 			(value "100pF")
-			(footprint "Capacitors:C_0201_0603Metric")
-			(datasheet "https://datasheet.lcsc.com/datasheet/pdf/1497a6a2cea2f2b0acf5e045d2bc193c.pdf?productCode=C561710")
-			(description "0201 100pF 50V")
+			(footprint "Capacitors:C0201")
+			(datasheet "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C730413")
+			(description "0201 100pF 50V C0G")
 			(fields
 				(field
-					(name "MPN") "FN03N100J500PLG")
+					(name "MPN") "CL03C101JB3NNNC")
 				(field
-					(name "LCSC Part") "C561710")
+					(name "LCSC Part") "C730413")
 				(field
-					(name "Manufacturer") "PSA")
+					(name "Manufacturer") "Samsung Electro-Mechanics")
 				(field
-					(name "Footprint") "Capacitors:C_0201_0603Metric")
+					(name "Footprint") "Capacitors:C0201")
 				(field
-					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/1497a6a2cea2f2b0acf5e045d2bc193c.pdf?productCode=C561710")
+					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C730413")
 				(field
-					(name "Description") "0201 100pF 50V")
+					(name "Description") "0201 100pF 50V C0G")
 			)
 			(libsource
 				(lib "LA150C_RDIVER_V1.00")
-				(part "FN03N100J500PLG")
-				(description "10pF ±5% 50V Ceramic Capacitor C0G 0201")
+				(part "CL03C101JB3NNNC")
+				(description "Imported from legacy JLC paste BOM")
 			)
 			(property
 				(name "MPN")
-				(value "FN03N100J500PLG")
+				(value "CL03C101JB3NNNC")
 			)
 			(property
 				(name "LCSC Part")
-				(value "C561710")
+				(value "C730413")
 			)
 			(property
 				(name "Manufacturer")
-				(value "PSA")
+				(value "Samsung Electro-Mechanics")
 			)
 			(property
 				(name "Sheetname")
@@ -3765,7 +3581,7 @@
 			)
 			(property
 				(name "ki_fp_filters")
-				(value "FN03N100J500PLG_*")
+				(value "C_*")
 			)
 			(sheetpath
 				(names "/MOTOR/")
@@ -3789,39 +3605,39 @@
 		(comp
 			(ref "C25")
 			(value "100pF")
-			(footprint "Capacitors:C_0201_0603Metric")
-			(datasheet "https://datasheet.lcsc.com/datasheet/pdf/1497a6a2cea2f2b0acf5e045d2bc193c.pdf?productCode=C561710")
-			(description "0201 100pF 50V")
+			(footprint "Capacitors:C0201")
+			(datasheet "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C730413")
+			(description "0201 100pF 50V C0G")
 			(fields
 				(field
-					(name "MPN") "FN03N100J500PLG")
+					(name "MPN") "CL03C101JB3NNNC")
 				(field
-					(name "LCSC Part") "C561710")
+					(name "LCSC Part") "C730413")
 				(field
-					(name "Manufacturer") "PSA")
+					(name "Manufacturer") "Samsung Electro-Mechanics")
 				(field
-					(name "Footprint") "Capacitors:C_0201_0603Metric")
+					(name "Footprint") "Capacitors:C0201")
 				(field
-					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/1497a6a2cea2f2b0acf5e045d2bc193c.pdf?productCode=C561710")
+					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C730413")
 				(field
-					(name "Description") "0201 100pF 50V")
+					(name "Description") "0201 100pF 50V C0G")
 			)
 			(libsource
 				(lib "LA150C_RDIVER_V1.00")
-				(part "FN03N100J500PLG")
-				(description "10pF ±5% 50V Ceramic Capacitor C0G 0201")
+				(part "CL03C101JB3NNNC")
+				(description "Imported from legacy JLC paste BOM")
 			)
 			(property
 				(name "MPN")
-				(value "FN03N100J500PLG")
+				(value "CL03C101JB3NNNC")
 			)
 			(property
 				(name "LCSC Part")
-				(value "C561710")
+				(value "C730413")
 			)
 			(property
 				(name "Manufacturer")
-				(value "PSA")
+				(value "Samsung Electro-Mechanics")
 			)
 			(property
 				(name "Sheetname")
@@ -3837,7 +3653,7 @@
 			)
 			(property
 				(name "ki_fp_filters")
-				(value "FN03N100J500PLG_*")
+				(value "C_*")
 			)
 			(sheetpath
 				(names "/MOTOR/")
@@ -3861,39 +3677,39 @@
 		(comp
 			(ref "C26")
 			(value "100pF")
-			(footprint "Capacitors:C_0201_0603Metric")
-			(datasheet "https://datasheet.lcsc.com/datasheet/pdf/1497a6a2cea2f2b0acf5e045d2bc193c.pdf?productCode=C561710")
-			(description "0201 100pF 50V")
+			(footprint "Capacitors:C0201")
+			(datasheet "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C730413")
+			(description "0201 100pF 50V C0G")
 			(fields
 				(field
-					(name "MPN") "FN03N100J500PLG")
+					(name "MPN") "CL03C101JB3NNNC")
 				(field
-					(name "LCSC Part") "C561710")
+					(name "LCSC Part") "C730413")
 				(field
-					(name "Manufacturer") "PSA")
+					(name "Manufacturer") "Samsung Electro-Mechanics")
 				(field
-					(name "Footprint") "Capacitors:C_0201_0603Metric")
+					(name "Footprint") "Capacitors:C0201")
 				(field
-					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/1497a6a2cea2f2b0acf5e045d2bc193c.pdf?productCode=C561710")
+					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C730413")
 				(field
-					(name "Description") "0201 100pF 50V")
+					(name "Description") "0201 100pF 50V C0G")
 			)
 			(libsource
 				(lib "LA150C_RDIVER_V1.00")
-				(part "FN03N100J500PLG")
-				(description "10pF ±5% 50V Ceramic Capacitor C0G 0201")
+				(part "CL03C101JB3NNNC")
+				(description "Imported from legacy JLC paste BOM")
 			)
 			(property
 				(name "MPN")
-				(value "FN03N100J500PLG")
+				(value "CL03C101JB3NNNC")
 			)
 			(property
 				(name "LCSC Part")
-				(value "C561710")
+				(value "C730413")
 			)
 			(property
 				(name "Manufacturer")
-				(value "PSA")
+				(value "Samsung Electro-Mechanics")
 			)
 			(property
 				(name "Sheetname")
@@ -3909,7 +3725,7 @@
 			)
 			(property
 				(name "ki_fp_filters")
-				(value "FN03N100J500PLG_*")
+				(value "C_*")
 			)
 			(sheetpath
 				(names "/MOTOR/")
@@ -3934,7 +3750,7 @@
 			(ref "C27")
 			(value "100nF")
 			(footprint "Capacitors:C0201")
-			(datasheet "https://www.lcsc.com/datasheet/C668346.pdf")
+			(datasheet "https://datasheet.lcsc.com/datasheet/pdf/0fb4604782167a586c3dd1f22396ac96.pdf?productCode=C668346")
 			(description "0201 100nF 16V")
 			(fields
 				(field
@@ -3942,18 +3758,18 @@
 				(field
 					(name "LCSC Part") "C668346")
 				(field
-					(name "Manufacturer") "muRata(村田)")
+					(name "Manufacturer") "muRata")
 				(field
 					(name "Footprint") "Capacitors:C0201")
 				(field
-					(name "Datasheet") "https://www.lcsc.com/datasheet/C668346.pdf")
+					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/0fb4604782167a586c3dd1f22396ac96.pdf?productCode=C668346")
 				(field
 					(name "Description") "0201 100nF 16V")
 			)
 			(libsource
 				(lib "LA150C_RDIVER_V1.00")
 				(part "GRM033Z71C104KE14D")
-				(description "Unpolarized capacitor")
+				(description "Imported from legacy JLC paste BOM")
 			)
 			(property
 				(name "MPN")
@@ -3965,7 +3781,7 @@
 			)
 			(property
 				(name "Manufacturer")
-				(value "muRata(村田)")
+				(value "muRata")
 			)
 			(property
 				(name "Sheetname")
@@ -3977,7 +3793,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "Multilayer Ceramic Capacitors MLCC - SMD/SMT")
+				(value "Capacitors/Ceramic Capacitors")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -4025,7 +3841,7 @@
 			(libsource
 				(lib "LA150C_RDIVER_V1.00")
 				(part "BLM15AG601SN1D")
-				(description "600Ω@100MHz 1 Line Ferrite Bead 0402 300mA 520mΩ")
+				(description "Imported from legacy JLC paste BOM")
 			)
 			(property
 				(name "MPN")
@@ -4076,40 +3892,40 @@
 		)
 		(comp
 			(ref "R22")
-			(value "10K")
+			(value "1K")
 			(footprint "Resistors:R0201")
-			(datasheet "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_10KR-1002-1_C106225.html")
-			(description "0201 10K 1%")
+			(datasheet "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C138165")
+			(description "0201 1K 1%")
 			(fields
 				(field
-					(name "MPN") "RC0201FR-0710KL")
+					(name "MPN") "RC0201FR-071KL")
 				(field
-					(name "LCSC Part") "C106225")
+					(name "LCSC Part") "C138165")
 				(field
-					(name "Manufacturer") "YAGEO(国巨)")
+					(name "Manufacturer") "YAGEO")
 				(field
 					(name "Footprint") "Resistors:R0201")
 				(field
-					(name "Datasheet") "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_10KR-1002-1_C106225.html")
+					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C138165")
 				(field
-					(name "Description") "0201 10K 1%")
+					(name "Description") "0201 1K 1%")
 			)
 			(libsource
 				(lib "LA150C_RDIVER_V1.00")
-				(part "RC0201FR-0710KL")
-				(description "Resistor")
+				(part "RC0201FR-071KL")
+				(description "Imported from legacy JLC paste BOM")
 			)
 			(property
 				(name "MPN")
-				(value "RC0201FR-0710KL")
+				(value "RC0201FR-071KL")
 			)
 			(property
 				(name "LCSC Part")
-				(value "C106225")
+				(value "C138165")
 			)
 			(property
 				(name "Manufacturer")
-				(value "YAGEO(国巨)")
+				(value "YAGEO")
 			)
 			(property
 				(name "Sheetname")
@@ -4121,7 +3937,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "Resistors")
+				(value "Resistors/Chip Resistor - Surface Mount")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -4169,7 +3985,7 @@
 			(libsource
 				(lib "LA150C_RDIVER_V1.00")
 				(part "RC0201FR-07100RL")
-				(description "50mW 100Ω 25V Thick Film Resistor ±1% ±200ppm/℃ 0201 Chip Resistor - Surface Mount RoHS")
+				(description "Imported from legacy JLC paste BOM")
 			)
 			(property
 				(name "MPN")
@@ -4241,7 +4057,7 @@
 			(libsource
 				(lib "LA150C_RDIVER_V1.00")
 				(part "RC0201FR-07100RL")
-				(description "50mW 100Ω 25V Thick Film Resistor ±1% ±200ppm/℃ 0201 Chip Resistor - Surface Mount RoHS")
+				(description "Imported from legacy JLC paste BOM")
 			)
 			(property
 				(name "MPN")
@@ -4313,7 +4129,7 @@
 			(libsource
 				(lib "LA150C_RDIVER_V1.00")
 				(part "RC0201FR-07100RL")
-				(description "50mW 100Ω 25V Thick Film Resistor ±1% ±200ppm/℃ 0201 Chip Resistor - Surface Mount RoHS")
+				(description "Imported from legacy JLC paste BOM")
 			)
 			(property
 				(name "MPN")
@@ -4365,7 +4181,7 @@
 		(comp
 			(ref "R26")
 			(value "8.06K")
-			(description "0201 8.06K 0.5%（料号待确认）")
+			(description "0201 8.06K 1%（QS01 EBOM）")
 			(fields
 				(field
 					(name "Footprint")
@@ -4374,7 +4190,7 @@
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "0201 8.06K 0.5%（料号待确认）")
+					(name "Description") "0201 8.06K 1%（QS01 EBOM）")
 			)
 			(libsource
 				(lib "Device")
@@ -4419,7 +4235,7 @@
 		(comp
 			(ref "R27")
 			(value "8.06K")
-			(description "0201 8.06K 0.5%（料号待确认）")
+			(description "0201 8.06K 1%（QS01 EBOM）")
 			(fields
 				(field
 					(name "Footprint")
@@ -4428,7 +4244,7 @@
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "0201 8.06K 0.5%（料号待确认）")
+					(name "Description") "0201 8.06K 1%（QS01 EBOM）")
 			)
 			(libsource
 				(lib "Device")
@@ -4473,7 +4289,7 @@
 		(comp
 			(ref "R28")
 			(value "8.06K")
-			(description "0201 8.06K 0.5%（料号待确认）")
+			(description "0201 8.06K 1%（QS01 EBOM）")
 			(fields
 				(field
 					(name "Footprint")
@@ -4482,7 +4298,7 @@
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "0201 8.06K 0.5%（料号待确认）")
+					(name "Description") "0201 8.06K 1%（QS01 EBOM）")
 			)
 			(libsource
 				(lib "Device")
@@ -4527,7 +4343,7 @@
 		(comp
 			(ref "R29")
 			(value "8.06K")
-			(description "0201 8.06K 0.5%（料号待确认）")
+			(description "0201 8.06K 1%（QS01 EBOM）")
 			(fields
 				(field
 					(name "Footprint")
@@ -4536,7 +4352,7 @@
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "0201 8.06K 0.5%（料号待确认）")
+					(name "Description") "0201 8.06K 1%（QS01 EBOM）")
 			)
 			(libsource
 				(lib "Device")
@@ -4581,7 +4397,7 @@
 		(comp
 			(ref "R30")
 			(value "8.06K")
-			(description "0201 8.06K 0.5%（料号待确认）")
+			(description "0201 8.06K 1%（QS01 EBOM）")
 			(fields
 				(field
 					(name "Footprint")
@@ -4590,7 +4406,7 @@
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "0201 8.06K 0.5%（料号待确认）")
+					(name "Description") "0201 8.06K 1%（QS01 EBOM）")
 			)
 			(libsource
 				(lib "Device")
@@ -4635,7 +4451,7 @@
 		(comp
 			(ref "R31")
 			(value "8.06K")
-			(description "0201 8.06K 0.5%（料号待确认）")
+			(description "0201 8.06K 1%（QS01 EBOM）")
 			(fields
 				(field
 					(name "Footprint")
@@ -4644,7 +4460,7 @@
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "0201 8.06K 0.5%（料号待确认）")
+					(name "Description") "0201 8.06K 1%（QS01 EBOM）")
 			)
 			(libsource
 				(lib "Device")
@@ -4688,40 +4504,40 @@
 		)
 		(comp
 			(ref "R32")
-			(value "10K")
+			(value "6.8K")
 			(footprint "Resistors:R0201")
-			(datasheet "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_10KR-1002-1_C106225.html")
-			(description "0201 10K 0.5%")
+			(datasheet "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C274877")
+			(description "0201 6.8K 1%")
 			(fields
 				(field
-					(name "MPN") "RC0201FR-0710KL")
+					(name "MPN") "RC0201FR-076K8L")
 				(field
-					(name "LCSC Part") "C106225")
+					(name "LCSC Part") "C274877")
 				(field
-					(name "Manufacturer") "YAGEO(国巨)")
+					(name "Manufacturer") "YAGEO")
 				(field
 					(name "Footprint") "Resistors:R0201")
 				(field
-					(name "Datasheet") "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_10KR-1002-1_C106225.html")
+					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C274877")
 				(field
-					(name "Description") "0201 10K 0.5%")
+					(name "Description") "0201 6.8K 1%")
 			)
 			(libsource
 				(lib "LA150C_RDIVER_V1.00")
-				(part "RC0201FR-0710KL")
-				(description "Resistor")
+				(part "RC0201FR-076K8L")
+				(description "Imported from legacy JLC paste BOM")
 			)
 			(property
 				(name "MPN")
-				(value "RC0201FR-0710KL")
+				(value "RC0201FR-076K8L")
 			)
 			(property
 				(name "LCSC Part")
-				(value "C106225")
+				(value "C274877")
 			)
 			(property
 				(name "Manufacturer")
-				(value "YAGEO(国巨)")
+				(value "YAGEO")
 			)
 			(property
 				(name "Sheetname")
@@ -4733,7 +4549,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "Resistors")
+				(value "Resistors/Chip Resistor - Surface Mount")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -4744,6 +4560,222 @@
 				(tstamps "/f65d106c-768b-5baa-b2fa-305e579eb962/")
 			)
 			(tstamps "2822b986-0d85-5086-8346-5bc6c9bc739a")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R34")
+			(value "10K")
+			(footprint "Resistors:R0201")
+			(datasheet "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C106225")
+			(description "0201 10K 1% EN pull-up to 3V3")
+			(fields
+				(field
+					(name "MPN") "RC0201FR-0710KL")
+				(field
+					(name "LCSC Part") "C106225")
+				(field
+					(name "Manufacturer") "YAGEO")
+				(field
+					(name "Footprint") "Resistors:R0201")
+				(field
+					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C106225")
+				(field
+					(name "Description") "0201 10K 1% EN pull-up to 3V3")
+			)
+			(libsource
+				(lib "LA150C_RDIVER_V1.00")
+				(part "RC0201FR-0710KL")
+				(description "Imported from legacy JLC paste BOM")
+			)
+			(property
+				(name "MPN")
+				(value "RC0201FR-0710KL")
+			)
+			(property
+				(name "LCSC Part")
+				(value "C106225")
+			)
+			(property
+				(name "Manufacturer")
+				(value "YAGEO")
+			)
+			(property
+				(name "Sheetname")
+				(value "MOTOR")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_LA150C_DRIVER_V1.00.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "Resistors/Chip Resistor - Surface Mount")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/MOTOR/")
+				(tstamps "/f65d106c-768b-5baa-b2fa-305e579eb962/")
+			)
+			(tstamps "06a602cf-8c19-587a-96d6-ac2ec9fd7da3")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R35")
+			(value "10K")
+			(footprint "Resistors:R0201")
+			(datasheet "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C106225")
+			(description "0201 10K 1% EN pull-up to 3V3")
+			(fields
+				(field
+					(name "MPN") "RC0201FR-0710KL")
+				(field
+					(name "LCSC Part") "C106225")
+				(field
+					(name "Manufacturer") "YAGEO")
+				(field
+					(name "Footprint") "Resistors:R0201")
+				(field
+					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C106225")
+				(field
+					(name "Description") "0201 10K 1% EN pull-up to 3V3")
+			)
+			(libsource
+				(lib "LA150C_RDIVER_V1.00")
+				(part "RC0201FR-0710KL")
+				(description "Imported from legacy JLC paste BOM")
+			)
+			(property
+				(name "MPN")
+				(value "RC0201FR-0710KL")
+			)
+			(property
+				(name "LCSC Part")
+				(value "C106225")
+			)
+			(property
+				(name "Manufacturer")
+				(value "YAGEO")
+			)
+			(property
+				(name "Sheetname")
+				(value "MOTOR")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_LA150C_DRIVER_V1.00.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "Resistors/Chip Resistor - Surface Mount")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/MOTOR/")
+				(tstamps "/f65d106c-768b-5baa-b2fa-305e579eb962/")
+			)
+			(tstamps "ef779c5a-eef1-5ba3-b389-a79ef3c5dd1a")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R36")
+			(value "10K")
+			(footprint "Resistors:R0201")
+			(datasheet "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C106225")
+			(description "0201 10K 1% EN pull-up to 3V3")
+			(fields
+				(field
+					(name "MPN") "RC0201FR-0710KL")
+				(field
+					(name "LCSC Part") "C106225")
+				(field
+					(name "Manufacturer") "YAGEO")
+				(field
+					(name "Footprint") "Resistors:R0201")
+				(field
+					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C106225")
+				(field
+					(name "Description") "0201 10K 1% EN pull-up to 3V3")
+			)
+			(libsource
+				(lib "LA150C_RDIVER_V1.00")
+				(part "RC0201FR-0710KL")
+				(description "Imported from legacy JLC paste BOM")
+			)
+			(property
+				(name "MPN")
+				(value "RC0201FR-0710KL")
+			)
+			(property
+				(name "LCSC Part")
+				(value "C106225")
+			)
+			(property
+				(name "Manufacturer")
+				(value "YAGEO")
+			)
+			(property
+				(name "Sheetname")
+				(value "MOTOR")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SCH_LA150C_DRIVER_V1.00.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "Resistors/Chip Resistor - Surface Mount")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/MOTOR/")
+				(tstamps "/f65d106c-768b-5baa-b2fa-305e579eb962/")
+			)
+			(tstamps "f6116b54-d53a-5397-80d9-37b8b958c8c6")
 			(units
 				(unit
 					(name "A")
@@ -4781,7 +4813,7 @@
 			(libsource
 				(lib "LA150C_RDIVER_V1.00")
 				(part "NCP15XH103F03RC")
-				(description "NTC Thermistor 10kΩ Surface Mount 0402")
+				(description "Imported from legacy JLC paste BOM")
 			)
 			(property
 				(name "MPN")
@@ -4966,35 +4998,35 @@
 		(comp
 			(ref "C11")
 			(value "100nF")
-			(footprint "Capacitors:C_0402_1005Metric")
-			(datasheet "https://datasheet.lcsc.com/datasheet/pdf/64ac52ef9cc4e1905eba7e2ece85e662.pdf?productCode=C77020")
-			(description "0402 100nF 16V")
+			(footprint "Capacitors:C0201")
+			(datasheet "https://datasheet.lcsc.com/datasheet/pdf/0fb4604782167a586c3dd1f22396ac96.pdf?productCode=C668346")
+			(description "0201 100nF 16V VDD 去耦")
 			(fields
 				(field
-					(name "MPN") "GRM155R71H104KE14D")
+					(name "MPN") "GRM033Z71C104KE14D")
 				(field
-					(name "LCSC Part") "C77020")
+					(name "LCSC Part") "C668346")
 				(field
 					(name "Manufacturer") "muRata")
 				(field
-					(name "Footprint") "Capacitors:C_0402_1005Metric")
+					(name "Footprint") "Capacitors:C0201")
 				(field
-					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/64ac52ef9cc4e1905eba7e2ece85e662.pdf?productCode=C77020")
+					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/0fb4604782167a586c3dd1f22396ac96.pdf?productCode=C668346")
 				(field
-					(name "Description") "0402 100nF 16V")
+					(name "Description") "0201 100nF 16V VDD 去耦")
 			)
 			(libsource
 				(lib "LA150C_RDIVER_V1.00")
-				(part "GRM155R71H104KE14D")
-				(description "100nF ±10% 50V Ceramic Capacitor X7R 0402")
+				(part "GRM033Z71C104KE14D")
+				(description "Imported from legacy JLC paste BOM")
 			)
 			(property
 				(name "MPN")
-				(value "GRM155R71H104KE14D")
+				(value "GRM033Z71C104KE14D")
 			)
 			(property
 				(name "LCSC Part")
-				(value "C77020")
+				(value "C668346")
 			)
 			(property
 				(name "Manufacturer")
@@ -5014,7 +5046,7 @@
 			)
 			(property
 				(name "ki_fp_filters")
-				(value "GRM155R71H104KE14D_*")
+				(value "C_*")
 			)
 			(sheetpath
 				(names "/ENCODER/")
@@ -5039,26 +5071,26 @@
 			(ref "C12")
 			(value "1uF")
 			(footprint "Capacitors:C0402")
-			(datasheet "https://www.lcsc.com/datasheet/C2803380.pdf")
-			(description "0402 1uF 10V")
+			(datasheet "https://datasheet.lcsc.com/datasheet/pdf/0b5a285c1df7dac78985feb71e334603.pdf?productCode=C2803380")
+			(description "0402 1uF 10V VDD 去耦")
 			(fields
 				(field
 					(name "MPN") "CL05Y105KP6VPNC")
 				(field
 					(name "LCSC Part") "C2803380")
 				(field
-					(name "Manufacturer") "SAMSUNG(三星)")
+					(name "Manufacturer") "Samsung Electro-Mechanics")
 				(field
 					(name "Footprint") "Capacitors:C0402")
 				(field
-					(name "Datasheet") "https://www.lcsc.com/datasheet/C2803380.pdf")
+					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/0b5a285c1df7dac78985feb71e334603.pdf?productCode=C2803380")
 				(field
-					(name "Description") "0402 1uF 10V")
+					(name "Description") "0402 1uF 10V VDD 去耦")
 			)
 			(libsource
 				(lib "LA150C_RDIVER_V1.00")
 				(part "CL05Y105KP6VPNC")
-				(description "Unpolarized capacitor")
+				(description "Imported from legacy JLC paste BOM")
 			)
 			(property
 				(name "MPN")
@@ -5070,7 +5102,7 @@
 			)
 			(property
 				(name "Manufacturer")
-				(value "SAMSUNG(三星)")
+				(value "Samsung Electro-Mechanics")
 			)
 			(property
 				(name "Sheetname")
@@ -5082,7 +5114,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "Multilayer Ceramic Capacitors MLCC - SMD/SMT")
+				(value "Capacitors/Ceramic Capacitors")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -5109,40 +5141,40 @@
 		)
 		(comp
 			(ref "U2")
-			(value "MT6701")
-			(description "QFN-16 磁编码器")
+			(value "MT6701QT-STD")
+			(footprint "Magnetic Sensors:VQFN-16_L3.0-W3.0-P0.50-TL-EP1.7")
+			(datasheet "https://atta.szlcsc.com/upload/public/pdf/source/20260616/FEB700C1922508565884FF0A90656B50.pdf")
+			(description "MT6701QT-STD 14-bit magnetic angle sensor, QFN-16")
 			(fields
 				(field
-					(name "MPN") "MT6701QT-ACD")
+					(name "MPN") "MT6701QT-STD")
 				(field
-					(name "LCSC Part") "C49257133")
+					(name "LCSC Part") "C2913974")
 				(field
-					(name "Manufacturer") "Magntek")
+					(name "Manufacturer") "NOVOSENSE(纳芯微)")
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "Magnetic Sensors:VQFN-16_L3.0-W3.0-P0.50-TL-EP1.7")
 				(field
-					(name "Datasheet")
-				)
+					(name "Datasheet") "https://atta.szlcsc.com/upload/public/pdf/source/20260616/FEB700C1922508565884FF0A90656B50.pdf")
 				(field
-					(name "Description") "QFN-16 磁编码器")
+					(name "Description") "MT6701QT-STD 14-bit magnetic angle sensor, QFN-16")
 			)
 			(libsource
 				(lib "LA150C_RDIVER_V1.00")
-				(part "MT6701")
-				(description "14-bit magnetic angle sensor, SSI/ABZ/I2C, QFN-16")
+				(part "MT6701QT-STD_C2913974")
+				(description "MT6701 QFN-16 magnetic angle sensor, standard variant")
 			)
 			(property
 				(name "MPN")
-				(value "MT6701QT-ACD")
+				(value "MT6701QT-STD")
 			)
 			(property
 				(name "LCSC Part")
-				(value "C49257133")
+				(value "C2913974")
 			)
 			(property
 				(name "Manufacturer")
-				(value "Magntek")
+				(value "NOVOSENSE(纳芯微)")
 			)
 			(property
 				(name "Sheetname")
@@ -5151,6 +5183,10 @@
 			(property
 				(name "Sheetfile")
 				(value "SCH_LA150C_ENCODER_V1.00.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "Magnetic Sensors/Angle, Linear Position Measuring")
 			)
 			(sheetpath
 				(names "/ENCODER/")
@@ -5161,18 +5197,6 @@
 				(unit
 					(name "A")
 					(pins
-						(pin
-							(num "5")
-						)
-						(pin
-							(num "6")
-						)
-						(pin
-							(num "7")
-						)
-						(pin
-							(num "8")
-						)
 						(pin
 							(num "1")
 						)
@@ -5186,31 +5210,43 @@
 							(num "4")
 						)
 						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
 							(num "17")
 						)
 						(pin
-							(num "13")
-						)
-						(pin
-							(num "14")
+							(num "16")
 						)
 						(pin
 							(num "15")
 						)
 						(pin
-							(num "9")
+							(num "14")
 						)
 						(pin
-							(num "10")
-						)
-						(pin
-							(num "11")
+							(num "13")
 						)
 						(pin
 							(num "12")
 						)
 						(pin
-							(num "16")
+							(num "11")
+						)
+						(pin
+							(num "10")
+						)
+						(pin
+							(num "9")
 						)
 					)
 				)
@@ -5219,35 +5255,35 @@
 		(comp
 			(ref "C13")
 			(value "100nF")
-			(footprint "Capacitors:C_0402_1005Metric")
-			(datasheet "https://datasheet.lcsc.com/datasheet/pdf/64ac52ef9cc4e1905eba7e2ece85e662.pdf?productCode=C77020")
-			(description "0402 100nF 16V")
+			(footprint "Capacitors:C0201")
+			(datasheet "https://datasheet.lcsc.com/datasheet/pdf/0fb4604782167a586c3dd1f22396ac96.pdf?productCode=C668346")
+			(description "0201 100nF 16V")
 			(fields
 				(field
-					(name "MPN") "GRM155R71H104KE14D")
+					(name "MPN") "GRM033Z71C104KE14D")
 				(field
-					(name "LCSC Part") "C77020")
+					(name "LCSC Part") "C668346")
 				(field
 					(name "Manufacturer") "muRata")
 				(field
-					(name "Footprint") "Capacitors:C_0402_1005Metric")
+					(name "Footprint") "Capacitors:C0201")
 				(field
-					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/64ac52ef9cc4e1905eba7e2ece85e662.pdf?productCode=C77020")
+					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/0fb4604782167a586c3dd1f22396ac96.pdf?productCode=C668346")
 				(field
-					(name "Description") "0402 100nF 16V")
+					(name "Description") "0201 100nF 16V")
 			)
 			(libsource
 				(lib "LA150C_RDIVER_V1.00")
-				(part "GRM155R71H104KE14D")
-				(description "100nF ±10% 50V Ceramic Capacitor X7R 0402")
+				(part "GRM033Z71C104KE14D")
+				(description "Imported from legacy JLC paste BOM")
 			)
 			(property
 				(name "MPN")
-				(value "GRM155R71H104KE14D")
+				(value "GRM033Z71C104KE14D")
 			)
 			(property
 				(name "LCSC Part")
-				(value "C77020")
+				(value "C668346")
 			)
 			(property
 				(name "Manufacturer")
@@ -5267,7 +5303,7 @@
 			)
 			(property
 				(name "ki_fp_filters")
-				(value "GRM155R71H104KE14D_*")
+				(value "C_*")
 			)
 			(sheetpath
 				(names "/communication/")
@@ -5289,41 +5325,29 @@
 			)
 		)
 		(comp
-			(ref "D2")
-			(value "PESD1CAN,215")
-			(footprint "Transistors:SOT-23_L2.9-W1.3-P1.90-LS2.4-BR")
-			(datasheet "https://lcsc.com/product-detail/Diodes-ESD_NXP_PESD1CAN_PESD1CAN_C15771.html")
-			(description "CAN 总线 ESD 保护 SOT-23-6")
+			(ref "D1")
+			(value "DE5VS06BA")
+			(footprint "Circuit Protection:D_0201_0603Metric")
+			(datasheet "https://www.lcsc.com/product-detail/C9900301658.html")
+			(description "DFN0603 5V/60W CANH ESD protection")
 			(fields
 				(field
-					(name "MPN") "PESD1CAN,215")
+					(name "LCSC Part") "C9900301658")
 				(field
-					(name "LCSC Part") "C15771")
+					(name "Footprint") "Circuit Protection:D_0201_0603Metric")
 				(field
-					(name "Manufacturer") "Nexperia(安世)")
+					(name "Datasheet") "https://www.lcsc.com/product-detail/C9900301658.html")
 				(field
-					(name "Footprint") "Transistors:SOT-23_L2.9-W1.3-P1.90-LS2.4-BR")
-				(field
-					(name "Datasheet") "https://lcsc.com/product-detail/Diodes-ESD_NXP_PESD1CAN_PESD1CAN_C15771.html")
-				(field
-					(name "Description") "CAN 总线 ESD 保护 SOT-23-6")
+					(name "Description") "DFN0603 5V/60W CANH ESD protection")
 			)
 			(libsource
 				(lib "LA150C_RDIVER_V1.00")
-				(part "PESD1CAN,215")
-				(description "PESD1CAN")
-			)
-			(property
-				(name "MPN")
-				(value "PESD1CAN,215")
+				(part "DE5VS06BA")
+				(description "Imported from legacy JLC paste BOM")
 			)
 			(property
 				(name "LCSC Part")
-				(value "C15771")
-			)
-			(property
-				(name "Manufacturer")
-				(value "Nexperia(安世)")
+				(value "C9900301658")
 			)
 			(property
 				(name "Sheetname")
@@ -5335,22 +5359,23 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "ESD Protection Devices")
+				(value "Circuit Protection/ESD Protection")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "TO-???* *_Diode_* *SingleDiode* D_*")
 			)
 			(sheetpath
 				(names "/communication/")
 				(tstamps "/d34be655-b805-5872-ac3c-ff5e37085fe8/")
 			)
-			(tstamps "dcf19c26-7429-555c-b5df-67ded787d927")
+			(tstamps "40c0c489-0058-558b-98cf-357f7fa9053a")
 			(units
 				(unit
 					(name "A")
 					(pins
 						(pin
 							(num "1")
-						)
-						(pin
-							(num "3")
 						)
 						(pin
 							(num "2")
@@ -5360,23 +5385,29 @@
 			)
 		)
 		(comp
-			(ref "R11")
-			(value "120R(DNP)")
-			(description "1206 120Ω 终端电阻，默认不贴片")
+			(ref "D2")
+			(value "DE5VS06BA")
+			(footprint "Circuit Protection:D_0201_0603Metric")
+			(datasheet "https://www.lcsc.com/product-detail/C9900301658.html")
+			(description "DFN0603 5V/60W CANL ESD protection")
 			(fields
 				(field
-					(name "Footprint")
-				)
+					(name "LCSC Part") "C9900301658")
 				(field
-					(name "Datasheet")
-				)
+					(name "Footprint") "Circuit Protection:D_0201_0603Metric")
 				(field
-					(name "Description") "1206 120Ω 终端电阻，默认不贴片")
+					(name "Datasheet") "https://www.lcsc.com/product-detail/C9900301658.html")
+				(field
+					(name "Description") "DFN0603 5V/60W CANL ESD protection")
 			)
 			(libsource
-				(lib "Device")
-				(part "R")
-				(description "Resistor")
+				(lib "LA150C_RDIVER_V1.00")
+				(part "DE5VS06BA")
+				(description "Imported from legacy JLC paste BOM")
+			)
+			(property
+				(name "LCSC Part")
+				(value "C9900301658")
 			)
 			(property
 				(name "Sheetname")
@@ -5387,21 +5418,18 @@
 				(value "SCH_LA150C_communication_V1.00.kicad_sch")
 			)
 			(property
-				(name "dnp")
-			)
-			(property
 				(name "ki_keywords")
-				(value "R res resistor")
+				(value "Circuit Protection/ESD Protection")
 			)
 			(property
 				(name "ki_fp_filters")
-				(value "R_*")
+				(value "TO-???* *_Diode_* *SingleDiode* D_*")
 			)
 			(sheetpath
 				(names "/communication/")
 				(tstamps "/d34be655-b805-5872-ac3c-ff5e37085fe8/")
 			)
-			(tstamps "f777bace-3094-5aeb-a3ea-99b766777ae5")
+			(tstamps "dcf19c26-7429-555c-b5df-67ded787d927")
 			(units
 				(unit
 					(name "A")
@@ -5419,7 +5447,7 @@
 		(comp
 			(ref "U3")
 			(value "TCAN3413DDFR")
-			(description "CAN FD 收发器 SOT-23-8")
+			(description "CAN FD transceiver, 3.3V, SOT-23-8")
 			(fields
 				(field
 					(name "MPN") "TCAN3413DDFR")
@@ -5434,7 +5462,7 @@
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "CAN FD 收发器 SOT-23-8")
+					(name "Description") "CAN FD transceiver, 3.3V, SOT-23-8")
 			)
 			(libsource
 				(lib "LA150C_RDIVER_V1.00")
@@ -5534,77 +5562,6 @@
 		)
 		(libpart
 			(lib "Device")
-			(part "C")
-			(description "Unpolarized capacitor")
-			(footprints
-				(fp "C_*")
-			)
-			(fields
-				(field
-					(name "Reference") "C")
-				(field
-					(name "Value") "C")
-				(field
-					(name "Footprint")
-				)
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Unpolarized capacitor")
-			)
-			(pins
-				(pin
-					(num "1")
-					(name "")
-					(type "passive")
-				)
-				(pin
-					(num "2")
-					(name "")
-					(type "passive")
-				)
-			)
-		)
-		(libpart
-			(lib "Device")
-			(part "D_TVS")
-			(description "Bidirectional transient-voltage-suppression diode")
-			(footprints
-				(fp "TO-???*")
-				(fp "*_Diode_*")
-				(fp "*SingleDiode*")
-				(fp "D_*")
-			)
-			(fields
-				(field
-					(name "Reference") "D")
-				(field
-					(name "Value") "D_TVS")
-				(field
-					(name "Footprint")
-				)
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Bidirectional transient-voltage-suppression diode")
-			)
-			(pins
-				(pin
-					(num "1")
-					(name "A1")
-					(type "passive")
-				)
-				(pin
-					(num "2")
-					(name "A2")
-					(type "passive")
-				)
-			)
-		)
-		(libpart
-			(lib "Device")
 			(part "R")
 			(description "Resistor")
 			(footprints
@@ -5640,7 +5597,7 @@
 		(libpart
 			(lib "LA150C_RDIVER_V1.00")
 			(part "BLM15AG601SN1D")
-			(description "600Ω@100MHz 1 Line Ferrite Bead 0402 300mA 520mΩ")
+			(description "Imported from legacy JLC paste BOM")
 			(docs "https://datasheet.lcsc.com/datasheet/pdf/f85b01b3a1a015a5ec4a9f03876e0063.pdf?productCode=C76884")
 			(footprints
 				(fp "Inductor_*")
@@ -5657,13 +5614,15 @@
 				(field
 					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/f85b01b3a1a015a5ec4a9f03876e0063.pdf?productCode=C76884")
 				(field
-					(name "Description") "600Ω@100MHz 1 Line Ferrite Bead 0402 300mA 520mΩ")
+					(name "Description") "Imported from legacy JLC paste BOM")
 				(field
 					(name "Manufacturer") "muRata")
 				(field
 					(name "MPN") "BLM15AG601SN1D")
 				(field
 					(name "LCSC Part") "C76884")
+				(field
+					(name "LocalDatasheet") "../datasheets/Filters/Ferrite Beads and Chips/C76884_BLM15AG601SN1D.pdf")
 			)
 			(pins
 				(pin
@@ -5680,9 +5639,9 @@
 		)
 		(libpart
 			(lib "LA150C_RDIVER_V1.00")
-			(part "CL05Y105KP6VPNC")
-			(description "Unpolarized capacitor")
-			(docs "https://www.lcsc.com/datasheet/C2803380.pdf")
+			(part "CL03C101JB3NNNC")
+			(description "Imported from legacy JLC paste BOM")
+			(docs "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C730413")
 			(footprints
 				(fp "C_*")
 			)
@@ -5690,19 +5649,62 @@
 				(field
 					(name "Reference") "C")
 				(field
-					(name "Value") "CL05Y105KP6VPNC")
+					(name "Value") "0201-100pF-50V-5%")
+				(field
+					(name "Footprint") "Capacitors:C0201")
+				(field
+					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C730413")
+				(field
+					(name "Description") "Imported from legacy JLC paste BOM")
+				(field
+					(name "Manufacturer") "Samsung Electro-Mechanics")
+				(field
+					(name "MPN") "CL03C101JB3NNNC")
+				(field
+					(name "LCSC Part") "C730413")
+				(field
+					(name "LocalDatasheet") "../datasheets/Capacitors/Ceramic Capacitors/C730413_CL03C101JB3NNNC.pdf")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "LA150C_RDIVER_V1.00")
+			(part "CL05Y105KP6VPNC")
+			(description "Imported from legacy JLC paste BOM")
+			(docs "https://datasheet.lcsc.com/datasheet/pdf/0b5a285c1df7dac78985feb71e334603.pdf?productCode=C2803380")
+			(footprints
+				(fp "C_*")
+			)
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "0402-1uF-10V-10%")
 				(field
 					(name "Footprint") "Capacitors:C0402")
 				(field
-					(name "Datasheet") "https://www.lcsc.com/datasheet/C2803380.pdf")
+					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/0b5a285c1df7dac78985feb71e334603.pdf?productCode=C2803380")
 				(field
-					(name "Description") "Unpolarized capacitor")
+					(name "Description") "Imported from legacy JLC paste BOM")
 				(field
-					(name "Manufacturer") "SAMSUNG(三星)")
+					(name "Manufacturer") "Samsung Electro-Mechanics")
 				(field
 					(name "MPN") "CL05Y105KP6VPNC")
 				(field
 					(name "LCSC Part") "C2803380")
+				(field
+					(name "LocalDatasheet") "../datasheets/Capacitors/Ceramic Capacitors/C2803380_CL05Y105KP6VPNC.pdf")
 			)
 			(pins
 				(pin
@@ -5719,29 +5721,38 @@
 		)
 		(libpart
 			(lib "LA150C_RDIVER_V1.00")
-			(part "CL10A475KP8NNNC")
-			(description "4.7uF (475) ±10% 10V")
-			(docs "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL10A475KP8NNNC_4-7uF-475-10-10V_C1705.html")
+			(part "CL10B105KB8NQNC")
+			(description "1uF ±10% 50V X7R 0603 ceramic capacitor")
+			(docs "https://atta.szlcsc.com/upload/public/pdf/source/20221017/6871EB52164389FFC3A4F3737FD2F190.pdf")
 			(footprints
-				(fp "C_*")
+				(fp "CL10B105KB8NQNC_*")
 			)
 			(fields
 				(field
 					(name "Reference") "C")
 				(field
-					(name "Value") "CL10A475KP8NNNC")
+					(name "Value") "1uF")
 				(field
-					(name "Footprint") "Capacitors:C0603")
+					(name "Footprint") "Capacitors:C_0603_1608Metric")
 				(field
-					(name "Datasheet") "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL10A475KP8NNNC_4-7uF-475-10-10V_C1705.html")
+					(name "Datasheet") "https://atta.szlcsc.com/upload/public/pdf/source/20221017/6871EB52164389FFC3A4F3737FD2F190.pdf")
 				(field
-					(name "Description") "4.7uF (475) ±10% 10V")
+					(name "Description") "1uF ±10% 50V X7R 0603 ceramic capacitor")
+				(field
+					(name "DatasheetRev")
+				)
+				(field
+					(name "DatasheetDate")
+				)
+				(field
+					(name "LocalDatasheet")
+				)
 				(field
 					(name "Manufacturer") "SAMSUNG(三星)")
 				(field
-					(name "MPN") "CL10A475KP8NNNC")
+					(name "MPN") "CL10B105KB8NQNC")
 				(field
-					(name "LCSC Part") "C1705")
+					(name "LCSC Part") "C5199872")
 			)
 			(pins
 				(pin
@@ -5758,76 +5769,66 @@
 		)
 		(libpart
 			(lib "LA150C_RDIVER_V1.00")
-			(part "CSTCE8M00G52-R0")
-			(description "8MHz three-terminal ceramic resonator, SMD-3225")
-			(fields
-				(field
-					(name "Reference") "X")
-				(field
-					(name "Value") "CSTCE8M00G52-R0")
-				(field
-					(name "Footprint")
-				)
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "8MHz three-terminal ceramic resonator, SMD-3225")
-				(field
-					(name "MPN") "CSTCE8M00G52-R0")
-				(field
-					(name "LCSC Part")
-				)
-				(field
-					(name "Manufacturer") "Murata")
-			)
-			(pins
-				(pin
-					(num "1")
-					(name "XI")
-					(type "passive")
-				)
-				(pin
-					(num "2")
-					(name "GND")
-					(type "power_in")
-				)
-				(pin
-					(num "3")
-					(name "XO")
-					(type "passive")
-				)
-			)
-		)
-		(libpart
-			(lib "LA150C_RDIVER_V1.00")
-			(part "DF52-4P-0.8C")
-			(description "DF52 0.8mm 4pin connector, VCC/GND/CANH/CANL")
+			(part "CON-1P-1.0mmx2.0mm-Rectangular")
+			(description "One rectangular SMD solder pad, 1.0 mm x 2.0 mm")
 			(fields
 				(field
 					(name "Reference") "J")
 				(field
-					(name "Value") "DF52-4P-0.8C")
+					(name "Value") "CON-1P-1.0mm*2.0mm-Rectangular")
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "LA150C_RDIVER_V1.00:CON-1P-1.0mmx2.0mm-Rectangular")
 				(field
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "DF52 0.8mm 4pin connector, VCC/GND/CANH/CANL")
+					(name "Description") "One rectangular SMD solder pad, 1.0 mm x 2.0 mm")
 				(field
-					(name "MPN") "DF52-4P-0.8C")
+					(name "MPN") "CON-1P-1.0mm*2.0mm-Rectangular")
 				(field
 					(name "LCSC Part")
 				)
 				(field
-					(name "Manufacturer") "Hirose")
+					(name "Manufacturer")
+				)
 			)
 			(pins
 				(pin
 					(num "1")
-					(name "VCC")
+					(name "PAD")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "LA150C_RDIVER_V1.00")
+			(part "CSTNE8M00G52A000R0")
+			(description "Imported from legacy JLC paste BOM")
+			(docs "https://datasheet.lcsc.com/datasheet/pdf/6229da9b14529ef4c771661e98fded14.pdf?productCode=C1851993")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "9990000052803")
+				(field
+					(name "Footprint") "Crystals, Oscillators, Resonators:CRYSTAL-SMD_3P-L3.2-W1.3-P1.2-BL-1")
+				(field
+					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/6229da9b14529ef4c771661e98fded14.pdf?productCode=C1851993")
+				(field
+					(name "Description") "Imported from legacy JLC paste BOM")
+				(field
+					(name "Manufacturer") "muRata")
+				(field
+					(name "MPN") "CSTNE8M00G52A000R0")
+				(field
+					(name "LCSC Part") "C1851993")
+				(field
+					(name "LocalDatasheet") "../datasheets/Crystals, Oscillators, Resonators/Resonators/C1851993_CSTNE8M00G52A000R0.pdf")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "Input")
 					(type "passive")
 				)
 				(pin
@@ -5837,51 +5838,51 @@
 				)
 				(pin
 					(num "3")
-					(name "CANH")
-					(type "passive")
-				)
-				(pin
-					(num "4")
-					(name "CANL")
+					(name "Output")
 					(type "passive")
 				)
 			)
 		)
 		(libpart
 			(lib "LA150C_RDIVER_V1.00")
-			(part "FN03N100J500PLG")
-			(description "10pF ±5% 50V Ceramic Capacitor C0G 0201")
-			(docs "https://datasheet.lcsc.com/datasheet/pdf/1497a6a2cea2f2b0acf5e045d2bc193c.pdf?productCode=C561710")
+			(part "DE5VS06BA")
+			(description "Imported from legacy JLC paste BOM")
+			(docs "https://www.lcsc.com/product-detail/C9900301658.html")
 			(footprints
-				(fp "FN03N100J500PLG_*")
+				(fp "TO-???*")
+				(fp "*_Diode_*")
+				(fp "*SingleDiode*")
+				(fp "D_*")
 			)
 			(fields
 				(field
-					(name "Reference") "C")
+					(name "Reference") "D")
 				(field
-					(name "Value") "10pF")
+					(name "Value") "9990000056296")
 				(field
-					(name "Footprint") "Capacitors:C_0201_0603Metric")
+					(name "Footprint") "Circuit Protection:D_0201_0603Metric")
 				(field
-					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/1497a6a2cea2f2b0acf5e045d2bc193c.pdf?productCode=C561710")
+					(name "Datasheet") "https://www.lcsc.com/product-detail/C9900301658.html")
 				(field
-					(name "Description") "10pF ±5% 50V Ceramic Capacitor C0G 0201")
+					(name "Description") "Imported from legacy JLC paste BOM")
 				(field
-					(name "Manufacturer") "PSA")
+					(name "Manufacturer")
+				)
 				(field
-					(name "MPN") "FN03N100J500PLG")
+					(name "MPN")
+				)
 				(field
-					(name "LCSC Part") "C561710")
+					(name "LCSC Part") "C9900301658")
 			)
 			(pins
 				(pin
 					(num "1")
-					(name "")
+					(name "A1")
 					(type "passive")
 				)
 				(pin
 					(num "2")
-					(name "")
+					(name "A2")
 					(type "passive")
 				)
 			)
@@ -5889,20 +5890,19 @@
 		(libpart
 			(lib "LA150C_RDIVER_V1.00")
 			(part "GD32F503REL7")
-			(description "GD32F503REL7 Cortex-M4F MCU, LQFP-64, 512KB flash")
+			(description "GD32F503REL7 Cortex-M33 MCU, BGA-64, 512KB flash")
 			(fields
 				(field
 					(name "Reference") "U")
 				(field
 					(name "Value") "GD32F503REL7")
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "Embedded Processors & Controllers:ucBGA-64_4x4mm_Layout8x8_P0.4mm")
 				(field
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "GD32F503REL7 Cortex-M4F MCU, LQFP-64, 512KB flash")
+					(name "Description") "GD32F503REL7 Cortex-M33 MCU, BGA-64, 512KB flash")
 				(field
 					(name "MPN") "GD32F503REL7")
 				(field
@@ -5912,322 +5912,322 @@
 			)
 			(pins
 				(pin
-					(num "1")
-					(name "VBAT")
-					(type "power_in")
-				)
-				(pin
-					(num "2")
-					(name "PC13")
-					(type "bidirectional")
-				)
-				(pin
-					(num "3")
-					(name "PC14-OSC32IN")
-					(type "bidirectional")
-				)
-				(pin
-					(num "4")
-					(name "PC15-OSC32OUT")
-					(type "bidirectional")
-				)
-				(pin
-					(num "5")
-					(name "OSCIN/PD0")
-					(type "bidirectional")
-				)
-				(pin
-					(num "6")
-					(name "OSCOUT/PD1")
-					(type "bidirectional")
-				)
-				(pin
-					(num "7")
-					(name "NRST")
-					(type "bidirectional")
-				)
-				(pin
-					(num "8")
-					(name "PC0/TIMER7_CH0_ON")
-					(type "bidirectional")
-				)
-				(pin
-					(num "9")
-					(name "PC1/TIMER7_CH1_ON")
-					(type "bidirectional")
-				)
-				(pin
-					(num "10")
-					(name "PC2/TIMER7_CH2_ON")
-					(type "bidirectional")
-				)
-				(pin
-					(num "11")
-					(name "PC3")
-					(type "bidirectional")
-				)
-				(pin
-					(num "12")
-					(name "VSSA/VREFN")
-					(type "power_in")
-				)
-				(pin
-					(num "13")
-					(name "VDDA/VREFP")
-					(type "power_in")
-				)
-				(pin
-					(num "14")
-					(name "PA0/ADC2_IN0")
-					(type "bidirectional")
-				)
-				(pin
-					(num "15")
-					(name "PA1")
-					(type "bidirectional")
-				)
-				(pin
-					(num "16")
-					(name "PA2")
-					(type "bidirectional")
-				)
-				(pin
-					(num "17")
-					(name "PA3/ADC1_IN3")
-					(type "bidirectional")
-				)
-				(pin
-					(num "18")
-					(name "VSS")
-					(type "power_in")
-				)
-				(pin
-					(num "19")
+					(num "A1")
 					(name "VDD")
 					(type "power_in")
 				)
 				(pin
-					(num "20")
-					(name "PA4")
-					(type "bidirectional")
-				)
-				(pin
-					(num "21")
-					(name "PA5/SPI2_SCK")
-					(type "bidirectional")
-				)
-				(pin
-					(num "22")
-					(name "PA6/SPI2_MISO")
-					(type "bidirectional")
-				)
-				(pin
-					(num "23")
-					(name "PA7/ADC0_IN7")
-					(type "bidirectional")
-				)
-				(pin
-					(num "24")
-					(name "PC4/ADC01_IN14")
-					(type "bidirectional")
-				)
-				(pin
-					(num "25")
-					(name "PC5/ADC01_IN15")
-					(type "bidirectional")
-				)
-				(pin
-					(num "26")
-					(name "PB0/ADC01_IN8")
-					(type "bidirectional")
-				)
-				(pin
-					(num "27")
-					(name "PB1/ADC01_IN9")
-					(type "bidirectional")
-				)
-				(pin
-					(num "28")
-					(name "PB2/BOOT1")
-					(type "bidirectional")
-				)
-				(pin
-					(num "29")
-					(name "PB10/ADC1_IN16")
-					(type "bidirectional")
-				)
-				(pin
-					(num "30")
-					(name "PB11/ADC2_IN16")
-					(type "bidirectional")
-				)
-				(pin
-					(num "31")
-					(name "VSS")
-					(type "power_in")
-				)
-				(pin
-					(num "32")
-					(name "VDD")
-					(type "power_in")
-				)
-				(pin
-					(num "33")
-					(name "PB12/CAN0_RX")
-					(type "bidirectional")
-				)
-				(pin
-					(num "34")
-					(name "PB13/CAN0_TX")
-					(type "bidirectional")
-				)
-				(pin
-					(num "35")
-					(name "PB14")
-					(type "bidirectional")
-				)
-				(pin
-					(num "36")
-					(name "PB15")
-					(type "bidirectional")
-				)
-				(pin
-					(num "37")
-					(name "PC6/TIMER7_CH0")
-					(type "bidirectional")
-				)
-				(pin
-					(num "38")
-					(name "PC7/TIMER7_CH1")
-					(type "bidirectional")
-				)
-				(pin
-					(num "39")
-					(name "PC8/TIMER7_CH2")
-					(type "bidirectional")
-				)
-				(pin
-					(num "40")
-					(name "PC9/TIMER7_CH3")
-					(type "bidirectional")
-				)
-				(pin
-					(num "41")
-					(name "PA8")
-					(type "bidirectional")
-				)
-				(pin
-					(num "42")
-					(name "PA9")
-					(type "bidirectional")
-				)
-				(pin
-					(num "43")
-					(name "PA10")
-					(type "bidirectional")
-				)
-				(pin
-					(num "44")
-					(name "PA11/TIMER7_CH0")
-					(type "bidirectional")
-				)
-				(pin
-					(num "45")
-					(name "PA12/TIMER7_CH1")
-					(type "bidirectional")
-				)
-				(pin
-					(num "46")
-					(name "PA13/SWDIO")
-					(type "bidirectional")
-				)
-				(pin
-					(num "47")
-					(name "VSS")
-					(type "power_in")
-				)
-				(pin
-					(num "48")
-					(name "VDD")
-					(type "power_in")
-				)
-				(pin
-					(num "49")
-					(name "PA14/SWCLK")
-					(type "bidirectional")
-				)
-				(pin
-					(num "50")
-					(name "PA15")
-					(type "bidirectional")
-				)
-				(pin
-					(num "51")
-					(name "PC10")
-					(type "bidirectional")
-				)
-				(pin
-					(num "52")
-					(name "PC11")
-					(type "bidirectional")
-				)
-				(pin
-					(num "53")
-					(name "PC12")
-					(type "bidirectional")
-				)
-				(pin
-					(num "54")
-					(name "PD2")
-					(type "bidirectional")
-				)
-				(pin
-					(num "55")
-					(name "PB3")
-					(type "bidirectional")
-				)
-				(pin
-					(num "56")
-					(name "PB4")
-					(type "bidirectional")
-				)
-				(pin
-					(num "57")
-					(name "PB5")
-					(type "bidirectional")
-				)
-				(pin
-					(num "58")
-					(name "PB6/ADC1_IN9")
-					(type "bidirectional")
-				)
-				(pin
-					(num "59")
-					(name "PB7/ADC1_IN8")
-					(type "bidirectional")
-				)
-				(pin
-					(num "60")
-					(name "BOOT0")
-					(type "input")
-				)
-				(pin
-					(num "61")
-					(name "PB8")
-					(type "bidirectional")
-				)
-				(pin
-					(num "62")
+					(num "A2")
 					(name "PB9")
 					(type "bidirectional")
 				)
 				(pin
-					(num "63")
+					(num "A3")
+					(name "PB7/ADC1_IN8")
+					(type "bidirectional")
+				)
+				(pin
+					(num "A4")
+					(name "PB6/ADC1_IN9")
+					(type "bidirectional")
+				)
+				(pin
+					(num "A5")
+					(name "PB3")
+					(type "bidirectional")
+				)
+				(pin
+					(num "A6")
+					(name "PC12")
+					(type "bidirectional")
+				)
+				(pin
+					(num "A7")
+					(name "PA15")
+					(type "bidirectional")
+				)
+				(pin
+					(num "A8")
+					(name "VDD")
+					(type "power_in")
+				)
+				(pin
+					(num "B1")
+					(name "PC13")
+					(type "bidirectional")
+				)
+				(pin
+					(num "B2")
 					(name "VSS")
 					(type "power_in")
 				)
 				(pin
-					(num "64")
+					(num "B3")
+					(name "BOOT0")
+					(type "input")
+				)
+				(pin
+					(num "B4")
+					(name "PB5")
+					(type "bidirectional")
+				)
+				(pin
+					(num "B5")
+					(name "PD2")
+					(type "bidirectional")
+				)
+				(pin
+					(num "B6")
+					(name "PC11")
+					(type "bidirectional")
+				)
+				(pin
+					(num "B7")
+					(name "VSS")
+					(type "power_in")
+				)
+				(pin
+					(num "B8")
+					(name "PA12/TIMER7_CH1")
+					(type "bidirectional")
+				)
+				(pin
+					(num "C1")
+					(name "PC14-OSC32IN")
+					(type "bidirectional")
+				)
+				(pin
+					(num "C2")
+					(name "VBAT")
+					(type "power_in")
+				)
+				(pin
+					(num "C3")
+					(name "PC1/TIMER7_CH1_ON")
+					(type "bidirectional")
+				)
+				(pin
+					(num "C4")
+					(name "PB4")
+					(type "bidirectional")
+				)
+				(pin
+					(num "C5")
+					(name "PC10")
+					(type "bidirectional")
+				)
+				(pin
+					(num "C6")
+					(name "PA14/SWCLK")
+					(type "bidirectional")
+				)
+				(pin
+					(num "C7")
+					(name "PA13/SWDIO")
+					(type "bidirectional")
+				)
+				(pin
+					(num "C8")
+					(name "PA11/TIMER7_CH0")
+					(type "bidirectional")
+				)
+				(pin
+					(num "D1")
+					(name "PC15-OSC32OUT")
+					(type "bidirectional")
+				)
+				(pin
+					(num "D2")
+					(name "NRST")
+					(type "bidirectional")
+				)
+				(pin
+					(num "D3")
+					(name "PC2/TIMER7_CH2_ON")
+					(type "bidirectional")
+				)
+				(pin
+					(num "D4")
+					(name "PA4")
+					(type "bidirectional")
+				)
+				(pin
+					(num "D5")
+					(name "PC4/ADC01_IN14")
+					(type "bidirectional")
+				)
+				(pin
+					(num "D6")
+					(name "PA10")
+					(type "bidirectional")
+				)
+				(pin
+					(num "D7")
+					(name "PA9")
+					(type "bidirectional")
+				)
+				(pin
+					(num "D8")
+					(name "PC9/TIMER7_CH3")
+					(type "bidirectional")
+				)
+				(pin
+					(num "E1")
+					(name "OSCIN/PD0")
+					(type "bidirectional")
+				)
+				(pin
+					(num "E2")
+					(name "PC0/TIMER7_CH0_ON")
+					(type "bidirectional")
+				)
+				(pin
+					(num "E3")
+					(name "PA1")
+					(type "bidirectional")
+				)
+				(pin
+					(num "E4")
+					(name "PA5")
+					(type "bidirectional")
+				)
+				(pin
+					(num "E5")
+					(name "PB0/ADC01_IN8")
+					(type "bidirectional")
+				)
+				(pin
+					(num "E6")
+					(name "PA8")
+					(type "bidirectional")
+				)
+				(pin
+					(num "E7")
+					(name "PC7/TIMER7_CH1")
+					(type "bidirectional")
+				)
+				(pin
+					(num "E8")
+					(name "PC6/TIMER7_CH0")
+					(type "bidirectional")
+				)
+				(pin
+					(num "F1")
+					(name "OSCOUT/PD1")
+					(type "bidirectional")
+				)
+				(pin
+					(num "F2")
+					(name "VSSA/VREFN")
+					(type "power_in")
+				)
+				(pin
+					(num "F3")
+					(name "PA2")
+					(type "bidirectional")
+				)
+				(pin
+					(num "F4")
+					(name "PC5/ADC01_IN15")
+					(type "bidirectional")
+				)
+				(pin
+					(num "F5")
+					(name "PB1/ADC01_IN9")
+					(type "bidirectional")
+				)
+				(pin
+					(num "F6")
+					(name "PC8/TIMER7_CH2")
+					(type "bidirectional")
+				)
+				(pin
+					(num "F7")
+					(name "PB15")
+					(type "bidirectional")
+				)
+				(pin
+					(num "F8")
+					(name "PB14")
+					(type "bidirectional")
+				)
+				(pin
+					(num "G1")
+					(name "VDDA/VREFP")
+					(type "power_in")
+				)
+				(pin
+					(num "G2")
+					(name "VSS")
+					(type "power_in")
+				)
+				(pin
+					(num "G3")
+					(name "PA6")
+					(type "bidirectional")
+				)
+				(pin
+					(num "G4")
+					(name "PC3")
+					(type "bidirectional")
+				)
+				(pin
+					(num "G5")
+					(name "PB8")
+					(type "bidirectional")
+				)
+				(pin
+					(num "G6")
+					(name "PB13/CANFD_TX")
+					(type "bidirectional")
+				)
+				(pin
+					(num "G7")
+					(name "VSS")
+					(type "power_in")
+				)
+				(pin
+					(num "G8")
+					(name "PB12/CANFD_RX")
+					(type "bidirectional")
+				)
+				(pin
+					(num "H1")
+					(name "VDD")
+					(type "power_in")
+				)
+				(pin
+					(num "H2")
+					(name "PA3/ADC1_IN3")
+					(type "bidirectional")
+				)
+				(pin
+					(num "H3")
+					(name "PA7/ADC0_IN7")
+					(type "bidirectional")
+				)
+				(pin
+					(num "H4")
+					(name "PB2/BOOT1")
+					(type "bidirectional")
+				)
+				(pin
+					(num "H5")
+					(name "PA0/ADC2_IN0")
+					(type "bidirectional")
+				)
+				(pin
+					(num "H6")
+					(name "PB10/ADC1_IN16")
+					(type "bidirectional")
+				)
+				(pin
+					(num "H7")
+					(name "PB11/ADC2_IN16")
+					(type "bidirectional")
+				)
+				(pin
+					(num "H8")
 					(name "VDD")
 					(type "power_in")
 				)
@@ -6236,8 +6236,8 @@
 		(libpart
 			(lib "LA150C_RDIVER_V1.00")
 			(part "GRM033Z71C104KE14D")
-			(description "Unpolarized capacitor")
-			(docs "https://www.lcsc.com/datasheet/C668346.pdf")
+			(description "Imported from legacy JLC paste BOM")
+			(docs "https://datasheet.lcsc.com/datasheet/pdf/0fb4604782167a586c3dd1f22396ac96.pdf?productCode=C668346")
 			(footprints
 				(fp "C_*")
 			)
@@ -6245,19 +6245,21 @@
 				(field
 					(name "Reference") "C")
 				(field
-					(name "Value") "GRM033Z71C104KE14D")
+					(name "Value") "0201-100nF-16V-10%")
 				(field
 					(name "Footprint") "Capacitors:C0201")
 				(field
-					(name "Datasheet") "https://www.lcsc.com/datasheet/C668346.pdf")
+					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/0fb4604782167a586c3dd1f22396ac96.pdf?productCode=C668346")
 				(field
-					(name "Description") "Unpolarized capacitor")
+					(name "Description") "Imported from legacy JLC paste BOM")
 				(field
-					(name "Manufacturer") "muRata(村田)")
+					(name "Manufacturer") "muRata")
 				(field
 					(name "MPN") "GRM033Z71C104KE14D")
 				(field
 					(name "LCSC Part") "C668346")
+				(field
+					(name "LocalDatasheet") "../datasheets/Capacitors/Ceramic Capacitors/C668346_GRM033Z71C104KE14D.pdf")
 			)
 			(pins
 				(pin
@@ -6297,6 +6299,8 @@
 					(name "MPN") "GRM155R71H104KE14D")
 				(field
 					(name "LCSC Part") "C77020")
+				(field
+					(name "LocalDatasheet") "../datasheets/Capacitors/Ceramic Capacitors/C77020_GRM155R71H104KE14D.pdf")
 			)
 			(pins
 				(pin
@@ -6313,29 +6317,38 @@
 		)
 		(libpart
 			(lib "LA150C_RDIVER_V1.00")
-			(part "GRM32EC72A106KE05L")
-			(description "Unpolarized capacitor")
-			(docs "https://www.lcsc.com/datasheet/C576517.pdf")
+			(part "GRM188Z71A106KA73D")
+			(description "10uF ±10% 10V X7R 0603 ceramic capacitor")
+			(docs "https://atta.szlcsc.com/upload/public/pdf/source/20220328/6A4892B7E841253269A84FFE395E0578.pdf")
 			(footprints
-				(fp "C_*")
+				(fp "GRM188Z71A106KA73D_*")
 			)
 			(fields
 				(field
 					(name "Reference") "C")
 				(field
-					(name "Value") "GRM32EC72A106KE05L")
+					(name "Value") "10uF")
 				(field
-					(name "Footprint") "Capacitors:C1210")
+					(name "Footprint") "Capacitors:C_0603_1608Metric")
 				(field
-					(name "Datasheet") "https://www.lcsc.com/datasheet/C576517.pdf")
+					(name "Datasheet") "https://atta.szlcsc.com/upload/public/pdf/source/20220328/6A4892B7E841253269A84FFE395E0578.pdf")
 				(field
-					(name "Description") "Unpolarized capacitor")
+					(name "Description") "10uF ±10% 10V X7R 0603 ceramic capacitor")
+				(field
+					(name "DatasheetRev")
+				)
+				(field
+					(name "DatasheetDate")
+				)
+				(field
+					(name "LocalDatasheet")
+				)
 				(field
 					(name "Manufacturer") "muRata(村田)")
 				(field
-					(name "MPN") "GRM32EC72A106KE05L")
+					(name "MPN") "GRM188Z71A106KA73D")
 				(field
-					(name "LCSC Part") "C576517")
+					(name "LCSC Part") "C2959727")
 			)
 			(pins
 				(pin
@@ -6504,88 +6517,95 @@
 		)
 		(libpart
 			(lib "LA150C_RDIVER_V1.00")
-			(part "MT6701")
-			(description "14-bit magnetic angle sensor, SSI/ABZ/I2C, QFN-16")
+			(part "MT6701QT-STD_C2913974")
+			(description "MT6701 QFN-16 magnetic angle sensor, standard variant")
+			(docs "https://atta.szlcsc.com/upload/public/pdf/source/20260616/FEB700C1922508565884FF0A90656B50.pdf")
 			(fields
 				(field
 					(name "Reference") "U")
 				(field
-					(name "Value") "MT6701")
+					(name "Value") "MT6701QT-STD")
 				(field
-					(name "Footprint")
+					(name "Footprint") "Magnetic Sensors:VQFN-16_L3.0-W3.0-P0.50-TL-EP1.7")
+				(field
+					(name "Datasheet") "https://atta.szlcsc.com/upload/public/pdf/source/20260616/FEB700C1922508565884FF0A90656B50.pdf")
+				(field
+					(name "Description") "MT6701 QFN-16 magnetic angle sensor, standard variant")
+				(field
+					(name "Manufacturer") "NOVOSENSE(纳芯微)")
+				(field
+					(name "MPN") "MT6701QT-STD")
+				(field
+					(name "LCSC Part") "C2913974")
+				(field
+					(name "DatasheetRev")
 				)
 				(field
-					(name "Datasheet")
+					(name "DatasheetDate")
 				)
 				(field
-					(name "Description") "14-bit magnetic angle sensor, SSI/ABZ/I2C, QFN-16")
-				(field
-					(name "MPN") "MT6701QT-ACD")
-				(field
-					(name "LCSC Part") "C49257133")
-				(field
-					(name "Manufacturer") "Magntek")
+					(name "LocalDatasheet") "../datasheets/Magnetic Sensors/Angle, Linear Position Measuring/C2913974_MT6701QT-STD.pdf")
 			)
 			(pins
 				(pin
 					(num "1")
-					(name "NC1")
-					(type "no_connect")
+					(name "NC")
+					(type "passive")
 				)
 				(pin
 					(num "2")
-					(name "NC2")
-					(type "no_connect")
+					(name "NC")
+					(type "passive")
 				)
 				(pin
 					(num "3")
-					(name "NC3")
-					(type "no_connect")
+					(name "NC")
+					(type "passive")
 				)
 				(pin
 					(num "4")
-					(name "NC4")
-					(type "no_connect")
+					(name "NC")
+					(type "passive")
 				)
 				(pin
 					(num "5")
 					(name "PUSH")
-					(type "output")
+					(type "passive")
 				)
 				(pin
 					(num "6")
-					(name "A/DO")
-					(type "bidirectional")
+					(name "A")
+					(type "passive")
 				)
 				(pin
 					(num "7")
-					(name "B/CLK")
-					(type "bidirectional")
+					(name "B")
+					(type "passive")
 				)
 				(pin
 					(num "8")
-					(name "Z/CSN")
-					(type "bidirectional")
+					(name "Z")
+					(type "passive")
 				)
 				(pin
 					(num "9")
-					(name "U")
-					(type "bidirectional")
+					(name "W")
+					(type "passive")
 				)
 				(pin
 					(num "10")
-					(name "NC5")
-					(type "no_connect")
+					(name "NC")
+					(type "passive")
 				)
 				(pin
 					(num "11")
-					(name "V")
-					(type "bidirectional")
+					(name "U")
+					(type "passive")
 				)
 				(pin
 					(num "12")
-					(name "W")
-					(type "bidirectional")
+					(name "V")
+					(type "passive")
 				)
 				(pin
 					(num "13")
@@ -6595,12 +6615,12 @@
 				(pin
 					(num "14")
 					(name "MODE")
-					(type "input")
+					(type "passive")
 				)
 				(pin
 					(num "15")
 					(name "OUT")
-					(type "output")
+					(type "passive")
 				)
 				(pin
 					(num "16")
@@ -6617,7 +6637,7 @@
 		(libpart
 			(lib "LA150C_RDIVER_V1.00")
 			(part "NCP15XH103F03RC")
-			(description "NTC Thermistor 10kΩ Surface Mount 0402")
+			(description "Imported from legacy JLC paste BOM")
 			(docs "https://datasheet.lcsc.com/datasheet/pdf/c9e5c9a36e405340079034c7608ac4b6.pdf?productCode=C77131")
 			(footprints
 				(fp "R_*")
@@ -6633,13 +6653,15 @@
 				(field
 					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/c9e5c9a36e405340079034c7608ac4b6.pdf?productCode=C77131")
 				(field
-					(name "Description") "NTC Thermistor 10kΩ Surface Mount 0402")
+					(name "Description") "Imported from legacy JLC paste BOM")
 				(field
 					(name "Manufacturer") "muRata")
 				(field
 					(name "MPN") "NCP15XH103F03RC")
 				(field
 					(name "LCSC Part") "C77131")
+				(field
+					(name "LocalDatasheet") "../datasheets/Sensors/NTC Thermistors/C77131_NCP15XH103F03RC.pdf")
 			)
 			(pins
 				(pin
@@ -6650,47 +6672,6 @@
 				(pin
 					(num "2")
 					(name "")
-					(type "passive")
-				)
-			)
-		)
-		(libpart
-			(lib "LA150C_RDIVER_V1.00")
-			(part "PESD1CAN,215")
-			(description "PESD1CAN")
-			(docs "https://lcsc.com/product-detail/Diodes-ESD_NXP_PESD1CAN_PESD1CAN_C15771.html")
-			(fields
-				(field
-					(name "Reference") "D")
-				(field
-					(name "Value") "PESD1CAN,215")
-				(field
-					(name "Footprint") "Transistors:SOT-23_L2.9-W1.3-P1.90-LS2.4-BR")
-				(field
-					(name "Datasheet") "https://lcsc.com/product-detail/Diodes-ESD_NXP_PESD1CAN_PESD1CAN_C15771.html")
-				(field
-					(name "Description") "PESD1CAN")
-				(field
-					(name "Manufacturer") "Nexperia(安世)")
-				(field
-					(name "MPN") "PESD1CAN,215")
-				(field
-					(name "LCSC Part") "C15771")
-			)
-			(pins
-				(pin
-					(num "1")
-					(name "1")
-					(type "passive")
-				)
-				(pin
-					(num "2")
-					(name "2")
-					(type "passive")
-				)
-				(pin
-					(num "3")
-					(name "3")
 					(type "passive")
 				)
 			)
@@ -6698,7 +6679,7 @@
 		(libpart
 			(lib "LA150C_RDIVER_V1.00")
 			(part "RC0201FR-07100RL")
-			(description "50mW 100Ω 25V Thick Film Resistor ±1% ±200ppm/℃ 0201 Chip Resistor - Surface Mount RoHS")
+			(description "Imported from legacy JLC paste BOM")
 			(docs "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C77623")
 			(footprints
 				(fp "RC0201FR-07100RL_*")
@@ -6707,19 +6688,21 @@
 				(field
 					(name "Reference") "R")
 				(field
-					(name "Value") "100Ω")
+					(name "Value") "0201-100R-1%")
 				(field
 					(name "Footprint") "Resistors:R_0201_0603Metric")
 				(field
 					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C77623")
 				(field
-					(name "Description") "50mW 100Ω 25V Thick Film Resistor ±1% ±200ppm/℃ 0201 Chip Resistor - Surface Mount RoHS")
+					(name "Description") "Imported from legacy JLC paste BOM")
 				(field
 					(name "Manufacturer") "YAGEO")
 				(field
 					(name "MPN") "RC0201FR-07100RL")
 				(field
 					(name "LCSC Part") "C77623")
+				(field
+					(name "LocalDatasheet") "../datasheets/Resistors/Chip Resistor - Surface Mount/C77623_RC0201FR-07100RL.pdf")
 			)
 			(pins
 				(pin
@@ -6737,8 +6720,8 @@
 		(libpart
 			(lib "LA150C_RDIVER_V1.00")
 			(part "RC0201FR-0710KL")
-			(description "Resistor")
-			(docs "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_10KR-1002-1_C106225.html")
+			(description "Imported from legacy JLC paste BOM")
+			(docs "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C106225")
 			(footprints
 				(fp "R_*")
 			)
@@ -6746,19 +6729,103 @@
 				(field
 					(name "Reference") "R")
 				(field
-					(name "Value") "RC0201FR-0710KL")
+					(name "Value") "0201-10K-1%")
 				(field
 					(name "Footprint") "Resistors:R0201")
 				(field
-					(name "Datasheet") "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_10KR-1002-1_C106225.html")
+					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C106225")
 				(field
-					(name "Description") "Resistor")
+					(name "Description") "Imported from legacy JLC paste BOM")
 				(field
-					(name "Manufacturer") "YAGEO(国巨)")
+					(name "Manufacturer") "YAGEO")
 				(field
 					(name "MPN") "RC0201FR-0710KL")
 				(field
 					(name "LCSC Part") "C106225")
+				(field
+					(name "LocalDatasheet") "../datasheets/Resistors/Chip Resistor - Surface Mount/C106225_RC0201FR-0710KL.pdf")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "LA150C_RDIVER_V1.00")
+			(part "RC0201FR-071KL")
+			(description "Imported from legacy JLC paste BOM")
+			(docs "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C138165")
+			(footprints
+				(fp "R_*")
+			)
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "0201-1K-1%")
+				(field
+					(name "Footprint") "Resistors:R0201")
+				(field
+					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C138165")
+				(field
+					(name "Description") "Imported from legacy JLC paste BOM")
+				(field
+					(name "Manufacturer") "YAGEO")
+				(field
+					(name "MPN") "RC0201FR-071KL")
+				(field
+					(name "LCSC Part") "C138165")
+				(field
+					(name "LocalDatasheet") "../datasheets/Resistors/Chip Resistor - Surface Mount/C138165_RC0201FR-071KL.pdf")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "LA150C_RDIVER_V1.00")
+			(part "RC0201FR-076K8L")
+			(description "Imported from legacy JLC paste BOM")
+			(docs "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C274877")
+			(footprints
+				(fp "R_*")
+			)
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "0201-6.8K-1%")
+				(field
+					(name "Footprint") "Resistors:R0201")
+				(field
+					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C274877")
+				(field
+					(name "Description") "Imported from legacy JLC paste BOM")
+				(field
+					(name "Manufacturer") "YAGEO")
+				(field
+					(name "MPN") "RC0201FR-076K8L")
+				(field
+					(name "LCSC Part") "C274877")
+				(field
+					(name "LocalDatasheet") "../datasheets/Resistors/Chip Resistor - Surface Mount/C274877_RC0201FR-076K8L.pdf")
 			)
 			(pins
 				(pin
@@ -6776,8 +6843,8 @@
 		(libpart
 			(lib "LA150C_RDIVER_V1.00")
 			(part "RC0402FR-070RL")
-			(description "Resistor")
-			(docs "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_0R-0R0-1_C106231.html")
+			(description "Imported from legacy JLC paste BOM")
+			(docs "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C106231")
 			(footprints
 				(fp "R_*")
 			)
@@ -6785,19 +6852,21 @@
 				(field
 					(name "Reference") "R")
 				(field
-					(name "Value") "RC0402FR-070RL")
+					(name "Value") "9990000051457")
 				(field
 					(name "Footprint") "Resistors:R0402")
 				(field
-					(name "Datasheet") "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_0R-0R0-1_C106231.html")
+					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C106231")
 				(field
-					(name "Description") "Resistor")
+					(name "Description") "Imported from legacy JLC paste BOM")
 				(field
-					(name "Manufacturer") "YAGEO(国巨)")
+					(name "Manufacturer") "YAGEO")
 				(field
 					(name "MPN") "RC0402FR-070RL")
 				(field
 					(name "LCSC Part") "C106231")
+				(field
+					(name "LocalDatasheet") "../datasheets/Resistors/Chip Resistor - Surface Mount/C106231_RC0402FR-070RL.pdf")
 			)
 			(pins
 				(pin
@@ -6815,8 +6884,8 @@
 		(libpart
 			(lib "LA150C_RDIVER_V1.00")
 			(part "RC0402FR-07100KL")
-			(description "Resistor")
-			(docs "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_100KR-1003-1_C60491.html")
+			(description "Imported from legacy JLC paste BOM")
+			(docs "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C60491")
 			(footprints
 				(fp "R_*")
 			)
@@ -6824,19 +6893,21 @@
 				(field
 					(name "Reference") "R")
 				(field
-					(name "Value") "RC0402FR-07100KL")
+					(name "Value") "0402-100K-1%")
 				(field
 					(name "Footprint") "Resistors:R0402")
 				(field
-					(name "Datasheet") "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_100KR-1003-1_C60491.html")
+					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C60491")
 				(field
-					(name "Description") "Resistor")
+					(name "Description") "Imported from legacy JLC paste BOM")
 				(field
-					(name "Manufacturer") "YAGEO(国巨)")
+					(name "Manufacturer") "YAGEO")
 				(field
 					(name "MPN") "RC0402FR-07100KL")
 				(field
 					(name "LCSC Part") "C60491")
+				(field
+					(name "LocalDatasheet") "../datasheets/Resistors/Chip Resistor - Surface Mount/C60491_RC0402FR-07100KL.pdf")
 			)
 			(pins
 				(pin
@@ -6915,23 +6986,72 @@
 		)
 		(libpart
 			(lib "LA150C_RDIVER_V1.00")
-			(part "SWD-1X5-1.27")
-			(description "1x5 1.27mm SWD debug header")
+			(part "SMF16CA")
+			(description "16V 200W bidirectional TVS diode SOD-123FL")
+			(docs "https://atta.szlcsc.com/upload/public/pdf/source/20250911/A9E208B97C1B87827444A0C468124C54.pdf")
+			(footprints
+				(fp "TO-???*")
+				(fp "*_Diode_*")
+				(fp "*SingleDiode*")
+				(fp "D_*")
+			)
+			(fields
+				(field
+					(name "Reference") "D")
+				(field
+					(name "Value") "SMF16CA")
+				(field
+					(name "Footprint") "Circuit Protection:D_SOD-123F")
+				(field
+					(name "Datasheet") "https://atta.szlcsc.com/upload/public/pdf/source/20250911/A9E208B97C1B87827444A0C468124C54.pdf")
+				(field
+					(name "Description") "16V 200W bidirectional TVS diode SOD-123FL")
+				(field
+					(name "DatasheetRev")
+				)
+				(field
+					(name "DatasheetDate")
+				)
+				(field
+					(name "LocalDatasheet") "../datasheets/Circuit Protection/TVS Diodes/C123805_SMF16CA.pdf")
+				(field
+					(name "Manufacturer") "MDD(辰达半导体)")
+				(field
+					(name "MPN") "SMF16CA")
+				(field
+					(name "LCSC Part") "C123805")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "A1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "A2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "LA150C_RDIVER_V1.00")
+			(part "SOLDER_HOLES_4P_0.5MM")
+			(description "4x solder holes, 0.5mm drill, 0.8mm pad, 2.54mm pitch")
 			(fields
 				(field
 					(name "Reference") "J")
 				(field
-					(name "Value") "SWD-1X5-1.27")
+					(name "Value") "SOLDER_HOLES_4P_0.5MM")
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "LA150C_RDIVER_V1.00:Solder_Holes_4P_0.5mm")
 				(field
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "1x5 1.27mm SWD debug header")
+					(name "Description") "4x solder holes, 0.5mm drill, 0.8mm pad, 2.54mm pitch")
 				(field
-					(name "MPN") "SWD-1X5-1.27")
+					(name "MPN") "SOLDER_HOLES_4P_0.5MM")
 				(field
 					(name "LCSC Part")
 				)
@@ -6942,17 +7062,17 @@
 			(pins
 				(pin
 					(num "1")
-					(name "PWR_3V3")
+					(name "CAN_L")
 					(type "passive")
 				)
 				(pin
 					(num "2")
-					(name "SWDIO")
+					(name "CAN_H")
 					(type "passive")
 				)
 				(pin
 					(num "3")
-					(name "SWCLK")
+					(name "VBUS")
 					(type "passive")
 				)
 				(pin
@@ -6960,9 +7080,47 @@
 					(name "GND")
 					(type "passive")
 				)
+			)
+		)
+		(libpart
+			(lib "LA150C_RDIVER_V1.00")
+			(part "SWD-1X3-1.0")
+			(description "QS01-compatible 1x3 1.0mm SWD header, 1 SWDIO / 2 GND / 3 SWCLK")
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "SWD-1X3-1.0")
+				(field
+					(name "Footprint") "Connector_PinHeader_1.00mm:PinHeader_1x03_P1.00mm_Vertical")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "QS01-compatible 1x3 1.0mm SWD header, 1 SWDIO / 2 GND / 3 SWCLK")
+				(field
+					(name "MPN") "SWD-1X3-1.0")
+				(field
+					(name "LCSC Part")
+				)
+				(field
+					(name "Manufacturer")
+				)
+			)
+			(pins
 				(pin
-					(num "5")
-					(name "NRST")
+					(num "1")
+					(name "SWDIO")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "GND")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "SWCLK")
 					(type "passive")
 				)
 			)
@@ -7034,42 +7192,6 @@
 				)
 			)
 		)
-		(libpart
-			(lib "Transistor_FET")
-			(part "Q_PMOS_GSD")
-			(description "P-MOSFET transistor, gate/source/drain")
-			(fields
-				(field
-					(name "Reference") "Q")
-				(field
-					(name "Value") "Q_PMOS_GSD")
-				(field
-					(name "Footprint")
-				)
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "P-MOSFET transistor, gate/source/drain")
-			)
-			(pins
-				(pin
-					(num "1")
-					(name "G")
-					(type "input")
-				)
-				(pin
-					(num "2")
-					(name "S")
-					(type "passive")
-				)
-				(pin
-					(num "3")
-					(name "D")
-					(type "passive")
-				)
-			)
-		)
 	)
 	(libraries
 		(library
@@ -7084,10 +7206,6 @@
 			(logical "LA150C_RDIVER_V1.00")
 			(uri "${KIPRJMOD}/library/LA150C_RDIVER_V1.00.kicad_sym")
 		)
-		(library
-			(logical "Transistor_FET")
-			(uri "${KICAD10_SYMBOL_DIR}/Transistor_FET.kicad_sym")
-		)
 	)
 	(nets
 		(net
@@ -7095,20 +7213,15 @@
 			(name "/CANH")
 			(class "Default")
 			(node
-				(ref "D2")
-				(pin "2")
-				(pinfunction "2_2")
-				(pintype "passive")
-			)
-			(node
-				(ref "J1")
-				(pin "3")
-				(pinfunction "CANH_3")
-				(pintype "passive")
-			)
-			(node
-				(ref "R11")
+				(ref "D1")
 				(pin "1")
+				(pinfunction "A1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J2")
+				(pin "2")
+				(pinfunction "CAN_H_2")
 				(pintype "passive")
 			)
 			(node
@@ -7124,19 +7237,14 @@
 			(class "Default")
 			(node
 				(ref "D2")
-				(pin "1")
-				(pinfunction "1_1")
-				(pintype "passive")
-			)
-			(node
-				(ref "J1")
-				(pin "4")
-				(pinfunction "CANL_4")
-				(pintype "passive")
-			)
-			(node
-				(ref "R11")
 				(pin "2")
+				(pinfunction "A2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J2")
+				(pin "1")
+				(pinfunction "CAN_L_1")
 				(pintype "passive")
 			)
 			(node
@@ -7152,15 +7260,15 @@
 			(class "Default")
 			(node
 				(ref "U1")
-				(pin "55")
-				(pinfunction "PB3_55")
+				(pin "A7")
+				(pinfunction "PA15_A7")
 				(pintype "bidirectional")
 			)
 			(node
 				(ref "U2")
 				(pin "8")
-				(pinfunction "Z/CSN_8")
-				(pintype "bidirectional")
+				(pinfunction "Z_8")
+				(pintype "passive")
 			)
 		)
 		(net
@@ -7169,15 +7277,15 @@
 			(class "Default")
 			(node
 				(ref "U1")
-				(pin "22")
-				(pinfunction "PA6/SPI2_MISO_22")
+				(pin "B6")
+				(pinfunction "PC11_B6")
 				(pintype "bidirectional")
 			)
 			(node
 				(ref "U2")
 				(pin "6")
-				(pinfunction "A/DO_6")
-				(pintype "bidirectional")
+				(pinfunction "A_6")
+				(pintype "passive")
 			)
 		)
 		(net
@@ -7186,15 +7294,15 @@
 			(class "Default")
 			(node
 				(ref "U1")
-				(pin "21")
-				(pinfunction "PA5/SPI2_SCK_21")
+				(pin "A5")
+				(pinfunction "PB3_A5")
 				(pintype "bidirectional")
 			)
 			(node
 				(ref "U2")
 				(pin "7")
-				(pinfunction "B/CLK_7")
-				(pintype "bidirectional")
+				(pinfunction "B_7")
+				(pintype "passive")
 			)
 		)
 		(net
@@ -7209,8 +7317,8 @@
 			)
 			(node
 				(ref "U1")
-				(pin "59")
-				(pinfunction "PB7/ADC1_IN8_59")
+				(pin "A3")
+				(pinfunction "PB7/ADC1_IN8_A3")
 				(pintype "bidirectional")
 			)
 		)
@@ -7226,8 +7334,8 @@
 			)
 			(node
 				(ref "U1")
-				(pin "58")
-				(pinfunction "PB6/ADC1_IN9_58")
+				(pin "A4")
+				(pinfunction "PB6/ADC1_IN9_A4")
 				(pintype "bidirectional")
 			)
 		)
@@ -7252,8 +7360,8 @@
 			)
 			(node
 				(ref "U1")
-				(pin "30")
-				(pinfunction "PB11/ADC2_IN16_30")
+				(pin "H7")
+				(pinfunction "PB11/ADC2_IN16_H7")
 				(pintype "bidirectional")
 			)
 		)
@@ -7278,19 +7386,35 @@
 			)
 			(node
 				(ref "U1")
-				(pin "29")
-				(pinfunction "PB10/ADC1_IN16_29")
+				(pin "H6")
+				(pinfunction "PB10/ADC1_IN16_H6")
 				(pintype "bidirectional")
 			)
 		)
 		(net
 			(code "10")
-			(name "/MCU/CAN0_RX")
+			(name "/MCU/BOOT1")
+			(class "Default")
+			(node
+				(ref "R38")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "H4")
+				(pinfunction "PB2/BOOT1_H4")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "11")
+			(name "/MCU/CANFD_RX")
 			(class "Default")
 			(node
 				(ref "U1")
-				(pin "33")
-				(pinfunction "PB12/CAN0_RX_33")
+				(pin "G8")
+				(pinfunction "PB12/CANFD_RX_G8")
 				(pintype "bidirectional")
 			)
 			(node
@@ -7301,13 +7425,13 @@
 			)
 		)
 		(net
-			(code "11")
-			(name "/MCU/CAN0_TX")
+			(code "12")
+			(name "/MCU/CANFD_TX")
 			(class "Default")
 			(node
 				(ref "U1")
-				(pin "34")
-				(pinfunction "PB13/CAN0_TX_34")
+				(pin "G6")
+				(pinfunction "PB13/CANFD_TX_G6")
 				(pintype "bidirectional")
 			)
 			(node
@@ -7318,54 +7442,37 @@
 			)
 		)
 		(net
-			(code "12")
-			(name "/MCU/EN_A")
-			(class "Default")
-			(node
-				(ref "U1")
-				(pin "44")
-				(pinfunction "PA11/TIMER7_CH0_44")
-				(pintype "bidirectional")
-			)
-			(node
-				(ref "U4")
-				(pin "1")
-				(pinfunction "ENA_1")
-				(pintype "input")
-			)
-		)
-		(net
 			(code "13")
-			(name "/MCU/EN_B")
+			(name "/MCU/OSC_IN")
 			(class "Default")
 			(node
 				(ref "U1")
-				(pin "8")
-				(pinfunction "PC0/TIMER7_CH0_ON_8")
+				(pin "E1")
+				(pinfunction "OSCIN/PD0_E1")
 				(pintype "bidirectional")
 			)
 			(node
-				(ref "U4")
-				(pin "2")
-				(pinfunction "ENB_2")
-				(pintype "input")
+				(ref "Y1")
+				(pin "1")
+				(pinfunction "Input_1")
+				(pintype "passive")
 			)
 		)
 		(net
 			(code "14")
-			(name "/MCU/EN_C")
+			(name "/MCU/OSC_OUT")
 			(class "Default")
 			(node
 				(ref "U1")
-				(pin "9")
-				(pinfunction "PC1/TIMER7_CH1_ON_9")
+				(pin "F1")
+				(pinfunction "OSCOUT/PD1_F1")
 				(pintype "bidirectional")
 			)
 			(node
-				(ref "U4")
+				(ref "Y1")
 				(pin "3")
-				(pinfunction "ENC_3")
-				(pintype "input")
+				(pinfunction "Output_3")
+				(pintype "passive")
 			)
 		)
 		(net
@@ -7374,8 +7481,8 @@
 			(class "Default")
 			(node
 				(ref "U1")
-				(pin "39")
-				(pinfunction "PC8/TIMER7_CH2_39")
+				(pin "F6")
+				(pinfunction "PC8/TIMER7_CH2_F6")
 				(pintype "bidirectional")
 			)
 			(node
@@ -7391,8 +7498,8 @@
 			(class "Default")
 			(node
 				(ref "U1")
-				(pin "45")
-				(pinfunction "PA12/TIMER7_CH1_45")
+				(pin "C8")
+				(pinfunction "PA11/TIMER7_CH0_C8")
 				(pintype "bidirectional")
 			)
 			(node
@@ -7408,8 +7515,8 @@
 			(class "Default")
 			(node
 				(ref "U1")
-				(pin "10")
-				(pinfunction "PC2/TIMER7_CH2_ON_10")
+				(pin "B8")
+				(pinfunction "PA12/TIMER7_CH1_B8")
 				(pintype "bidirectional")
 			)
 			(node
@@ -7435,8 +7542,8 @@
 			)
 			(node
 				(ref "U1")
-				(pin "14")
-				(pinfunction "PA0/ADC2_IN0_14")
+				(pin "H5")
+				(pinfunction "PA0/ADC2_IN0_H5")
 				(pintype "bidirectional")
 			)
 		)
@@ -7456,8 +7563,8 @@
 			)
 			(node
 				(ref "U1")
-				(pin "17")
-				(pinfunction "PA3/ADC1_IN3_17")
+				(pin "H2")
+				(pinfunction "PA3/ADC1_IN3_H2")
 				(pintype "bidirectional")
 			)
 		)
@@ -7477,8 +7584,8 @@
 			)
 			(node
 				(ref "U1")
-				(pin "23")
-				(pinfunction "PA7/ADC0_IN7_23")
+				(pin "H3")
+				(pinfunction "PA7/ADC0_IN7_H3")
 				(pintype "bidirectional")
 			)
 		)
@@ -7488,8 +7595,8 @@
 			(class "Default")
 			(node
 				(ref "U1")
-				(pin "3")
-				(pinfunction "PC14-OSC32IN_3")
+				(pin "C1")
+				(pinfunction "PC14-OSC32IN_C1")
 				(pintype "bidirectional")
 			)
 			(node
@@ -7501,6 +7608,54 @@
 		)
 		(net
 			(code "22")
+			(name "/MOTOR/EN_A_PU")
+			(class "Default")
+			(node
+				(ref "R34")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U4")
+				(pin "1")
+				(pinfunction "ENA_1")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "23")
+			(name "/MOTOR/EN_B_PU")
+			(class "Default")
+			(node
+				(ref "R35")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U4")
+				(pin "2")
+				(pinfunction "ENB_2")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "24")
+			(name "/MOTOR/EN_C_PU")
+			(class "Default")
+			(node
+				(ref "R36")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U4")
+				(pin "3")
+				(pinfunction "ENC_3")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "25")
 			(name "/MOTOR/SOA_RAW")
 			(class "Default")
 			(node
@@ -7526,7 +7681,7 @@
 			)
 		)
 		(net
-			(code "23")
+			(code "26")
 			(name "/MOTOR/SOB_RAW")
 			(class "Default")
 			(node
@@ -7552,7 +7707,7 @@
 			)
 		)
 		(net
-			(code "24")
+			(code "27")
 			(name "/MOTOR/SOC_RAW")
 			(class "Default")
 			(node
@@ -7578,7 +7733,7 @@
 			)
 		)
 		(net
-			(code "25")
+			(code "28")
 			(name "/MOTOR/V3P3_DRV")
 			(class "Default")
 			(node
@@ -7600,7 +7755,7 @@
 			)
 		)
 		(net
-			(code "26")
+			(code "29")
 			(name "/MOTOR/VCP_DRV")
 			(class "Default")
 			(node
@@ -7616,7 +7771,7 @@
 			)
 		)
 		(net
-			(code "27")
+			(code "30")
 			(name "/MOTOR/nFAULT")
 			(class "Default")
 			(node
@@ -7631,8 +7786,8 @@
 			)
 			(node
 				(ref "U1")
-				(pin "4")
-				(pinfunction "PC15-OSC32OUT_4")
+				(pin "D1")
+				(pinfunction "PC15-OSC32OUT_D1")
 				(pintype "bidirectional")
 			)
 			(node
@@ -7643,13 +7798,13 @@
 			)
 		)
 		(net
-			(code "28")
+			(code "31")
 			(name "/MOT_U")
 			(class "Default")
 			(node
-				(ref "TP1")
+				(ref "J3")
 				(pin "1")
-				(pinfunction "1_1")
+				(pinfunction "PAD_1")
 				(pintype "passive")
 			)
 			(node
@@ -7660,13 +7815,13 @@
 			)
 		)
 		(net
-			(code "29")
+			(code "32")
 			(name "/MOT_V")
 			(class "Default")
 			(node
-				(ref "TP2")
+				(ref "J4")
 				(pin "1")
-				(pinfunction "1_1")
+				(pinfunction "PAD_1")
 				(pintype "passive")
 			)
 			(node
@@ -7677,13 +7832,13 @@
 			)
 		)
 		(net
-			(code "30")
+			(code "33")
 			(name "/MOT_W")
 			(class "Default")
 			(node
-				(ref "TP3")
+				(ref "J5")
 				(pin "1")
-				(pinfunction "1_1")
+				(pinfunction "PAD_1")
 				(pintype "passive")
 			)
 			(node
@@ -7694,7 +7849,7 @@
 			)
 		)
 		(net
-			(code "31")
+			(code "34")
 			(name "/NRST")
 			(class "Default")
 			(node
@@ -7703,25 +7858,25 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "J2")
-				(pin "5")
-				(pinfunction "NRST_5")
-				(pintype "passive")
-			)
-			(node
 				(ref "R33")
 				(pin "2")
 				(pintype "passive")
 			)
 			(node
+				(ref "TP8")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
 				(ref "U1")
-				(pin "7")
-				(pinfunction "NRST_7")
+				(pin "D2")
+				(pinfunction "NRST_D2")
 				(pintype "bidirectional")
 			)
 		)
 		(net
-			(code "32")
+			(code "35")
 			(name "/POWER/U1_FB")
 			(class "Default")
 			(node
@@ -7742,41 +7897,41 @@
 			)
 		)
 		(net
-			(code "33")
+			(code "36")
 			(name "/SWCLK")
 			(class "Default")
 			(node
-				(ref "J2")
+				(ref "J1")
 				(pin "3")
 				(pinfunction "SWCLK_3")
 				(pintype "passive")
 			)
 			(node
 				(ref "U1")
-				(pin "49")
-				(pinfunction "PA14/SWCLK_49")
+				(pin "C6")
+				(pinfunction "PA14/SWCLK_C6")
 				(pintype "bidirectional")
 			)
 		)
 		(net
-			(code "34")
+			(code "37")
 			(name "/SWDIO")
 			(class "Default")
 			(node
-				(ref "J2")
-				(pin "2")
-				(pinfunction "SWDIO_2")
+				(ref "J1")
+				(pin "1")
+				(pinfunction "SWDIO_1")
 				(pintype "passive")
 			)
 			(node
 				(ref "U1")
-				(pin "46")
-				(pinfunction "PA13/SWDIO_46")
+				(pin "C7")
+				(pinfunction "PA13/SWDIO_C7")
 				(pintype "bidirectional")
 			)
 		)
 		(net
-			(code "35")
+			(code "38")
 			(name "AGND")
 			(class "Default")
 			(node
@@ -7851,13 +8006,13 @@
 			)
 			(node
 				(ref "U1")
-				(pin "12")
-				(pinfunction "VSSA/VREFN_12")
+				(pin "F2")
+				(pinfunction "VSSA/VREFN_F2")
 				(pintype "power_in")
 			)
 		)
 		(net
-			(code "36")
+			(code "39")
 			(name "GND")
 			(class "Default")
 			(node
@@ -7911,19 +8066,15 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "C37")
+				(ref "D1")
 				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "C38")
-				(pin "2")
+				(pinfunction "A2_2")
 				(pintype "passive")
 			)
 			(node
 				(ref "D2")
-				(pin "3")
-				(pinfunction "3_3")
+				(pin "1")
+				(pinfunction "A1_1")
 				(pintype "passive")
 			)
 			(node
@@ -7939,38 +8090,42 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "R37")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R38")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
 				(ref "R8")
 				(pin "2")
 				(pintype "passive")
 			)
 			(node
 				(ref "U1")
-				(pin "18")
-				(pinfunction "VSS_18")
+				(pin "B2")
+				(pinfunction "VSS_B2")
 				(pintype "power_in")
 			)
 			(node
 				(ref "U1")
-				(pin "31")
-				(pinfunction "VSS_31")
+				(pin "B7")
+				(pinfunction "VSS_B7")
 				(pintype "power_in")
 			)
 			(node
 				(ref "U1")
-				(pin "47")
-				(pinfunction "VSS_47")
+				(pin "G2")
+				(pinfunction "VSS_G2")
 				(pintype "power_in")
 			)
 			(node
 				(ref "U1")
-				(pin "60")
-				(pinfunction "BOOT0_60")
-				(pintype "input")
-			)
-			(node
-				(ref "U1")
-				(pin "63")
-				(pinfunction "VSS_63")
+				(pin "G7")
+				(pinfunction "VSS_G7")
 				(pintype "power_in")
 			)
 			(node
@@ -7998,35 +8153,14 @@
 				(pintype "input")
 			)
 			(node
-				(ref "X1")
+				(ref "Y1")
 				(pin "2")
 				(pinfunction "GND_2")
-				(pintype "power_in")
-			)
-		)
-		(net
-			(code "37")
-			(name "Net-(Q1-G)")
-			(class "Default")
-			(node
-				(ref "C2")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "Q1")
-				(pin "1")
-				(pinfunction "G_1")
-				(pintype "input")
-			)
-			(node
-				(ref "R1")
-				(pin "1")
 				(pintype "passive")
 			)
 		)
 		(net
-			(code "38")
+			(code "40")
 			(name "Net-(R10-Pad1)")
 			(class "Default")
 			(node
@@ -8046,51 +8180,23 @@
 			)
 		)
 		(net
-			(code "39")
-			(name "Net-(U1-OSCIN{slash}PD0)")
-			(class "Default")
-			(node
-				(ref "C37")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "U1")
-				(pin "5")
-				(pinfunction "OSCIN/PD0_5")
-				(pintype "bidirectional")
-			)
-			(node
-				(ref "X1")
-				(pin "1")
-				(pinfunction "XI_1")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "40")
-			(name "Net-(U1-OSCOUT{slash}PD1)")
-			(class "Default")
-			(node
-				(ref "C38")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "U1")
-				(pin "6")
-				(pinfunction "OSCOUT/PD1_6")
-				(pintype "bidirectional")
-			)
-			(node
-				(ref "X1")
-				(pin "3")
-				(pinfunction "XO_3")
-				(pintype "passive")
-			)
-		)
-		(net
 			(code "41")
+			(name "Net-(U1-BOOT0)")
+			(class "Default")
+			(node
+				(ref "R37")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "B3")
+				(pinfunction "BOOT0_B3")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "42")
 			(name "Net-(U5-BST)")
 			(class "Default")
 			(node
@@ -8106,7 +8212,7 @@
 			)
 		)
 		(net
-			(code "42")
+			(code "43")
 			(name "Net-(U5-EN)")
 			(class "Default")
 			(node
@@ -8122,7 +8228,7 @@
 			)
 		)
 		(net
-			(code "43")
+			(code "44")
 			(name "Net-(U5-SW)")
 			(class "Default")
 			(node
@@ -8138,21 +8244,11 @@
 			)
 		)
 		(net
-			(code "44")
+			(code "45")
 			(name "PGND")
 			(class "Default")
 			(node
-				(ref "C1")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
 				(ref "C19")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "C2")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -8182,24 +8278,14 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "C8")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
 				(ref "C9")
 				(pin "2")
 				(pintype "passive")
 			)
 			(node
-				(ref "D1")
+				(ref "D3")
 				(pin "1")
 				(pinfunction "A1_1")
-				(pintype "passive")
-			)
-			(node
-				(ref "R1")
-				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -8250,7 +8336,7 @@
 			)
 		)
 		(net
-			(code "45")
+			(code "46")
 			(name "PWR_3V3")
 			(class "Default")
 			(node
@@ -8304,23 +8390,27 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "C8")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
 				(ref "C9")
 				(pin "1")
 				(pintype "passive")
 			)
 			(node
-				(ref "J2")
+				(ref "R33")
 				(pin "1")
-				(pinfunction "PWR_3V3_1")
 				(pintype "passive")
 			)
 			(node
-				(ref "R33")
+				(ref "R34")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R35")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R36")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -8342,32 +8432,32 @@
 			)
 			(node
 				(ref "U1")
-				(pin "1")
-				(pinfunction "VBAT_1")
+				(pin "A1")
+				(pinfunction "VDD_A1")
 				(pintype "power_in")
 			)
 			(node
 				(ref "U1")
-				(pin "19")
-				(pinfunction "VDD_19")
+				(pin "A8")
+				(pinfunction "VDD_A8")
 				(pintype "power_in")
 			)
 			(node
 				(ref "U1")
-				(pin "32")
-				(pinfunction "VDD_32")
+				(pin "C2")
+				(pinfunction "VBAT_C2")
 				(pintype "power_in")
 			)
 			(node
 				(ref "U1")
-				(pin "48")
-				(pinfunction "VDD_48")
+				(pin "H1")
+				(pinfunction "VDD_H1")
 				(pintype "power_in")
 			)
 			(node
 				(ref "U1")
-				(pin "64")
-				(pinfunction "VDD_64")
+				(pin "H8")
+				(pinfunction "VDD_H8")
 				(pintype "power_in")
 			)
 			(node
@@ -8380,7 +8470,7 @@
 				(ref "U2")
 				(pin "14")
 				(pinfunction "MODE_14")
-				(pintype "input")
+				(pintype "passive")
 			)
 			(node
 				(ref "U3")
@@ -8402,7 +8492,7 @@
 			)
 		)
 		(net
-			(code "46")
+			(code "47")
 			(name "PWR_3V3A")
 			(class "Default")
 			(node
@@ -8443,13 +8533,13 @@
 			)
 			(node
 				(ref "U1")
-				(pin "13")
-				(pinfunction "VDDA/VREFP_13")
+				(pin "G1")
+				(pinfunction "VDDA/VREFP_G1")
 				(pintype "power_in")
 			)
 		)
 		(net
-			(code "47")
+			(code "48")
 			(name "VBUS")
 			(class "Default")
 			(node
@@ -8478,9 +8568,15 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "Q1")
+				(ref "D3")
+				(pin "2")
+				(pinfunction "A2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J2")
 				(pin "3")
-				(pinfunction "D_3")
+				(pinfunction "VBUS_3")
 				(pintype "passive")
 			)
 			(node
@@ -8525,442 +8621,436 @@
 			)
 		)
 		(net
-			(code "48")
-			(name "VBUS_IN")
-			(class "Default")
-			(node
-				(ref "C1")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "D1")
-				(pin "2")
-				(pinfunction "A2_2")
-				(pintype "passive")
-			)
-			(node
-				(ref "J1")
-				(pin "1")
-				(pinfunction "VCC_1")
-				(pintype "passive")
-			)
-			(node
-				(ref "Q1")
-				(pin "2")
-				(pinfunction "S_2")
-				(pintype "passive")
-			)
-		)
-		(net
 			(code "49")
-			(name "unconnected-(U1-PA1-Pad15)")
+			(name "unconnected-(U1-PA1-PadE3)")
 			(class "Default")
 			(node
 				(ref "U1")
-				(pin "15")
-				(pinfunction "PA1_15")
+				(pin "E3")
+				(pinfunction "PA1_E3")
 				(pintype "bidirectional+no_connect")
 			)
 		)
 		(net
 			(code "50")
-			(name "unconnected-(U1-PA2-Pad16)")
+			(name "unconnected-(U1-PA2-PadF3)")
 			(class "Default")
 			(node
 				(ref "U1")
-				(pin "16")
-				(pinfunction "PA2_16")
+				(pin "F3")
+				(pinfunction "PA2_F3")
 				(pintype "bidirectional+no_connect")
 			)
 		)
 		(net
 			(code "51")
-			(name "unconnected-(U1-PA4-Pad20)")
+			(name "unconnected-(U1-PA4-PadD4)")
 			(class "Default")
 			(node
 				(ref "U1")
-				(pin "20")
-				(pinfunction "PA4_20")
+				(pin "D4")
+				(pinfunction "PA4_D4")
 				(pintype "bidirectional+no_connect")
 			)
 		)
 		(net
 			(code "52")
-			(name "unconnected-(U1-PA8-Pad41)")
+			(name "unconnected-(U1-PA5-PadE4)")
 			(class "Default")
 			(node
 				(ref "U1")
-				(pin "41")
-				(pinfunction "PA8_41")
+				(pin "E4")
+				(pinfunction "PA5_E4")
 				(pintype "bidirectional+no_connect")
 			)
 		)
 		(net
 			(code "53")
-			(name "unconnected-(U1-PA9-Pad42)")
+			(name "unconnected-(U1-PA6-PadG3)")
 			(class "Default")
 			(node
 				(ref "U1")
-				(pin "42")
-				(pinfunction "PA9_42")
+				(pin "G3")
+				(pinfunction "PA6_G3")
 				(pintype "bidirectional+no_connect")
 			)
 		)
 		(net
 			(code "54")
-			(name "unconnected-(U1-PA10-Pad43)")
+			(name "unconnected-(U1-PA8-PadE6)")
 			(class "Default")
 			(node
 				(ref "U1")
-				(pin "43")
-				(pinfunction "PA10_43")
+				(pin "E6")
+				(pinfunction "PA8_E6")
 				(pintype "bidirectional+no_connect")
 			)
 		)
 		(net
 			(code "55")
-			(name "unconnected-(U1-PA15-Pad50)")
+			(name "unconnected-(U1-PA9-PadD7)")
 			(class "Default")
 			(node
 				(ref "U1")
-				(pin "50")
-				(pinfunction "PA15_50")
+				(pin "D7")
+				(pinfunction "PA9_D7")
 				(pintype "bidirectional+no_connect")
 			)
 		)
 		(net
 			(code "56")
-			(name "unconnected-(U1-PB0{slash}ADC01_IN8-Pad26)")
+			(name "unconnected-(U1-PA10-PadD6)")
 			(class "Default")
 			(node
 				(ref "U1")
-				(pin "26")
-				(pinfunction "PB0/ADC01_IN8_26")
+				(pin "D6")
+				(pinfunction "PA10_D6")
 				(pintype "bidirectional+no_connect")
 			)
 		)
 		(net
 			(code "57")
-			(name "unconnected-(U1-PB1{slash}ADC01_IN9-Pad27)")
+			(name "unconnected-(U1-PB0{slash}ADC01_IN8-PadE5)")
 			(class "Default")
 			(node
 				(ref "U1")
-				(pin "27")
-				(pinfunction "PB1/ADC01_IN9_27")
+				(pin "E5")
+				(pinfunction "PB0/ADC01_IN8_E5")
 				(pintype "bidirectional+no_connect")
 			)
 		)
 		(net
 			(code "58")
-			(name "unconnected-(U1-PB2{slash}BOOT1-Pad28)")
+			(name "unconnected-(U1-PB1{slash}ADC01_IN9-PadF5)")
 			(class "Default")
 			(node
 				(ref "U1")
-				(pin "28")
-				(pinfunction "PB2/BOOT1_28")
+				(pin "F5")
+				(pinfunction "PB1/ADC01_IN9_F5")
 				(pintype "bidirectional+no_connect")
 			)
 		)
 		(net
 			(code "59")
-			(name "unconnected-(U1-PB4-Pad56)")
+			(name "unconnected-(U1-PB4-PadC4)")
 			(class "Default")
 			(node
 				(ref "U1")
-				(pin "56")
-				(pinfunction "PB4_56")
+				(pin "C4")
+				(pinfunction "PB4_C4")
 				(pintype "bidirectional+no_connect")
 			)
 		)
 		(net
 			(code "60")
-			(name "unconnected-(U1-PB5-Pad57)")
+			(name "unconnected-(U1-PB5-PadB4)")
 			(class "Default")
 			(node
 				(ref "U1")
-				(pin "57")
-				(pinfunction "PB5_57")
+				(pin "B4")
+				(pinfunction "PB5_B4")
 				(pintype "bidirectional+no_connect")
 			)
 		)
 		(net
 			(code "61")
-			(name "unconnected-(U1-PB8-Pad61)")
+			(name "unconnected-(U1-PB8-PadG5)")
 			(class "Default")
 			(node
 				(ref "U1")
-				(pin "61")
-				(pinfunction "PB8_61")
+				(pin "G5")
+				(pinfunction "PB8_G5")
 				(pintype "bidirectional+no_connect")
 			)
 		)
 		(net
 			(code "62")
-			(name "unconnected-(U1-PB9-Pad62)")
+			(name "unconnected-(U1-PB9-PadA2)")
 			(class "Default")
 			(node
 				(ref "U1")
-				(pin "62")
-				(pinfunction "PB9_62")
+				(pin "A2")
+				(pinfunction "PB9_A2")
 				(pintype "bidirectional+no_connect")
 			)
 		)
 		(net
 			(code "63")
-			(name "unconnected-(U1-PB14-Pad35)")
+			(name "unconnected-(U1-PB14-PadF8)")
 			(class "Default")
 			(node
 				(ref "U1")
-				(pin "35")
-				(pinfunction "PB14_35")
+				(pin "F8")
+				(pinfunction "PB14_F8")
 				(pintype "bidirectional+no_connect")
 			)
 		)
 		(net
 			(code "64")
-			(name "unconnected-(U1-PB15-Pad36)")
+			(name "unconnected-(U1-PB15-PadF7)")
 			(class "Default")
 			(node
 				(ref "U1")
-				(pin "36")
-				(pinfunction "PB15_36")
+				(pin "F7")
+				(pinfunction "PB15_F7")
 				(pintype "bidirectional+no_connect")
 			)
 		)
 		(net
 			(code "65")
-			(name "unconnected-(U1-PC3-Pad11)")
+			(name "unconnected-(U1-PC0{slash}TIMER7_CH0_ON-PadE2)")
 			(class "Default")
 			(node
 				(ref "U1")
-				(pin "11")
-				(pinfunction "PC3_11")
+				(pin "E2")
+				(pinfunction "PC0/TIMER7_CH0_ON_E2")
 				(pintype "bidirectional+no_connect")
 			)
 		)
 		(net
 			(code "66")
-			(name "unconnected-(U1-PC4{slash}ADC01_IN14-Pad24)")
+			(name "unconnected-(U1-PC1{slash}TIMER7_CH1_ON-PadC3)")
 			(class "Default")
 			(node
 				(ref "U1")
-				(pin "24")
-				(pinfunction "PC4/ADC01_IN14_24")
+				(pin "C3")
+				(pinfunction "PC1/TIMER7_CH1_ON_C3")
 				(pintype "bidirectional+no_connect")
 			)
 		)
 		(net
 			(code "67")
-			(name "unconnected-(U1-PC5{slash}ADC01_IN15-Pad25)")
+			(name "unconnected-(U1-PC2{slash}TIMER7_CH2_ON-PadD3)")
 			(class "Default")
 			(node
 				(ref "U1")
-				(pin "25")
-				(pinfunction "PC5/ADC01_IN15_25")
+				(pin "D3")
+				(pinfunction "PC2/TIMER7_CH2_ON_D3")
 				(pintype "bidirectional+no_connect")
 			)
 		)
 		(net
 			(code "68")
-			(name "unconnected-(U1-PC6{slash}TIMER7_CH0-Pad37)")
+			(name "unconnected-(U1-PC3-PadG4)")
 			(class "Default")
 			(node
 				(ref "U1")
-				(pin "37")
-				(pinfunction "PC6/TIMER7_CH0_37")
+				(pin "G4")
+				(pinfunction "PC3_G4")
 				(pintype "bidirectional+no_connect")
 			)
 		)
 		(net
 			(code "69")
-			(name "unconnected-(U1-PC7{slash}TIMER7_CH1-Pad38)")
+			(name "unconnected-(U1-PC4{slash}ADC01_IN14-PadD5)")
 			(class "Default")
 			(node
 				(ref "U1")
-				(pin "38")
-				(pinfunction "PC7/TIMER7_CH1_38")
+				(pin "D5")
+				(pinfunction "PC4/ADC01_IN14_D5")
 				(pintype "bidirectional+no_connect")
 			)
 		)
 		(net
 			(code "70")
-			(name "unconnected-(U1-PC9{slash}TIMER7_CH3-Pad40)")
+			(name "unconnected-(U1-PC5{slash}ADC01_IN15-PadF4)")
 			(class "Default")
 			(node
 				(ref "U1")
-				(pin "40")
-				(pinfunction "PC9/TIMER7_CH3_40")
+				(pin "F4")
+				(pinfunction "PC5/ADC01_IN15_F4")
 				(pintype "bidirectional+no_connect")
 			)
 		)
 		(net
 			(code "71")
-			(name "unconnected-(U1-PC10-Pad51)")
+			(name "unconnected-(U1-PC6{slash}TIMER7_CH0-PadE8)")
 			(class "Default")
 			(node
 				(ref "U1")
-				(pin "51")
-				(pinfunction "PC10_51")
+				(pin "E8")
+				(pinfunction "PC6/TIMER7_CH0_E8")
 				(pintype "bidirectional+no_connect")
 			)
 		)
 		(net
 			(code "72")
-			(name "unconnected-(U1-PC11-Pad52)")
+			(name "unconnected-(U1-PC7{slash}TIMER7_CH1-PadE7)")
 			(class "Default")
 			(node
 				(ref "U1")
-				(pin "52")
-				(pinfunction "PC11_52")
+				(pin "E7")
+				(pinfunction "PC7/TIMER7_CH1_E7")
 				(pintype "bidirectional+no_connect")
 			)
 		)
 		(net
 			(code "73")
-			(name "unconnected-(U1-PC12-Pad53)")
+			(name "unconnected-(U1-PC9{slash}TIMER7_CH3-PadD8)")
 			(class "Default")
 			(node
 				(ref "U1")
-				(pin "53")
-				(pinfunction "PC12_53")
+				(pin "D8")
+				(pinfunction "PC9/TIMER7_CH3_D8")
 				(pintype "bidirectional+no_connect")
 			)
 		)
 		(net
 			(code "74")
-			(name "unconnected-(U1-PC13-Pad2)")
+			(name "unconnected-(U1-PC10-PadC5)")
 			(class "Default")
 			(node
 				(ref "U1")
-				(pin "2")
-				(pinfunction "PC13_2")
+				(pin "C5")
+				(pinfunction "PC10_C5")
 				(pintype "bidirectional+no_connect")
 			)
 		)
 		(net
 			(code "75")
-			(name "unconnected-(U1-PD2-Pad54)")
+			(name "unconnected-(U1-PC12-PadA6)")
 			(class "Default")
 			(node
 				(ref "U1")
-				(pin "54")
-				(pinfunction "PD2_54")
+				(pin "A6")
+				(pinfunction "PC12_A6")
 				(pintype "bidirectional+no_connect")
 			)
 		)
 		(net
 			(code "76")
-			(name "unconnected-(U2-NC1-Pad1)")
+			(name "unconnected-(U1-PC13-PadB1)")
 			(class "Default")
 			(node
-				(ref "U2")
-				(pin "1")
-				(pinfunction "NC1_1")
-				(pintype "no_connect")
+				(ref "U1")
+				(pin "B1")
+				(pinfunction "PC13_B1")
+				(pintype "bidirectional+no_connect")
 			)
 		)
 		(net
 			(code "77")
-			(name "unconnected-(U2-NC2-Pad2)")
+			(name "unconnected-(U1-PD2-PadB5)")
 			(class "Default")
 			(node
-				(ref "U2")
-				(pin "2")
-				(pinfunction "NC2_2")
-				(pintype "no_connect")
+				(ref "U1")
+				(pin "B5")
+				(pinfunction "PD2_B5")
+				(pintype "bidirectional+no_connect")
 			)
 		)
 		(net
 			(code "78")
-			(name "unconnected-(U2-NC3-Pad3)")
+			(name "unconnected-(U2-NC-Pad1)")
 			(class "Default")
 			(node
 				(ref "U2")
-				(pin "3")
-				(pinfunction "NC3_3")
-				(pintype "no_connect")
+				(pin "1")
+				(pinfunction "NC_1")
+				(pintype "passive+no_connect")
 			)
 		)
 		(net
 			(code "79")
-			(name "unconnected-(U2-NC4-Pad4)")
+			(name "unconnected-(U2-NC-Pad2)")
 			(class "Default")
 			(node
 				(ref "U2")
-				(pin "4")
-				(pinfunction "NC4_4")
-				(pintype "no_connect")
+				(pin "2")
+				(pinfunction "NC_2")
+				(pintype "passive+no_connect")
 			)
 		)
 		(net
 			(code "80")
-			(name "unconnected-(U2-NC5-Pad10)")
+			(name "unconnected-(U2-NC-Pad3)")
 			(class "Default")
 			(node
 				(ref "U2")
-				(pin "10")
-				(pinfunction "NC5_10")
-				(pintype "no_connect")
+				(pin "3")
+				(pinfunction "NC_3")
+				(pintype "passive+no_connect")
 			)
 		)
 		(net
 			(code "81")
+			(name "unconnected-(U2-NC-Pad4)")
+			(class "Default")
+			(node
+				(ref "U2")
+				(pin "4")
+				(pinfunction "NC_4")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "82")
+			(name "unconnected-(U2-NC-Pad10)")
+			(class "Default")
+			(node
+				(ref "U2")
+				(pin "10")
+				(pinfunction "NC_10")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "83")
 			(name "unconnected-(U2-OUT-Pad15)")
 			(class "Default")
 			(node
 				(ref "U2")
 				(pin "15")
 				(pinfunction "OUT_15")
-				(pintype "output+no_connect")
+				(pintype "passive+no_connect")
 			)
 		)
 		(net
-			(code "82")
+			(code "84")
 			(name "unconnected-(U2-PUSH-Pad5)")
 			(class "Default")
 			(node
 				(ref "U2")
 				(pin "5")
 				(pinfunction "PUSH_5")
-				(pintype "output+no_connect")
-			)
-		)
-		(net
-			(code "83")
-			(name "unconnected-(U2-U-Pad9)")
-			(class "Default")
-			(node
-				(ref "U2")
-				(pin "9")
-				(pinfunction "U_9")
-				(pintype "bidirectional+no_connect")
-			)
-		)
-		(net
-			(code "84")
-			(name "unconnected-(U2-V-Pad11)")
-			(class "Default")
-			(node
-				(ref "U2")
-				(pin "11")
-				(pinfunction "V_11")
-				(pintype "bidirectional+no_connect")
+				(pintype "passive+no_connect")
 			)
 		)
 		(net
 			(code "85")
-			(name "unconnected-(U2-W-Pad12)")
+			(name "unconnected-(U2-U-Pad11)")
 			(class "Default")
 			(node
 				(ref "U2")
-				(pin "12")
-				(pinfunction "W_12")
-				(pintype "bidirectional+no_connect")
+				(pin "11")
+				(pinfunction "U_11")
+				(pintype "passive+no_connect")
 			)
 		)
 		(net
 			(code "86")
+			(name "unconnected-(U2-V-Pad12)")
+			(class "Default")
+			(node
+				(ref "U2")
+				(pin "12")
+				(pinfunction "V_12")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "87")
+			(name "unconnected-(U2-W-Pad9)")
+			(class "Default")
+			(node
+				(ref "U2")
+				(pin "9")
+				(pinfunction "W_9")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "88")
 			(name "unconnected-(U4-N{slash}C-Pad19)")
 			(class "Default")
 			(node

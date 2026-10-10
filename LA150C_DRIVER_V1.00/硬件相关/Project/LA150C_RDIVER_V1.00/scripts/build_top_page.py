@@ -55,7 +55,7 @@ def main() -> int:
         "POWER": ([], [("AD_VBUS", 45.72)]),
         "communication": (
             [],
-            [("CAN0_TX", 71.12), ("CAN0_RX", 76.2), ("CANH", 81.28), ("CANL", 86.36)],
+            [("CANFD_TX", 71.12), ("CANFD_RX", 76.2), ("CANH", 81.28), ("CANL", 86.36)],
         ),
         "ENCODER": (
             [],
@@ -63,21 +63,21 @@ def main() -> int:
         ),
         "MCU": (
             [
-                ("AD_VBUS", 45.72), ("CAN0_TX", 71.12), ("CAN0_RX", 76.2),
+                ("AD_VBUS", 45.72), ("CANFD_TX", 71.12), ("CANFD_RX", 76.2),
                 ("SPI2_SCK", 111.76), ("SPI2_MISO", 116.84), ("SPI2_CSN", 121.92),
                 ("FORCE_P", 138.43), ("FORCE_N", 143.51),
                 ("SWDIO", 148.59), ("SWCLK", 153.67), ("NRST", 158.75),
             ],
             [
-                ("PWM_A", 30.48), ("EN_A", 35.56), ("PWM_B", 40.64), ("EN_B", 45.72),
-                ("PWM_C", 50.8), ("EN_C", 55.88), ("nSLEEP", 60.96), ("nFAULT", 66.04),
+                ("PWM_A", 30.48), ("PWM_B", 35.56), ("PWM_C", 40.64),
+                ("nSLEEP", 45.72), ("nFAULT", 50.8),
                 ("SO_A", 76.2), ("SO_B", 81.28), ("SO_C", 86.36), ("AD_NTC", 91.44),
             ],
         ),
         "MOTOR": (
             [
-                ("PWM_A", 30.48), ("EN_A", 35.56), ("PWM_B", 40.64), ("EN_B", 45.72),
-                ("PWM_C", 50.8), ("EN_C", 55.88), ("nSLEEP", 60.96), ("nFAULT", 66.04),
+                ("PWM_A", 30.48), ("PWM_B", 35.56), ("PWM_C", 40.64),
+                ("nSLEEP", 45.72), ("nFAULT", 50.8),
                 ("SO_A", 76.2), ("SO_B", 81.28), ("SO_C", 86.36), ("AD_NTC", 91.44),
             ],
             [("MOT_U", 60.96), ("MOT_V", 66.04), ("MOT_W", 71.12)],
@@ -135,17 +135,16 @@ def main() -> int:
         wire(net, (mx, py), (76.2, py))
         label(net, 76.2, py, rotation=180)
 
-    swd = f"{P}:SWD-1X5-1.27"
+    swd = f"{P}:SWD-1X3-1.0"
     swd_x, swd_y = 45.72, 168.91
-    sheet.component(swd, "J2", "SWD-1X5-1.27", swd_x, swd_y, footprint="",
-                    description="1x5 1.27mm SWD 调试排针")
+    sheet.component(swd, "J1", "SWD-1X3-1.0", swd_x, swd_y, footprint="",
+                    description="1x3 1.0mm SWD header: SWDIO/SWCLK/GND")
 
     def swd_pin(n):
         return sheet.pin(swd, swd_x, swd_y, 0, n)
 
     swd_map = (
-        ("1", "PWR_3V3", True), ("2", "SWDIO", False), ("3", "SWCLK", False),
-        ("4", "GND", True), ("5", "NRST", False),
+        ("1", "SWDIO", False), ("2", "GND", True), ("3", "SWCLK", False),
     )
     for number, net, is_power in swd_map:
         point = swd_pin(number)
@@ -155,60 +154,77 @@ def main() -> int:
         else:
             label(net, 31.75, point[1], rotation=180)
 
-    # --------------------------------------------- external 4-pin DF52 connector
-    j1 = f"{P}:DF52-4P-0.8C"
-    j1_x, j1_y = 45.72, 152.4
-    sheet.component(j1, "J1", "DF52-4P-0.8C", j1_x, j1_y, footprint="",
-                    description="DF52-4P-0.8C 整机对外连接器")
+    # --------------------------------- external 4x 0.5mm solder holes (J2)
+    j1 = f"{P}:SOLDER_HOLES_4P_0.5MM"
+    j1_x, j1_y = 45.72, 149.86
+    sheet.component(j1, "J2", "SOLDER_HOLES_4P_0.5MM", j1_x, j1_y, footprint="",
+                    description="4x 0.5mm solder holes, 0.8mm pad, 2.54mm pitch")
 
     def j1_pin(n):
         return sheet.pin(j1, j1_x, j1_y, 0, n)
 
-    for number, net, is_power in (
-        ("1", "VBUS_IN", True), ("2", "GND", True),
-        ("3", "CANH", False), ("4", "CANL", False),
+    for number, net, is_power, side in (
+        ("1", "CANL", False, "left"), ("2", "CANH", False, "left"),
+        ("3", "VBUS", True, "left"), ("4", "GND", True, "left"),
     ):
         point = j1_pin(number)
-        wire(net, (point[0], point[1]), (31.75, point[1]))
+        endpoint = {"1": 31.75, "2": 31.75, "3": 27.94, "4": 26.67}[number]
+        wire(net, (point[0], point[1]), (endpoint, point[1]))
         if is_power:
-            sheet.power(f"{P}:{net}", next_power(), 31.75, point[1])
+            sheet.power(f"{P}:{net}", next_power(), endpoint, point[1])
         else:
-            label(net, 31.75, point[1], rotation=180)
+            label(net, endpoint, point[1], rotation=180 if side == "left" else 0)
 
-    sheet.pwr_flag(31.75, j1_pin("1")[1])
-    sheet.pwr_flag(31.75, j1_pin("2")[1])
+    sheet.pwr_flag(27.94, j1_pin("3")[1])
+    sheet.pwr_flag(26.67, j1_pin("4")[1])
+
+    # ------------------------------------------- motor power solder pads
+    tp_x, tp_col = 257.81, 262.89
+    for ref, net, y, desc in (
+        ("J3", "MOT_U", 92.71, "1.0 x 2.0 mm solder pad, motor U"),
+        ("J4", "MOT_V", 97.79, "1.0 x 2.0 mm solder pad, motor V"),
+        ("J5", "MOT_W", 102.87, "1.0 x 2.0 mm solder pad, motor W"),
+    ):
+        pad = f"{P}:CON-1P-1.0mmx2.0mm-Rectangular"
+        sheet.component(pad, ref, "CON-1P-1.0mm*2.0mm-Rectangular", tp_x, y,
+                        footprint="", description=desc)
+        point = sheet.pin(pad, tp_x, y, 0, "1")
+        wire(net, (point[0], point[1]), (tp_col, y))
+        label(net, tp_col, y)
 
     # ------------------------------------------------------- test pads (stacked)
     # They live in the gap between MCU and MOTOR: the drawing sheet's own title
     # block owns x >= 108 / y >= 165, so nothing may be placed there.
-    tp_x, tp_col = 167.64, 172.72
     for index, (ref, net, desc) in enumerate(
         (
-            ("TP1", "MOT_U", "φ0.8 测试点，电机 U 相"),
-            ("TP2", "MOT_V", "φ0.8 测试点，电机 V 相"),
-            ("TP3", "MOT_W", "φ0.8 测试点，电机 W 相"),
             ("TP4", "FORCE_P", "φ0.8 测试点，一维力传感器预留输入 P"),
             ("TP5", "FORCE_N", "φ0.8 测试点，一维力传感器预留输入 N"),
         )
     ):
-        y = 100.33 + index * 5.08
+        y = 107.95 + index * 5.08
         sheet.component("Connector:TestPoint", ref, "TP0.8", tp_x, y,
                         footprint="TestPoint:TestPoint_Pad_D1.0mm", description=desc,
                         value_visible=False)
         wire(net, (tp_x, y), (tp_col, y))
         label(net, tp_col, y)
     for index, net in enumerate(("VBUS", "PWR_3V3")):
-        y = 100.33 + (5 + index) * 5.08
+        y = 118.11 + index * 5.08
         sheet.component("Connector:TestPoint", f"TP{6 + index}", "TP0.8", tp_x, y,
                         footprint="TestPoint:TestPoint_Pad_D1.0mm",
                         description=f"φ0.8 测试点，{net} 电源轨",
                         value_visible=False)
         wire(net, (tp_x, y), (tp_col, y))
         sheet.power(f"{P}:{net}", next_power(), tp_col, y)
+    sheet.component("Connector:TestPoint", "TP8", "TP0.8", tp_x, 128.27,
+                    footprint="TestPoint:TestPoint_Pad_D1.0mm",
+                    description="φ0.8 测试点，NRST 复位网络",
+                    value_visible=False)
+    wire("NRST", (tp_x, 128.27), (tp_col, 128.27))
+    label("NRST", tp_col, 128.27)
     sheet.text(
         "note:tp",
-        "测试点：TP1/2/3 = MOT_U/V/W；TP4/5 = FORCE_P/N（一维力传感器预留）\n"
-        "TP6 = VBUS 8~14V；TP7 = PWR_3V3 3.3V ±5%",
+        "J3/J4/J5 = MOT_U/V/W 焊接盘（1.0×2.0mm Rectangular）；"
+        "TP4/5 = FORCE_P/N；TP6 = VBUS 4.2~15V；TP7 = PWR_3V3 3.3V；TP8 = NRST",
         20.32,
         183.39,
         1.27,
@@ -225,9 +241,9 @@ def main() -> int:
     for label, x in (("Rev", 21.59), ("Date", 36.83), ("Author", 59.69), ("Changes", 77.47)):
         sheet.text(f"table:h:{label}", label, x, 191.77, 1.27)
     sheet.text("table:rev", "V1.00", 21.59, 199.39, 1.27)
-    sheet.text("table:date", "2026-10-04", 36.83, 199.39, 1.27)
+    sheet.text("table:date", "2026-10-11", 36.83, 199.39, 1.27)
     sheet.text("table:author", "Codex", 59.69, 199.39, 1.27)
-    sheet.text("table:changes", "Altium 导入 → 脚本化重绘", 77.47, 199.39, 1.27)
+    sheet.text("table:changes", "V1.12资源表/EN上拉/外置晶振", 77.47, 199.39, 1.27)
 
     sheet.text(
         "title",
@@ -238,15 +254,15 @@ def main() -> int:
     )
     sheet.text(
         "note:power",
-        "电源流向：VBUS_IN(8~14V) → [P-MOS 反接保护] → VBUS → [SCT2230MLUAR 同步降压] → PWR_3V3 → [MP6543H V3P3 + 磁珠] → PWR_3V3A",
+        "电源流向：J2 PIN3 VBUS(4.2~15V, 12V 额定) → [D3 SMF16CA] → [SCT2230MLUAR 同步降压] → PWR_3V3 → [MP6543H V3P3 + 磁珠] → PWR_3V3A",
         20.32,
         15.24,
         1.27,
     )
     sheet.text(
         "note:iface",
-        "整机对外接口：DF52-4P-0.8C  PIN1 VCC / PIN2 GND / PIN3 CANFD_H / PIN4 CANFD_L（线序与 QS02 规格书一致）；"
-        " U/V/W 与 SWD 不引出到该连接器",
+        "整机对外接口：J2 4×Ø0.5mm 焊接孔（0.8mm 外径，2.54mm 间距）"
+        " PIN1 CAN_L / PIN2 CAN_H / PIN3 12V / PIN4 GND；U/V/W 与 SWD 不引出到该连接器",
         20.32,
         17.78,
         1.27,

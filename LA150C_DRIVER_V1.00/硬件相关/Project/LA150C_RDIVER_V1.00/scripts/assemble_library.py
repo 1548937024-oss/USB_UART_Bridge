@@ -31,7 +31,7 @@ TARGET = PROJECT_ROOT / "library" / "LA150C_RDIVER_V1.00.kicad_sym"
 
 CLASSIFIED_ROOT = Path(
     r"D:\办公相关\项目相关\三花\03-灵巧手项目\O-硬件设计"
-    r"\KICAD-Library\libraries\LCSC_Classified\libraries"
+    r"\Library\Private\LCSC_Classified\libraries"
 )
 KICAD_SYMBOLS = Path(r"D:\KiCad10.0\share\kicad\symbols")
 
@@ -59,6 +59,9 @@ CLASSIFIED_SYMBOLS: list[tuple[str, str]] = [
     ("Interface", "TCAN3413DDFR_C30111221"),
     ("Sensors", "NCP15XH103F03RC"),
     ("Transistors", "PESD1CAN,215"),
+    ("Circuit Protection", "SMF16CA"),
+    ("Crystals, Oscillators, Resonators", "CSTNE8M00G52A000R0"),
+    ("Magnetic Sensors", "MT6701QT-STD_C2913974"),
     # passives with confirmed LCSC parts
     ("Resistors", "RC0201FR-070RL"),
     ("Resistors", "RC0402FR-070RL"),
@@ -82,6 +85,9 @@ CLASSIFIED_SYMBOLS: list[tuple[str, str]] = [
     ("Capacitors", "GRM033Z71C104KE14D"),
     ("Capacitors", "GRM155R71H104KE14D"),
     ("Capacitors", "CL10B104KC8NNNC"),
+    ("Capacitors", "GRM188Z71A106KA73D"),
+    ("Capacitors", "CL10B105KB8NQNC"),
+    ("Capacitors", "CL03C101JB3NNNC"),
     ("Capacitors", "CL05Y105KP6VPNC"),
     ("Capacitors", "CL10A475KP8NNNC"),
     ("Capacitors", "CL10B106MQ8NRNC"),
@@ -89,7 +95,18 @@ CLASSIFIED_SYMBOLS: list[tuple[str, str]] = [
     ("Capacitors", "FN03N100J500PLG"),
     ("Capacitors", "CC0402KRX7R9BB222"),
     ("Capacitors", "CC0402KRX7R0BB103"),
+    ("Capacitors", "CGA4J1X7S1E106KT0Y0N"),
+    ("Capacitors", "C1005X7S1A225KT000E"),
     ("Filters", "BLM15AG601SN1D"),
+]
+
+
+# DE5VS06BA was converted before the active Circuit Protection library was
+# rebuilt and currently remains in the backup file.  Keep the source
+# explicit so the project library stays reproducible without editing the
+# shared classified library.
+MANUAL_SYMBOLS: list[tuple[str, str, str]] = [
+    ("Circuit Protection", "Circuit Protection.bak", "DE5VS06BA"),
 ]
 
 
@@ -131,6 +148,15 @@ def collect_groups() -> tuple[dict[str, list[k.Node]], list[str]]:
             # the whole build; the page generator falls back to the generic
             # KiCad symbol when the private counterpart is unavailable.
             missing.append(f"{category}/{name}")
+            continue
+        merged[name] = copy.deepcopy(library[name])
+
+    # 2b. Manually retained classified parts.
+    for category, filename, name in MANUAL_SYMBOLS:
+        path = classified_path(category).with_name(filename)
+        library = k.read_library(path)
+        if name not in library:
+            missing.append(f"{category}/{filename}:{name}")
             continue
         merged[name] = copy.deepcopy(library[name])
 
@@ -198,6 +224,21 @@ def set_pin_type(node: k.Node, kind: str = "passive") -> None:
     for item in node:
         if isinstance(item, list):
             set_pin_type(item, kind)
+
+
+def set_pin_types(node: k.Node, mapping: dict[str, str]) -> None:
+    """Set pin electrical types by pin number."""
+    if not isinstance(node, list):
+        return
+    if node and node[0] == "pin":
+        number_node = k.direct(node, "number")
+        if number_node is not None and len(number_node) >= 2:
+            number = k.atom(number_node[1])
+            if number in mapping:
+                node[1] = mapping[number]
+    for item in node:
+        if isinstance(item, list):
+            set_pin_types(item, mapping)
 
 
 def passive_category(name: str, source: list[k.Node]) -> str | None:
@@ -303,9 +344,22 @@ def main() -> int:
 
     # Connector and ESD parts import with unspecified pin types; normalise
     # them to passive so ERC does not flag pin-type conflicts.
-    for name in ("PESD1CAN,215",):
+    for name in (
+        "PESD1CAN,215",
+        "SMF16CA",
+        "DE5VS06BA",
+        "CSTNE8M00G52A000R0",
+    ):
         if name in merged:
             set_pin_type(merged[name], "passive")
+
+    # The classified MT6701 symbol carries unspecified pin types.  Define
+    # the interface explicitly so ERC checks the real supply/ground and does
+    # not warn on every SSI net.
+    mt6701 = merged.get("MT6701QT-STD_C2913974")
+    if mt6701 is not None:
+        set_pin_type(mt6701, "passive")
+        set_pin_types(mt6701, {"13": "power_in", "16": "power_in", "17": "passive"})
 
     root: list[k.Node] = [
         "kicad_symbol_lib",

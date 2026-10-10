@@ -29,10 +29,6 @@ class PrivatePart:
 # confirmed purchase part yet.  The value shown on the schematic is still the
 # design value; the note is what the reviewer needs to close.
 PENDING_PARTS: dict[str, str] = {
-    "Q1": "P-MOS 反接保护，型号待确认（母线 8~14 V，Vds ≥ 30 V）",
-    "D1": "母线 TVS SMC/DO-214AB 18 V 档，具体型号待确认",
-    "C1": "母线储能电容 ≥47 µF/25 V 低 ESR，型号待确认",
-    "C2": "输出电容 2 × 22 µF，具体料号待确认",
 }
 
 
@@ -58,23 +54,25 @@ VALUE_PARTS: dict[tuple[str, str, str], str] = {
     ("R", "100K", "0402"): "RC0402FR-07100KL",
     ("R", "100K", "0603"): "RC0603FR-07100KL",
     ("R", "10K NTC", "0402"): "NCP15XH103F03RC",
-    ("C", "100pF", "0201"): "FN03N100J500PLG",
+    ("C", "100pF", "0201"): "CL03C101JB3NNNC",
     ("C", "2.2nF", "0402"): "CC0402KRX7R9BB222",
     ("C", "10nF", "0402"): "CC0402KRX7R0BB103",
     ("C", "100nF", "0201"): "GRM033Z71C104KE14D",
     ("C", "100nF", "0402"): "GRM155R71H104KE14D",
     ("C", "100nF", "0603"): "CL10B104KC8NNNC",
     ("C", "1uF", "0402"): "CL05Y105KP6VPNC",
+    ("C", "1uF", "0603"): "CL10B105KB8NQNC",
     ("C", "4.7uF", "0603"): "CL10A475KP8NNNC",
-    ("C", "10uF", "0603"): "CL10B106MQ8NRNC",
+    ("C", "10uF", "0603"): "GRM188Z71A106KA73D",
+    ("C", "10uF", "0805"): "CGA4J1X7S1E106KT0Y0N",
     ("C", "10uF", "1210"): "GRM32EC72A106KE05L",
+    ("C", "2.2uF", "0402"): "C1005X7S1A225KT000E",
     ("L", "600R", "0402"): "BLM15AG601SN1D",
 }
 
 
 # Polarity matters for two-terminal protection parts: pin 1 is the cathode.
 PART_BY_REFERENCE: dict[str, PrivatePart] = {
-    "D2": PrivatePart("PESD1CAN,215", "PESD1CAN,215"),
 }
 
 
@@ -146,5 +144,5 @@ def normalized_symbol_names() -> set[str]:
     """Symbols whose two-terminal geometry must match the KiCad templates."""
     names = set(VALUE_PARTS.values())
     names.update(part.symbol for part in PART_BY_REFERENCE.values())
-    names.update({"PESD1CAN,215", "SMBJ58CA", "XL-1005UGC"})
+    names.update({"PESD1CAN,215", "SMF16CA", "DE5VS06BA", "SMBJ58CA", "XL-1005UGC"})
     return names

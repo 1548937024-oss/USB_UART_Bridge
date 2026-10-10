@@ -3,7 +3,7 @@
 
 Blocks, from the hardware design doc §3.1 / §3.5:
 
-* 输入保护与母线电容 - TVS clamp, P-MOS reverse-polarity protection, bulk cap;
+* 输入保护与母线电容 - SMF16CA TVS clamp and a 10 uF / 25 V bulk cap;
 * 同步降压 3.3V       - U1 SCT2230MLUAR with the datasheet's 3.3V/2A
   application circuit (10uF + 100nF input, 100nF BST, 31.6k/10.2k feedback,
   2 x 22uF + 100nF output);
@@ -56,7 +56,7 @@ def main() -> int:
 
     sheet.text(
         "title",
-        "LA150C RDIVER V1.00 - POWER\n母线 VBUS_IN(8~14V) → 反接保护 → VBUS → SCT2230MLUAR 同步降压 → PWR_3V3",
+        "LA150C RDIVER V1.00 - POWER\n母线 VBUS_IN(4.2~15V) → SMF16CA / 10µF → VBUS → SCT2230MLUAR 同步降压 → PWR_3V3",
         17.78,
         13.97,
         1.5,
@@ -78,82 +78,47 @@ def main() -> int:
     sheet.block("A  输入保护与母线电容", 20.32, 24.13, 218.44, 78.74)
     sheet.text(
         "note:a",
-        "D1 母线 TVS（SMC/18V 档，型号待确认）；Q1 P-MOS 反接保护，栅极 R1 下拉、C2 去抖；C1 ≥47µF/25V 低 ESR（料号待确认）",
+        "D3 SMF16CA 双向 TVS（SOD-123FL / 16 V / 200 W）；C18 按空间优化删除，"
+        " 母线储能由控制板承担，驱动板保留 C4 1µF/50V 本地旁路。",
         22.86,
         33.02,
         1.27,
     )
 
     # VBUS_IN rail
-    sheet.power(f"{P}:VBUS_IN", ref(), 33.02, 30.48)
+    sheet.power(f"{P}:VBUS", ref(), 33.02, 30.48)
     sheet.wire(33.02, 30.48, 33.02, 41.91)
-    sheet.wire(33.02, 41.91, 90.17, 41.91)          # to Q1 source
+    sheet.wire(33.02, 41.91, 127.0, 41.91)
 
-    # C1 bulk capacitor
-    sheet.component("Device:C", "C1", "47uF", 45.72, 49.53, footprint="", description="1210 47uF 25V 低 ESR（料号待确认）")
-    c1_a = sheet.pin("Device:C", 45.72, 49.53, 0, "1")
-    c1_b = sheet.pin("Device:C", 45.72, 49.53, 0, "2")
-    sheet.wire(45.72, 41.91, c1_a[0], c1_a[1])
-    sheet.junction(45.72, 41.91)
-    sheet.wire(c1_b[0], c1_b[1], c1_b[0], 62.23)
-    gnd("PGND", c1_b[0], 62.23)
-
-    # D1 bus TVS
-    sheet.component("Device:D_TVS", "D1", "SMCJ18A", 60.96, 49.53, rotation=90, footprint="", description="SMC(DO-214AB) 18V 档 TVS（型号待确认）")
-    d1_a = sheet.pin("Device:D_TVS", 60.96, 49.53, 90, "1")
-    d1_b = sheet.pin("Device:D_TVS", 60.96, 49.53, 90, "2")
-    sheet.wire(60.96, 41.91, d1_b[0], d1_b[1])
+    # D3 bus TVS, exact QS01/QS03 part
+    d3 = f"{P}:SMF16CA"
+    sheet.component(d3, "D3", "SMF16CA", 60.96, 49.53, rotation=90, footprint="",
+                    description="SOD-123FL 16V/200W bidirectional TVS")
+    d3_a = sheet.pin(d3, 60.96, 49.53, 90, "1")
+    d3_b = sheet.pin(d3, 60.96, 49.53, 90, "2")
+    sheet.wire(60.96, 41.91, d3_b[0], d3_b[1])
     sheet.junction(60.96, 41.91)
-    sheet.wire(d1_a[0], d1_a[1], d1_a[0], 62.23)
-    gnd("PGND", d1_a[0], 62.23)
+    sheet.wire(d3_a[0], d3_a[1], d3_a[0], 62.23)
+    gnd("PGND", d3_a[0], 62.23)
 
-    # Q1 reverse-polarity P-MOS: source on the input side, drain to VBUS
-    qx, qy, qrot = 95.25, 44.45, 270
-    sheet.component(
-        "Transistor_FET:Q_PMOS_GSD", "Q1", "PMOS", qx, qy,
-        rotation=qrot, mirror="x", footprint="", description="P-MOS 反接保护（型号待确认）",
-    )
-    q_s = sheet.pin("Transistor_FET:Q_PMOS_GSD", qx, qy, qrot, "2", mirror="x")
-    q_d = sheet.pin("Transistor_FET:Q_PMOS_GSD", qx, qy, qrot, "3", mirror="x")
-    q_g = sheet.pin("Transistor_FET:Q_PMOS_GSD", qx, qy, qrot, "1", mirror="x")
-    sheet.text("note:q1", "Q1: S 接输入，D 接输出；Q1 型号待确认（Vds ≥ 30V）", 22.86, 37.465, 1.27)
-
-    # VBUS after Q1
-    sheet.wire(q_d[0], q_d[1], 127.0, q_d[1])
+    # VBUS after the TVS / bulk capacitor
     sheet.power(f"{P}:VBUS", ref(), 127.0, 30.48)
-    sheet.wire(127.0, 30.48, 127.0, q_d[1])
-    sheet.junction(127.0, q_d[1])
-    sheet.pwr_flag(119.38, q_d[1])
-    sheet.junction(119.38, q_d[1])
-
-    # gate network: gate -> R1 / C2 -> PGND
-    sheet.wire(q_g[0], q_g[1], q_g[0], 52.07)
-    sheet.wire(q_g[0], 52.07, 101.6, 52.07)
-    sheet.junction(q_g[0], 52.07)
-    for refc, val, desc, x in (
-        ("R1", "10K", "0201 10K 1%", 95.25),
-        ("C2", "100nF", "0402 100nF 50V", 101.6),
-    ):
-        sheet.component("Device:R" if refc.startswith("R") else "Device:C",
-                        refc, val, x, 55.88, footprint="", description=desc)
-        bot = sheet.pin("Device:R" if refc.startswith("R") else "Device:C", x, 55.88, 0, "2")
-        sheet.wire(bot[0], bot[1], bot[0], 62.23)
-    sheet.wire(95.25, 62.23, 101.6, 62.23)
-    gnd("PGND", 95.25, 62.23)
-    sheet.junction(95.25, 62.23)
+    sheet.wire(127.0, 30.48, 127.0, 41.91)
+    sheet.junction(127.0, 41.91)
 
     # ================================================== B 同步降压 3.3V
     sheet.block("B  同步降压 3.3V - U5 SCT2230MLUAR", 20.32, 86.36, 218.44, 152.4)
     sheet.text(
         "note:b",
-        "U5 按 datasheet Figure 8 (12V→3.3V/2A) 配置：R3 301k 使能分压、C6 100nF BST-SW、R4 31.6k / R5 10.2k 反馈、C7/C8 2×22µF + C9 100nF 输出",
+        "U5 按 datasheet Figure 8 (12V→3.3V/2A) 配置：R3 301k 使能分压、C6 100nF BST-SW、"
+        "R4 31.6k / R5 10.2k 反馈、C7 10µF X7R + C9 100nF 输出（60mA/200mV 目标）",
         22.86,
         92.71,
         1.27,
     )
     sheet.text(
         "note:b2",
-        "R3/R4/R5/C7/C8 暂无确认料号；U5 EN 分压 R3=301k（datasheet 典型应用值）",
+        "C7/C21 = GRM188Z71A106KA73D；C8 已删除；R4/R5 改 0201 封装；U5 EN 分压 R3=301k",
         22.86,
         95.25,
         1.27,
@@ -176,7 +141,7 @@ def main() -> int:
 
     # input capacitors
     for refc, val, desc, x in (
-        ("C4", "10uF", "1210 10uF 25V", 44.45),
+        ("C4", "1uF", "0603 1uF 50V X7R", 44.45),
         ("C5", "100nF", "0402 100nF 50V", 52.07),
     ):
         sheet.component("Device:C", refc, val, x, 124.46, footprint="", description=desc)
@@ -215,8 +180,7 @@ def main() -> int:
     sheet.wire(163.83, vout[1], 163.83, 110.49)
     sheet.junction(163.83, vout[1])
     for refc, val, desc, x in (
-        ("C7", "22uF", "0805 22uF 10V（料号待确认）", 121.92),
-        ("C8", "22uF", "0805 22uF 10V（料号待确认）", 132.08),
+        ("C7", "10uF", "0603 10uF 10V X7R", 121.92),
         ("C9", "100nF", "0402 100nF 16V", 142.24),
     ):
         sheet.component("Device:C", refc, val, x, 121.92, footprint="", description=desc)
@@ -226,7 +190,6 @@ def main() -> int:
         sheet.junction(x, vout[1])
         sheet.wire(bot[0], bot[1], bot[0], 130.81)
     sheet.wire(121.92, 130.81, 142.24, 130.81)
-    sheet.junction(132.08, 130.81)
     gnd("PGND", 121.92, 130.81)
     sheet.junction(121.92, 130.81)
 
@@ -234,8 +197,24 @@ def main() -> int:
     # VOUT rail and the output capacitors crossing-free
     sheet.wire(fb[0], fb[1], 116.84, fb[1])
     sheet.label("U1_FB", 116.84, fb[1])
-    sheet.component("Device:R", "R4", "31.6K", 175.26, 105.41, footprint="", description="0402 31.6K 1%（料号待确认）")
-    sheet.component("Device:R", "R5", "10.2K", 175.26, 115.57, footprint="", description="0201 10.2K 1%（料号待确认）")
+    sheet.component(
+        "Device:R",
+        "R4",
+        "31.6K",
+        175.26,
+        105.41,
+        footprint="Resistors:R_0201_0603Metric",
+        description="0201 31.6K 1%（料号待确认）",
+    )
+    sheet.component(
+        "Device:R",
+        "R5",
+        "10.2K",
+        175.26,
+        115.57,
+        footprint="Resistors:R_0201_0603Metric",
+        description="0201 10.2K 1%（料号待确认）",
+    )
     r4_a = sheet.pin("Device:R", 175.26, 105.41, 0, "1")
     r4_b = sheet.pin("Device:R", 175.26, 105.41, 0, "2")
     r5_a = sheet.pin("Device:R", 175.26, 115.57, 0, "1")
@@ -275,7 +254,8 @@ def main() -> int:
     sheet.junction(r6_b[0], 180.34)
     sheet.wire(r6_b[0], 180.34, 63.5, 180.34)
     sheet.hier_label("AD_VBUS", 63.5, 180.34, shape="output", rotation=0)
-    sheet.component("Device:C", "C10", "100pF", 45.72, 186.69, footprint="", description="0201 100pF 50V")
+    sheet.component("Device:C", "C10", "100pF", 45.72, 186.69, footprint="",
+                    description="0201 100pF 50V C0G")
     c10_a = sheet.pin("Device:C", 45.72, 186.69, 0, "1")
     c10_b = sheet.pin("Device:C", 45.72, 186.69, 0, "2")
     sheet.wire(45.72, 180.34, c10_a[0], c10_a[1])

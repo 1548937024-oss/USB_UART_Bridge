@@ -90,12 +90,20 @@ def write_library_tables() -> None:
             ["options", k.quote("")],
             ["descr", k.quote("KiCad standard test point footprints")],
         ],
+        [
+            "lib",
+            ["name", k.quote("Connector_PinHeader_1.00mm")],
+            ["type", k.quote("KiCad")],
+            ["uri", k.quote("${KICAD10_FOOTPRINT_DIR}/Connector_PinHeader_1.00mm.pretty")],
+            ["options", k.quote("")],
+            ["descr", k.quote("KiCad standard 1.00mm pin header footprints")],
+        ],
     ]
 
     # Footprints that come with the classified LCSC libraries.  The path is
     # relative to the project so the container stays portable inside the repo.
     classified = (
-        "${KIPRJMOD}/../../../../KICAD-Library/libraries/LCSC_Classified/libraries"
+        "${KIPRJMOD}/../../../../Library/Private/LCSC_Classified/libraries"
     )
     for category in (
         "Capacitors",
@@ -164,7 +172,7 @@ def write_project_file() -> None:
     variables["@PAGE NO"] = "1"
     variables["@PAGE COUNT"] = str(len(SHEET_FILES) + 1)
     variables["@CREATE DATE"] = "2026-09-22"
-    variables["@UPDATE DATE"] = "2026-10-04"
+    variables["@UPDATE DATE"] = "2026-10-11"
     variables["VERSION"] = "V1.00"
     variables["SHEETTOTAL"] = str(len(SHEET_FILES) + 1)
     variables["PAGE SIZE"] = "A4"
