@@ -1,17 +1,73 @@
 {
-  "parts": 102,
-  "downloaded": 1,
-  "copied_from_cache": 0,
+  "parts": 112,
+  "downloaded": 8,
+  "copied_from_cache": 1,
   "existing_or_skipped": 0,
   "failed": 0,
   "missing_source": 0,
   "results": [
     {
-      "LCSC": "C114761",
-      "MPN": "RC0402FR-0715KL",
+      "LCSC": "C106224",
+      "MPN": "RC0201FR-07100KL",
       "Status": "downloaded",
       "Datasheet": "https://atta.szlcsc.com/upload/public/pdf/source/20250610/89E4D743C004A82A45145C7A2CC3A578.pdf",
-      "LocalDatasheet": "../datasheets/C114761/RC0402FR-0715KL.pdf"
+      "LocalDatasheet": "../datasheets/C106224/RC0201FR-07100KL.pdf"
+    },
+    {
+      "LCSC": "C123805",
+      "MPN": "SMF16CA",
+      "Status": "downloaded",
+      "Datasheet": "https://atta.szlcsc.com/upload/public/pdf/source/20250911/A9E208B97C1B87827444A0C468124C54.pdf",
+      "LocalDatasheet": "../datasheets/C123805/SMF16CA.pdf"
+    },
+    {
+      "LCSC": "C2913974",
+      "MPN": "MT6701QT-STD",
+      "Status": "downloaded",
+      "Datasheet": "https://atta.szlcsc.com/upload/public/pdf/source/20260616/FEB700C1922508565884FF0A90656B50.pdf",
+      "LocalDatasheet": "../datasheets/C2913974/MT6701QT-STD.pdf"
+    },
+    {
+      "LCSC": "C2925430",
+      "MPN": "BM29B0.6-2DS/2-0.35V",
+      "Status": "downloaded",
+      "Datasheet": "https://atta.szlcsc.com/upload/public/pdf/source/20211126/440829653A41B2C50D4B12C1CE909750.pdf",
+      "LocalDatasheet": "../datasheets/C2925430/BM29B0.6-2DS_2-0.35V.pdf"
+    },
+    {
+      "LCSC": "C29936",
+      "MPN": "CL10B105KA8NNNC",
+      "Status": "downloaded",
+      "Datasheet": "https://atta.szlcsc.com/upload/public/pdf/source/20160218/1457707763339.pdf",
+      "LocalDatasheet": "../datasheets/C29936/CL10B105KA8NNNC.pdf"
+    },
+    {
+      "LCSC": "C327379",
+      "MPN": "RC0201FR-078K06L",
+      "Status": "copied-https_atta.szlcsc.com_upload_public_pdf_source_20250610_89E4D743C004A82A45145C7A2CC3A578.pdf.pdf",
+      "Datasheet": "https://atta.szlcsc.com/upload/public/pdf/source/20250610/89E4D743C004A82A45145C7A2CC3A578.pdf",
+      "LocalDatasheet": "../datasheets/C327379/RC0201FR-078K06L.pdf"
+    },
+    {
+      "LCSC": "C445740",
+      "MPN": "C1005X7S1A225KT000E",
+      "Status": "downloaded",
+      "Datasheet": "https://atta.szlcsc.com/upload/public/pdf/source/20191108/C445765_930F403C9F9F1C91FA65B6959DB97EFA.pdf",
+      "LocalDatasheet": "../datasheets/C445740/C1005X7S1A225KT000E.pdf"
+    },
+    {
+      "LCSC": "C561711",
+      "MPN": "FN03N101J500PLG",
+      "Status": "downloaded",
+      "Datasheet": "https://atta.szlcsc.com/upload/public/pdf/source/20241107/25D13BC56D84FBEC5B349398FCEBBC16.pdf",
+      "LocalDatasheet": "../datasheets/C561711/FN03N101J500PLG.pdf"
+    },
+    {
+      "LCSC": "C694230",
+      "MPN": "CGA4J1X7S1E106KT0Y0N",
+      "Status": "downloaded",
+      "Datasheet": "https://atta.szlcsc.com/upload/public/pdf/source/20200407/C342975_AB13C551805E4B495BBDB585D2C58CA0.pdf",
+      "LocalDatasheet": "../datasheets/C694230/CGA4J1X7S1E106KT0Y0N.pdf"
     }
   ]
 }

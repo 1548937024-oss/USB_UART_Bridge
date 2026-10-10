@@ -12,6 +12,7 @@
 - `../../建库用/BOM_PASTER_8984112A_Y43.xls`
 - `../../建库用/BOM_Z300BL_IC-TW39_V1.10.xlsx`
 - `manual_imports/LocalParts/parts_review.csv`（非立创在售或手工核准器件）
+- `manual_imports/EBOM_V1.10/parts_review.csv`（EBOM 补库器件）
 - `metadata_overrides.csv`（规格书版本、本地归档和人工确认字段）
 - `datasheets/`（规格书离线归档）
 
@@ -69,10 +70,10 @@ LCSC_Classified/
 
 ## 当前状态
 
-- 合并后唯一料号：`101`
-- 已完成符号和封装转换：`100`
+- 合并后唯一料号：`111`
+- 已完成符号和封装转换：`110`
 - 待转换：`1`
-- 已关联并完成本地归档的 PDF 规格书：`101`
+- 已关联并完成本地归档的 PDF 规格书：`111`
 - 旧 BOM 占位或未确认料号已进入 `excluded_parts.csv`，不再进入主索引。
 - `C124020 / TJA1051TK/3,118` 已从有效库排除；CAN FD 替代料
   `C30111221 / TCAN3413DDFR` 已入库并完成本地规格书归档。
@@ -115,7 +116,7 @@ LCSC_Classified/
   `${KICAD10_3DMODEL_DIR}`。
 - `register_global_libraries.ps1` 会把 `LCSC_LIB_ROOT` 写入
   `kicad_common.json`，同时注册符号库和封装库。
-- 当前已转换器件中，`100 / 100` 有可解析的 3D 关联。
+- 当前已转换器件中，`110 / 110` 有可解析的 3D 关联。
 - 优先保留已有本地 `.wrl/.step`；缺失模型从国内 LCEDA 获取并归入对应
   `<分类>.3dshapes`，不再重复下载已存在的本地模型。
 - 3D 清单输出到 `data/model_3d_local_manifest.csv`，校验摘要输出到
@@ -170,6 +171,7 @@ C:\Users\15489\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\p
   .\Library\Private\LCSC_Classified\new_imports\Y43\parts_review.csv `
   .\Library\Private\LCSC_Classified\new_imports\Z300BL\parts_review.csv `
   .\Library\Private\LCSC_Classified\manual_imports\LocalParts\parts_review.csv `
+  .\Library\Private\LCSC_Classified\manual_imports\EBOM_V1.10\parts_review.csv `
   --overrides .\Library\Private\LCSC_Classified\category_overrides.csv `
   --metadata-overrides .\Library\Private\LCSC_Classified\metadata_overrides.csv `
   --exclude-parts .\Library\Private\LCSC_Classified\excluded_parts.csv `

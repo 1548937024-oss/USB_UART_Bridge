@@ -1,9 +1,9 @@
 {
-  "parts": 102,
+  "parts": 111,
   "top_categories": {
-    "Capacitors": 27,
-    "Circuit Protection": 1,
-    "Connectors": 7,
+    "Capacitors": 31,
+    "Circuit Protection": 2,
+    "Connectors": 8,
     "Crystals, Oscillators, Resonators": 1,
     "Diodes": 2,
     "Embedded Processors & Controllers": 2,
@@ -11,12 +11,12 @@
     "Inductors, Coils, Chokes": 2,
     "Industrial control electrical": 1,
     "Interface": 3,
-    "Magnetic Sensors": 3,
+    "Magnetic Sensors": 4,
     "Memory": 1,
     "Motor Driver ICs": 3,
     "Optoelectronics": 3,
     "Power Management (PMIC)": 6,
-    "Resistors": 28,
+    "Resistors": 30,
     "Sensors": 1,
     "Switches": 1,
     "Transistors": 8
@@ -25,7 +25,7 @@
     {
       "top": "Capacitors",
       "sub": "Ceramic Capacitors",
-      "parts": 27
+      "parts": 31
     },
     {
       "top": "Circuit Protection",
@@ -33,9 +33,14 @@
       "parts": 1
     },
     {
+      "top": "Circuit Protection",
+      "sub": "TVS Diodes",
+      "parts": 1
+    },
+    {
       "top": "Connectors",
       "sub": "Headers, Male Pins",
-      "parts": 7
+      "parts": 8
     },
     {
       "top": "Crystals, Oscillators, Resonators",
@@ -85,7 +90,7 @@
     {
       "top": "Magnetic Sensors",
       "sub": "Angle, Linear Position Measuring",
-      "parts": 3
+      "parts": 4
     },
     {
       "top": "Memory",
@@ -120,7 +125,7 @@
     {
       "top": "Resistors",
       "sub": "Chip Resistor - Surface Mount",
-      "parts": 28
+      "parts": 30
     },
     {
       "top": "Sensors",

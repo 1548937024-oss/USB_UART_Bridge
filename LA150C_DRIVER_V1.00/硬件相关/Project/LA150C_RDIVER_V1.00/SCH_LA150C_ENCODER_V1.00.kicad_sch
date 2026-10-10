@@ -1154,7 +1154,7 @@
 		(uuid "1e6460af-0ae7-5455-8220-828645f86ce3")
 	)
 	(junction
-		(at 127 60.96)
+		(at 127 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "39e7e901-648e-510b-934c-737427659b1f")
@@ -1253,17 +1253,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 55.88) (xy 127 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5732cc0f-cf7d-510d-819b-56d7c3b5a299")
-	)
-	(wire
-		(pts
-			(xy 134.62 55.88) (xy 134.62 60.96)
+			(xy 134.62 55.88) (xy 134.62 57.15)
 		)
 		(stroke
 			(width 0)
@@ -1313,7 +1303,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 60.96) (xy 134.62 60.96)
+			(xy 127 57.15) (xy 134.62 57.15)
 		)
 		(stroke
 			(width 0)
@@ -1350,6 +1340,16 @@
 			(type default)
 		)
 		(uuid "dca10374-aae1-5da1-b393-4f1d2eb69442")
+	)
+	(wire
+		(pts
+			(xy 127 55.88) (xy 127 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e095d415-215a-4e27-ae1e-22fe2ef7d502")
 	)
 	(wire
 		(pts
@@ -1478,7 +1478,7 @@
 	)
 	(symbol
 		(lib_id "LA150C_RDIVER_V1.00:GND")
-		(at 127 60.96 0)
+		(at 127 58.42 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1488,7 +1488,7 @@
 		(dnp no)
 		(uuid "543bb32f-dfc7-54f1-a4ec-9153f0d5a057")
 		(property "Reference" "#PWR057"
-			(at 125.73 59.69 0)
+			(at 125.73 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1500,7 +1500,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 129.54 61.595 0)
+			(at 128.778 61.214 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1511,7 +1511,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 127 60.96 0)
+			(at 127 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1523,7 +1523,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 127 60.96 0)
+			(at 127 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1535,7 +1535,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 127 60.96 0)
+			(at 127 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
